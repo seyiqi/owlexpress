@@ -14,7 +14,7 @@ import denoise.StandardDenoiser;
  * */
 public class ImageMatcher {
 	
-	public List<Results> parseImage(String dir){
+	public String parseImage(String dir){
 		// preprocessing
 		OpenCVPreproessor pre = new OpenCVPreproessor();
 		pre.preprocess(dir, "output.JPG");
@@ -28,12 +28,13 @@ public class ImageMatcher {
 		Denoiser denoiser = new StandardDenoiser();
 		String denoised = denoiser.denoise(fromImage);
 		System.out.println("denoised = \n" + denoised);
+		
 				
 		// match person
-		Matcher matcher = new StandardMatcher();
-		List<Results> res = matcher.generateMatch(denoised, "college");
+		// Matcher matcher = new StandardMatcher();
+		// List<Results> res = matcher.generateMatch(denoised, "college");
 		
-		return res;
+		return denoised;
 	}
 	
 	

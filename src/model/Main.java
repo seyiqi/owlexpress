@@ -1,13 +1,11 @@
 package model;
 
-import java.util.List;
+import java.io.FileOutputStream;
+import java.io.PrintWriter;
+import java.net.URL;
+import java.nio.channels.Channels;
+import java.nio.channels.ReadableByteChannel;
 
-import matching.Matcher;
-import matching.StandardMatcher;
-import denoise.Denoiser;
-import denoise.StandardDenoiser;
-import ocr.Tess4JOCR;
-import preprocess.OpenCVPreproessor;
 
 /**
  * Main Class
@@ -16,36 +14,35 @@ public class Main {
 	
 	/**
 	 * Execution method
+	 * @throws Exception 
 	 * */
-	public static void main(String args[]){
+	public static void main(String args[]) throws Exception{
 		
-		String projectPath = "/Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/";
-		String dataPath = projectPath + "data/";
+		/* Input Parse */
+		if (args.length != 2) {
+			System.err.println("Illegal argument: java xxx.class <url> <outputPath>");
+		}
+		String url = args[0];
+		String outputPath = args[1];
 		
-		// preprocessing
-		OpenCVPreproessor pre = new OpenCVPreproessor();
-		pre.preprocess(dataPath+"l2.1.JPG", dataPath+"output.JPG");
+		/* Cache url */
+		URL website = new URL(url);
+		ReadableByteChannel rbc = Channels.newChannel(website.openStream());
+		FileOutputStream fos = new FileOutputStream("input.JPG");
+		fos.getChannel().transferFrom(rbc, 0, Long.MAX_VALUE);
 		
-		// read text
-		Tess4JOCR ocr = new Tess4JOCR();
-		String fromImage = ocr.readImage(dataPath+"output.JPG");
-		System.out.println("fromImage = \n" + fromImage);
-		
-		// denoise
-		Denoiser denoiser = new StandardDenoiser();
-		String denoised = denoiser.denoise(fromImage);
-		System.out.println("denoised = \n" + denoised);
-		
-		// match person
-		Matcher matcher = new StandardMatcher();
-		List<Results> res = matcher.generateMatch(denoised, "college");
-		
+		ImageMatcher matcher = new ImageMatcher();
+		String res = matcher.parseImage("input.JPG");
 		System.out.println("res = " + res);
+		fos.close();
+		
+		/* Reformat to JSON style */
+		String output = "{\"success\":true,\"img\":\"" + url +"\",\"value\":\"" + res +"\"}";
+		System.out.println("output = " + output);
+		
+		/* Save to output.txt */
+		PrintWriter out = new PrintWriter(outputPath);
+		out.println(res);
+		out.close();
 	}
-
 }
-//
-
-// SH‘? MENGCHEN TANG
-// T01 6310 MAIN ST
-// HOUSTON TEXAS 77005-1843
