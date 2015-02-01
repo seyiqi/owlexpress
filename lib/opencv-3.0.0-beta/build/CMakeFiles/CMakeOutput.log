@@ -1,0 +1,397 @@
+The system is: Darwin - 14.0.0 - x86_64
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is AppleClang, found in "/Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/3.0.2/CompilerIdCXX/a.out"
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is AppleClang, found in "/Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/3.0.2/CompilerIdC/a.out"
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTryCompileExec1861629677/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec1861629677.dir/build.make CMakeFiles/cmTryCompileExec1861629677.dir/build
+gmake[1]: Entering directory '/Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1861629677.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec1861629677.dir/testCXXCompiler.cxx.o -c /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec1861629677
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1861629677.dir/link.txt --verbose=1
+/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec1861629677.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec1861629677  
+gmake[1]: Leaving directory '/Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTryCompileExec3891194341/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec3891194341.dir/build.make CMakeFiles/cmTryCompileExec3891194341.dir/build
+gmake[1]: Entering directory '/Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3891194341.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec3891194341.dir/CMakeCXXCompilerABI.cpp.o -c /opt/local/share/cmake-3.0/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec3891194341
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3891194341.dir/link.txt --verbose=1
+/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names -v -Wl,-v CMakeFiles/cmTryCompileExec3891194341.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec3891194341   
+Apple LLVM version 6.0 (clang-600.0.56) (based on LLVM 3.5svn)
+Target: x86_64-apple-darwin14.0.0
+Thread model: posix
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.10.0 -o cmTryCompileExec3891194341 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTryCompileExec3891194341.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.0/lib/darwin/libclang_rt.osx.a
+@(#)PROGRAM:ld  PROJECT:ld64-241.9
+configured to support archs: armv6 armv7 armv7s arm64 i386 x86_64 x86_64h armv6m armv7m armv7em
+Library search paths:
+	/usr/lib
+	/usr/local/lib
+Framework search paths:
+	/Library/Frameworks/
+	/System/Library/Frameworks/
+gmake[1]: Leaving directory '/Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/opt/local/bin/gmake" "cmTryCompileExec3891194341/fast"]
+  ignore line: [/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec3891194341.dir/build.make CMakeFiles/cmTryCompileExec3891194341.dir/build]
+  ignore line: [gmake[1]: Entering directory '/Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp']
+  ignore line: [/opt/local/bin/cmake -E cmake_progress_report /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec3891194341.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec3891194341.dir/CMakeCXXCompilerABI.cpp.o -c /opt/local/share/cmake-3.0/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec3891194341]
+  ignore line: [/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3891194341.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++     -Wl,-search_paths_first -Wl,-headerpad_max_install_names -v -Wl,-v CMakeFiles/cmTryCompileExec3891194341.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec3891194341   ]
+  ignore line: [Apple LLVM version 6.0 (clang-600.0.56) (based on LLVM 3.5svn)]
+  ignore line: [Target: x86_64-apple-darwin14.0.0]
+  ignore line: [Thread model: posix]
+  link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.10.0 -o cmTryCompileExec3891194341 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTryCompileExec3891194341.dir/CMakeCXXCompilerABI.cpp.o -lc++ -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.0/lib/darwin/libclang_rt.osx.a]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
+    arg [-demangle] ==> ignore
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-macosx_version_min] ==> ignore
+    arg [10.10.0] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec3891194341] ==> ignore
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-v] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec3891194341.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lc++] ==> lib [c++]
+    arg [-lSystem] ==> lib [System]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.0/lib/darwin/libclang_rt.osx.a]
+  Library search paths: [;/usr/lib;/usr/local/lib]
+  Framework search paths: [;/Library/Frameworks/;/System/Library/Frameworks/]
+  remove lib [System]
+  collapse lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.0/lib/darwin/libclang_rt.osx.a] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/6.0/lib/darwin/libclang_rt.osx.a]
+  collapse library dir [/usr/lib] ==> [/usr/lib]
+  collapse library dir [/usr/local/lib] ==> [/usr/local/lib]
+  collapse framework dir [/Library/Frameworks/] ==> [/Library/Frameworks]
+  collapse framework dir [/System/Library/Frameworks/] ==> [/System/Library/Frameworks]
+  implicit libs: [c++;/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/6.0/lib/darwin/libclang_rt.osx.a]
+  implicit dirs: [/usr/lib;/usr/local/lib]
+  implicit fwks: [/Library/Frameworks;/System/Library/Frameworks]
+
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTryCompileExec3039821167/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec3039821167.dir/build.make CMakeFiles/cmTryCompileExec3039821167.dir/build
+gmake[1]: Entering directory '/Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3039821167.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3039821167.dir/testCCompiler.c.o   -c /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec3039821167
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3039821167.dir/link.txt --verbose=1
+/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3039821167.dir/testCCompiler.c.o  -o cmTryCompileExec3039821167  
+gmake[1]: Leaving directory '/Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTryCompileExec2263257757/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec2263257757.dir/build.make CMakeFiles/cmTryCompileExec2263257757.dir/build
+gmake[1]: Entering directory '/Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2263257757.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2263257757.dir/CMakeCCompilerABI.c.o   -c /opt/local/share/cmake-3.0/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec2263257757
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2263257757.dir/link.txt --verbose=1
+/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names -v -Wl,-v CMakeFiles/cmTryCompileExec2263257757.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec2263257757   
+Apple LLVM version 6.0 (clang-600.0.56) (based on LLVM 3.5svn)
+Target: x86_64-apple-darwin14.0.0
+Thread model: posix
+ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.10.0 -o cmTryCompileExec2263257757 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTryCompileExec2263257757.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.0/lib/darwin/libclang_rt.osx.a
+@(#)PROGRAM:ld  PROJECT:ld64-241.9
+configured to support archs: armv6 armv7 armv7s arm64 i386 x86_64 x86_64h armv6m armv7m armv7em
+Library search paths:
+	/usr/lib
+	/usr/local/lib
+Framework search paths:
+	/Library/Frameworks/
+	/System/Library/Frameworks/
+gmake[1]: Leaving directory '/Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/opt/local/bin/gmake" "cmTryCompileExec2263257757/fast"]
+  ignore line: [/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec2263257757.dir/build.make CMakeFiles/cmTryCompileExec2263257757.dir/build]
+  ignore line: [gmake[1]: Entering directory '/Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp']
+  ignore line: [/opt/local/bin/cmake -E cmake_progress_report /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec2263257757.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTryCompileExec2263257757.dir/CMakeCCompilerABI.c.o   -c /opt/local/share/cmake-3.0/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec2263257757]
+  ignore line: [/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2263257757.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc    -Wl,-search_paths_first -Wl,-headerpad_max_install_names -v -Wl,-v CMakeFiles/cmTryCompileExec2263257757.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec2263257757   ]
+  ignore line: [Apple LLVM version 6.0 (clang-600.0.56) (based on LLVM 3.5svn)]
+  ignore line: [Target: x86_64-apple-darwin14.0.0]
+  ignore line: [Thread model: posix]
+  link line: [ "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld" -demangle -dynamic -arch x86_64 -macosx_version_min 10.10.0 -o cmTryCompileExec2263257757 -search_paths_first -headerpad_max_install_names -v CMakeFiles/cmTryCompileExec2263257757.dir/CMakeCCompilerABI.c.o -lSystem /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.0/lib/darwin/libclang_rt.osx.a]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld] ==> ignore
+    arg [-demangle] ==> ignore
+    arg [-dynamic] ==> ignore
+    arg [-arch] ==> ignore
+    arg [x86_64] ==> ignore
+    arg [-macosx_version_min] ==> ignore
+    arg [10.10.0] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec2263257757] ==> ignore
+    arg [-search_paths_first] ==> ignore
+    arg [-headerpad_max_install_names] ==> ignore
+    arg [-v] ==> ignore
+    arg [CMakeFiles/cmTryCompileExec2263257757.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lSystem] ==> lib [System]
+    arg [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.0/lib/darwin/libclang_rt.osx.a] ==> lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.0/lib/darwin/libclang_rt.osx.a]
+  Library search paths: [;/usr/lib;/usr/local/lib]
+  Framework search paths: [;/Library/Frameworks/;/System/Library/Frameworks/]
+  remove lib [System]
+  collapse lib [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../lib/clang/6.0/lib/darwin/libclang_rt.osx.a] ==> [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/6.0/lib/darwin/libclang_rt.osx.a]
+  collapse library dir [/usr/lib] ==> [/usr/lib]
+  collapse library dir [/usr/local/lib] ==> [/usr/local/lib]
+  collapse framework dir [/Library/Frameworks/] ==> [/Library/Frameworks]
+  collapse framework dir [/System/Library/Frameworks/] ==> [/System/Library/Frameworks]
+  implicit libs: [/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/6.0/lib/darwin/libclang_rt.osx.a]
+  implicit dirs: [/usr/lib;/usr/local/lib]
+  implicit fwks: [/Library/Frameworks;/System/Library/Frameworks]
+
+
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTryCompileExec1627203904/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec1627203904.dir/build.make CMakeFiles/cmTryCompileExec1627203904.dir/build
+gmake[1]: Entering directory '/Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1627203904.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIC   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -Wno-long-long -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec1627203904.dir/CheckIncludeFile.c.o   -c /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec1627203904
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1627203904.dir/link.txt --verbose=1
+/usr/bin/cc   -fPIC   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -Wno-long-long -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec1627203904.dir/CheckIncludeFile.c.o  -o cmTryCompileExec1627203904  
+gmake[1]: Leaving directory '/Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTryCompileExec3133473427/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec3133473427.dir/build.make CMakeFiles/cmTryCompileExec3133473427.dir/build
+gmake[1]: Entering directory '/Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3133473427.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIC   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -Wno-long-long -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec3133473427.dir/CheckIncludeFile.c.o   -c /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec3133473427
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3133473427.dir/link.txt --verbose=1
+/usr/bin/cc   -fPIC   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -Wno-long-long -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3133473427.dir/CheckIncludeFile.c.o  -o cmTryCompileExec3133473427  
+gmake[1]: Leaving directory '/Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTryCompileExec3313395436/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec3313395436.dir/build.make CMakeFiles/cmTryCompileExec3313395436.dir/build
+gmake[1]: Entering directory '/Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3313395436.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIC   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -Wno-long-long -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec3313395436.dir/CheckIncludeFile.c.o   -c /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec3313395436
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3313395436.dir/link.txt --verbose=1
+/usr/bin/cc   -fPIC   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -Wno-long-long -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec3313395436.dir/CheckIncludeFile.c.o  -o cmTryCompileExec3313395436  
+gmake[1]: Leaving directory '/Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp'
+
+
+Determining size of unsigned short passed with the following output:
+Change Dir: /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTryCompileExec142808001/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec142808001.dir/build.make CMakeFiles/cmTryCompileExec142808001.dir/build
+gmake[1]: Entering directory '/Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec142808001.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o
+/usr/bin/cc   -fPIC   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -Wno-long-long -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec142808001.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o   -c /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CheckTypeSize/CMAKE_SIZEOF_UNSIGNED_SHORT.c
+Linking C executable cmTryCompileExec142808001
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec142808001.dir/link.txt --verbose=1
+/usr/bin/cc   -fPIC   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -Wno-long-long -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec142808001.dir/CMAKE_SIZEOF_UNSIGNED_SHORT.c.o  -o cmTryCompileExec142808001  
+gmake[1]: Leaving directory '/Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function fseeko exists passed with the following output:
+Change Dir: /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTryCompileExec133552913/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec133552913.dir/build.make CMakeFiles/cmTryCompileExec133552913.dir/build
+gmake[1]: Entering directory '/Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec133552913.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -fPIC   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -Wno-long-long -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -DCHECK_FUNCTION_EXISTS=fseeko -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec133552913.dir/CheckFunctionExists.c.o   -c /opt/local/share/cmake-3.0/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec133552913
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec133552913.dir/link.txt --verbose=1
+/usr/bin/cc   -fPIC   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -Wno-long-long -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -DCHECK_FUNCTION_EXISTS=fseeko -O3 -DNDEBUG -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec133552913.dir/CheckFunctionExists.c.o  -o cmTryCompileExec133552913  
+gmake[1]: Leaving directory '/Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTryCompileExec2030618397/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec2030618397.dir/build.make CMakeFiles/cmTryCompileExec2030618397.dir/build
+gmake[1]: Entering directory '/Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2030618397.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIC   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -Wno-long-long -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec2030618397.dir/CheckIncludeFile.c.o   -c /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2030618397
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2030618397.dir/link.txt --verbose=1
+/usr/bin/cc   -fPIC   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -Wno-long-long -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec2030618397.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2030618397  
+gmake[1]: Leaving directory '/Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file assert.h exists passed with the following output:
+Change Dir: /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTryCompileExec1230117349/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec1230117349.dir/build.make CMakeFiles/cmTryCompileExec1230117349.dir/build
+gmake[1]: Entering directory '/Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1230117349.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIC   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -Wno-long-long -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec1230117349.dir/CheckIncludeFile.c.o   -c /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec1230117349
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1230117349.dir/link.txt --verbose=1
+/usr/bin/cc   -fPIC   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -Wno-long-long -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec1230117349.dir/CheckIncludeFile.c.o  -o cmTryCompileExec1230117349  
+gmake[1]: Leaving directory '/Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file fcntl.h exists passed with the following output:
+Change Dir: /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTryCompileExec4254640172/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec4254640172.dir/build.make CMakeFiles/cmTryCompileExec4254640172.dir/build
+gmake[1]: Entering directory '/Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4254640172.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIC   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -Wno-long-long -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec4254640172.dir/CheckIncludeFile.c.o   -c /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec4254640172
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4254640172.dir/link.txt --verbose=1
+/usr/bin/cc   -fPIC   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -Wno-long-long -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec4254640172.dir/CheckIncludeFile.c.o  -o cmTryCompileExec4254640172  
+gmake[1]: Leaving directory '/Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the function mmap exists passed with the following output:
+Change Dir: /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTryCompileExec1894273328/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec1894273328.dir/build.make CMakeFiles/cmTryCompileExec1894273328.dir/build
+gmake[1]: Entering directory '/Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1894273328.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -fPIC   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -Wno-long-long -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -DCHECK_FUNCTION_EXISTS=mmap -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec1894273328.dir/CheckFunctionExists.c.o   -c /opt/local/share/cmake-3.0/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1894273328
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1894273328.dir/link.txt --verbose=1
+/usr/bin/cc   -fPIC   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -Wno-long-long -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden -DCHECK_FUNCTION_EXISTS=mmap -O3 -DNDEBUG -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec1894273328.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1894273328  
+gmake[1]: Leaving directory '/Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file search.h exists passed with the following output:
+Change Dir: /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTryCompileExec696336076/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec696336076.dir/build.make CMakeFiles/cmTryCompileExec696336076.dir/build
+gmake[1]: Entering directory '/Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec696336076.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIC   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -Wno-long-long -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec696336076.dir/CheckIncludeFile.c.o   -c /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec696336076
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec696336076.dir/link.txt --verbose=1
+/usr/bin/cc   -fPIC   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -Wno-long-long -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec696336076.dir/CheckIncludeFile.c.o  -o cmTryCompileExec696336076  
+gmake[1]: Leaving directory '/Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file string.h exists passed with the following output:
+Change Dir: /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTryCompileExec2353912250/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec2353912250.dir/build.make CMakeFiles/cmTryCompileExec2353912250.dir/build
+gmake[1]: Entering directory '/Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2353912250.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIC   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -Wno-long-long -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec2353912250.dir/CheckIncludeFile.c.o   -c /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec2353912250
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2353912250.dir/link.txt --verbose=1
+/usr/bin/cc   -fPIC   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -Wno-long-long -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec2353912250.dir/CheckIncludeFile.c.o  -o cmTryCompileExec2353912250  
+gmake[1]: Leaving directory '/Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTryCompileExec4233948244/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec4233948244.dir/build.make CMakeFiles/cmTryCompileExec4233948244.dir/build
+gmake[1]: Entering directory '/Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4233948244.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIC   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -Wno-long-long -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec4233948244.dir/CheckIncludeFile.c.o   -c /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec4233948244
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4233948244.dir/link.txt --verbose=1
+/usr/bin/cc   -fPIC   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -Wno-long-long -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec4233948244.dir/CheckIncludeFile.c.o  -o cmTryCompileExec4233948244  
+gmake[1]: Leaving directory '/Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the include file semaphore.h exists passed with the following output:
+Change Dir: /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/opt/local/bin/gmake" "cmTryCompileExec125198520/fast"
+/opt/local/bin/gmake -f CMakeFiles/cmTryCompileExec125198520.dir/build.make CMakeFiles/cmTryCompileExec125198520.dir/build
+gmake[1]: Entering directory '/Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp'
+/opt/local/bin/cmake -E cmake_progress_report /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec125198520.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIC   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -Wno-long-long -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG   -o CMakeFiles/cmTryCompileExec125198520.dir/CheckIncludeFile.c.o   -c /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTryCompileExec125198520
+/opt/local/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec125198520.dir/link.txt --verbose=1
+/usr/bin/cc   -fPIC   -fsigned-char -W -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -fdiagnostics-show-option -Wno-long-long -Wno-semicolon-before-method-body -fno-omit-frame-pointer -msse -msse2 -msse3 -fvisibility=hidden -fvisibility-inlines-hidden  -O3 -DNDEBUG -Wl,-search_paths_first -Wl,-headerpad_max_install_names   CMakeFiles/cmTryCompileExec125198520.dir/CheckIncludeFile.c.o  -o cmTryCompileExec125198520  
+gmake[1]: Leaving directory '/Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/build/CMakeFiles/CMakeTmp'
+
+

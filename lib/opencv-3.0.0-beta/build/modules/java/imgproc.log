@@ -1,0 +1,3936 @@
+ok: CLASS ..Imgproc : 
+
+
+===== Header: /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/modules/imgproc/include/opencv2/imgproc/imgproc_c.h =====
+Namespaces: set([''])
+
+
+===== Header: /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/modules/imgproc/include/opencv2/imgproc/types_c.h =====
+Namespaces: set([''])
+
+--- Incoming ---
+['const CV_BLUR_NO_SCALE', '0', [], []]
+ok: CONST CV_BLUR_NO_SCALE=0
+
+--- Incoming ---
+['const CV_BLUR', '1', [], []]
+ok: CONST CV_BLUR=1
+
+--- Incoming ---
+['const CV_GAUSSIAN', '2', [], []]
+ok: CONST CV_GAUSSIAN=2
+
+--- Incoming ---
+['const CV_MEDIAN', '3', [], []]
+ok: CONST CV_MEDIAN=3
+
+--- Incoming ---
+['const CV_BILATERAL', '4', [], []]
+ok: CONST CV_BILATERAL=4
+
+--- Incoming ---
+['const CV_GAUSSIAN_5x5', '7', [], []]
+ok: CONST CV_GAUSSIAN_5x5=7
+
+--- Incoming ---
+['const CV_SCHARR', '-1', [], []]
+ok: CONST CV_SCHARR=-1
+
+--- Incoming ---
+['const CV_MAX_SOBEL_KSIZE', '7', [], []]
+ok: CONST CV_MAX_SOBEL_KSIZE=7
+
+--- Incoming ---
+['const CV_BGR2BGRA', '0', [], []]
+ignored: CONST CV_BGR2BGRA=0
+
+--- Incoming ---
+['const CV_RGB2RGBA', 'CV_BGR2BGRA', [], []]
+ignored: CONST CV_RGB2RGBA=CV_BGR2BGRA
+
+--- Incoming ---
+['const CV_BGRA2BGR', '1', [], []]
+ignored: CONST CV_BGRA2BGR=1
+
+--- Incoming ---
+['const CV_RGBA2RGB', 'CV_BGRA2BGR', [], []]
+ignored: CONST CV_RGBA2RGB=CV_BGRA2BGR
+
+--- Incoming ---
+['const CV_BGR2RGBA', '2', [], []]
+ignored: CONST CV_BGR2RGBA=2
+
+--- Incoming ---
+['const CV_RGB2BGRA', 'CV_BGR2RGBA', [], []]
+ignored: CONST CV_RGB2BGRA=CV_BGR2RGBA
+
+--- Incoming ---
+['const CV_RGBA2BGR', '3', [], []]
+ignored: CONST CV_RGBA2BGR=3
+
+--- Incoming ---
+['const CV_BGRA2RGB', 'CV_RGBA2BGR', [], []]
+ignored: CONST CV_BGRA2RGB=CV_RGBA2BGR
+
+--- Incoming ---
+['const CV_BGR2RGB', '4', [], []]
+ignored: CONST CV_BGR2RGB=4
+
+--- Incoming ---
+['const CV_RGB2BGR', 'CV_BGR2RGB', [], []]
+ignored: CONST CV_RGB2BGR=CV_BGR2RGB
+
+--- Incoming ---
+['const CV_BGRA2RGBA', '5', [], []]
+ignored: CONST CV_BGRA2RGBA=5
+
+--- Incoming ---
+['const CV_RGBA2BGRA', 'CV_BGRA2RGBA', [], []]
+ignored: CONST CV_RGBA2BGRA=CV_BGRA2RGBA
+
+--- Incoming ---
+['const CV_BGR2GRAY', '6', [], []]
+ignored: CONST CV_BGR2GRAY=6
+
+--- Incoming ---
+['const CV_RGB2GRAY', '7', [], []]
+ignored: CONST CV_RGB2GRAY=7
+
+--- Incoming ---
+['const CV_GRAY2BGR', '8', [], []]
+ignored: CONST CV_GRAY2BGR=8
+
+--- Incoming ---
+['const CV_GRAY2RGB', 'CV_GRAY2BGR', [], []]
+ignored: CONST CV_GRAY2RGB=CV_GRAY2BGR
+
+--- Incoming ---
+['const CV_GRAY2BGRA', '9', [], []]
+ignored: CONST CV_GRAY2BGRA=9
+
+--- Incoming ---
+['const CV_GRAY2RGBA', 'CV_GRAY2BGRA', [], []]
+ignored: CONST CV_GRAY2RGBA=CV_GRAY2BGRA
+
+--- Incoming ---
+['const CV_BGRA2GRAY', '10', [], []]
+ignored: CONST CV_BGRA2GRAY=10
+
+--- Incoming ---
+['const CV_RGBA2GRAY', '11', [], []]
+ignored: CONST CV_RGBA2GRAY=11
+
+--- Incoming ---
+['const CV_BGR2BGR565', '12', [], []]
+ignored: CONST CV_BGR2BGR565=12
+
+--- Incoming ---
+['const CV_RGB2BGR565', '13', [], []]
+ignored: CONST CV_RGB2BGR565=13
+
+--- Incoming ---
+['const CV_BGR5652BGR', '14', [], []]
+ignored: CONST CV_BGR5652BGR=14
+
+--- Incoming ---
+['const CV_BGR5652RGB', '15', [], []]
+ignored: CONST CV_BGR5652RGB=15
+
+--- Incoming ---
+['const CV_BGRA2BGR565', '16', [], []]
+ignored: CONST CV_BGRA2BGR565=16
+
+--- Incoming ---
+['const CV_RGBA2BGR565', '17', [], []]
+ignored: CONST CV_RGBA2BGR565=17
+
+--- Incoming ---
+['const CV_BGR5652BGRA', '18', [], []]
+ignored: CONST CV_BGR5652BGRA=18
+
+--- Incoming ---
+['const CV_BGR5652RGBA', '19', [], []]
+ignored: CONST CV_BGR5652RGBA=19
+
+--- Incoming ---
+['const CV_GRAY2BGR565', '20', [], []]
+ignored: CONST CV_GRAY2BGR565=20
+
+--- Incoming ---
+['const CV_BGR5652GRAY', '21', [], []]
+ignored: CONST CV_BGR5652GRAY=21
+
+--- Incoming ---
+['const CV_BGR2BGR555', '22', [], []]
+ignored: CONST CV_BGR2BGR555=22
+
+--- Incoming ---
+['const CV_RGB2BGR555', '23', [], []]
+ignored: CONST CV_RGB2BGR555=23
+
+--- Incoming ---
+['const CV_BGR5552BGR', '24', [], []]
+ignored: CONST CV_BGR5552BGR=24
+
+--- Incoming ---
+['const CV_BGR5552RGB', '25', [], []]
+ignored: CONST CV_BGR5552RGB=25
+
+--- Incoming ---
+['const CV_BGRA2BGR555', '26', [], []]
+ignored: CONST CV_BGRA2BGR555=26
+
+--- Incoming ---
+['const CV_RGBA2BGR555', '27', [], []]
+ignored: CONST CV_RGBA2BGR555=27
+
+--- Incoming ---
+['const CV_BGR5552BGRA', '28', [], []]
+ignored: CONST CV_BGR5552BGRA=28
+
+--- Incoming ---
+['const CV_BGR5552RGBA', '29', [], []]
+ignored: CONST CV_BGR5552RGBA=29
+
+--- Incoming ---
+['const CV_GRAY2BGR555', '30', [], []]
+ignored: CONST CV_GRAY2BGR555=30
+
+--- Incoming ---
+['const CV_BGR5552GRAY', '31', [], []]
+ignored: CONST CV_BGR5552GRAY=31
+
+--- Incoming ---
+['const CV_BGR2XYZ', '32', [], []]
+ignored: CONST CV_BGR2XYZ=32
+
+--- Incoming ---
+['const CV_RGB2XYZ', '33', [], []]
+ignored: CONST CV_RGB2XYZ=33
+
+--- Incoming ---
+['const CV_XYZ2BGR', '34', [], []]
+ignored: CONST CV_XYZ2BGR=34
+
+--- Incoming ---
+['const CV_XYZ2RGB', '35', [], []]
+ignored: CONST CV_XYZ2RGB=35
+
+--- Incoming ---
+['const CV_BGR2YCrCb', '36', [], []]
+ignored: CONST CV_BGR2YCrCb=36
+
+--- Incoming ---
+['const CV_RGB2YCrCb', '37', [], []]
+ignored: CONST CV_RGB2YCrCb=37
+
+--- Incoming ---
+['const CV_YCrCb2BGR', '38', [], []]
+ignored: CONST CV_YCrCb2BGR=38
+
+--- Incoming ---
+['const CV_YCrCb2RGB', '39', [], []]
+ignored: CONST CV_YCrCb2RGB=39
+
+--- Incoming ---
+['const CV_BGR2HSV', '40', [], []]
+ignored: CONST CV_BGR2HSV=40
+
+--- Incoming ---
+['const CV_RGB2HSV', '41', [], []]
+ignored: CONST CV_RGB2HSV=41
+
+--- Incoming ---
+['const CV_BGR2Lab', '44', [], []]
+ignored: CONST CV_BGR2Lab=44
+
+--- Incoming ---
+['const CV_RGB2Lab', '45', [], []]
+ignored: CONST CV_RGB2Lab=45
+
+--- Incoming ---
+['const CV_BayerBG2BGR', '46', [], []]
+ignored: CONST CV_BayerBG2BGR=46
+
+--- Incoming ---
+['const CV_BayerGB2BGR', '47', [], []]
+ignored: CONST CV_BayerGB2BGR=47
+
+--- Incoming ---
+['const CV_BayerRG2BGR', '48', [], []]
+ignored: CONST CV_BayerRG2BGR=48
+
+--- Incoming ---
+['const CV_BayerGR2BGR', '49', [], []]
+ignored: CONST CV_BayerGR2BGR=49
+
+--- Incoming ---
+['const CV_BayerBG2RGB', 'CV_BayerRG2BGR', [], []]
+ignored: CONST CV_BayerBG2RGB=CV_BayerRG2BGR
+
+--- Incoming ---
+['const CV_BayerGB2RGB', 'CV_BayerGR2BGR', [], []]
+ignored: CONST CV_BayerGB2RGB=CV_BayerGR2BGR
+
+--- Incoming ---
+['const CV_BayerRG2RGB', 'CV_BayerBG2BGR', [], []]
+ignored: CONST CV_BayerRG2RGB=CV_BayerBG2BGR
+
+--- Incoming ---
+['const CV_BayerGR2RGB', 'CV_BayerGB2BGR', [], []]
+ignored: CONST CV_BayerGR2RGB=CV_BayerGB2BGR
+
+--- Incoming ---
+['const CV_BGR2Luv', '50', [], []]
+ignored: CONST CV_BGR2Luv=50
+
+--- Incoming ---
+['const CV_RGB2Luv', '51', [], []]
+ignored: CONST CV_RGB2Luv=51
+
+--- Incoming ---
+['const CV_BGR2HLS', '52', [], []]
+ignored: CONST CV_BGR2HLS=52
+
+--- Incoming ---
+['const CV_RGB2HLS', '53', [], []]
+ignored: CONST CV_RGB2HLS=53
+
+--- Incoming ---
+['const CV_HSV2BGR', '54', [], []]
+ignored: CONST CV_HSV2BGR=54
+
+--- Incoming ---
+['const CV_HSV2RGB', '55', [], []]
+ignored: CONST CV_HSV2RGB=55
+
+--- Incoming ---
+['const CV_Lab2BGR', '56', [], []]
+ignored: CONST CV_Lab2BGR=56
+
+--- Incoming ---
+['const CV_Lab2RGB', '57', [], []]
+ignored: CONST CV_Lab2RGB=57
+
+--- Incoming ---
+['const CV_Luv2BGR', '58', [], []]
+ignored: CONST CV_Luv2BGR=58
+
+--- Incoming ---
+['const CV_Luv2RGB', '59', [], []]
+ignored: CONST CV_Luv2RGB=59
+
+--- Incoming ---
+['const CV_HLS2BGR', '60', [], []]
+ignored: CONST CV_HLS2BGR=60
+
+--- Incoming ---
+['const CV_HLS2RGB', '61', [], []]
+ignored: CONST CV_HLS2RGB=61
+
+--- Incoming ---
+['const CV_BayerBG2BGR_VNG', '62', [], []]
+ignored: CONST CV_BayerBG2BGR_VNG=62
+
+--- Incoming ---
+['const CV_BayerGB2BGR_VNG', '63', [], []]
+ignored: CONST CV_BayerGB2BGR_VNG=63
+
+--- Incoming ---
+['const CV_BayerRG2BGR_VNG', '64', [], []]
+ignored: CONST CV_BayerRG2BGR_VNG=64
+
+--- Incoming ---
+['const CV_BayerGR2BGR_VNG', '65', [], []]
+ignored: CONST CV_BayerGR2BGR_VNG=65
+
+--- Incoming ---
+['const CV_BayerBG2RGB_VNG', 'CV_BayerRG2BGR_VNG', [], []]
+ignored: CONST CV_BayerBG2RGB_VNG=CV_BayerRG2BGR_VNG
+
+--- Incoming ---
+['const CV_BayerGB2RGB_VNG', 'CV_BayerGR2BGR_VNG', [], []]
+ignored: CONST CV_BayerGB2RGB_VNG=CV_BayerGR2BGR_VNG
+
+--- Incoming ---
+['const CV_BayerRG2RGB_VNG', 'CV_BayerBG2BGR_VNG', [], []]
+ignored: CONST CV_BayerRG2RGB_VNG=CV_BayerBG2BGR_VNG
+
+--- Incoming ---
+['const CV_BayerGR2RGB_VNG', 'CV_BayerGB2BGR_VNG', [], []]
+ignored: CONST CV_BayerGR2RGB_VNG=CV_BayerGB2BGR_VNG
+
+--- Incoming ---
+['const CV_BGR2HSV_FULL', '66', [], []]
+ignored: CONST CV_BGR2HSV_FULL=66
+
+--- Incoming ---
+['const CV_RGB2HSV_FULL', '67', [], []]
+ignored: CONST CV_RGB2HSV_FULL=67
+
+--- Incoming ---
+['const CV_BGR2HLS_FULL', '68', [], []]
+ignored: CONST CV_BGR2HLS_FULL=68
+
+--- Incoming ---
+['const CV_RGB2HLS_FULL', '69', [], []]
+ignored: CONST CV_RGB2HLS_FULL=69
+
+--- Incoming ---
+['const CV_HSV2BGR_FULL', '70', [], []]
+ignored: CONST CV_HSV2BGR_FULL=70
+
+--- Incoming ---
+['const CV_HSV2RGB_FULL', '71', [], []]
+ignored: CONST CV_HSV2RGB_FULL=71
+
+--- Incoming ---
+['const CV_HLS2BGR_FULL', '72', [], []]
+ignored: CONST CV_HLS2BGR_FULL=72
+
+--- Incoming ---
+['const CV_HLS2RGB_FULL', '73', [], []]
+ignored: CONST CV_HLS2RGB_FULL=73
+
+--- Incoming ---
+['const CV_LBGR2Lab', '74', [], []]
+ignored: CONST CV_LBGR2Lab=74
+
+--- Incoming ---
+['const CV_LRGB2Lab', '75', [], []]
+ignored: CONST CV_LRGB2Lab=75
+
+--- Incoming ---
+['const CV_LBGR2Luv', '76', [], []]
+ignored: CONST CV_LBGR2Luv=76
+
+--- Incoming ---
+['const CV_LRGB2Luv', '77', [], []]
+ignored: CONST CV_LRGB2Luv=77
+
+--- Incoming ---
+['const CV_Lab2LBGR', '78', [], []]
+ignored: CONST CV_Lab2LBGR=78
+
+--- Incoming ---
+['const CV_Lab2LRGB', '79', [], []]
+ignored: CONST CV_Lab2LRGB=79
+
+--- Incoming ---
+['const CV_Luv2LBGR', '80', [], []]
+ignored: CONST CV_Luv2LBGR=80
+
+--- Incoming ---
+['const CV_Luv2LRGB', '81', [], []]
+ignored: CONST CV_Luv2LRGB=81
+
+--- Incoming ---
+['const CV_BGR2YUV', '82', [], []]
+ignored: CONST CV_BGR2YUV=82
+
+--- Incoming ---
+['const CV_RGB2YUV', '83', [], []]
+ignored: CONST CV_RGB2YUV=83
+
+--- Incoming ---
+['const CV_YUV2BGR', '84', [], []]
+ignored: CONST CV_YUV2BGR=84
+
+--- Incoming ---
+['const CV_YUV2RGB', '85', [], []]
+ignored: CONST CV_YUV2RGB=85
+
+--- Incoming ---
+['const CV_BayerBG2GRAY', '86', [], []]
+ignored: CONST CV_BayerBG2GRAY=86
+
+--- Incoming ---
+['const CV_BayerGB2GRAY', '87', [], []]
+ignored: CONST CV_BayerGB2GRAY=87
+
+--- Incoming ---
+['const CV_BayerRG2GRAY', '88', [], []]
+ignored: CONST CV_BayerRG2GRAY=88
+
+--- Incoming ---
+['const CV_BayerGR2GRAY', '89', [], []]
+ignored: CONST CV_BayerGR2GRAY=89
+
+--- Incoming ---
+['const CV_YUV2RGB_NV12', '90', [], []]
+ignored: CONST CV_YUV2RGB_NV12=90
+
+--- Incoming ---
+['const CV_YUV2BGR_NV12', '91', [], []]
+ignored: CONST CV_YUV2BGR_NV12=91
+
+--- Incoming ---
+['const CV_YUV2RGB_NV21', '92', [], []]
+ignored: CONST CV_YUV2RGB_NV21=92
+
+--- Incoming ---
+['const CV_YUV2BGR_NV21', '93', [], []]
+ignored: CONST CV_YUV2BGR_NV21=93
+
+--- Incoming ---
+['const CV_YUV420sp2RGB', 'CV_YUV2RGB_NV21', [], []]
+ignored: CONST CV_YUV420sp2RGB=CV_YUV2RGB_NV21
+
+--- Incoming ---
+['const CV_YUV420sp2BGR', 'CV_YUV2BGR_NV21', [], []]
+ignored: CONST CV_YUV420sp2BGR=CV_YUV2BGR_NV21
+
+--- Incoming ---
+['const CV_YUV2RGBA_NV12', '94', [], []]
+ignored: CONST CV_YUV2RGBA_NV12=94
+
+--- Incoming ---
+['const CV_YUV2BGRA_NV12', '95', [], []]
+ignored: CONST CV_YUV2BGRA_NV12=95
+
+--- Incoming ---
+['const CV_YUV2RGBA_NV21', '96', [], []]
+ignored: CONST CV_YUV2RGBA_NV21=96
+
+--- Incoming ---
+['const CV_YUV2BGRA_NV21', '97', [], []]
+ignored: CONST CV_YUV2BGRA_NV21=97
+
+--- Incoming ---
+['const CV_YUV420sp2RGBA', 'CV_YUV2RGBA_NV21', [], []]
+ignored: CONST CV_YUV420sp2RGBA=CV_YUV2RGBA_NV21
+
+--- Incoming ---
+['const CV_YUV420sp2BGRA', 'CV_YUV2BGRA_NV21', [], []]
+ignored: CONST CV_YUV420sp2BGRA=CV_YUV2BGRA_NV21
+
+--- Incoming ---
+['const CV_YUV2RGB_YV12', '98', [], []]
+ignored: CONST CV_YUV2RGB_YV12=98
+
+--- Incoming ---
+['const CV_YUV2BGR_YV12', '99', [], []]
+ignored: CONST CV_YUV2BGR_YV12=99
+
+--- Incoming ---
+['const CV_YUV2RGB_IYUV', '100', [], []]
+ignored: CONST CV_YUV2RGB_IYUV=100
+
+--- Incoming ---
+['const CV_YUV2BGR_IYUV', '101', [], []]
+ignored: CONST CV_YUV2BGR_IYUV=101
+
+--- Incoming ---
+['const CV_YUV2RGB_I420', 'CV_YUV2RGB_IYUV', [], []]
+ignored: CONST CV_YUV2RGB_I420=CV_YUV2RGB_IYUV
+
+--- Incoming ---
+['const CV_YUV2BGR_I420', 'CV_YUV2BGR_IYUV', [], []]
+ignored: CONST CV_YUV2BGR_I420=CV_YUV2BGR_IYUV
+
+--- Incoming ---
+['const CV_YUV420p2RGB', 'CV_YUV2RGB_YV12', [], []]
+ignored: CONST CV_YUV420p2RGB=CV_YUV2RGB_YV12
+
+--- Incoming ---
+['const CV_YUV420p2BGR', 'CV_YUV2BGR_YV12', [], []]
+ignored: CONST CV_YUV420p2BGR=CV_YUV2BGR_YV12
+
+--- Incoming ---
+['const CV_YUV2RGBA_YV12', '102', [], []]
+ignored: CONST CV_YUV2RGBA_YV12=102
+
+--- Incoming ---
+['const CV_YUV2BGRA_YV12', '103', [], []]
+ignored: CONST CV_YUV2BGRA_YV12=103
+
+--- Incoming ---
+['const CV_YUV2RGBA_IYUV', '104', [], []]
+ignored: CONST CV_YUV2RGBA_IYUV=104
+
+--- Incoming ---
+['const CV_YUV2BGRA_IYUV', '105', [], []]
+ignored: CONST CV_YUV2BGRA_IYUV=105
+
+--- Incoming ---
+['const CV_YUV2RGBA_I420', 'CV_YUV2RGBA_IYUV', [], []]
+ignored: CONST CV_YUV2RGBA_I420=CV_YUV2RGBA_IYUV
+
+--- Incoming ---
+['const CV_YUV2BGRA_I420', 'CV_YUV2BGRA_IYUV', [], []]
+ignored: CONST CV_YUV2BGRA_I420=CV_YUV2BGRA_IYUV
+
+--- Incoming ---
+['const CV_YUV420p2RGBA', 'CV_YUV2RGBA_YV12', [], []]
+ignored: CONST CV_YUV420p2RGBA=CV_YUV2RGBA_YV12
+
+--- Incoming ---
+['const CV_YUV420p2BGRA', 'CV_YUV2BGRA_YV12', [], []]
+ignored: CONST CV_YUV420p2BGRA=CV_YUV2BGRA_YV12
+
+--- Incoming ---
+['const CV_YUV2GRAY_420', '106', [], []]
+ignored: CONST CV_YUV2GRAY_420=106
+
+--- Incoming ---
+['const CV_YUV2GRAY_NV21', 'CV_YUV2GRAY_420', [], []]
+ignored: CONST CV_YUV2GRAY_NV21=CV_YUV2GRAY_420
+
+--- Incoming ---
+['const CV_YUV2GRAY_NV12', 'CV_YUV2GRAY_420', [], []]
+ignored: CONST CV_YUV2GRAY_NV12=CV_YUV2GRAY_420
+
+--- Incoming ---
+['const CV_YUV2GRAY_YV12', 'CV_YUV2GRAY_420', [], []]
+ignored: CONST CV_YUV2GRAY_YV12=CV_YUV2GRAY_420
+
+--- Incoming ---
+['const CV_YUV2GRAY_IYUV', 'CV_YUV2GRAY_420', [], []]
+ignored: CONST CV_YUV2GRAY_IYUV=CV_YUV2GRAY_420
+
+--- Incoming ---
+['const CV_YUV2GRAY_I420', 'CV_YUV2GRAY_420', [], []]
+ignored: CONST CV_YUV2GRAY_I420=CV_YUV2GRAY_420
+
+--- Incoming ---
+['const CV_YUV420sp2GRAY', 'CV_YUV2GRAY_420', [], []]
+ignored: CONST CV_YUV420sp2GRAY=CV_YUV2GRAY_420
+
+--- Incoming ---
+['const CV_YUV420p2GRAY', 'CV_YUV2GRAY_420', [], []]
+ignored: CONST CV_YUV420p2GRAY=CV_YUV2GRAY_420
+
+--- Incoming ---
+['const CV_YUV2RGB_UYVY', '107', [], []]
+ignored: CONST CV_YUV2RGB_UYVY=107
+
+--- Incoming ---
+['const CV_YUV2BGR_UYVY', '108', [], []]
+ignored: CONST CV_YUV2BGR_UYVY=108
+
+--- Incoming ---
+['const CV_YUV2RGB_Y422', 'CV_YUV2RGB_UYVY', [], []]
+ignored: CONST CV_YUV2RGB_Y422=CV_YUV2RGB_UYVY
+
+--- Incoming ---
+['const CV_YUV2BGR_Y422', 'CV_YUV2BGR_UYVY', [], []]
+ignored: CONST CV_YUV2BGR_Y422=CV_YUV2BGR_UYVY
+
+--- Incoming ---
+['const CV_YUV2RGB_UYNV', 'CV_YUV2RGB_UYVY', [], []]
+ignored: CONST CV_YUV2RGB_UYNV=CV_YUV2RGB_UYVY
+
+--- Incoming ---
+['const CV_YUV2BGR_UYNV', 'CV_YUV2BGR_UYVY', [], []]
+ignored: CONST CV_YUV2BGR_UYNV=CV_YUV2BGR_UYVY
+
+--- Incoming ---
+['const CV_YUV2RGBA_UYVY', '111', [], []]
+ignored: CONST CV_YUV2RGBA_UYVY=111
+
+--- Incoming ---
+['const CV_YUV2BGRA_UYVY', '112', [], []]
+ignored: CONST CV_YUV2BGRA_UYVY=112
+
+--- Incoming ---
+['const CV_YUV2RGBA_Y422', 'CV_YUV2RGBA_UYVY', [], []]
+ignored: CONST CV_YUV2RGBA_Y422=CV_YUV2RGBA_UYVY
+
+--- Incoming ---
+['const CV_YUV2BGRA_Y422', 'CV_YUV2BGRA_UYVY', [], []]
+ignored: CONST CV_YUV2BGRA_Y422=CV_YUV2BGRA_UYVY
+
+--- Incoming ---
+['const CV_YUV2RGBA_UYNV', 'CV_YUV2RGBA_UYVY', [], []]
+ignored: CONST CV_YUV2RGBA_UYNV=CV_YUV2RGBA_UYVY
+
+--- Incoming ---
+['const CV_YUV2BGRA_UYNV', 'CV_YUV2BGRA_UYVY', [], []]
+ignored: CONST CV_YUV2BGRA_UYNV=CV_YUV2BGRA_UYVY
+
+--- Incoming ---
+['const CV_YUV2RGB_YUY2', '115', [], []]
+ignored: CONST CV_YUV2RGB_YUY2=115
+
+--- Incoming ---
+['const CV_YUV2BGR_YUY2', '116', [], []]
+ignored: CONST CV_YUV2BGR_YUY2=116
+
+--- Incoming ---
+['const CV_YUV2RGB_YVYU', '117', [], []]
+ignored: CONST CV_YUV2RGB_YVYU=117
+
+--- Incoming ---
+['const CV_YUV2BGR_YVYU', '118', [], []]
+ignored: CONST CV_YUV2BGR_YVYU=118
+
+--- Incoming ---
+['const CV_YUV2RGB_YUYV', 'CV_YUV2RGB_YUY2', [], []]
+ignored: CONST CV_YUV2RGB_YUYV=CV_YUV2RGB_YUY2
+
+--- Incoming ---
+['const CV_YUV2BGR_YUYV', 'CV_YUV2BGR_YUY2', [], []]
+ignored: CONST CV_YUV2BGR_YUYV=CV_YUV2BGR_YUY2
+
+--- Incoming ---
+['const CV_YUV2RGB_YUNV', 'CV_YUV2RGB_YUY2', [], []]
+ignored: CONST CV_YUV2RGB_YUNV=CV_YUV2RGB_YUY2
+
+--- Incoming ---
+['const CV_YUV2BGR_YUNV', 'CV_YUV2BGR_YUY2', [], []]
+ignored: CONST CV_YUV2BGR_YUNV=CV_YUV2BGR_YUY2
+
+--- Incoming ---
+['const CV_YUV2RGBA_YUY2', '119', [], []]
+ignored: CONST CV_YUV2RGBA_YUY2=119
+
+--- Incoming ---
+['const CV_YUV2BGRA_YUY2', '120', [], []]
+ignored: CONST CV_YUV2BGRA_YUY2=120
+
+--- Incoming ---
+['const CV_YUV2RGBA_YVYU', '121', [], []]
+ignored: CONST CV_YUV2RGBA_YVYU=121
+
+--- Incoming ---
+['const CV_YUV2BGRA_YVYU', '122', [], []]
+ignored: CONST CV_YUV2BGRA_YVYU=122
+
+--- Incoming ---
+['const CV_YUV2RGBA_YUYV', 'CV_YUV2RGBA_YUY2', [], []]
+ignored: CONST CV_YUV2RGBA_YUYV=CV_YUV2RGBA_YUY2
+
+--- Incoming ---
+['const CV_YUV2BGRA_YUYV', 'CV_YUV2BGRA_YUY2', [], []]
+ignored: CONST CV_YUV2BGRA_YUYV=CV_YUV2BGRA_YUY2
+
+--- Incoming ---
+['const CV_YUV2RGBA_YUNV', 'CV_YUV2RGBA_YUY2', [], []]
+ignored: CONST CV_YUV2RGBA_YUNV=CV_YUV2RGBA_YUY2
+
+--- Incoming ---
+['const CV_YUV2BGRA_YUNV', 'CV_YUV2BGRA_YUY2', [], []]
+ignored: CONST CV_YUV2BGRA_YUNV=CV_YUV2BGRA_YUY2
+
+--- Incoming ---
+['const CV_YUV2GRAY_UYVY', '123', [], []]
+ignored: CONST CV_YUV2GRAY_UYVY=123
+
+--- Incoming ---
+['const CV_YUV2GRAY_YUY2', '124', [], []]
+ignored: CONST CV_YUV2GRAY_YUY2=124
+
+--- Incoming ---
+['const CV_YUV2GRAY_Y422', 'CV_YUV2GRAY_UYVY', [], []]
+ignored: CONST CV_YUV2GRAY_Y422=CV_YUV2GRAY_UYVY
+
+--- Incoming ---
+['const CV_YUV2GRAY_UYNV', 'CV_YUV2GRAY_UYVY', [], []]
+ignored: CONST CV_YUV2GRAY_UYNV=CV_YUV2GRAY_UYVY
+
+--- Incoming ---
+['const CV_YUV2GRAY_YVYU', 'CV_YUV2GRAY_YUY2', [], []]
+ignored: CONST CV_YUV2GRAY_YVYU=CV_YUV2GRAY_YUY2
+
+--- Incoming ---
+['const CV_YUV2GRAY_YUYV', 'CV_YUV2GRAY_YUY2', [], []]
+ignored: CONST CV_YUV2GRAY_YUYV=CV_YUV2GRAY_YUY2
+
+--- Incoming ---
+['const CV_YUV2GRAY_YUNV', 'CV_YUV2GRAY_YUY2', [], []]
+ignored: CONST CV_YUV2GRAY_YUNV=CV_YUV2GRAY_YUY2
+
+--- Incoming ---
+['const CV_RGBA2mRGBA', '125', [], []]
+ok: CONST CV_RGBA2mRGBA=125
+
+--- Incoming ---
+['const CV_mRGBA2RGBA', '126', [], []]
+ok: CONST CV_mRGBA2RGBA=126
+
+--- Incoming ---
+['const CV_RGB2YUV_I420', '127', [], []]
+ignored: CONST CV_RGB2YUV_I420=127
+
+--- Incoming ---
+['const CV_BGR2YUV_I420', '128', [], []]
+ignored: CONST CV_BGR2YUV_I420=128
+
+--- Incoming ---
+['const CV_RGB2YUV_IYUV', 'CV_RGB2YUV_I420', [], []]
+ignored: CONST CV_RGB2YUV_IYUV=CV_RGB2YUV_I420
+
+--- Incoming ---
+['const CV_BGR2YUV_IYUV', 'CV_BGR2YUV_I420', [], []]
+ignored: CONST CV_BGR2YUV_IYUV=CV_BGR2YUV_I420
+
+--- Incoming ---
+['const CV_RGBA2YUV_I420', '129', [], []]
+ignored: CONST CV_RGBA2YUV_I420=129
+
+--- Incoming ---
+['const CV_BGRA2YUV_I420', '130', [], []]
+ignored: CONST CV_BGRA2YUV_I420=130
+
+--- Incoming ---
+['const CV_RGBA2YUV_IYUV', 'CV_RGBA2YUV_I420', [], []]
+ignored: CONST CV_RGBA2YUV_IYUV=CV_RGBA2YUV_I420
+
+--- Incoming ---
+['const CV_BGRA2YUV_IYUV', 'CV_BGRA2YUV_I420', [], []]
+ignored: CONST CV_BGRA2YUV_IYUV=CV_BGRA2YUV_I420
+
+--- Incoming ---
+['const CV_RGB2YUV_YV12', '131', [], []]
+ignored: CONST CV_RGB2YUV_YV12=131
+
+--- Incoming ---
+['const CV_BGR2YUV_YV12', '132', [], []]
+ignored: CONST CV_BGR2YUV_YV12=132
+
+--- Incoming ---
+['const CV_RGBA2YUV_YV12', '133', [], []]
+ignored: CONST CV_RGBA2YUV_YV12=133
+
+--- Incoming ---
+['const CV_BGRA2YUV_YV12', '134', [], []]
+ignored: CONST CV_BGRA2YUV_YV12=134
+
+--- Incoming ---
+['const CV_BayerBG2BGR_EA', '135', [], []]
+ignored: CONST CV_BayerBG2BGR_EA=135
+
+--- Incoming ---
+['const CV_BayerGB2BGR_EA', '136', [], []]
+ignored: CONST CV_BayerGB2BGR_EA=136
+
+--- Incoming ---
+['const CV_BayerRG2BGR_EA', '137', [], []]
+ignored: CONST CV_BayerRG2BGR_EA=137
+
+--- Incoming ---
+['const CV_BayerGR2BGR_EA', '138', [], []]
+ignored: CONST CV_BayerGR2BGR_EA=138
+
+--- Incoming ---
+['const CV_BayerBG2RGB_EA', 'CV_BayerRG2BGR_EA', [], []]
+ignored: CONST CV_BayerBG2RGB_EA=CV_BayerRG2BGR_EA
+
+--- Incoming ---
+['const CV_BayerGB2RGB_EA', 'CV_BayerGR2BGR_EA', [], []]
+ignored: CONST CV_BayerGB2RGB_EA=CV_BayerGR2BGR_EA
+
+--- Incoming ---
+['const CV_BayerRG2RGB_EA', 'CV_BayerBG2BGR_EA', [], []]
+ignored: CONST CV_BayerRG2RGB_EA=CV_BayerBG2BGR_EA
+
+--- Incoming ---
+['const CV_BayerGR2RGB_EA', 'CV_BayerGB2BGR_EA', [], []]
+ignored: CONST CV_BayerGR2RGB_EA=CV_BayerGB2BGR_EA
+
+--- Incoming ---
+['const CV_COLORCVT_MAX', '139', [], []]
+ignored: CONST CV_COLORCVT_MAX=139
+
+--- Incoming ---
+['const CV_INTER_NN', '0', [], []]
+ok: CONST CV_INTER_NN=0
+
+--- Incoming ---
+['const CV_INTER_LINEAR', '1', [], []]
+ok: CONST CV_INTER_LINEAR=1
+
+--- Incoming ---
+['const CV_INTER_CUBIC', '2', [], []]
+ok: CONST CV_INTER_CUBIC=2
+
+--- Incoming ---
+['const CV_INTER_AREA', '3', [], []]
+ok: CONST CV_INTER_AREA=3
+
+--- Incoming ---
+['const CV_INTER_LANCZOS4', '4', [], []]
+ok: CONST CV_INTER_LANCZOS4=4
+
+--- Incoming ---
+['const CV_WARP_FILL_OUTLIERS', '8', [], []]
+ok: CONST CV_WARP_FILL_OUTLIERS=8
+
+--- Incoming ---
+['const CV_WARP_INVERSE_MAP', '16', [], []]
+ok: CONST CV_WARP_INVERSE_MAP=16
+
+--- Incoming ---
+['const CV_SHAPE_RECT', '0', [], []]
+ok: CONST CV_SHAPE_RECT=0
+
+--- Incoming ---
+['const CV_SHAPE_CROSS', '1', [], []]
+ok: CONST CV_SHAPE_CROSS=1
+
+--- Incoming ---
+['const CV_SHAPE_ELLIPSE', '2', [], []]
+ok: CONST CV_SHAPE_ELLIPSE=2
+
+--- Incoming ---
+['const CV_SHAPE_CUSTOM', '100', [], []]
+ok: CONST CV_SHAPE_CUSTOM=100
+
+--- Incoming ---
+['const CV_MOP_ERODE', '0', [], []]
+ok: CONST CV_MOP_ERODE=0
+
+--- Incoming ---
+['const CV_MOP_DILATE', '1', [], []]
+ok: CONST CV_MOP_DILATE=1
+
+--- Incoming ---
+['const CV_MOP_OPEN', '2', [], []]
+ok: CONST CV_MOP_OPEN=2
+
+--- Incoming ---
+['const CV_MOP_CLOSE', '3', [], []]
+ok: CONST CV_MOP_CLOSE=3
+
+--- Incoming ---
+['const CV_MOP_GRADIENT', '4', [], []]
+ok: CONST CV_MOP_GRADIENT=4
+
+--- Incoming ---
+['const CV_MOP_TOPHAT', '5', [], []]
+ok: CONST CV_MOP_TOPHAT=5
+
+--- Incoming ---
+['const CV_MOP_BLACKHAT', '6', [], []]
+ok: CONST CV_MOP_BLACKHAT=6
+
+--- Incoming ---
+['const CV_TM_SQDIFF', '0', [], []]
+ignored: CONST CV_TM_SQDIFF=0
+
+--- Incoming ---
+['const CV_TM_SQDIFF_NORMED', '1', [], []]
+ignored: CONST CV_TM_SQDIFF_NORMED=1
+
+--- Incoming ---
+['const CV_TM_CCORR', '2', [], []]
+ignored: CONST CV_TM_CCORR=2
+
+--- Incoming ---
+['const CV_TM_CCORR_NORMED', '3', [], []]
+ignored: CONST CV_TM_CCORR_NORMED=3
+
+--- Incoming ---
+['const CV_TM_CCOEFF', '4', [], []]
+ignored: CONST CV_TM_CCOEFF=4
+
+--- Incoming ---
+['const CV_TM_CCOEFF_NORMED', '5', [], []]
+ignored: CONST CV_TM_CCOEFF_NORMED=5
+
+--- Incoming ---
+['const CV_RETR_EXTERNAL', '0', [], []]
+ok: CONST CV_RETR_EXTERNAL=0
+
+--- Incoming ---
+['const CV_RETR_LIST', '1', [], []]
+ok: CONST CV_RETR_LIST=1
+
+--- Incoming ---
+['const CV_RETR_CCOMP', '2', [], []]
+ok: CONST CV_RETR_CCOMP=2
+
+--- Incoming ---
+['const CV_RETR_TREE', '3', [], []]
+ok: CONST CV_RETR_TREE=3
+
+--- Incoming ---
+['const CV_RETR_FLOODFILL', '4', [], []]
+ok: CONST CV_RETR_FLOODFILL=4
+
+--- Incoming ---
+['const CV_CHAIN_CODE', '0', [], []]
+ok: CONST CV_CHAIN_CODE=0
+
+--- Incoming ---
+['const CV_CHAIN_APPROX_NONE', '1', [], []]
+ok: CONST CV_CHAIN_APPROX_NONE=1
+
+--- Incoming ---
+['const CV_CHAIN_APPROX_SIMPLE', '2', [], []]
+ok: CONST CV_CHAIN_APPROX_SIMPLE=2
+
+--- Incoming ---
+['const CV_CHAIN_APPROX_TC89_L1', '3', [], []]
+ok: CONST CV_CHAIN_APPROX_TC89_L1=3
+
+--- Incoming ---
+['const CV_CHAIN_APPROX_TC89_KCOS', '4', [], []]
+ok: CONST CV_CHAIN_APPROX_TC89_KCOS=4
+
+--- Incoming ---
+['const CV_LINK_RUNS', '5', [], []]
+ok: CONST CV_LINK_RUNS=5
+
+--- Incoming ---
+['const CV_POLY_APPROX_DP', '0', [], []]
+ok: CONST CV_POLY_APPROX_DP=0
+
+--- Incoming ---
+['const CV_CONTOURS_MATCH_I1', '1', [], []]
+ok: CONST CV_CONTOURS_MATCH_I1=1
+
+--- Incoming ---
+['const CV_CONTOURS_MATCH_I2', '2', [], []]
+ok: CONST CV_CONTOURS_MATCH_I2=2
+
+--- Incoming ---
+['const CV_CONTOURS_MATCH_I3', '3', [], []]
+ok: CONST CV_CONTOURS_MATCH_I3=3
+
+--- Incoming ---
+['const CV_CLOCKWISE', '1', [], []]
+ok: CONST CV_CLOCKWISE=1
+
+--- Incoming ---
+['const CV_COUNTER_CLOCKWISE', '2', [], []]
+ok: CONST CV_COUNTER_CLOCKWISE=2
+
+--- Incoming ---
+['const CV_COMP_CORREL', '0', [], []]
+ok: CONST CV_COMP_CORREL=0
+
+--- Incoming ---
+['const CV_COMP_CHISQR', '1', [], []]
+ok: CONST CV_COMP_CHISQR=1
+
+--- Incoming ---
+['const CV_COMP_INTERSECT', '2', [], []]
+ok: CONST CV_COMP_INTERSECT=2
+
+--- Incoming ---
+['const CV_COMP_BHATTACHARYYA', '3', [], []]
+ok: CONST CV_COMP_BHATTACHARYYA=3
+
+--- Incoming ---
+['const CV_COMP_HELLINGER', 'CV_COMP_BHATTACHARYYA', [], []]
+ok: CONST CV_COMP_HELLINGER=CV_COMP_BHATTACHARYYA
+
+--- Incoming ---
+['const CV_COMP_CHISQR_ALT', '4', [], []]
+ok: CONST CV_COMP_CHISQR_ALT=4
+
+--- Incoming ---
+['const CV_COMP_KL_DIV', '5', [], []]
+ok: CONST CV_COMP_KL_DIV=5
+
+--- Incoming ---
+['const CV_DIST_MASK_3', '3', [], []]
+ok: CONST CV_DIST_MASK_3=3
+
+--- Incoming ---
+['const CV_DIST_MASK_5', '5', [], []]
+ok: CONST CV_DIST_MASK_5=5
+
+--- Incoming ---
+['const CV_DIST_MASK_PRECISE', '0', [], []]
+ok: CONST CV_DIST_MASK_PRECISE=0
+
+--- Incoming ---
+['const CV_DIST_LABEL_CCOMP', '0', [], []]
+ok: CONST CV_DIST_LABEL_CCOMP=0
+
+--- Incoming ---
+['const CV_DIST_LABEL_PIXEL', '1', [], []]
+ok: CONST CV_DIST_LABEL_PIXEL=1
+
+--- Incoming ---
+['const CV_DIST_USER', '-1', [], []]
+ok: CONST CV_DIST_USER=-1
+
+--- Incoming ---
+['const CV_DIST_L1', '1', [], []]
+ok: CONST CV_DIST_L1=1
+
+--- Incoming ---
+['const CV_DIST_L2', '2', [], []]
+ok: CONST CV_DIST_L2=2
+
+--- Incoming ---
+['const CV_DIST_C', '3', [], []]
+ok: CONST CV_DIST_C=3
+
+--- Incoming ---
+['const CV_DIST_L12', '4', [], []]
+ok: CONST CV_DIST_L12=4
+
+--- Incoming ---
+['const CV_DIST_FAIR', '5', [], []]
+ok: CONST CV_DIST_FAIR=5
+
+--- Incoming ---
+['const CV_DIST_WELSCH', '6', [], []]
+ok: CONST CV_DIST_WELSCH=6
+
+--- Incoming ---
+['const CV_DIST_HUBER', '7', [], []]
+ok: CONST CV_DIST_HUBER=7
+
+--- Incoming ---
+['const CV_THRESH_BINARY', '0', [], []]
+ok: CONST CV_THRESH_BINARY=0
+
+--- Incoming ---
+['const CV_THRESH_BINARY_INV', '1', [], []]
+ok: CONST CV_THRESH_BINARY_INV=1
+
+--- Incoming ---
+['const CV_THRESH_TRUNC', '2', [], []]
+ok: CONST CV_THRESH_TRUNC=2
+
+--- Incoming ---
+['const CV_THRESH_TOZERO', '3', [], []]
+ok: CONST CV_THRESH_TOZERO=3
+
+--- Incoming ---
+['const CV_THRESH_TOZERO_INV', '4', [], []]
+ok: CONST CV_THRESH_TOZERO_INV=4
+
+--- Incoming ---
+['const CV_THRESH_MASK', '7', [], []]
+ok: CONST CV_THRESH_MASK=7
+
+--- Incoming ---
+['const CV_THRESH_OTSU', '8', [], []]
+ok: CONST CV_THRESH_OTSU=8
+
+--- Incoming ---
+['const CV_THRESH_TRIANGLE', '16', [], []]
+ok: CONST CV_THRESH_TRIANGLE=16
+
+--- Incoming ---
+['const CV_ADAPTIVE_THRESH_MEAN_C', '0', [], []]
+ignored: CONST CV_ADAPTIVE_THRESH_MEAN_C=0
+
+--- Incoming ---
+['const CV_ADAPTIVE_THRESH_GAUSSIAN_C', '1', [], []]
+ignored: CONST CV_ADAPTIVE_THRESH_GAUSSIAN_C=1
+
+--- Incoming ---
+['const CV_FLOODFILL_FIXED_RANGE', '(1 << 16)', [], []]
+ignored: CONST CV_FLOODFILL_FIXED_RANGE=(1 << 16)
+
+--- Incoming ---
+['const CV_FLOODFILL_MASK_ONLY', '(1 << 17)', [], []]
+ignored: CONST CV_FLOODFILL_MASK_ONLY=(1 << 17)
+
+--- Incoming ---
+['const CV_CANNY_L2_GRADIENT', '(1 << 31)', [], []]
+ok: CONST CV_CANNY_L2_GRADIENT=(1 << 31)
+
+--- Incoming ---
+['const CV_HOUGH_STANDARD', '0', [], []]
+ok: CONST CV_HOUGH_STANDARD=0
+
+--- Incoming ---
+['const CV_HOUGH_PROBABILISTIC', '1', [], []]
+ok: CONST CV_HOUGH_PROBABILISTIC=1
+
+--- Incoming ---
+['const CV_HOUGH_MULTI_SCALE', '2', [], []]
+ok: CONST CV_HOUGH_MULTI_SCALE=2
+
+--- Incoming ---
+['const CV_HOUGH_GRADIENT', '3', [], []]
+ok: CONST CV_HOUGH_GRADIENT=3
+
+
+===== Header: /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/modules/imgproc/include/opencv2/imgproc.hpp =====
+Namespaces: set(['', 'cv'])
+
+--- Incoming ---
+['const cv.MORPH_ERODE', '0', [], []]
+ok: CONST MORPH_ERODE=0
+
+--- Incoming ---
+['const cv.MORPH_DILATE', '1', [], []]
+ok: CONST MORPH_DILATE=1
+
+--- Incoming ---
+['const cv.MORPH_OPEN', '2', [], []]
+ok: CONST MORPH_OPEN=2
+
+--- Incoming ---
+['const cv.MORPH_CLOSE', '3', [], []]
+ok: CONST MORPH_CLOSE=3
+
+--- Incoming ---
+['const cv.MORPH_GRADIENT', '4', [], []]
+ok: CONST MORPH_GRADIENT=4
+
+--- Incoming ---
+['const cv.MORPH_TOPHAT', '5', [], []]
+ok: CONST MORPH_TOPHAT=5
+
+--- Incoming ---
+['const cv.MORPH_BLACKHAT', '6', [], []]
+ok: CONST MORPH_BLACKHAT=6
+
+--- Incoming ---
+['const cv.MORPH_RECT', '0', [], []]
+ok: CONST MORPH_RECT=0
+
+--- Incoming ---
+['const cv.MORPH_CROSS', '1', [], []]
+ok: CONST MORPH_CROSS=1
+
+--- Incoming ---
+['const cv.MORPH_ELLIPSE', '2', [], []]
+ok: CONST MORPH_ELLIPSE=2
+
+--- Incoming ---
+['const cv.INTER_NEAREST', '0', [], []]
+ok: CONST INTER_NEAREST=0
+
+--- Incoming ---
+['const cv.INTER_LINEAR', '1', [], []]
+ok: CONST INTER_LINEAR=1
+
+--- Incoming ---
+['const cv.INTER_CUBIC', '2', [], []]
+ok: CONST INTER_CUBIC=2
+
+--- Incoming ---
+['const cv.INTER_AREA', '3', [], []]
+ok: CONST INTER_AREA=3
+
+--- Incoming ---
+['const cv.INTER_LANCZOS4', '4', [], []]
+ok: CONST INTER_LANCZOS4=4
+
+--- Incoming ---
+['const cv.INTER_MAX', '7', [], []]
+ok: CONST INTER_MAX=7
+
+--- Incoming ---
+['const cv.WARP_FILL_OUTLIERS', '8', [], []]
+ok: CONST WARP_FILL_OUTLIERS=8
+
+--- Incoming ---
+['const cv.WARP_INVERSE_MAP', '16', [], []]
+ok: CONST WARP_INVERSE_MAP=16
+
+--- Incoming ---
+['const cv.INTER_BITS', '5', [], []]
+ok: CONST INTER_BITS=5
+
+--- Incoming ---
+['const cv.INTER_BITS2', 'INTER_BITS * 2', [], []]
+ok: CONST INTER_BITS2=INTER_BITS * 2
+
+--- Incoming ---
+['const cv.INTER_TAB_SIZE', '1 << INTER_BITS', [], []]
+ok: CONST INTER_TAB_SIZE=1 << INTER_BITS
+
+--- Incoming ---
+['const cv.INTER_TAB_SIZE2', 'INTER_TAB_SIZE * INTER_TAB_SIZE', [], []]
+ok: CONST INTER_TAB_SIZE2=INTER_TAB_SIZE * INTER_TAB_SIZE
+
+--- Incoming ---
+['const cv.DIST_USER', '-1', [], []]
+ok: CONST DIST_USER=-1
+
+--- Incoming ---
+['const cv.DIST_L1', '1', [], []]
+ok: CONST DIST_L1=1
+
+--- Incoming ---
+['const cv.DIST_L2', '2', [], []]
+ok: CONST DIST_L2=2
+
+--- Incoming ---
+['const cv.DIST_C', '3', [], []]
+ok: CONST DIST_C=3
+
+--- Incoming ---
+['const cv.DIST_L12', '4', [], []]
+ok: CONST DIST_L12=4
+
+--- Incoming ---
+['const cv.DIST_FAIR', '5', [], []]
+ok: CONST DIST_FAIR=5
+
+--- Incoming ---
+['const cv.DIST_WELSCH', '6', [], []]
+ok: CONST DIST_WELSCH=6
+
+--- Incoming ---
+['const cv.DIST_HUBER', '7', [], []]
+ok: CONST DIST_HUBER=7
+
+--- Incoming ---
+['const cv.DIST_MASK_3', '3', [], []]
+ok: CONST DIST_MASK_3=3
+
+--- Incoming ---
+['const cv.DIST_MASK_5', '5', [], []]
+ok: CONST DIST_MASK_5=5
+
+--- Incoming ---
+['const cv.DIST_MASK_PRECISE', '0', [], []]
+ok: CONST DIST_MASK_PRECISE=0
+
+--- Incoming ---
+['const cv.THRESH_BINARY', '0', [], []]
+ok: CONST THRESH_BINARY=0
+
+--- Incoming ---
+['const cv.THRESH_BINARY_INV', '1', [], []]
+ok: CONST THRESH_BINARY_INV=1
+
+--- Incoming ---
+['const cv.THRESH_TRUNC', '2', [], []]
+ok: CONST THRESH_TRUNC=2
+
+--- Incoming ---
+['const cv.THRESH_TOZERO', '3', [], []]
+ok: CONST THRESH_TOZERO=3
+
+--- Incoming ---
+['const cv.THRESH_TOZERO_INV', '4', [], []]
+ok: CONST THRESH_TOZERO_INV=4
+
+--- Incoming ---
+['const cv.THRESH_MASK', '7', [], []]
+ok: CONST THRESH_MASK=7
+
+--- Incoming ---
+['const cv.THRESH_OTSU', '8', [], []]
+ok: CONST THRESH_OTSU=8
+
+--- Incoming ---
+['const cv.THRESH_TRIANGLE', '16', [], []]
+ok: CONST THRESH_TRIANGLE=16
+
+--- Incoming ---
+['const cv.ADAPTIVE_THRESH_MEAN_C', '0', [], []]
+ok: CONST ADAPTIVE_THRESH_MEAN_C=0
+
+--- Incoming ---
+['const cv.ADAPTIVE_THRESH_GAUSSIAN_C', '1', [], []]
+ok: CONST ADAPTIVE_THRESH_GAUSSIAN_C=1
+
+--- Incoming ---
+['const cv.PROJ_SPHERICAL_ORTHO', '0', [], []]
+ok: CONST PROJ_SPHERICAL_ORTHO=0
+
+--- Incoming ---
+['const cv.PROJ_SPHERICAL_EQRECT', '1', [], []]
+ok: CONST PROJ_SPHERICAL_EQRECT=1
+
+--- Incoming ---
+['const cv.GC_BGD', '0', [], []]
+ok: CONST GC_BGD=0
+
+--- Incoming ---
+['const cv.GC_FGD', '1', [], []]
+ok: CONST GC_FGD=1
+
+--- Incoming ---
+['const cv.GC_PR_BGD', '2', [], []]
+ok: CONST GC_PR_BGD=2
+
+--- Incoming ---
+['const cv.GC_PR_FGD', '3', [], []]
+ok: CONST GC_PR_FGD=3
+
+--- Incoming ---
+['const cv.GC_INIT_WITH_RECT', '0', [], []]
+ok: CONST GC_INIT_WITH_RECT=0
+
+--- Incoming ---
+['const cv.GC_INIT_WITH_MASK', '1', [], []]
+ok: CONST GC_INIT_WITH_MASK=1
+
+--- Incoming ---
+['const cv.GC_EVAL', '2', [], []]
+ok: CONST GC_EVAL=2
+
+--- Incoming ---
+['const cv.DIST_LABEL_CCOMP', '0', [], []]
+ok: CONST DIST_LABEL_CCOMP=0
+
+--- Incoming ---
+['const cv.DIST_LABEL_PIXEL', '1', [], []]
+ok: CONST DIST_LABEL_PIXEL=1
+
+--- Incoming ---
+['const cv.FLOODFILL_FIXED_RANGE', '1 << 16', [], []]
+ok: CONST FLOODFILL_FIXED_RANGE=1 << 16
+
+--- Incoming ---
+['const cv.FLOODFILL_MASK_ONLY', '1 << 17', [], []]
+ok: CONST FLOODFILL_MASK_ONLY=1 << 17
+
+--- Incoming ---
+['const cv.TM_SQDIFF', '0', [], []]
+ok: CONST TM_SQDIFF=0
+
+--- Incoming ---
+['const cv.TM_SQDIFF_NORMED', '1', [], []]
+ok: CONST TM_SQDIFF_NORMED=1
+
+--- Incoming ---
+['const cv.TM_CCORR', '2', [], []]
+ok: CONST TM_CCORR=2
+
+--- Incoming ---
+['const cv.TM_CCORR_NORMED', '3', [], []]
+ok: CONST TM_CCORR_NORMED=3
+
+--- Incoming ---
+['const cv.TM_CCOEFF', '4', [], []]
+ok: CONST TM_CCOEFF=4
+
+--- Incoming ---
+['const cv.TM_CCOEFF_NORMED', '5', [], []]
+ok: CONST TM_CCOEFF_NORMED=5
+
+--- Incoming ---
+['const cv.CC_STAT_LEFT', '0', [], []]
+ok: CONST CC_STAT_LEFT=0
+
+--- Incoming ---
+['const cv.CC_STAT_TOP', '1', [], []]
+ok: CONST CC_STAT_TOP=1
+
+--- Incoming ---
+['const cv.CC_STAT_WIDTH', '2', [], []]
+ok: CONST CC_STAT_WIDTH=2
+
+--- Incoming ---
+['const cv.CC_STAT_HEIGHT', '3', [], []]
+ok: CONST CC_STAT_HEIGHT=3
+
+--- Incoming ---
+['const cv.CC_STAT_AREA', '4', [], []]
+ok: CONST CC_STAT_AREA=4
+
+--- Incoming ---
+['const cv.CC_STAT_MAX', '5', [], []]
+ok: CONST CC_STAT_MAX=5
+
+--- Incoming ---
+['const cv.RETR_EXTERNAL', '0', [], []]
+ok: CONST RETR_EXTERNAL=0
+
+--- Incoming ---
+['const cv.RETR_LIST', '1', [], []]
+ok: CONST RETR_LIST=1
+
+--- Incoming ---
+['const cv.RETR_CCOMP', '2', [], []]
+ok: CONST RETR_CCOMP=2
+
+--- Incoming ---
+['const cv.RETR_TREE', '3', [], []]
+ok: CONST RETR_TREE=3
+
+--- Incoming ---
+['const cv.RETR_FLOODFILL', '4', [], []]
+ok: CONST RETR_FLOODFILL=4
+
+--- Incoming ---
+['const cv.CHAIN_APPROX_NONE', '1', [], []]
+ok: CONST CHAIN_APPROX_NONE=1
+
+--- Incoming ---
+['const cv.CHAIN_APPROX_SIMPLE', '2', [], []]
+ok: CONST CHAIN_APPROX_SIMPLE=2
+
+--- Incoming ---
+['const cv.CHAIN_APPROX_TC89_L1', '3', [], []]
+ok: CONST CHAIN_APPROX_TC89_L1=3
+
+--- Incoming ---
+['const cv.CHAIN_APPROX_TC89_KCOS', '4', [], []]
+ok: CONST CHAIN_APPROX_TC89_KCOS=4
+
+--- Incoming ---
+['const cv.HOUGH_STANDARD', '0', [], []]
+ok: CONST HOUGH_STANDARD=0
+
+--- Incoming ---
+['const cv.HOUGH_PROBABILISTIC', '1', [], []]
+ok: CONST HOUGH_PROBABILISTIC=1
+
+--- Incoming ---
+['const cv.HOUGH_MULTI_SCALE', '2', [], []]
+ok: CONST HOUGH_MULTI_SCALE=2
+
+--- Incoming ---
+['const cv.HOUGH_GRADIENT', '3', [], []]
+ok: CONST HOUGH_GRADIENT=3
+
+--- Incoming ---
+['const cv.LSD_REFINE_NONE', '0', [], []]
+ok: CONST LSD_REFINE_NONE=0
+
+--- Incoming ---
+['const cv.LSD_REFINE_STD', '1', [], []]
+ok: CONST LSD_REFINE_STD=1
+
+--- Incoming ---
+['const cv.LSD_REFINE_ADV', '2', [], []]
+ok: CONST LSD_REFINE_ADV=2
+
+--- Incoming ---
+['const cv.HISTCMP_CORREL', '0', [], []]
+ok: CONST HISTCMP_CORREL=0
+
+--- Incoming ---
+['const cv.HISTCMP_CHISQR', '1', [], []]
+ok: CONST HISTCMP_CHISQR=1
+
+--- Incoming ---
+['const cv.HISTCMP_INTERSECT', '2', [], []]
+ok: CONST HISTCMP_INTERSECT=2
+
+--- Incoming ---
+['const cv.HISTCMP_BHATTACHARYYA', '3', [], []]
+ok: CONST HISTCMP_BHATTACHARYYA=3
+
+--- Incoming ---
+['const cv.HISTCMP_HELLINGER', 'HISTCMP_BHATTACHARYYA', [], []]
+ok: CONST HISTCMP_HELLINGER=HISTCMP_BHATTACHARYYA
+
+--- Incoming ---
+['const cv.HISTCMP_CHISQR_ALT', '4', [], []]
+ok: CONST HISTCMP_CHISQR_ALT=4
+
+--- Incoming ---
+['const cv.HISTCMP_KL_DIV', '5', [], []]
+ok: CONST HISTCMP_KL_DIV=5
+
+--- Incoming ---
+['const cv.COLOR_BGR2BGRA', '0', [], []]
+ok: CONST COLOR_BGR2BGRA=0
+
+--- Incoming ---
+['const cv.COLOR_RGB2RGBA', 'COLOR_BGR2BGRA', [], []]
+ok: CONST COLOR_RGB2RGBA=COLOR_BGR2BGRA
+
+--- Incoming ---
+['const cv.COLOR_BGRA2BGR', '1', [], []]
+ok: CONST COLOR_BGRA2BGR=1
+
+--- Incoming ---
+['const cv.COLOR_RGBA2RGB', 'COLOR_BGRA2BGR', [], []]
+ok: CONST COLOR_RGBA2RGB=COLOR_BGRA2BGR
+
+--- Incoming ---
+['const cv.COLOR_BGR2RGBA', '2', [], []]
+ok: CONST COLOR_BGR2RGBA=2
+
+--- Incoming ---
+['const cv.COLOR_RGB2BGRA', 'COLOR_BGR2RGBA', [], []]
+ok: CONST COLOR_RGB2BGRA=COLOR_BGR2RGBA
+
+--- Incoming ---
+['const cv.COLOR_RGBA2BGR', '3', [], []]
+ok: CONST COLOR_RGBA2BGR=3
+
+--- Incoming ---
+['const cv.COLOR_BGRA2RGB', 'COLOR_RGBA2BGR', [], []]
+ok: CONST COLOR_BGRA2RGB=COLOR_RGBA2BGR
+
+--- Incoming ---
+['const cv.COLOR_BGR2RGB', '4', [], []]
+ok: CONST COLOR_BGR2RGB=4
+
+--- Incoming ---
+['const cv.COLOR_RGB2BGR', 'COLOR_BGR2RGB', [], []]
+ok: CONST COLOR_RGB2BGR=COLOR_BGR2RGB
+
+--- Incoming ---
+['const cv.COLOR_BGRA2RGBA', '5', [], []]
+ok: CONST COLOR_BGRA2RGBA=5
+
+--- Incoming ---
+['const cv.COLOR_RGBA2BGRA', 'COLOR_BGRA2RGBA', [], []]
+ok: CONST COLOR_RGBA2BGRA=COLOR_BGRA2RGBA
+
+--- Incoming ---
+['const cv.COLOR_BGR2GRAY', '6', [], []]
+ok: CONST COLOR_BGR2GRAY=6
+
+--- Incoming ---
+['const cv.COLOR_RGB2GRAY', '7', [], []]
+ok: CONST COLOR_RGB2GRAY=7
+
+--- Incoming ---
+['const cv.COLOR_GRAY2BGR', '8', [], []]
+ok: CONST COLOR_GRAY2BGR=8
+
+--- Incoming ---
+['const cv.COLOR_GRAY2RGB', 'COLOR_GRAY2BGR', [], []]
+ok: CONST COLOR_GRAY2RGB=COLOR_GRAY2BGR
+
+--- Incoming ---
+['const cv.COLOR_GRAY2BGRA', '9', [], []]
+ok: CONST COLOR_GRAY2BGRA=9
+
+--- Incoming ---
+['const cv.COLOR_GRAY2RGBA', 'COLOR_GRAY2BGRA', [], []]
+ok: CONST COLOR_GRAY2RGBA=COLOR_GRAY2BGRA
+
+--- Incoming ---
+['const cv.COLOR_BGRA2GRAY', '10', [], []]
+ok: CONST COLOR_BGRA2GRAY=10
+
+--- Incoming ---
+['const cv.COLOR_RGBA2GRAY', '11', [], []]
+ok: CONST COLOR_RGBA2GRAY=11
+
+--- Incoming ---
+['const cv.COLOR_BGR2BGR565', '12', [], []]
+ok: CONST COLOR_BGR2BGR565=12
+
+--- Incoming ---
+['const cv.COLOR_RGB2BGR565', '13', [], []]
+ok: CONST COLOR_RGB2BGR565=13
+
+--- Incoming ---
+['const cv.COLOR_BGR5652BGR', '14', [], []]
+ok: CONST COLOR_BGR5652BGR=14
+
+--- Incoming ---
+['const cv.COLOR_BGR5652RGB', '15', [], []]
+ok: CONST COLOR_BGR5652RGB=15
+
+--- Incoming ---
+['const cv.COLOR_BGRA2BGR565', '16', [], []]
+ok: CONST COLOR_BGRA2BGR565=16
+
+--- Incoming ---
+['const cv.COLOR_RGBA2BGR565', '17', [], []]
+ok: CONST COLOR_RGBA2BGR565=17
+
+--- Incoming ---
+['const cv.COLOR_BGR5652BGRA', '18', [], []]
+ok: CONST COLOR_BGR5652BGRA=18
+
+--- Incoming ---
+['const cv.COLOR_BGR5652RGBA', '19', [], []]
+ok: CONST COLOR_BGR5652RGBA=19
+
+--- Incoming ---
+['const cv.COLOR_GRAY2BGR565', '20', [], []]
+ok: CONST COLOR_GRAY2BGR565=20
+
+--- Incoming ---
+['const cv.COLOR_BGR5652GRAY', '21', [], []]
+ok: CONST COLOR_BGR5652GRAY=21
+
+--- Incoming ---
+['const cv.COLOR_BGR2BGR555', '22', [], []]
+ok: CONST COLOR_BGR2BGR555=22
+
+--- Incoming ---
+['const cv.COLOR_RGB2BGR555', '23', [], []]
+ok: CONST COLOR_RGB2BGR555=23
+
+--- Incoming ---
+['const cv.COLOR_BGR5552BGR', '24', [], []]
+ok: CONST COLOR_BGR5552BGR=24
+
+--- Incoming ---
+['const cv.COLOR_BGR5552RGB', '25', [], []]
+ok: CONST COLOR_BGR5552RGB=25
+
+--- Incoming ---
+['const cv.COLOR_BGRA2BGR555', '26', [], []]
+ok: CONST COLOR_BGRA2BGR555=26
+
+--- Incoming ---
+['const cv.COLOR_RGBA2BGR555', '27', [], []]
+ok: CONST COLOR_RGBA2BGR555=27
+
+--- Incoming ---
+['const cv.COLOR_BGR5552BGRA', '28', [], []]
+ok: CONST COLOR_BGR5552BGRA=28
+
+--- Incoming ---
+['const cv.COLOR_BGR5552RGBA', '29', [], []]
+ok: CONST COLOR_BGR5552RGBA=29
+
+--- Incoming ---
+['const cv.COLOR_GRAY2BGR555', '30', [], []]
+ok: CONST COLOR_GRAY2BGR555=30
+
+--- Incoming ---
+['const cv.COLOR_BGR5552GRAY', '31', [], []]
+ok: CONST COLOR_BGR5552GRAY=31
+
+--- Incoming ---
+['const cv.COLOR_BGR2XYZ', '32', [], []]
+ok: CONST COLOR_BGR2XYZ=32
+
+--- Incoming ---
+['const cv.COLOR_RGB2XYZ', '33', [], []]
+ok: CONST COLOR_RGB2XYZ=33
+
+--- Incoming ---
+['const cv.COLOR_XYZ2BGR', '34', [], []]
+ok: CONST COLOR_XYZ2BGR=34
+
+--- Incoming ---
+['const cv.COLOR_XYZ2RGB', '35', [], []]
+ok: CONST COLOR_XYZ2RGB=35
+
+--- Incoming ---
+['const cv.COLOR_BGR2YCrCb', '36', [], []]
+ok: CONST COLOR_BGR2YCrCb=36
+
+--- Incoming ---
+['const cv.COLOR_RGB2YCrCb', '37', [], []]
+ok: CONST COLOR_RGB2YCrCb=37
+
+--- Incoming ---
+['const cv.COLOR_YCrCb2BGR', '38', [], []]
+ok: CONST COLOR_YCrCb2BGR=38
+
+--- Incoming ---
+['const cv.COLOR_YCrCb2RGB', '39', [], []]
+ok: CONST COLOR_YCrCb2RGB=39
+
+--- Incoming ---
+['const cv.COLOR_BGR2HSV', '40', [], []]
+ok: CONST COLOR_BGR2HSV=40
+
+--- Incoming ---
+['const cv.COLOR_RGB2HSV', '41', [], []]
+ok: CONST COLOR_RGB2HSV=41
+
+--- Incoming ---
+['const cv.COLOR_BGR2Lab', '44', [], []]
+ok: CONST COLOR_BGR2Lab=44
+
+--- Incoming ---
+['const cv.COLOR_RGB2Lab', '45', [], []]
+ok: CONST COLOR_RGB2Lab=45
+
+--- Incoming ---
+['const cv.COLOR_BGR2Luv', '50', [], []]
+ok: CONST COLOR_BGR2Luv=50
+
+--- Incoming ---
+['const cv.COLOR_RGB2Luv', '51', [], []]
+ok: CONST COLOR_RGB2Luv=51
+
+--- Incoming ---
+['const cv.COLOR_BGR2HLS', '52', [], []]
+ok: CONST COLOR_BGR2HLS=52
+
+--- Incoming ---
+['const cv.COLOR_RGB2HLS', '53', [], []]
+ok: CONST COLOR_RGB2HLS=53
+
+--- Incoming ---
+['const cv.COLOR_HSV2BGR', '54', [], []]
+ok: CONST COLOR_HSV2BGR=54
+
+--- Incoming ---
+['const cv.COLOR_HSV2RGB', '55', [], []]
+ok: CONST COLOR_HSV2RGB=55
+
+--- Incoming ---
+['const cv.COLOR_Lab2BGR', '56', [], []]
+ok: CONST COLOR_Lab2BGR=56
+
+--- Incoming ---
+['const cv.COLOR_Lab2RGB', '57', [], []]
+ok: CONST COLOR_Lab2RGB=57
+
+--- Incoming ---
+['const cv.COLOR_Luv2BGR', '58', [], []]
+ok: CONST COLOR_Luv2BGR=58
+
+--- Incoming ---
+['const cv.COLOR_Luv2RGB', '59', [], []]
+ok: CONST COLOR_Luv2RGB=59
+
+--- Incoming ---
+['const cv.COLOR_HLS2BGR', '60', [], []]
+ok: CONST COLOR_HLS2BGR=60
+
+--- Incoming ---
+['const cv.COLOR_HLS2RGB', '61', [], []]
+ok: CONST COLOR_HLS2RGB=61
+
+--- Incoming ---
+['const cv.COLOR_BGR2HSV_FULL', '66', [], []]
+ok: CONST COLOR_BGR2HSV_FULL=66
+
+--- Incoming ---
+['const cv.COLOR_RGB2HSV_FULL', '67', [], []]
+ok: CONST COLOR_RGB2HSV_FULL=67
+
+--- Incoming ---
+['const cv.COLOR_BGR2HLS_FULL', '68', [], []]
+ok: CONST COLOR_BGR2HLS_FULL=68
+
+--- Incoming ---
+['const cv.COLOR_RGB2HLS_FULL', '69', [], []]
+ok: CONST COLOR_RGB2HLS_FULL=69
+
+--- Incoming ---
+['const cv.COLOR_HSV2BGR_FULL', '70', [], []]
+ok: CONST COLOR_HSV2BGR_FULL=70
+
+--- Incoming ---
+['const cv.COLOR_HSV2RGB_FULL', '71', [], []]
+ok: CONST COLOR_HSV2RGB_FULL=71
+
+--- Incoming ---
+['const cv.COLOR_HLS2BGR_FULL', '72', [], []]
+ok: CONST COLOR_HLS2BGR_FULL=72
+
+--- Incoming ---
+['const cv.COLOR_HLS2RGB_FULL', '73', [], []]
+ok: CONST COLOR_HLS2RGB_FULL=73
+
+--- Incoming ---
+['const cv.COLOR_LBGR2Lab', '74', [], []]
+ok: CONST COLOR_LBGR2Lab=74
+
+--- Incoming ---
+['const cv.COLOR_LRGB2Lab', '75', [], []]
+ok: CONST COLOR_LRGB2Lab=75
+
+--- Incoming ---
+['const cv.COLOR_LBGR2Luv', '76', [], []]
+ok: CONST COLOR_LBGR2Luv=76
+
+--- Incoming ---
+['const cv.COLOR_LRGB2Luv', '77', [], []]
+ok: CONST COLOR_LRGB2Luv=77
+
+--- Incoming ---
+['const cv.COLOR_Lab2LBGR', '78', [], []]
+ok: CONST COLOR_Lab2LBGR=78
+
+--- Incoming ---
+['const cv.COLOR_Lab2LRGB', '79', [], []]
+ok: CONST COLOR_Lab2LRGB=79
+
+--- Incoming ---
+['const cv.COLOR_Luv2LBGR', '80', [], []]
+ok: CONST COLOR_Luv2LBGR=80
+
+--- Incoming ---
+['const cv.COLOR_Luv2LRGB', '81', [], []]
+ok: CONST COLOR_Luv2LRGB=81
+
+--- Incoming ---
+['const cv.COLOR_BGR2YUV', '82', [], []]
+ok: CONST COLOR_BGR2YUV=82
+
+--- Incoming ---
+['const cv.COLOR_RGB2YUV', '83', [], []]
+ok: CONST COLOR_RGB2YUV=83
+
+--- Incoming ---
+['const cv.COLOR_YUV2BGR', '84', [], []]
+ok: CONST COLOR_YUV2BGR=84
+
+--- Incoming ---
+['const cv.COLOR_YUV2RGB', '85', [], []]
+ok: CONST COLOR_YUV2RGB=85
+
+--- Incoming ---
+['const cv.COLOR_YUV2RGB_NV12', '90', [], []]
+ok: CONST COLOR_YUV2RGB_NV12=90
+
+--- Incoming ---
+['const cv.COLOR_YUV2BGR_NV12', '91', [], []]
+ok: CONST COLOR_YUV2BGR_NV12=91
+
+--- Incoming ---
+['const cv.COLOR_YUV2RGB_NV21', '92', [], []]
+ok: CONST COLOR_YUV2RGB_NV21=92
+
+--- Incoming ---
+['const cv.COLOR_YUV2BGR_NV21', '93', [], []]
+ok: CONST COLOR_YUV2BGR_NV21=93
+
+--- Incoming ---
+['const cv.COLOR_YUV420sp2RGB', 'COLOR_YUV2RGB_NV21', [], []]
+ok: CONST COLOR_YUV420sp2RGB=COLOR_YUV2RGB_NV21
+
+--- Incoming ---
+['const cv.COLOR_YUV420sp2BGR', 'COLOR_YUV2BGR_NV21', [], []]
+ok: CONST COLOR_YUV420sp2BGR=COLOR_YUV2BGR_NV21
+
+--- Incoming ---
+['const cv.COLOR_YUV2RGBA_NV12', '94', [], []]
+ok: CONST COLOR_YUV2RGBA_NV12=94
+
+--- Incoming ---
+['const cv.COLOR_YUV2BGRA_NV12', '95', [], []]
+ok: CONST COLOR_YUV2BGRA_NV12=95
+
+--- Incoming ---
+['const cv.COLOR_YUV2RGBA_NV21', '96', [], []]
+ok: CONST COLOR_YUV2RGBA_NV21=96
+
+--- Incoming ---
+['const cv.COLOR_YUV2BGRA_NV21', '97', [], []]
+ok: CONST COLOR_YUV2BGRA_NV21=97
+
+--- Incoming ---
+['const cv.COLOR_YUV420sp2RGBA', 'COLOR_YUV2RGBA_NV21', [], []]
+ok: CONST COLOR_YUV420sp2RGBA=COLOR_YUV2RGBA_NV21
+
+--- Incoming ---
+['const cv.COLOR_YUV420sp2BGRA', 'COLOR_YUV2BGRA_NV21', [], []]
+ok: CONST COLOR_YUV420sp2BGRA=COLOR_YUV2BGRA_NV21
+
+--- Incoming ---
+['const cv.COLOR_YUV2RGB_YV12', '98', [], []]
+ok: CONST COLOR_YUV2RGB_YV12=98
+
+--- Incoming ---
+['const cv.COLOR_YUV2BGR_YV12', '99', [], []]
+ok: CONST COLOR_YUV2BGR_YV12=99
+
+--- Incoming ---
+['const cv.COLOR_YUV2RGB_IYUV', '100', [], []]
+ok: CONST COLOR_YUV2RGB_IYUV=100
+
+--- Incoming ---
+['const cv.COLOR_YUV2BGR_IYUV', '101', [], []]
+ok: CONST COLOR_YUV2BGR_IYUV=101
+
+--- Incoming ---
+['const cv.COLOR_YUV2RGB_I420', 'COLOR_YUV2RGB_IYUV', [], []]
+ok: CONST COLOR_YUV2RGB_I420=COLOR_YUV2RGB_IYUV
+
+--- Incoming ---
+['const cv.COLOR_YUV2BGR_I420', 'COLOR_YUV2BGR_IYUV', [], []]
+ok: CONST COLOR_YUV2BGR_I420=COLOR_YUV2BGR_IYUV
+
+--- Incoming ---
+['const cv.COLOR_YUV420p2RGB', 'COLOR_YUV2RGB_YV12', [], []]
+ok: CONST COLOR_YUV420p2RGB=COLOR_YUV2RGB_YV12
+
+--- Incoming ---
+['const cv.COLOR_YUV420p2BGR', 'COLOR_YUV2BGR_YV12', [], []]
+ok: CONST COLOR_YUV420p2BGR=COLOR_YUV2BGR_YV12
+
+--- Incoming ---
+['const cv.COLOR_YUV2RGBA_YV12', '102', [], []]
+ok: CONST COLOR_YUV2RGBA_YV12=102
+
+--- Incoming ---
+['const cv.COLOR_YUV2BGRA_YV12', '103', [], []]
+ok: CONST COLOR_YUV2BGRA_YV12=103
+
+--- Incoming ---
+['const cv.COLOR_YUV2RGBA_IYUV', '104', [], []]
+ok: CONST COLOR_YUV2RGBA_IYUV=104
+
+--- Incoming ---
+['const cv.COLOR_YUV2BGRA_IYUV', '105', [], []]
+ok: CONST COLOR_YUV2BGRA_IYUV=105
+
+--- Incoming ---
+['const cv.COLOR_YUV2RGBA_I420', 'COLOR_YUV2RGBA_IYUV', [], []]
+ok: CONST COLOR_YUV2RGBA_I420=COLOR_YUV2RGBA_IYUV
+
+--- Incoming ---
+['const cv.COLOR_YUV2BGRA_I420', 'COLOR_YUV2BGRA_IYUV', [], []]
+ok: CONST COLOR_YUV2BGRA_I420=COLOR_YUV2BGRA_IYUV
+
+--- Incoming ---
+['const cv.COLOR_YUV420p2RGBA', 'COLOR_YUV2RGBA_YV12', [], []]
+ok: CONST COLOR_YUV420p2RGBA=COLOR_YUV2RGBA_YV12
+
+--- Incoming ---
+['const cv.COLOR_YUV420p2BGRA', 'COLOR_YUV2BGRA_YV12', [], []]
+ok: CONST COLOR_YUV420p2BGRA=COLOR_YUV2BGRA_YV12
+
+--- Incoming ---
+['const cv.COLOR_YUV2GRAY_420', '106', [], []]
+ok: CONST COLOR_YUV2GRAY_420=106
+
+--- Incoming ---
+['const cv.COLOR_YUV2GRAY_NV21', 'COLOR_YUV2GRAY_420', [], []]
+ok: CONST COLOR_YUV2GRAY_NV21=COLOR_YUV2GRAY_420
+
+--- Incoming ---
+['const cv.COLOR_YUV2GRAY_NV12', 'COLOR_YUV2GRAY_420', [], []]
+ok: CONST COLOR_YUV2GRAY_NV12=COLOR_YUV2GRAY_420
+
+--- Incoming ---
+['const cv.COLOR_YUV2GRAY_YV12', 'COLOR_YUV2GRAY_420', [], []]
+ok: CONST COLOR_YUV2GRAY_YV12=COLOR_YUV2GRAY_420
+
+--- Incoming ---
+['const cv.COLOR_YUV2GRAY_IYUV', 'COLOR_YUV2GRAY_420', [], []]
+ok: CONST COLOR_YUV2GRAY_IYUV=COLOR_YUV2GRAY_420
+
+--- Incoming ---
+['const cv.COLOR_YUV2GRAY_I420', 'COLOR_YUV2GRAY_420', [], []]
+ok: CONST COLOR_YUV2GRAY_I420=COLOR_YUV2GRAY_420
+
+--- Incoming ---
+['const cv.COLOR_YUV420sp2GRAY', 'COLOR_YUV2GRAY_420', [], []]
+ok: CONST COLOR_YUV420sp2GRAY=COLOR_YUV2GRAY_420
+
+--- Incoming ---
+['const cv.COLOR_YUV420p2GRAY', 'COLOR_YUV2GRAY_420', [], []]
+ok: CONST COLOR_YUV420p2GRAY=COLOR_YUV2GRAY_420
+
+--- Incoming ---
+['const cv.COLOR_YUV2RGB_UYVY', '107', [], []]
+ok: CONST COLOR_YUV2RGB_UYVY=107
+
+--- Incoming ---
+['const cv.COLOR_YUV2BGR_UYVY', '108', [], []]
+ok: CONST COLOR_YUV2BGR_UYVY=108
+
+--- Incoming ---
+['const cv.COLOR_YUV2RGB_Y422', 'COLOR_YUV2RGB_UYVY', [], []]
+ok: CONST COLOR_YUV2RGB_Y422=COLOR_YUV2RGB_UYVY
+
+--- Incoming ---
+['const cv.COLOR_YUV2BGR_Y422', 'COLOR_YUV2BGR_UYVY', [], []]
+ok: CONST COLOR_YUV2BGR_Y422=COLOR_YUV2BGR_UYVY
+
+--- Incoming ---
+['const cv.COLOR_YUV2RGB_UYNV', 'COLOR_YUV2RGB_UYVY', [], []]
+ok: CONST COLOR_YUV2RGB_UYNV=COLOR_YUV2RGB_UYVY
+
+--- Incoming ---
+['const cv.COLOR_YUV2BGR_UYNV', 'COLOR_YUV2BGR_UYVY', [], []]
+ok: CONST COLOR_YUV2BGR_UYNV=COLOR_YUV2BGR_UYVY
+
+--- Incoming ---
+['const cv.COLOR_YUV2RGBA_UYVY', '111', [], []]
+ok: CONST COLOR_YUV2RGBA_UYVY=111
+
+--- Incoming ---
+['const cv.COLOR_YUV2BGRA_UYVY', '112', [], []]
+ok: CONST COLOR_YUV2BGRA_UYVY=112
+
+--- Incoming ---
+['const cv.COLOR_YUV2RGBA_Y422', 'COLOR_YUV2RGBA_UYVY', [], []]
+ok: CONST COLOR_YUV2RGBA_Y422=COLOR_YUV2RGBA_UYVY
+
+--- Incoming ---
+['const cv.COLOR_YUV2BGRA_Y422', 'COLOR_YUV2BGRA_UYVY', [], []]
+ok: CONST COLOR_YUV2BGRA_Y422=COLOR_YUV2BGRA_UYVY
+
+--- Incoming ---
+['const cv.COLOR_YUV2RGBA_UYNV', 'COLOR_YUV2RGBA_UYVY', [], []]
+ok: CONST COLOR_YUV2RGBA_UYNV=COLOR_YUV2RGBA_UYVY
+
+--- Incoming ---
+['const cv.COLOR_YUV2BGRA_UYNV', 'COLOR_YUV2BGRA_UYVY', [], []]
+ok: CONST COLOR_YUV2BGRA_UYNV=COLOR_YUV2BGRA_UYVY
+
+--- Incoming ---
+['const cv.COLOR_YUV2RGB_YUY2', '115', [], []]
+ok: CONST COLOR_YUV2RGB_YUY2=115
+
+--- Incoming ---
+['const cv.COLOR_YUV2BGR_YUY2', '116', [], []]
+ok: CONST COLOR_YUV2BGR_YUY2=116
+
+--- Incoming ---
+['const cv.COLOR_YUV2RGB_YVYU', '117', [], []]
+ok: CONST COLOR_YUV2RGB_YVYU=117
+
+--- Incoming ---
+['const cv.COLOR_YUV2BGR_YVYU', '118', [], []]
+ok: CONST COLOR_YUV2BGR_YVYU=118
+
+--- Incoming ---
+['const cv.COLOR_YUV2RGB_YUYV', 'COLOR_YUV2RGB_YUY2', [], []]
+ok: CONST COLOR_YUV2RGB_YUYV=COLOR_YUV2RGB_YUY2
+
+--- Incoming ---
+['const cv.COLOR_YUV2BGR_YUYV', 'COLOR_YUV2BGR_YUY2', [], []]
+ok: CONST COLOR_YUV2BGR_YUYV=COLOR_YUV2BGR_YUY2
+
+--- Incoming ---
+['const cv.COLOR_YUV2RGB_YUNV', 'COLOR_YUV2RGB_YUY2', [], []]
+ok: CONST COLOR_YUV2RGB_YUNV=COLOR_YUV2RGB_YUY2
+
+--- Incoming ---
+['const cv.COLOR_YUV2BGR_YUNV', 'COLOR_YUV2BGR_YUY2', [], []]
+ok: CONST COLOR_YUV2BGR_YUNV=COLOR_YUV2BGR_YUY2
+
+--- Incoming ---
+['const cv.COLOR_YUV2RGBA_YUY2', '119', [], []]
+ok: CONST COLOR_YUV2RGBA_YUY2=119
+
+--- Incoming ---
+['const cv.COLOR_YUV2BGRA_YUY2', '120', [], []]
+ok: CONST COLOR_YUV2BGRA_YUY2=120
+
+--- Incoming ---
+['const cv.COLOR_YUV2RGBA_YVYU', '121', [], []]
+ok: CONST COLOR_YUV2RGBA_YVYU=121
+
+--- Incoming ---
+['const cv.COLOR_YUV2BGRA_YVYU', '122', [], []]
+ok: CONST COLOR_YUV2BGRA_YVYU=122
+
+--- Incoming ---
+['const cv.COLOR_YUV2RGBA_YUYV', 'COLOR_YUV2RGBA_YUY2', [], []]
+ok: CONST COLOR_YUV2RGBA_YUYV=COLOR_YUV2RGBA_YUY2
+
+--- Incoming ---
+['const cv.COLOR_YUV2BGRA_YUYV', 'COLOR_YUV2BGRA_YUY2', [], []]
+ok: CONST COLOR_YUV2BGRA_YUYV=COLOR_YUV2BGRA_YUY2
+
+--- Incoming ---
+['const cv.COLOR_YUV2RGBA_YUNV', 'COLOR_YUV2RGBA_YUY2', [], []]
+ok: CONST COLOR_YUV2RGBA_YUNV=COLOR_YUV2RGBA_YUY2
+
+--- Incoming ---
+['const cv.COLOR_YUV2BGRA_YUNV', 'COLOR_YUV2BGRA_YUY2', [], []]
+ok: CONST COLOR_YUV2BGRA_YUNV=COLOR_YUV2BGRA_YUY2
+
+--- Incoming ---
+['const cv.COLOR_YUV2GRAY_UYVY', '123', [], []]
+ok: CONST COLOR_YUV2GRAY_UYVY=123
+
+--- Incoming ---
+['const cv.COLOR_YUV2GRAY_YUY2', '124', [], []]
+ok: CONST COLOR_YUV2GRAY_YUY2=124
+
+--- Incoming ---
+['const cv.COLOR_YUV2GRAY_Y422', 'COLOR_YUV2GRAY_UYVY', [], []]
+ok: CONST COLOR_YUV2GRAY_Y422=COLOR_YUV2GRAY_UYVY
+
+--- Incoming ---
+['const cv.COLOR_YUV2GRAY_UYNV', 'COLOR_YUV2GRAY_UYVY', [], []]
+ok: CONST COLOR_YUV2GRAY_UYNV=COLOR_YUV2GRAY_UYVY
+
+--- Incoming ---
+['const cv.COLOR_YUV2GRAY_YVYU', 'COLOR_YUV2GRAY_YUY2', [], []]
+ok: CONST COLOR_YUV2GRAY_YVYU=COLOR_YUV2GRAY_YUY2
+
+--- Incoming ---
+['const cv.COLOR_YUV2GRAY_YUYV', 'COLOR_YUV2GRAY_YUY2', [], []]
+ok: CONST COLOR_YUV2GRAY_YUYV=COLOR_YUV2GRAY_YUY2
+
+--- Incoming ---
+['const cv.COLOR_YUV2GRAY_YUNV', 'COLOR_YUV2GRAY_YUY2', [], []]
+ok: CONST COLOR_YUV2GRAY_YUNV=COLOR_YUV2GRAY_YUY2
+
+--- Incoming ---
+['const cv.COLOR_RGBA2mRGBA', '125', [], []]
+ok: CONST COLOR_RGBA2mRGBA=125
+
+--- Incoming ---
+['const cv.COLOR_mRGBA2RGBA', '126', [], []]
+ok: CONST COLOR_mRGBA2RGBA=126
+
+--- Incoming ---
+['const cv.COLOR_RGB2YUV_I420', '127', [], []]
+ok: CONST COLOR_RGB2YUV_I420=127
+
+--- Incoming ---
+['const cv.COLOR_BGR2YUV_I420', '128', [], []]
+ok: CONST COLOR_BGR2YUV_I420=128
+
+--- Incoming ---
+['const cv.COLOR_RGB2YUV_IYUV', 'COLOR_RGB2YUV_I420', [], []]
+ok: CONST COLOR_RGB2YUV_IYUV=COLOR_RGB2YUV_I420
+
+--- Incoming ---
+['const cv.COLOR_BGR2YUV_IYUV', 'COLOR_BGR2YUV_I420', [], []]
+ok: CONST COLOR_BGR2YUV_IYUV=COLOR_BGR2YUV_I420
+
+--- Incoming ---
+['const cv.COLOR_RGBA2YUV_I420', '129', [], []]
+ok: CONST COLOR_RGBA2YUV_I420=129
+
+--- Incoming ---
+['const cv.COLOR_BGRA2YUV_I420', '130', [], []]
+ok: CONST COLOR_BGRA2YUV_I420=130
+
+--- Incoming ---
+['const cv.COLOR_RGBA2YUV_IYUV', 'COLOR_RGBA2YUV_I420', [], []]
+ok: CONST COLOR_RGBA2YUV_IYUV=COLOR_RGBA2YUV_I420
+
+--- Incoming ---
+['const cv.COLOR_BGRA2YUV_IYUV', 'COLOR_BGRA2YUV_I420', [], []]
+ok: CONST COLOR_BGRA2YUV_IYUV=COLOR_BGRA2YUV_I420
+
+--- Incoming ---
+['const cv.COLOR_RGB2YUV_YV12', '131', [], []]
+ok: CONST COLOR_RGB2YUV_YV12=131
+
+--- Incoming ---
+['const cv.COLOR_BGR2YUV_YV12', '132', [], []]
+ok: CONST COLOR_BGR2YUV_YV12=132
+
+--- Incoming ---
+['const cv.COLOR_RGBA2YUV_YV12', '133', [], []]
+ok: CONST COLOR_RGBA2YUV_YV12=133
+
+--- Incoming ---
+['const cv.COLOR_BGRA2YUV_YV12', '134', [], []]
+ok: CONST COLOR_BGRA2YUV_YV12=134
+
+--- Incoming ---
+['const cv.COLOR_BayerBG2BGR', '46', [], []]
+ok: CONST COLOR_BayerBG2BGR=46
+
+--- Incoming ---
+['const cv.COLOR_BayerGB2BGR', '47', [], []]
+ok: CONST COLOR_BayerGB2BGR=47
+
+--- Incoming ---
+['const cv.COLOR_BayerRG2BGR', '48', [], []]
+ok: CONST COLOR_BayerRG2BGR=48
+
+--- Incoming ---
+['const cv.COLOR_BayerGR2BGR', '49', [], []]
+ok: CONST COLOR_BayerGR2BGR=49
+
+--- Incoming ---
+['const cv.COLOR_BayerBG2RGB', 'COLOR_BayerRG2BGR', [], []]
+ok: CONST COLOR_BayerBG2RGB=COLOR_BayerRG2BGR
+
+--- Incoming ---
+['const cv.COLOR_BayerGB2RGB', 'COLOR_BayerGR2BGR', [], []]
+ok: CONST COLOR_BayerGB2RGB=COLOR_BayerGR2BGR
+
+--- Incoming ---
+['const cv.COLOR_BayerRG2RGB', 'COLOR_BayerBG2BGR', [], []]
+ok: CONST COLOR_BayerRG2RGB=COLOR_BayerBG2BGR
+
+--- Incoming ---
+['const cv.COLOR_BayerGR2RGB', 'COLOR_BayerGB2BGR', [], []]
+ok: CONST COLOR_BayerGR2RGB=COLOR_BayerGB2BGR
+
+--- Incoming ---
+['const cv.COLOR_BayerBG2GRAY', '86', [], []]
+ok: CONST COLOR_BayerBG2GRAY=86
+
+--- Incoming ---
+['const cv.COLOR_BayerGB2GRAY', '87', [], []]
+ok: CONST COLOR_BayerGB2GRAY=87
+
+--- Incoming ---
+['const cv.COLOR_BayerRG2GRAY', '88', [], []]
+ok: CONST COLOR_BayerRG2GRAY=88
+
+--- Incoming ---
+['const cv.COLOR_BayerGR2GRAY', '89', [], []]
+ok: CONST COLOR_BayerGR2GRAY=89
+
+--- Incoming ---
+['const cv.COLOR_BayerBG2BGR_VNG', '62', [], []]
+ok: CONST COLOR_BayerBG2BGR_VNG=62
+
+--- Incoming ---
+['const cv.COLOR_BayerGB2BGR_VNG', '63', [], []]
+ok: CONST COLOR_BayerGB2BGR_VNG=63
+
+--- Incoming ---
+['const cv.COLOR_BayerRG2BGR_VNG', '64', [], []]
+ok: CONST COLOR_BayerRG2BGR_VNG=64
+
+--- Incoming ---
+['const cv.COLOR_BayerGR2BGR_VNG', '65', [], []]
+ok: CONST COLOR_BayerGR2BGR_VNG=65
+
+--- Incoming ---
+['const cv.COLOR_BayerBG2RGB_VNG', 'COLOR_BayerRG2BGR_VNG', [], []]
+ok: CONST COLOR_BayerBG2RGB_VNG=COLOR_BayerRG2BGR_VNG
+
+--- Incoming ---
+['const cv.COLOR_BayerGB2RGB_VNG', 'COLOR_BayerGR2BGR_VNG', [], []]
+ok: CONST COLOR_BayerGB2RGB_VNG=COLOR_BayerGR2BGR_VNG
+
+--- Incoming ---
+['const cv.COLOR_BayerRG2RGB_VNG', 'COLOR_BayerBG2BGR_VNG', [], []]
+ok: CONST COLOR_BayerRG2RGB_VNG=COLOR_BayerBG2BGR_VNG
+
+--- Incoming ---
+['const cv.COLOR_BayerGR2RGB_VNG', 'COLOR_BayerGB2BGR_VNG', [], []]
+ok: CONST COLOR_BayerGR2RGB_VNG=COLOR_BayerGB2BGR_VNG
+
+--- Incoming ---
+['const cv.COLOR_BayerBG2BGR_EA', '135', [], []]
+ok: CONST COLOR_BayerBG2BGR_EA=135
+
+--- Incoming ---
+['const cv.COLOR_BayerGB2BGR_EA', '136', [], []]
+ok: CONST COLOR_BayerGB2BGR_EA=136
+
+--- Incoming ---
+['const cv.COLOR_BayerRG2BGR_EA', '137', [], []]
+ok: CONST COLOR_BayerRG2BGR_EA=137
+
+--- Incoming ---
+['const cv.COLOR_BayerGR2BGR_EA', '138', [], []]
+ok: CONST COLOR_BayerGR2BGR_EA=138
+
+--- Incoming ---
+['const cv.COLOR_BayerBG2RGB_EA', 'COLOR_BayerRG2BGR_EA', [], []]
+ok: CONST COLOR_BayerBG2RGB_EA=COLOR_BayerRG2BGR_EA
+
+--- Incoming ---
+['const cv.COLOR_BayerGB2RGB_EA', 'COLOR_BayerGR2BGR_EA', [], []]
+ok: CONST COLOR_BayerGB2RGB_EA=COLOR_BayerGR2BGR_EA
+
+--- Incoming ---
+['const cv.COLOR_BayerRG2RGB_EA', 'COLOR_BayerBG2BGR_EA', [], []]
+ok: CONST COLOR_BayerRG2RGB_EA=COLOR_BayerBG2BGR_EA
+
+--- Incoming ---
+['const cv.COLOR_BayerGR2RGB_EA', 'COLOR_BayerGB2BGR_EA', [], []]
+ok: CONST COLOR_BayerGR2RGB_EA=COLOR_BayerGB2BGR_EA
+
+--- Incoming ---
+['const cv.COLOR_COLORCVT_MAX', '139', [], []]
+ok: CONST COLOR_COLORCVT_MAX=139
+
+--- Incoming ---
+['const cv.INTERSECT_NONE', '0', [], []]
+ok: CONST INTERSECT_NONE=0
+
+--- Incoming ---
+['const cv.INTERSECT_PARTIAL', '1', [], []]
+ok: CONST INTERSECT_PARTIAL=1
+
+--- Incoming ---
+['const cv.INTERSECT_FULL', '2', [], []]
+ok: CONST INTERSECT_FULL=2
+
+--- Incoming ---
+['class cv.CLAHE', ': cv::Algorithm', [], []]
+ok: CLASS cv..CLAHE : Algorithm
+
+--- Incoming ---
+[   'cv.CLAHE.apply',
+    'void',
+    [],
+    [['Mat', 'src', '', []], ['Mat', 'dst', '', ['/O']]]]
+ok: FUNC <void cv.CLAHE.apply [ARG Mat src=, ARG Mat dst=]>
+
+--- Incoming ---
+['cv.CLAHE.setClipLimit', 'void', [], [['double', 'clipLimit', '', []]]]
+ok: FUNC <void cv.CLAHE.setClipLimit [ARG double clipLimit=]>
+
+--- Incoming ---
+['cv.CLAHE.getClipLimit', 'double', [], []]
+ok: FUNC <double cv.CLAHE.getClipLimit []>
+
+--- Incoming ---
+['cv.CLAHE.setTilesGridSize', 'void', [], [['Size', 'tileGridSize', '', []]]]
+ok: FUNC <void cv.CLAHE.setTilesGridSize [ARG Size tileGridSize=]>
+
+--- Incoming ---
+['cv.CLAHE.getTilesGridSize', 'Size', [], []]
+ok: FUNC <Size cv.CLAHE.getTilesGridSize []>
+
+--- Incoming ---
+['cv.CLAHE.collectGarbage', 'void', [], []]
+ok: FUNC <void cv.CLAHE.collectGarbage []>
+
+--- Incoming ---
+['class cv.Subdiv2D', '', [], []]
+ok: CLASS cv..Subdiv2D : 
+
+--- Incoming ---
+['const cv.Subdiv2D.PTLOC_ERROR', '-2', [], []]
+ok: CONST PTLOC_ERROR=-2
+
+--- Incoming ---
+['const cv.Subdiv2D.PTLOC_OUTSIDE_RECT', '-1', [], []]
+ok: CONST PTLOC_OUTSIDE_RECT=-1
+
+--- Incoming ---
+['const cv.Subdiv2D.PTLOC_INSIDE', '0', [], []]
+ok: CONST PTLOC_INSIDE=0
+
+--- Incoming ---
+['const cv.Subdiv2D.PTLOC_VERTEX', '1', [], []]
+ok: CONST PTLOC_VERTEX=1
+
+--- Incoming ---
+['const cv.Subdiv2D.PTLOC_ON_EDGE', '2', [], []]
+ok: CONST PTLOC_ON_EDGE=2
+
+--- Incoming ---
+['const cv.Subdiv2D.NEXT_AROUND_ORG', '0x00', [], []]
+ok: CONST NEXT_AROUND_ORG=0x00
+
+--- Incoming ---
+['const cv.Subdiv2D.NEXT_AROUND_DST', '0x22', [], []]
+ok: CONST NEXT_AROUND_DST=0x22
+
+--- Incoming ---
+['const cv.Subdiv2D.PREV_AROUND_ORG', '0x11', [], []]
+ok: CONST PREV_AROUND_ORG=0x11
+
+--- Incoming ---
+['const cv.Subdiv2D.PREV_AROUND_DST', '0x33', [], []]
+ok: CONST PREV_AROUND_DST=0x33
+
+--- Incoming ---
+['const cv.Subdiv2D.NEXT_AROUND_LEFT', '0x13', [], []]
+ok: CONST NEXT_AROUND_LEFT=0x13
+
+--- Incoming ---
+['const cv.Subdiv2D.NEXT_AROUND_RIGHT', '0x31', [], []]
+ok: CONST NEXT_AROUND_RIGHT=0x31
+
+--- Incoming ---
+['const cv.Subdiv2D.PREV_AROUND_LEFT', '0x20', [], []]
+ok: CONST PREV_AROUND_LEFT=0x20
+
+--- Incoming ---
+['const cv.Subdiv2D.PREV_AROUND_RIGHT', '0x02', [], []]
+ok: CONST PREV_AROUND_RIGHT=0x02
+
+--- Incoming ---
+['cv.Subdiv2D.Subdiv2D', '', [], []]
+ok: FUNC < cv.Subdiv2D.Subdiv2D []>
+
+--- Incoming ---
+['cv.Subdiv2D.Subdiv2D', '', [], [['Rect', 'rect', '', []]]]
+ok: FUNC < cv.Subdiv2D.Subdiv2D [ARG Rect rect=]>
+
+--- Incoming ---
+['cv.Subdiv2D.initDelaunay', 'void', [], [['Rect', 'rect', '', []]]]
+ok: FUNC <void cv.Subdiv2D.initDelaunay [ARG Rect rect=]>
+
+--- Incoming ---
+['cv.Subdiv2D.insert', 'int', [], [['Point2f', 'pt', '', []]]]
+ok: FUNC <int cv.Subdiv2D.insert [ARG Point2f pt=]>
+
+--- Incoming ---
+['cv.Subdiv2D.insert', 'void', [], [['vector_Point2f', 'ptvec', '', []]]]
+ok: FUNC <void cv.Subdiv2D.insert [ARG vector_Point2f ptvec=]>
+
+--- Incoming ---
+[   'cv.Subdiv2D.locate',
+    'int',
+    [],
+    [   ['Point2f', 'pt', '', []],
+        ['int', 'edge', '', ['/O']],
+        ['int', 'vertex', '', ['/O']]]]
+ok: FUNC <int cv.Subdiv2D.locate [ARG Point2f pt=, ARG int edge=, ARG int vertex=]>
+
+--- Incoming ---
+[   'cv.Subdiv2D.findNearest',
+    'int',
+    [],
+    [['Point2f', 'pt', '', []], ['Point2f*', 'nearestPt', '0', ['/O']]]]
+ok: FUNC <int cv.Subdiv2D.findNearest [ARG Point2f pt=, ARG Point2f * nearestPt=0]>
+
+--- Incoming ---
+[   'cv.Subdiv2D.getEdgeList',
+    'void',
+    [],
+    [['vector_Vec4f', 'edgeList', '', ['/O']]]]
+ok: FUNC <void cv.Subdiv2D.getEdgeList [ARG vector_Vec4f edgeList=]>
+
+--- Incoming ---
+[   'cv.Subdiv2D.getTriangleList',
+    'void',
+    [],
+    [['vector_Vec6f', 'triangleList', '', ['/O']]]]
+ok: FUNC <void cv.Subdiv2D.getTriangleList [ARG vector_Vec6f triangleList=]>
+
+--- Incoming ---
+[   'cv.Subdiv2D.getVoronoiFacetList',
+    'void',
+    [],
+    [   ['vector_int', 'idx', '', []],
+        ['vector_vector_Point2f', 'facetList', '', ['/O']],
+        ['vector_Point2f', 'facetCenters', '', ['/O']]]]
+ok: FUNC <void cv.Subdiv2D.getVoronoiFacetList [ARG vector_int idx=, ARG vector_vector_Point2f facetList=, ARG vector_Point2f facetCenters=]>
+
+--- Incoming ---
+[   'cv.Subdiv2D.getVertex',
+    'Point2f',
+    [],
+    [['int', 'vertex', '', []], ['int*', 'firstEdge', '0', ['/O']]]]
+ok: FUNC <Point2f cv.Subdiv2D.getVertex [ARG int vertex=, ARG int * firstEdge=0]>
+
+--- Incoming ---
+[   'cv.Subdiv2D.getEdge',
+    'int',
+    [],
+    [['int', 'edge', '', []], ['int', 'nextEdgeType', '', []]]]
+ok: FUNC <int cv.Subdiv2D.getEdge [ARG int edge=, ARG int nextEdgeType=]>
+
+--- Incoming ---
+['cv.Subdiv2D.nextEdge', 'int', [], [['int', 'edge', '', []]]]
+ok: FUNC <int cv.Subdiv2D.nextEdge [ARG int edge=]>
+
+--- Incoming ---
+[   'cv.Subdiv2D.rotateEdge',
+    'int',
+    [],
+    [['int', 'edge', '', []], ['int', 'rotate', '', []]]]
+ok: FUNC <int cv.Subdiv2D.rotateEdge [ARG int edge=, ARG int rotate=]>
+
+--- Incoming ---
+['cv.Subdiv2D.symEdge', 'int', [], [['int', 'edge', '', []]]]
+ok: FUNC <int cv.Subdiv2D.symEdge [ARG int edge=]>
+
+--- Incoming ---
+[   'cv.Subdiv2D.edgeOrg',
+    'int',
+    [],
+    [['int', 'edge', '', []], ['Point2f*', 'orgpt', '0', ['/O']]]]
+ok: FUNC <int cv.Subdiv2D.edgeOrg [ARG int edge=, ARG Point2f * orgpt=0]>
+
+--- Incoming ---
+[   'cv.Subdiv2D.edgeDst',
+    'int',
+    [],
+    [['int', 'edge', '', []], ['Point2f*', 'dstpt', '0', ['/O']]]]
+ok: FUNC <int cv.Subdiv2D.edgeDst [ARG int edge=, ARG Point2f * dstpt=0]>
+
+--- Incoming ---
+['class cv.LineSegmentDetector', ': cv::Algorithm', [], []]
+ok: CLASS cv..LineSegmentDetector : Algorithm
+
+--- Incoming ---
+[   'cv.LineSegmentDetector.detect',
+    'void',
+    [],
+    [   ['Mat', '_image', '', []],
+        ['Mat', '_lines', '', ['/O']],
+        ['Mat', 'width', 'Mat()', ['/O']],
+        ['Mat', 'prec', 'Mat()', ['/O']],
+        ['Mat', 'nfa', 'Mat()', ['/O']]]]
+ok: FUNC <void cv.LineSegmentDetector.detect [ARG Mat _image=, ARG Mat _lines=, ARG Mat width=Mat(), ARG Mat prec=Mat(), ARG Mat nfa=Mat()]>
+
+--- Incoming ---
+[   'cv.LineSegmentDetector.drawSegments',
+    'void',
+    [],
+    [['Mat', '_image', '', ['/IO']], ['Mat', 'lines', '', []]]]
+ok: FUNC <void cv.LineSegmentDetector.drawSegments [ARG Mat _image=, ARG Mat lines=]>
+
+--- Incoming ---
+[   'cv.LineSegmentDetector.compareSegments',
+    'int',
+    [],
+    [   ['Size', 'size', '', []],
+        ['Mat', 'lines1', '', []],
+        ['Mat', 'lines2', '', []],
+        ['Mat', '_image', 'Mat()', ['/IO']]]]
+ok: FUNC <int cv.LineSegmentDetector.compareSegments [ARG Size size=, ARG Mat lines1=, ARG Mat lines2=, ARG Mat _image=Mat()]>
+
+--- Incoming ---
+[   'cv.createLineSegmentDetector',
+    'Ptr_LineSegmentDetector',
+    [],
+    [   ['int', '_refine', 'LSD_REFINE_STD', []],
+        ['double', '_scale', '0.8', []],
+        ['double', '_sigma_scale', '0.6', []],
+        ['double', '_quant', '2.0', []],
+        ['double', '_ang_th', '22.5', []],
+        ['double', '_log_eps', '0', []],
+        ['double', '_density_th', '0.7', []],
+        ['int', '_n_bins', '1024', []]]]
+ok: FUNC <Ptr_LineSegmentDetector cv..createLineSegmentDetector [ARG int _refine=LSD_REFINE_STD, ARG double _scale=0.8, ARG double _sigma_scale=0.6, ARG double _quant=2.0, ARG double _ang_th=22.5, ARG double _log_eps=0, ARG double _density_th=0.7, ARG int _n_bins=1024]>
+
+--- Incoming ---
+[   'cv.getGaussianKernel',
+    'Mat',
+    [],
+    [   ['int', 'ksize', '', []],
+        ['double', 'sigma', '', []],
+        ['int', 'ktype', 'CV_64F', []]]]
+ok: FUNC <Mat cv..getGaussianKernel [ARG int ksize=, ARG double sigma=, ARG int ktype=CV_64F]>
+
+--- Incoming ---
+[   'cv.getDerivKernels',
+    'void',
+    [],
+    [   ['Mat', 'kx', '', ['/O']],
+        ['Mat', 'ky', '', ['/O']],
+        ['int', 'dx', '', []],
+        ['int', 'dy', '', []],
+        ['int', 'ksize', '', []],
+        ['bool', 'normalize', 'false', []],
+        ['int', 'ktype', 'CV_32F', []]]]
+ok: FUNC <void cv..getDerivKernels [ARG Mat kx=, ARG Mat ky=, ARG int dx=, ARG int dy=, ARG int ksize=, ARG bool normalize=false, ARG int ktype=CV_32F]>
+
+--- Incoming ---
+[   'cv.getGaborKernel',
+    'Mat',
+    [],
+    [   ['Size', 'ksize', '', []],
+        ['double', 'sigma', '', []],
+        ['double', 'theta', '', []],
+        ['double', 'lambd', '', []],
+        ['double', 'gamma', '', []],
+        ['double', 'psi', 'CV_PI*0.5', []],
+        ['int', 'ktype', 'CV_64F', []]]]
+ok: FUNC <Mat cv..getGaborKernel [ARG Size ksize=, ARG double sigma=, ARG double theta=, ARG double lambd=, ARG double gamma=, ARG double psi=CV_PI*0.5, ARG int ktype=CV_64F]>
+
+--- Incoming ---
+[   'cv.getStructuringElement',
+    'Mat',
+    [],
+    [   ['int', 'shape', '', []],
+        ['Size', 'ksize', '', []],
+        ['Point', 'anchor', 'Point(-1,-1)', []]]]
+ok: FUNC <Mat cv..getStructuringElement [ARG int shape=, ARG Size ksize=, ARG Point anchor=Point(-1,-1)]>
+
+--- Incoming ---
+[   'cv.medianBlur',
+    'void',
+    [],
+    [   ['Mat', 'src', '', []],
+        ['Mat', 'dst', '', ['/O']],
+        ['int', 'ksize', '', []]]]
+ok: FUNC <void cv..medianBlur [ARG Mat src=, ARG Mat dst=, ARG int ksize=]>
+
+--- Incoming ---
+[   'cv.GaussianBlur',
+    'void',
+    [],
+    [   ['Mat', 'src', '', []],
+        ['Mat', 'dst', '', ['/O']],
+        ['Size', 'ksize', '', []],
+        ['double', 'sigmaX', '', []],
+        ['double', 'sigmaY', '0', []],
+        ['int', 'borderType', 'BORDER_DEFAULT', []]]]
+ok: FUNC <void cv..GaussianBlur [ARG Mat src=, ARG Mat dst=, ARG Size ksize=, ARG double sigmaX=, ARG double sigmaY=0, ARG int borderType=BORDER_DEFAULT]>
+
+--- Incoming ---
+[   'cv.bilateralFilter',
+    'void',
+    [],
+    [   ['Mat', 'src', '', []],
+        ['Mat', 'dst', '', ['/O']],
+        ['int', 'd', '', []],
+        ['double', 'sigmaColor', '', []],
+        ['double', 'sigmaSpace', '', []],
+        ['int', 'borderType', 'BORDER_DEFAULT', []]]]
+ok: FUNC <void cv..bilateralFilter [ARG Mat src=, ARG Mat dst=, ARG int d=, ARG double sigmaColor=, ARG double sigmaSpace=, ARG int borderType=BORDER_DEFAULT]>
+
+--- Incoming ---
+[   'cv.boxFilter',
+    'void',
+    [],
+    [   ['Mat', 'src', '', []],
+        ['Mat', 'dst', '', ['/O']],
+        ['int', 'ddepth', '', []],
+        ['Size', 'ksize', '', []],
+        ['Point', 'anchor', 'Point(-1,-1)', []],
+        ['bool', 'normalize', 'true', []],
+        ['int', 'borderType', 'BORDER_DEFAULT', []]]]
+ok: FUNC <void cv..boxFilter [ARG Mat src=, ARG Mat dst=, ARG int ddepth=, ARG Size ksize=, ARG Point anchor=Point(-1,-1), ARG bool normalize=true, ARG int borderType=BORDER_DEFAULT]>
+
+--- Incoming ---
+[   'cv.sqrBoxFilter',
+    'void',
+    [],
+    [   ['Mat', '_src', '', []],
+        ['Mat', '_dst', '', ['/O']],
+        ['int', 'ddepth', '', []],
+        ['Size', 'ksize', '', []],
+        ['Point', 'anchor', 'Point(-1, -1)', []],
+        ['bool', 'normalize', 'true', []],
+        ['int', 'borderType', 'BORDER_DEFAULT', []]]]
+ok: FUNC <void cv..sqrBoxFilter [ARG Mat _src=, ARG Mat _dst=, ARG int ddepth=, ARG Size ksize=, ARG Point anchor=Point(-1, -1), ARG bool normalize=true, ARG int borderType=BORDER_DEFAULT]>
+
+--- Incoming ---
+[   'cv.blur',
+    'void',
+    [],
+    [   ['Mat', 'src', '', []],
+        ['Mat', 'dst', '', ['/O']],
+        ['Size', 'ksize', '', []],
+        ['Point', 'anchor', 'Point(-1,-1)', []],
+        ['int', 'borderType', 'BORDER_DEFAULT', []]]]
+ok: FUNC <void cv..blur [ARG Mat src=, ARG Mat dst=, ARG Size ksize=, ARG Point anchor=Point(-1,-1), ARG int borderType=BORDER_DEFAULT]>
+
+--- Incoming ---
+[   'cv.filter2D',
+    'void',
+    [],
+    [   ['Mat', 'src', '', []],
+        ['Mat', 'dst', '', ['/O']],
+        ['int', 'ddepth', '', []],
+        ['Mat', 'kernel', '', []],
+        ['Point', 'anchor', 'Point(-1,-1)', []],
+        ['double', 'delta', '0', []],
+        ['int', 'borderType', 'BORDER_DEFAULT', []]]]
+ok: FUNC <void cv..filter2D [ARG Mat src=, ARG Mat dst=, ARG int ddepth=, ARG Mat kernel=, ARG Point anchor=Point(-1,-1), ARG double delta=0, ARG int borderType=BORDER_DEFAULT]>
+
+--- Incoming ---
+[   'cv.sepFilter2D',
+    'void',
+    [],
+    [   ['Mat', 'src', '', []],
+        ['Mat', 'dst', '', ['/O']],
+        ['int', 'ddepth', '', []],
+        ['Mat', 'kernelX', '', []],
+        ['Mat', 'kernelY', '', []],
+        ['Point', 'anchor', 'Point(-1,-1)', []],
+        ['double', 'delta', '0', []],
+        ['int', 'borderType', 'BORDER_DEFAULT', []]]]
+ok: FUNC <void cv..sepFilter2D [ARG Mat src=, ARG Mat dst=, ARG int ddepth=, ARG Mat kernelX=, ARG Mat kernelY=, ARG Point anchor=Point(-1,-1), ARG double delta=0, ARG int borderType=BORDER_DEFAULT]>
+
+--- Incoming ---
+[   'cv.Sobel',
+    'void',
+    [],
+    [   ['Mat', 'src', '', []],
+        ['Mat', 'dst', '', ['/O']],
+        ['int', 'ddepth', '', []],
+        ['int', 'dx', '', []],
+        ['int', 'dy', '', []],
+        ['int', 'ksize', '3', []],
+        ['double', 'scale', '1', []],
+        ['double', 'delta', '0', []],
+        ['int', 'borderType', 'BORDER_DEFAULT', []]]]
+ok: FUNC <void cv..Sobel [ARG Mat src=, ARG Mat dst=, ARG int ddepth=, ARG int dx=, ARG int dy=, ARG int ksize=3, ARG double scale=1, ARG double delta=0, ARG int borderType=BORDER_DEFAULT]>
+
+--- Incoming ---
+[   'cv.Scharr',
+    'void',
+    [],
+    [   ['Mat', 'src', '', []],
+        ['Mat', 'dst', '', ['/O']],
+        ['int', 'ddepth', '', []],
+        ['int', 'dx', '', []],
+        ['int', 'dy', '', []],
+        ['double', 'scale', '1', []],
+        ['double', 'delta', '0', []],
+        ['int', 'borderType', 'BORDER_DEFAULT', []]]]
+ok: FUNC <void cv..Scharr [ARG Mat src=, ARG Mat dst=, ARG int ddepth=, ARG int dx=, ARG int dy=, ARG double scale=1, ARG double delta=0, ARG int borderType=BORDER_DEFAULT]>
+
+--- Incoming ---
+[   'cv.Laplacian',
+    'void',
+    [],
+    [   ['Mat', 'src', '', []],
+        ['Mat', 'dst', '', ['/O']],
+        ['int', 'ddepth', '', []],
+        ['int', 'ksize', '1', []],
+        ['double', 'scale', '1', []],
+        ['double', 'delta', '0', []],
+        ['int', 'borderType', 'BORDER_DEFAULT', []]]]
+ok: FUNC <void cv..Laplacian [ARG Mat src=, ARG Mat dst=, ARG int ddepth=, ARG int ksize=1, ARG double scale=1, ARG double delta=0, ARG int borderType=BORDER_DEFAULT]>
+
+--- Incoming ---
+[   'cv.Canny',
+    'void',
+    [],
+    [   ['Mat', 'image', '', []],
+        ['Mat', 'edges', '', ['/O']],
+        ['double', 'threshold1', '', []],
+        ['double', 'threshold2', '', []],
+        ['int', 'apertureSize', '3', []],
+        ['bool', 'L2gradient', 'false', []]]]
+ok: FUNC <void cv..Canny [ARG Mat image=, ARG Mat edges=, ARG double threshold1=, ARG double threshold2=, ARG int apertureSize=3, ARG bool L2gradient=false]>
+
+--- Incoming ---
+[   'cv.cornerMinEigenVal',
+    'void',
+    [],
+    [   ['Mat', 'src', '', []],
+        ['Mat', 'dst', '', ['/O']],
+        ['int', 'blockSize', '', []],
+        ['int', 'ksize', '3', []],
+        ['int', 'borderType', 'BORDER_DEFAULT', []]]]
+ok: FUNC <void cv..cornerMinEigenVal [ARG Mat src=, ARG Mat dst=, ARG int blockSize=, ARG int ksize=3, ARG int borderType=BORDER_DEFAULT]>
+
+--- Incoming ---
+[   'cv.cornerHarris',
+    'void',
+    [],
+    [   ['Mat', 'src', '', []],
+        ['Mat', 'dst', '', ['/O']],
+        ['int', 'blockSize', '', []],
+        ['int', 'ksize', '', []],
+        ['double', 'k', '', []],
+        ['int', 'borderType', 'BORDER_DEFAULT', []]]]
+ok: FUNC <void cv..cornerHarris [ARG Mat src=, ARG Mat dst=, ARG int blockSize=, ARG int ksize=, ARG double k=, ARG int borderType=BORDER_DEFAULT]>
+
+--- Incoming ---
+[   'cv.cornerEigenValsAndVecs',
+    'void',
+    [],
+    [   ['Mat', 'src', '', []],
+        ['Mat', 'dst', '', ['/O']],
+        ['int', 'blockSize', '', []],
+        ['int', 'ksize', '', []],
+        ['int', 'borderType', 'BORDER_DEFAULT', []]]]
+ok: FUNC <void cv..cornerEigenValsAndVecs [ARG Mat src=, ARG Mat dst=, ARG int blockSize=, ARG int ksize=, ARG int borderType=BORDER_DEFAULT]>
+
+--- Incoming ---
+[   'cv.preCornerDetect',
+    'void',
+    [],
+    [   ['Mat', 'src', '', []],
+        ['Mat', 'dst', '', ['/O']],
+        ['int', 'ksize', '', []],
+        ['int', 'borderType', 'BORDER_DEFAULT', []]]]
+ok: FUNC <void cv..preCornerDetect [ARG Mat src=, ARG Mat dst=, ARG int ksize=, ARG int borderType=BORDER_DEFAULT]>
+
+--- Incoming ---
+[   'cv.cornerSubPix',
+    'void',
+    [],
+    [   ['Mat', 'image', '', []],
+        ['Mat', 'corners', '', ['/IO']],
+        ['Size', 'winSize', '', []],
+        ['Size', 'zeroZone', '', []],
+        ['TermCriteria', 'criteria', '', []]]]
+ok: FUNC <void cv..cornerSubPix [ARG Mat image=, ARG vector_Point2f corners=, ARG Size winSize=, ARG Size zeroZone=, ARG TermCriteria criteria=]>
+
+--- Incoming ---
+[   'cv.goodFeaturesToTrack',
+    'void',
+    [],
+    [   ['Mat', 'image', '', []],
+        ['Mat', 'corners', '', ['/O']],
+        ['int', 'maxCorners', '', []],
+        ['double', 'qualityLevel', '', []],
+        ['double', 'minDistance', '', []],
+        ['Mat', 'mask', 'Mat()', []],
+        ['int', 'blockSize', '3', []],
+        ['bool', 'useHarrisDetector', 'false', []],
+        ['double', 'k', '0.04', []]]]
+ok: FUNC <void cv..goodFeaturesToTrack [ARG Mat image=, ARG vector_Point corners=, ARG int maxCorners=, ARG double qualityLevel=, ARG double minDistance=, ARG Mat mask=Mat(), ARG int blockSize=3, ARG bool useHarrisDetector=false, ARG double k=0.04]>
+
+--- Incoming ---
+[   'cv.HoughLines',
+    'void',
+    [],
+    [   ['Mat', 'image', '', []],
+        ['Mat', 'lines', '', ['/O']],
+        ['double', 'rho', '', []],
+        ['double', 'theta', '', []],
+        ['int', 'threshold', '', []],
+        ['double', 'srn', '0', []],
+        ['double', 'stn', '0', []],
+        ['double', 'min_theta', '0', []],
+        ['double', 'max_theta', 'CV_PI', []]]]
+ok: FUNC <void cv..HoughLines [ARG Mat image=, ARG Mat lines=, ARG double rho=, ARG double theta=, ARG int threshold=, ARG double srn=0, ARG double stn=0, ARG double min_theta=0, ARG double max_theta=CV_PI]>
+
+--- Incoming ---
+[   'cv.HoughLinesP',
+    'void',
+    [],
+    [   ['Mat', 'image', '', []],
+        ['Mat', 'lines', '', ['/O']],
+        ['double', 'rho', '', []],
+        ['double', 'theta', '', []],
+        ['int', 'threshold', '', []],
+        ['double', 'minLineLength', '0', []],
+        ['double', 'maxLineGap', '0', []]]]
+ok: FUNC <void cv..HoughLinesP [ARG Mat image=, ARG Mat lines=, ARG double rho=, ARG double theta=, ARG int threshold=, ARG double minLineLength=0, ARG double maxLineGap=0]>
+
+--- Incoming ---
+[   'cv.HoughCircles',
+    'void',
+    [],
+    [   ['Mat', 'image', '', []],
+        ['Mat', 'circles', '', ['/O']],
+        ['int', 'method', '', []],
+        ['double', 'dp', '', []],
+        ['double', 'minDist', '', []],
+        ['double', 'param1', '100', []],
+        ['double', 'param2', '100', []],
+        ['int', 'minRadius', '0', []],
+        ['int', 'maxRadius', '0', []]]]
+ok: FUNC <void cv..HoughCircles [ARG Mat image=, ARG Mat circles=, ARG int method=, ARG double dp=, ARG double minDist=, ARG double param1=100, ARG double param2=100, ARG int minRadius=0, ARG int maxRadius=0]>
+
+--- Incoming ---
+[   'cv.erode',
+    'void',
+    [],
+    [   ['Mat', 'src', '', []],
+        ['Mat', 'dst', '', ['/O']],
+        ['Mat', 'kernel', '', []],
+        ['Point', 'anchor', 'Point(-1,-1)', []],
+        ['int', 'iterations', '1', []],
+        ['int', 'borderType', 'BORDER_CONSTANT', []],
+        ['Scalar', 'borderValue', 'morphologyDefaultBorderValue()', []]]]
+ok: FUNC <void cv..erode [ARG Mat src=, ARG Mat dst=, ARG Mat kernel=, ARG Point anchor=Point(-1,-1), ARG int iterations=1, ARG int borderType=BORDER_CONSTANT, ARG Scalar borderValue=morphologyDefaultBorderValue()]>
+
+--- Incoming ---
+[   'cv.dilate',
+    'void',
+    [],
+    [   ['Mat', 'src', '', []],
+        ['Mat', 'dst', '', ['/O']],
+        ['Mat', 'kernel', '', []],
+        ['Point', 'anchor', 'Point(-1,-1)', []],
+        ['int', 'iterations', '1', []],
+        ['int', 'borderType', 'BORDER_CONSTANT', []],
+        ['Scalar', 'borderValue', 'morphologyDefaultBorderValue()', []]]]
+ok: FUNC <void cv..dilate [ARG Mat src=, ARG Mat dst=, ARG Mat kernel=, ARG Point anchor=Point(-1,-1), ARG int iterations=1, ARG int borderType=BORDER_CONSTANT, ARG Scalar borderValue=morphologyDefaultBorderValue()]>
+
+--- Incoming ---
+[   'cv.morphologyEx',
+    'void',
+    [],
+    [   ['Mat', 'src', '', []],
+        ['Mat', 'dst', '', ['/O']],
+        ['int', 'op', '', []],
+        ['Mat', 'kernel', '', []],
+        ['Point', 'anchor', 'Point(-1,-1)', []],
+        ['int', 'iterations', '1', []],
+        ['int', 'borderType', 'BORDER_CONSTANT', []],
+        ['Scalar', 'borderValue', 'morphologyDefaultBorderValue()', []]]]
+ok: FUNC <void cv..morphologyEx [ARG Mat src=, ARG Mat dst=, ARG int op=, ARG Mat kernel=, ARG Point anchor=Point(-1,-1), ARG int iterations=1, ARG int borderType=BORDER_CONSTANT, ARG Scalar borderValue=morphologyDefaultBorderValue()]>
+
+--- Incoming ---
+[   'cv.resize',
+    'void',
+    [],
+    [   ['Mat', 'src', '', []],
+        ['Mat', 'dst', '', ['/O']],
+        ['Size', 'dsize', '', []],
+        ['double', 'fx', '0', []],
+        ['double', 'fy', '0', []],
+        ['int', 'interpolation', 'INTER_LINEAR', []]]]
+ok: FUNC <void cv..resize [ARG Mat src=, ARG Mat dst=, ARG Size dsize=, ARG double fx=0, ARG double fy=0, ARG int interpolation=INTER_LINEAR]>
+
+--- Incoming ---
+[   'cv.warpAffine',
+    'void',
+    [],
+    [   ['Mat', 'src', '', []],
+        ['Mat', 'dst', '', ['/O']],
+        ['Mat', 'M', '', []],
+        ['Size', 'dsize', '', []],
+        ['int', 'flags', 'INTER_LINEAR', []],
+        ['int', 'borderMode', 'BORDER_CONSTANT', []],
+        ['Scalar', 'borderValue', 'Scalar()', []]]]
+ok: FUNC <void cv..warpAffine [ARG Mat src=, ARG Mat dst=, ARG Mat M=, ARG Size dsize=, ARG int flags=INTER_LINEAR, ARG int borderMode=BORDER_CONSTANT, ARG Scalar borderValue=Scalar()]>
+
+--- Incoming ---
+[   'cv.warpPerspective',
+    'void',
+    [],
+    [   ['Mat', 'src', '', []],
+        ['Mat', 'dst', '', ['/O']],
+        ['Mat', 'M', '', []],
+        ['Size', 'dsize', '', []],
+        ['int', 'flags', 'INTER_LINEAR', []],
+        ['int', 'borderMode', 'BORDER_CONSTANT', []],
+        ['Scalar', 'borderValue', 'Scalar()', []]]]
+ok: FUNC <void cv..warpPerspective [ARG Mat src=, ARG Mat dst=, ARG Mat M=, ARG Size dsize=, ARG int flags=INTER_LINEAR, ARG int borderMode=BORDER_CONSTANT, ARG Scalar borderValue=Scalar()]>
+
+--- Incoming ---
+[   'cv.remap',
+    'void',
+    [],
+    [   ['Mat', 'src', '', []],
+        ['Mat', 'dst', '', ['/O']],
+        ['Mat', 'map1', '', []],
+        ['Mat', 'map2', '', []],
+        ['int', 'interpolation', '', []],
+        ['int', 'borderMode', 'BORDER_CONSTANT', []],
+        ['Scalar', 'borderValue', 'Scalar()', []]]]
+ok: FUNC <void cv..remap [ARG Mat src=, ARG Mat dst=, ARG Mat map1=, ARG Mat map2=, ARG int interpolation=, ARG int borderMode=BORDER_CONSTANT, ARG Scalar borderValue=Scalar()]>
+
+--- Incoming ---
+[   'cv.convertMaps',
+    'void',
+    [],
+    [   ['Mat', 'map1', '', []],
+        ['Mat', 'map2', '', []],
+        ['Mat', 'dstmap1', '', ['/O']],
+        ['Mat', 'dstmap2', '', ['/O']],
+        ['int', 'dstmap1type', '', []],
+        ['bool', 'nninterpolation', 'false', []]]]
+ok: FUNC <void cv..convertMaps [ARG Mat map1=, ARG Mat map2=, ARG Mat dstmap1=, ARG Mat dstmap2=, ARG int dstmap1type=, ARG bool nninterpolation=false]>
+
+--- Incoming ---
+[   'cv.getRotationMatrix2D',
+    'Mat',
+    [],
+    [   ['Point2f', 'center', '', []],
+        ['double', 'angle', '', []],
+        ['double', 'scale', '', []]]]
+ok: FUNC <Mat cv..getRotationMatrix2D [ARG Point2f center=, ARG double angle=, ARG double scale=]>
+
+--- Incoming ---
+[   'cv.invertAffineTransform',
+    'void',
+    [],
+    [['Mat', 'M', '', []], ['Mat', 'iM', '', ['/O']]]]
+ok: FUNC <void cv..invertAffineTransform [ARG Mat M=, ARG Mat iM=]>
+
+--- Incoming ---
+[   'cv.getPerspectiveTransform',
+    'Mat',
+    [],
+    [['Mat', 'src', '', []], ['Mat', 'dst', '', []]]]
+ok: FUNC <Mat cv..getPerspectiveTransform [ARG Mat src=, ARG Mat dst=]>
+
+--- Incoming ---
+[   'cv.getAffineTransform',
+    'Mat',
+    [],
+    [['Mat', 'src', '', []], ['Mat', 'dst', '', []]]]
+ok: FUNC <Mat cv..getAffineTransform [ARG vector_Point2f src=, ARG vector_Point2f dst=]>
+
+--- Incoming ---
+[   'cv.getRectSubPix',
+    'void',
+    [],
+    [   ['Mat', 'image', '', []],
+        ['Size', 'patchSize', '', []],
+        ['Point2f', 'center', '', []],
+        ['Mat', 'patch', '', ['/O']],
+        ['int', 'patchType', '-1', []]]]
+ok: FUNC <void cv..getRectSubPix [ARG Mat image=, ARG Size patchSize=, ARG Point2f center=, ARG Mat patch=, ARG int patchType=-1]>
+
+--- Incoming ---
+[   'cv.logPolar',
+    'void',
+    [],
+    [   ['Mat', 'src', '', []],
+        ['Mat', 'dst', '', ['/O']],
+        ['Point2f', 'center', '', []],
+        ['double', 'M', '', []],
+        ['int', 'flags', '', []]]]
+ok: FUNC <void cv..logPolar [ARG Mat src=, ARG Mat dst=, ARG Point2f center=, ARG double M=, ARG int flags=]>
+
+--- Incoming ---
+[   'cv.linearPolar',
+    'void',
+    [],
+    [   ['Mat', 'src', '', []],
+        ['Mat', 'dst', '', ['/O']],
+        ['Point2f', 'center', '', []],
+        ['double', 'maxRadius', '', []],
+        ['int', 'flags', '', []]]]
+ok: FUNC <void cv..linearPolar [ARG Mat src=, ARG Mat dst=, ARG Point2f center=, ARG double maxRadius=, ARG int flags=]>
+
+--- Incoming ---
+[   'cv.integral',
+    'void',
+    [],
+    [   ['Mat', 'src', '', []],
+        ['Mat', 'sum', '', ['/O']],
+        ['int', 'sdepth', '-1', []]]]
+ok: FUNC <void cv..integral [ARG Mat src=, ARG Mat sum=, ARG int sdepth=-1]>
+
+--- Incoming ---
+[   'cv.integral',
+    'void',
+    ['=integral2'],
+    [   ['Mat', 'src', '', []],
+        ['Mat', 'sum', '', ['/O']],
+        ['Mat', 'sqsum', '', ['/O']],
+        ['int', 'sdepth', '-1', []],
+        ['int', 'sqdepth', '-1', []]]]
+ok: FUNC <void cv..integral [ARG Mat src=, ARG Mat sum=, ARG Mat sqsum=, ARG int sdepth=-1, ARG int sqdepth=-1]>
+
+--- Incoming ---
+[   'cv.integral',
+    'void',
+    ['=integral3'],
+    [   ['Mat', 'src', '', []],
+        ['Mat', 'sum', '', ['/O']],
+        ['Mat', 'sqsum', '', ['/O']],
+        ['Mat', 'tilted', '', ['/O']],
+        ['int', 'sdepth', '-1', []],
+        ['int', 'sqdepth', '-1', []]]]
+ok: FUNC <void cv..integral [ARG Mat src=, ARG Mat sum=, ARG Mat sqsum=, ARG Mat tilted=, ARG int sdepth=-1, ARG int sqdepth=-1]>
+
+--- Incoming ---
+[   'cv.accumulate',
+    'void',
+    [],
+    [   ['Mat', 'src', '', []],
+        ['Mat', 'dst', '', ['/IO']],
+        ['Mat', 'mask', 'Mat()', []]]]
+ok: FUNC <void cv..accumulate [ARG Mat src=, ARG Mat dst=, ARG Mat mask=Mat()]>
+
+--- Incoming ---
+[   'cv.accumulateSquare',
+    'void',
+    [],
+    [   ['Mat', 'src', '', []],
+        ['Mat', 'dst', '', ['/IO']],
+        ['Mat', 'mask', 'Mat()', []]]]
+ok: FUNC <void cv..accumulateSquare [ARG Mat src=, ARG Mat dst=, ARG Mat mask=Mat()]>
+
+--- Incoming ---
+[   'cv.accumulateProduct',
+    'void',
+    [],
+    [   ['Mat', 'src1', '', []],
+        ['Mat', 'src2', '', []],
+        ['Mat', 'dst', '', ['/IO']],
+        ['Mat', 'mask', 'Mat()', []]]]
+ok: FUNC <void cv..accumulateProduct [ARG Mat src1=, ARG Mat src2=, ARG Mat dst=, ARG Mat mask=Mat()]>
+
+--- Incoming ---
+[   'cv.accumulateWeighted',
+    'void',
+    [],
+    [   ['Mat', 'src', '', []],
+        ['Mat', 'dst', '', ['/IO']],
+        ['double', 'alpha', '', []],
+        ['Mat', 'mask', 'Mat()', []]]]
+ok: FUNC <void cv..accumulateWeighted [ARG Mat src=, ARG Mat dst=, ARG double alpha=, ARG Mat mask=Mat()]>
+
+--- Incoming ---
+[   'cv.phaseCorrelate',
+    'Point2d',
+    [],
+    [   ['Mat', 'src1', '', []],
+        ['Mat', 'src2', '', []],
+        ['Mat', 'window', 'Mat()', []],
+        ['double*', 'response', '0', ['/O']]]]
+ok: FUNC <Point2d cv..phaseCorrelate [ARG Mat src1=, ARG Mat src2=, ARG Mat window=Mat(), ARG double * response=0]>
+
+--- Incoming ---
+[   'cv.createHanningWindow',
+    'void',
+    [],
+    [   ['Mat', 'dst', '', ['/O']],
+        ['Size', 'winSize', '', []],
+        ['int', 'type', '', []]]]
+ok: FUNC <void cv..createHanningWindow [ARG Mat dst=, ARG Size winSize=, ARG int type=]>
+
+--- Incoming ---
+[   'cv.threshold',
+    'double',
+    [],
+    [   ['Mat', 'src', '', []],
+        ['Mat', 'dst', '', ['/O']],
+        ['double', 'thresh', '', []],
+        ['double', 'maxval', '', []],
+        ['int', 'type', '', []]]]
+ok: FUNC <double cv..threshold [ARG Mat src=, ARG Mat dst=, ARG double thresh=, ARG double maxval=, ARG int type=]>
+
+--- Incoming ---
+[   'cv.adaptiveThreshold',
+    'void',
+    [],
+    [   ['Mat', 'src', '', []],
+        ['Mat', 'dst', '', ['/O']],
+        ['double', 'maxValue', '', []],
+        ['int', 'adaptiveMethod', '', []],
+        ['int', 'thresholdType', '', []],
+        ['int', 'blockSize', '', []],
+        ['double', 'C', '', []]]]
+ok: FUNC <void cv..adaptiveThreshold [ARG Mat src=, ARG Mat dst=, ARG double maxValue=, ARG int adaptiveMethod=, ARG int thresholdType=, ARG int blockSize=, ARG double C=]>
+
+--- Incoming ---
+[   'cv.pyrDown',
+    'void',
+    [],
+    [   ['Mat', 'src', '', []],
+        ['Mat', 'dst', '', ['/O']],
+        ['Size', 'dstsize', 'Size()', []],
+        ['int', 'borderType', 'BORDER_DEFAULT', []]]]
+ok: FUNC <void cv..pyrDown [ARG Mat src=, ARG Mat dst=, ARG Size dstsize=Size(), ARG int borderType=BORDER_DEFAULT]>
+
+--- Incoming ---
+[   'cv.pyrUp',
+    'void',
+    [],
+    [   ['Mat', 'src', '', []],
+        ['Mat', 'dst', '', ['/O']],
+        ['Size', 'dstsize', 'Size()', []],
+        ['int', 'borderType', 'BORDER_DEFAULT', []]]]
+ok: FUNC <void cv..pyrUp [ARG Mat src=, ARG Mat dst=, ARG Size dstsize=Size(), ARG int borderType=BORDER_DEFAULT]>
+
+--- Incoming ---
+[   'cv.undistort',
+    'void',
+    [],
+    [   ['Mat', 'src', '', []],
+        ['Mat', 'dst', '', ['/O']],
+        ['Mat', 'cameraMatrix', '', []],
+        ['Mat', 'distCoeffs', '', []],
+        ['Mat', 'newCameraMatrix', 'Mat()', []]]]
+ok: FUNC <void cv..undistort [ARG Mat src=, ARG Mat dst=, ARG Mat cameraMatrix=, ARG Mat distCoeffs=, ARG Mat newCameraMatrix=Mat()]>
+
+--- Incoming ---
+[   'cv.initUndistortRectifyMap',
+    'void',
+    [],
+    [   ['Mat', 'cameraMatrix', '', []],
+        ['Mat', 'distCoeffs', '', []],
+        ['Mat', 'R', '', []],
+        ['Mat', 'newCameraMatrix', '', []],
+        ['Size', 'size', '', []],
+        ['int', 'm1type', '', []],
+        ['Mat', 'map1', '', ['/O']],
+        ['Mat', 'map2', '', ['/O']]]]
+ok: FUNC <void cv..initUndistortRectifyMap [ARG Mat cameraMatrix=, ARG Mat distCoeffs=, ARG Mat R=, ARG Mat newCameraMatrix=, ARG Size size=, ARG int m1type=, ARG Mat map1=, ARG Mat map2=]>
+
+--- Incoming ---
+[   'cv.initWideAngleProjMap',
+    'float',
+    [],
+    [   ['Mat', 'cameraMatrix', '', []],
+        ['Mat', 'distCoeffs', '', []],
+        ['Size', 'imageSize', '', []],
+        ['int', 'destImageWidth', '', []],
+        ['int', 'm1type', '', []],
+        ['Mat', 'map1', '', ['/O']],
+        ['Mat', 'map2', '', ['/O']],
+        ['int', 'projType', 'PROJ_SPHERICAL_EQRECT', []],
+        ['double', 'alpha', '0', []]]]
+ok: FUNC <float cv..initWideAngleProjMap [ARG Mat cameraMatrix=, ARG Mat distCoeffs=, ARG Size imageSize=, ARG int destImageWidth=, ARG int m1type=, ARG Mat map1=, ARG Mat map2=, ARG int projType=PROJ_SPHERICAL_EQRECT, ARG double alpha=0]>
+
+--- Incoming ---
+[   'cv.getDefaultNewCameraMatrix',
+    'Mat',
+    [],
+    [   ['Mat', 'cameraMatrix', '', []],
+        ['Size', 'imgsize', 'Size()', []],
+        ['bool', 'centerPrincipalPoint', 'false', []]]]
+ok: FUNC <Mat cv..getDefaultNewCameraMatrix [ARG Mat cameraMatrix=, ARG Size imgsize=Size(), ARG bool centerPrincipalPoint=false]>
+
+--- Incoming ---
+[   'cv.undistortPoints',
+    'void',
+    [],
+    [   ['Mat', 'src', '', []],
+        ['Mat', 'dst', '', ['/O']],
+        ['Mat', 'cameraMatrix', '', []],
+        ['Mat', 'distCoeffs', '', []],
+        ['Mat', 'R', 'Mat()', []],
+        ['Mat', 'P', 'Mat()', []]]]
+ok: FUNC <void cv..undistortPoints [ARG vector_Point2f src=, ARG vector_Point2f dst=, ARG Mat cameraMatrix=, ARG Mat distCoeffs=, ARG Mat R=Mat(), ARG Mat P=Mat()]>
+
+--- Incoming ---
+[   'cv.calcHist',
+    'void',
+    [],
+    [   ['vector_Mat', 'images', '', []],
+        ['vector_int', 'channels', '', []],
+        ['Mat', 'mask', '', []],
+        ['Mat', 'hist', '', ['/O']],
+        ['vector_int', 'histSize', '', []],
+        ['vector_float', 'ranges', '', []],
+        ['bool', 'accumulate', 'false', []]]]
+ok: FUNC <void cv..calcHist [ARG vector_Mat images=, ARG vector_int channels=, ARG Mat mask=, ARG Mat hist=, ARG vector_int histSize=, ARG vector_float ranges=, ARG bool accumulate=false]>
+
+--- Incoming ---
+[   'cv.calcBackProject',
+    'void',
+    [],
+    [   ['vector_Mat', 'images', '', []],
+        ['vector_int', 'channels', '', []],
+        ['Mat', 'hist', '', []],
+        ['Mat', 'dst', '', ['/O']],
+        ['vector_float', 'ranges', '', []],
+        ['double', 'scale', '', []]]]
+ok: FUNC <void cv..calcBackProject [ARG vector_Mat images=, ARG vector_int channels=, ARG Mat hist=, ARG Mat dst=, ARG vector_float ranges=, ARG double scale=]>
+
+--- Incoming ---
+[   'cv.compareHist',
+    'double',
+    [],
+    [['Mat', 'H1', '', []], ['Mat', 'H2', '', []], ['int', 'method', '', []]]]
+ok: FUNC <double cv..compareHist [ARG Mat H1=, ARG Mat H2=, ARG int method=]>
+
+--- Incoming ---
+[   'cv.equalizeHist',
+    'void',
+    [],
+    [['Mat', 'src', '', []], ['Mat', 'dst', '', ['/O']]]]
+ok: FUNC <void cv..equalizeHist [ARG Mat src=, ARG Mat dst=]>
+
+--- Incoming ---
+[   'cv.watershed',
+    'void',
+    [],
+    [['Mat', 'image', '', []], ['Mat', 'markers', '', ['/IO']]]]
+ok: FUNC <void cv..watershed [ARG Mat image=, ARG Mat markers=]>
+
+--- Incoming ---
+[   'cv.pyrMeanShiftFiltering',
+    'void',
+    [],
+    [   ['Mat', 'src', '', []],
+        ['Mat', 'dst', '', ['/O']],
+        ['double', 'sp', '', []],
+        ['double', 'sr', '', []],
+        ['int', 'maxLevel', '1', []],
+        [   'TermCriteria',
+            'termcrit',
+            'TermCriteria(TermCriteria::MAX_ITER+TermCriteria::EPS,5,1)',
+            []]]]
+ok: FUNC <void cv..pyrMeanShiftFiltering [ARG Mat src=, ARG Mat dst=, ARG double sp=, ARG double sr=, ARG int maxLevel=1, ARG TermCriteria termcrit=TermCriteria(TermCriteria::MAX_ITER+TermCriteria::EPS,5,1)]>
+
+--- Incoming ---
+[   'cv.grabCut',
+    'void',
+    [],
+    [   ['Mat', 'img', '', []],
+        ['Mat', 'mask', '', ['/IO']],
+        ['Rect', 'rect', '', []],
+        ['Mat', 'bgdModel', '', ['/IO']],
+        ['Mat', 'fgdModel', '', ['/IO']],
+        ['int', 'iterCount', '', []],
+        ['int', 'mode', 'GC_EVAL', []]]]
+ok: FUNC <void cv..grabCut [ARG Mat img=, ARG Mat mask=, ARG Rect rect=, ARG Mat bgdModel=, ARG Mat fgdModel=, ARG int iterCount=, ARG int mode=GC_EVAL]>
+
+--- Incoming ---
+[   'cv.distanceTransform',
+    'void',
+    ['=distanceTransformWithLabels'],
+    [   ['Mat', 'src', '', []],
+        ['Mat', 'dst', '', ['/O']],
+        ['Mat', 'labels', '', ['/O']],
+        ['int', 'distanceType', '', []],
+        ['int', 'maskSize', '', []],
+        ['int', 'labelType', 'DIST_LABEL_CCOMP', []]]]
+ok: FUNC <void cv..distanceTransform [ARG Mat src=, ARG Mat dst=, ARG Mat labels=, ARG int distanceType=, ARG int maskSize=, ARG int labelType=DIST_LABEL_CCOMP]>
+
+--- Incoming ---
+[   'cv.distanceTransform',
+    'void',
+    [],
+    [   ['Mat', 'src', '', []],
+        ['Mat', 'dst', '', ['/O']],
+        ['int', 'distanceType', '', []],
+        ['int', 'maskSize', '', []],
+        ['int', 'dstType', 'CV_32F', []]]]
+ok: FUNC <void cv..distanceTransform [ARG Mat src=, ARG Mat dst=, ARG int distanceType=, ARG int maskSize=, ARG int dstType=CV_32F]>
+
+--- Incoming ---
+[   'cv.floodFill',
+    'int',
+    [],
+    [   ['Mat', 'image', '', ['/IO']],
+        ['Mat', 'mask', '', ['/IO']],
+        ['Point', 'seedPoint', '', []],
+        ['Scalar', 'newVal', '', []],
+        ['Rect*', 'rect', '0', ['/O']],
+        ['Scalar', 'loDiff', 'Scalar()', []],
+        ['Scalar', 'upDiff', 'Scalar()', []],
+        ['int', 'flags', '4', []]]]
+ok: FUNC <int cv..floodFill [ARG Mat image=, ARG Mat mask=, ARG Point seedPoint=, ARG Scalar newVal=, ARG Rect * rect=0, ARG Scalar loDiff=Scalar(), ARG Scalar upDiff=Scalar(), ARG int flags=4]>
+
+--- Incoming ---
+[   'cv.cvtColor',
+    'void',
+    [],
+    [   ['Mat', 'src', '', []],
+        ['Mat', 'dst', '', ['/O']],
+        ['int', 'code', '', []],
+        ['int', 'dstCn', '0', []]]]
+ok: FUNC <void cv..cvtColor [ARG Mat src=, ARG Mat dst=, ARG int code=, ARG int dstCn=0]>
+
+--- Incoming ---
+[   'cv.demosaicing',
+    'void',
+    [],
+    [   ['Mat', '_src', '', []],
+        ['Mat', '_dst', '', ['/O']],
+        ['int', 'code', '', []],
+        ['int', 'dcn', '0', []]]]
+ok: FUNC <void cv..demosaicing [ARG Mat _src=, ARG Mat _dst=, ARG int code=, ARG int dcn=0]>
+
+--- Incoming ---
+[   'cv.moments',
+    'Moments',
+    [],
+    [['Mat', 'array', '', []], ['bool', 'binaryImage', 'false', []]]]
+ok: FUNC <Moments cv..moments [ARG Mat array=, ARG bool binaryImage=false]>
+
+--- Incoming ---
+[   'cv.HuMoments',
+    'void',
+    [],
+    [['Moments', 'm', '', []], ['Mat', 'hu', '', ['/O']]]]
+ok: FUNC <void cv..HuMoments [ARG Moments m=, ARG Mat hu=]>
+
+--- Incoming ---
+[   'cv.matchTemplate',
+    'void',
+    [],
+    [   ['Mat', 'image', '', []],
+        ['Mat', 'templ', '', []],
+        ['Mat', 'result', '', ['/O']],
+        ['int', 'method', '', []]]]
+ok: FUNC <void cv..matchTemplate [ARG Mat image=, ARG Mat templ=, ARG Mat result=, ARG int method=]>
+
+--- Incoming ---
+[   'cv.connectedComponents',
+    'int',
+    [],
+    [   ['Mat', 'image', '', []],
+        ['Mat', 'labels', '', ['/O']],
+        ['int', 'connectivity', '8', []],
+        ['int', 'ltype', 'CV_32S', []]]]
+ok: FUNC <int cv..connectedComponents [ARG Mat image=, ARG Mat labels=, ARG int connectivity=8, ARG int ltype=CV_32S]>
+
+--- Incoming ---
+[   'cv.connectedComponentsWithStats',
+    'int',
+    [],
+    [   ['Mat', 'image', '', []],
+        ['Mat', 'labels', '', ['/O']],
+        ['Mat', 'stats', '', ['/O']],
+        ['Mat', 'centroids', '', ['/O']],
+        ['int', 'connectivity', '8', []],
+        ['int', 'ltype', 'CV_32S', []]]]
+ok: FUNC <int cv..connectedComponentsWithStats [ARG Mat image=, ARG Mat labels=, ARG Mat stats=, ARG Mat centroids=, ARG int connectivity=8, ARG int ltype=CV_32S]>
+
+--- Incoming ---
+[   'cv.findContours',
+    'void',
+    [],
+    [   ['Mat', 'image', '', ['/IO']],
+        ['vector_Mat', 'contours', '', ['/O']],
+        ['Mat', 'hierarchy', '', ['/O']],
+        ['int', 'mode', '', []],
+        ['int', 'method', '', []],
+        ['Point', 'offset', 'Point()', []]]]
+ok: FUNC <void cv..findContours [ARG Mat image=, ARG vector_vector_Point contours=, ARG Mat hierarchy=, ARG int mode=, ARG int method=, ARG Point offset=Point()]>
+
+--- Incoming ---
+[   'cv.approxPolyDP',
+    'void',
+    [],
+    [   ['Mat', 'curve', '', []],
+        ['Mat', 'approxCurve', '', ['/O']],
+        ['double', 'epsilon', '', []],
+        ['bool', 'closed', '', []]]]
+ok: FUNC <void cv..approxPolyDP [ARG vector_Point2f curve=, ARG vector_Point2f approxCurve=, ARG double epsilon=, ARG bool closed=]>
+
+--- Incoming ---
+[   'cv.arcLength',
+    'double',
+    [],
+    [['Mat', 'curve', '', []], ['bool', 'closed', '', []]]]
+ok: FUNC <double cv..arcLength [ARG vector_Point2f curve=, ARG bool closed=]>
+
+--- Incoming ---
+['cv.boundingRect', 'Rect', [], [['Mat', 'points', '', []]]]
+ok: FUNC <Rect cv..boundingRect [ARG vector_Point points=]>
+
+--- Incoming ---
+[   'cv.contourArea',
+    'double',
+    [],
+    [['Mat', 'contour', '', []], ['bool', 'oriented', 'false', []]]]
+ok: FUNC <double cv..contourArea [ARG Mat contour=, ARG bool oriented=false]>
+
+--- Incoming ---
+['cv.minAreaRect', 'RotatedRect', [], [['Mat', 'points', '', []]]]
+ok: FUNC <RotatedRect cv..minAreaRect [ARG vector_Point2f points=]>
+
+--- Incoming ---
+[   'cv.boxPoints',
+    'void',
+    [],
+    [['RotatedRect', 'box', '', []], ['Mat', 'points', '', ['/O']]]]
+ok: FUNC <void cv..boxPoints [ARG RotatedRect box=, ARG Mat points=]>
+
+--- Incoming ---
+[   'cv.minEnclosingCircle',
+    'void',
+    [],
+    [   ['Mat', 'points', '', []],
+        ['Point2f', 'center', '', ['/O']],
+        ['float', 'radius', '', ['/O']]]]
+ok: FUNC <void cv..minEnclosingCircle [ARG vector_Point2f points=, ARG Point2f center=, ARG float radius=]>
+
+--- Incoming ---
+[   'cv.minEnclosingTriangle',
+    'double',
+    [],
+    [['Mat', 'points', '', []], ['Mat', 'triangle', '', ['/O', '/O']]]]
+ok: FUNC <double cv..minEnclosingTriangle [ARG Mat points=, ARG Mat triangle=]>
+
+--- Incoming ---
+[   'cv.matchShapes',
+    'double',
+    [],
+    [   ['Mat', 'contour1', '', []],
+        ['Mat', 'contour2', '', []],
+        ['int', 'method', '', []],
+        ['double', 'parameter', '', []]]]
+ok: FUNC <double cv..matchShapes [ARG Mat contour1=, ARG Mat contour2=, ARG int method=, ARG double parameter=]>
+
+--- Incoming ---
+[   'cv.convexHull',
+    'void',
+    [],
+    [   ['Mat', 'points', '', []],
+        ['Mat', 'hull', '', ['/O']],
+        ['bool', 'clockwise', 'false', []],
+        ['bool', 'returnPoints', 'true', []]]]
+ok: FUNC <void cv..convexHull [ARG vector_Point points=, ARG vector_int hull=, ARG bool clockwise=false, ARG  returnPoints=true]>
+
+--- Incoming ---
+[   'cv.convexityDefects',
+    'void',
+    [],
+    [   ['Mat', 'contour', '', []],
+        ['Mat', 'convexhull', '', []],
+        ['Mat', 'convexityDefects', '', ['/O']]]]
+ok: FUNC <void cv..convexityDefects [ARG vector_Point contour=, ARG vector_int convexhull=, ARG vector_Vec4i convexityDefects=]>
+
+--- Incoming ---
+['cv.isContourConvex', 'bool', [], [['Mat', 'contour', '', []]]]
+ok: FUNC <bool cv..isContourConvex [ARG vector_Point contour=]>
+
+--- Incoming ---
+[   'cv.intersectConvexConvex',
+    'float',
+    [],
+    [   ['Mat', '_p1', '', []],
+        ['Mat', '_p2', '', []],
+        ['Mat', '_p12', '', ['/O']],
+        ['bool', 'handleNested', 'true', []]]]
+ok: FUNC <float cv..intersectConvexConvex [ARG Mat _p1=, ARG Mat _p2=, ARG Mat _p12=, ARG bool handleNested=true]>
+
+--- Incoming ---
+['cv.fitEllipse', 'RotatedRect', [], [['Mat', 'points', '', []]]]
+ok: FUNC <RotatedRect cv..fitEllipse [ARG vector_Point2f points=]>
+
+--- Incoming ---
+[   'cv.fitLine',
+    'void',
+    [],
+    [   ['Mat', 'points', '', []],
+        ['Mat', 'line', '', ['/O']],
+        ['int', 'distType', '', []],
+        ['double', 'param', '', []],
+        ['double', 'reps', '', []],
+        ['double', 'aeps', '', []]]]
+ok: FUNC <void cv..fitLine [ARG Mat points=, ARG Mat line=, ARG int distType=, ARG double param=, ARG double reps=, ARG double aeps=]>
+
+--- Incoming ---
+[   'cv.pointPolygonTest',
+    'double',
+    [],
+    [   ['Mat', 'contour', '', []],
+        ['Point2f', 'pt', '', []],
+        ['bool', 'measureDist', '', []]]]
+ok: FUNC <double cv..pointPolygonTest [ARG vector_Point2f contour=, ARG Point2f pt=, ARG bool measureDist=]>
+
+--- Incoming ---
+[   'cv.rotatedRectangleIntersection',
+    'int',
+    [],
+    [   ['RotatedRect', 'rect1', '', []],
+        ['RotatedRect', 'rect2', '', []],
+        ['Mat', 'intersectingRegion', '', ['/O']]]]
+ok: FUNC <int cv..rotatedRectangleIntersection [ARG RotatedRect rect1=, ARG RotatedRect rect2=, ARG Mat intersectingRegion=]>
+
+--- Incoming ---
+[   'cv.createCLAHE',
+    'Ptr_CLAHE',
+    [],
+    [   ['double', 'clipLimit', '40.0', []],
+        ['Size', 'tileGridSize', 'Size(8, 8)', []]]]
+ok: FUNC <Ptr_CLAHE cv..createCLAHE [ARG double clipLimit=40.0, ARG Size tileGridSize=Size(8, 8)]>
+
+--- Incoming ---
+['const cv.COLORMAP_AUTUMN', '0', [], []]
+ok: CONST COLORMAP_AUTUMN=0
+
+--- Incoming ---
+['const cv.COLORMAP_BONE', '1', [], []]
+ok: CONST COLORMAP_BONE=1
+
+--- Incoming ---
+['const cv.COLORMAP_JET', '2', [], []]
+ok: CONST COLORMAP_JET=2
+
+--- Incoming ---
+['const cv.COLORMAP_WINTER', '3', [], []]
+ok: CONST COLORMAP_WINTER=3
+
+--- Incoming ---
+['const cv.COLORMAP_RAINBOW', '4', [], []]
+ok: CONST COLORMAP_RAINBOW=4
+
+--- Incoming ---
+['const cv.COLORMAP_OCEAN', '5', [], []]
+ok: CONST COLORMAP_OCEAN=5
+
+--- Incoming ---
+['const cv.COLORMAP_SUMMER', '6', [], []]
+ok: CONST COLORMAP_SUMMER=6
+
+--- Incoming ---
+['const cv.COLORMAP_SPRING', '7', [], []]
+ok: CONST COLORMAP_SPRING=7
+
+--- Incoming ---
+['const cv.COLORMAP_COOL', '8', [], []]
+ok: CONST COLORMAP_COOL=8
+
+--- Incoming ---
+['const cv.COLORMAP_HSV', '9', [], []]
+ok: CONST COLORMAP_HSV=9
+
+--- Incoming ---
+['const cv.COLORMAP_PINK', '10', [], []]
+ok: CONST COLORMAP_PINK=10
+
+--- Incoming ---
+['const cv.COLORMAP_HOT', '11', [], []]
+ok: CONST COLORMAP_HOT=11
+
+--- Incoming ---
+[   'cv.applyColorMap',
+    'void',
+    [],
+    [   ['Mat', 'src', '', []],
+        ['Mat', 'dst', '', ['/O']],
+        ['int', 'colormap', '', []]]]
+ok: FUNC <void cv..applyColorMap [ARG Mat src=, ARG Mat dst=, ARG int colormap=]>
+
+--- Incoming ---
+[   'cv.line',
+    'void',
+    [],
+    [   ['Mat', 'img', '', ['/IO']],
+        ['Point', 'pt1', '', []],
+        ['Point', 'pt2', '', []],
+        ['Scalar', 'color', '', []],
+        ['int', 'thickness', '1', []],
+        ['int', 'lineType', 'LINE_8', []],
+        ['int', 'shift', '0', []]]]
+ok: FUNC <void cv..line [ARG Mat img=, ARG Point pt1=, ARG Point pt2=, ARG Scalar color=, ARG int thickness=1, ARG int lineType=LINE_8, ARG int shift=0]>
+
+--- Incoming ---
+[   'cv.arrowedLine',
+    'void',
+    [],
+    [   ['Mat', 'img', '', ['/IO']],
+        ['Point', 'pt1', '', []],
+        ['Point', 'pt2', '', []],
+        ['Scalar', 'color', '', []],
+        ['int', 'thickness', '1', []],
+        ['int', 'line_type', '8', []],
+        ['int', 'shift', '0', []],
+        ['double', 'tipLength', '0.1', []]]]
+ok: FUNC <void cv..arrowedLine [ARG Mat img=, ARG Point pt1=, ARG Point pt2=, ARG Scalar color=, ARG int thickness=1, ARG int line_type=8, ARG int shift=0, ARG double tipLength=0.1]>
+
+--- Incoming ---
+[   'cv.rectangle',
+    'void',
+    [],
+    [   ['Mat', 'img', '', ['/IO']],
+        ['Point', 'pt1', '', []],
+        ['Point', 'pt2', '', []],
+        ['Scalar', 'color', '', []],
+        ['int', 'thickness', '1', []],
+        ['int', 'lineType', 'LINE_8', []],
+        ['int', 'shift', '0', []]]]
+ok: FUNC <void cv..rectangle [ARG Mat img=, ARG Point pt1=, ARG Point pt2=, ARG Scalar color=, ARG int thickness=1, ARG int lineType=LINE_8, ARG int shift=0]>
+
+--- Incoming ---
+[   'cv.circle',
+    'void',
+    [],
+    [   ['Mat', 'img', '', ['/IO']],
+        ['Point', 'center', '', []],
+        ['int', 'radius', '', []],
+        ['Scalar', 'color', '', []],
+        ['int', 'thickness', '1', []],
+        ['int', 'lineType', 'LINE_8', []],
+        ['int', 'shift', '0', []]]]
+ok: FUNC <void cv..circle [ARG Mat img=, ARG Point center=, ARG int radius=, ARG Scalar color=, ARG int thickness=1, ARG int lineType=LINE_8, ARG int shift=0]>
+
+--- Incoming ---
+[   'cv.ellipse',
+    'void',
+    [],
+    [   ['Mat', 'img', '', ['/IO']],
+        ['Point', 'center', '', []],
+        ['Size', 'axes', '', []],
+        ['double', 'angle', '', []],
+        ['double', 'startAngle', '', []],
+        ['double', 'endAngle', '', []],
+        ['Scalar', 'color', '', []],
+        ['int', 'thickness', '1', []],
+        ['int', 'lineType', 'LINE_8', []],
+        ['int', 'shift', '0', []]]]
+ok: FUNC <void cv..ellipse [ARG Mat img=, ARG Point center=, ARG Size axes=, ARG double angle=, ARG double startAngle=, ARG double endAngle=, ARG Scalar color=, ARG int thickness=1, ARG int lineType=LINE_8, ARG int shift=0]>
+
+--- Incoming ---
+[   'cv.ellipse',
+    'void',
+    [],
+    [   ['Mat', 'img', '', ['/IO']],
+        ['RotatedRect', 'box', '', []],
+        ['Scalar', 'color', '', []],
+        ['int', 'thickness', '1', []],
+        ['int', 'lineType', 'LINE_8', []]]]
+ok: FUNC <void cv..ellipse [ARG Mat img=, ARG RotatedRect box=, ARG Scalar color=, ARG int thickness=1, ARG int lineType=LINE_8]>
+
+--- Incoming ---
+[   'cv.fillConvexPoly',
+    'void',
+    [],
+    [   ['Mat', 'img', '', ['/IO']],
+        ['Mat', 'points', '', []],
+        ['Scalar', 'color', '', []],
+        ['int', 'lineType', 'LINE_8', []],
+        ['int', 'shift', '0', []]]]
+ok: FUNC <void cv..fillConvexPoly [ARG Mat img=, ARG vector_Point points=, ARG Scalar color=, ARG int lineType=LINE_8, ARG int shift=0]>
+
+--- Incoming ---
+[   'cv.fillPoly',
+    'void',
+    [],
+    [   ['Mat', 'img', '', ['/IO']],
+        ['vector_Mat', 'pts', '', []],
+        ['Scalar', 'color', '', []],
+        ['int', 'lineType', 'LINE_8', []],
+        ['int', 'shift', '0', []],
+        ['Point', 'offset', 'Point()', []]]]
+ok: FUNC <void cv..fillPoly [ARG Mat img=, ARG vector_vector_Point pts=, ARG Scalar color=, ARG int lineType=LINE_8, ARG int shift=0, ARG Point offset=Point()]>
+
+--- Incoming ---
+[   'cv.polylines',
+    'void',
+    [],
+    [   ['Mat', 'img', '', ['/IO']],
+        ['vector_Mat', 'pts', '', []],
+        ['bool', 'isClosed', '', []],
+        ['Scalar', 'color', '', []],
+        ['int', 'thickness', '1', []],
+        ['int', 'lineType', 'LINE_8', []],
+        ['int', 'shift', '0', []]]]
+ok: FUNC <void cv..polylines [ARG Mat img=, ARG vector_vector_Point pts=, ARG bool isClosed=, ARG Scalar color=, ARG int thickness=1, ARG int lineType=LINE_8, ARG int shift=0]>
+
+--- Incoming ---
+[   'cv.drawContours',
+    'void',
+    [],
+    [   ['Mat', 'image', '', ['/IO']],
+        ['vector_Mat', 'contours', '', []],
+        ['int', 'contourIdx', '', []],
+        ['Scalar', 'color', '', []],
+        ['int', 'thickness', '1', []],
+        ['int', 'lineType', 'LINE_8', []],
+        ['Mat', 'hierarchy', 'Mat()', []],
+        ['int', 'maxLevel', 'INT_MAX', []],
+        ['Point', 'offset', 'Point()', []]]]
+ok: FUNC <void cv..drawContours [ARG Mat image=, ARG vector_vector_Point contours=, ARG int contourIdx=, ARG Scalar color=, ARG int thickness=1, ARG int lineType=LINE_8, ARG Mat hierarchy=Mat(), ARG int maxLevel=INT_MAX, ARG Point offset=Point()]>
+
+--- Incoming ---
+[   'cv.clipLine',
+    'bool',
+    [],
+    [   ['Rect', 'imgRect', '', []],
+        ['Point', 'pt1', '', ['/O', '/IO']],
+        ['Point', 'pt2', '', ['/O', '/IO']]]]
+ok: FUNC <bool cv..clipLine [ARG Rect imgRect=, ARG Point pt1=, ARG Point pt2=]>
+
+--- Incoming ---
+[   'cv.ellipse2Poly',
+    'void',
+    [],
+    [   ['Point', 'center', '', []],
+        ['Size', 'axes', '', []],
+        ['int', 'angle', '', []],
+        ['int', 'arcStart', '', []],
+        ['int', 'arcEnd', '', []],
+        ['int', 'delta', '', []],
+        ['vector_Point', 'pts', '', ['/O']]]]
+ok: FUNC <void cv..ellipse2Poly [ARG Point center=, ARG Size axes=, ARG int angle=, ARG int arcStart=, ARG int arcEnd=, ARG int delta=, ARG vector_Point pts=]>
+
+--- Incoming ---
+[   'cv.putText',
+    'void',
+    [],
+    [   ['Mat', 'img', '', ['/IO']],
+        ['String', 'text', '', []],
+        ['Point', 'org', '', []],
+        ['int', 'fontFace', '', []],
+        ['double', 'fontScale', '', []],
+        ['Scalar', 'color', '', []],
+        ['int', 'thickness', '1', []],
+        ['int', 'lineType', 'LINE_8', []],
+        ['bool', 'bottomLeftOrigin', 'false', []]]]
+ok: FUNC <void cv..putText [ARG Mat img=, ARG String text=, ARG Point org=, ARG int fontFace=, ARG double fontScale=, ARG Scalar color=, ARG int thickness=1, ARG int lineType=LINE_8, ARG bool bottomLeftOrigin=false]>
+
+--- Incoming ---
+[   'cv.getTextSize',
+    'Size',
+    [],
+    [   ['String', 'text', '', []],
+        ['int', 'fontFace', '', []],
+        ['double', 'fontScale', '', []],
+        ['int', 'thickness', '', []],
+        ['int*', 'baseLine', '', ['/O']]]]
+manual: FUNC <Size cv..getTextSize [ARG String text=, ARG int fontFace=, ARG double fontScale=, ARG int thickness=, ARG int * baseLine=]>
+
+
+===== Header: /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/modules/imgproc/include/opencv2/imgproc/imgproc.hpp =====
+Namespaces: set(['', 'cv'])
+
+
+===== Generating... =====
+CLASS cv..LineSegmentDetector : Algorithm
+FUNC <void cv.LineSegmentDetector.detect [ARG Mat _image=, ARG Mat _lines=, ARG Mat width=Mat(), ARG Mat prec=Mat(), ARG Mat nfa=Mat()]>
+FUNC <void cv.LineSegmentDetector.drawSegments [ARG Mat _image=, ARG Mat lines=]>
+FUNC <int cv.LineSegmentDetector.compareSegments [ARG Size size=, ARG Mat lines1=, ARG Mat lines2=, ARG Mat _image=Mat()]>
+CLASS cv..Subdiv2D : 
+[CONST PTLOC_ERROR=-2, CONST PTLOC_OUTSIDE_RECT=-1, CONST PTLOC_INSIDE=0, CONST PTLOC_VERTEX=1, CONST PTLOC_ON_EDGE=2, CONST NEXT_AROUND_ORG=0x00, CONST NEXT_AROUND_DST=0x22, CONST PREV_AROUND_ORG=0x11, CONST PREV_AROUND_DST=0x33, CONST NEXT_AROUND_LEFT=0x13, CONST NEXT_AROUND_RIGHT=0x31, CONST PREV_AROUND_LEFT=0x20, CONST PREV_AROUND_RIGHT=0x02]
+FUNC < cv.Subdiv2D.Subdiv2D []>
+FUNC < cv.Subdiv2D.Subdiv2D [ARG Rect rect=]>
+FUNC <void cv.Subdiv2D.initDelaunay [ARG Rect rect=]>
+FUNC <int cv.Subdiv2D.insert [ARG Point2f pt=]>
+FUNC <void cv.Subdiv2D.insert [ARG vector_Point2f ptvec=]>
+FUNC <int cv.Subdiv2D.locate [ARG Point2f pt=, ARG int edge=, ARG int vertex=]>
+FUNC <int cv.Subdiv2D.findNearest [ARG Point2f pt=, ARG Point2f * nearestPt=0]>
+FUNC <void cv.Subdiv2D.getEdgeList [ARG vector_Vec4f edgeList=]>
+FUNC <void cv.Subdiv2D.getTriangleList [ARG vector_Vec6f triangleList=]>
+FUNC <void cv.Subdiv2D.getVoronoiFacetList [ARG vector_int idx=, ARG vector_vector_Point2f facetList=, ARG vector_Point2f facetCenters=]>
+FUNC <Point2f cv.Subdiv2D.getVertex [ARG int vertex=, ARG int * firstEdge=0]>
+FUNC <int cv.Subdiv2D.getEdge [ARG int edge=, ARG int nextEdgeType=]>
+FUNC <int cv.Subdiv2D.nextEdge [ARG int edge=]>
+FUNC <int cv.Subdiv2D.rotateEdge [ARG int edge=, ARG int rotate=]>
+FUNC <int cv.Subdiv2D.symEdge [ARG int edge=]>
+FUNC <int cv.Subdiv2D.edgeOrg [ARG int edge=, ARG Point2f * orgpt=0]>
+FUNC <int cv.Subdiv2D.edgeDst [ARG int edge=, ARG Point2f * dstpt=0]>
+CLASS ..Imgproc : 
+[CONST IPL_BORDER_CONSTANT=0(manual), CONST IPL_BORDER_REPLICATE=1(manual), CONST IPL_BORDER_REFLECT=2(manual), CONST IPL_BORDER_WRAP=3(manual), CONST IPL_BORDER_REFLECT_101=4(manual), CONST IPL_BORDER_TRANSPARENT=5(manual), CONST CV_INTER_NN=0, CONST CV_INTER_LINEAR=1, CONST CV_INTER_CUBIC=2, CONST CV_INTER_AREA=3, CONST CV_INTER_LANCZOS4=4, CONST CV_MOP_ERODE=0, CONST CV_MOP_DILATE=1, CONST CV_MOP_OPEN=2, CONST CV_MOP_CLOSE=3, CONST CV_MOP_GRADIENT=4, CONST CV_MOP_TOPHAT=5, CONST CV_MOP_BLACKHAT=6, CONST CV_RETR_EXTERNAL=0, CONST CV_RETR_LIST=1, CONST CV_RETR_CCOMP=2, CONST CV_RETR_TREE=3, CONST CV_RETR_FLOODFILL=4, CONST CV_CHAIN_APPROX_NONE=1, CONST CV_CHAIN_APPROX_SIMPLE=2, CONST CV_CHAIN_APPROX_TC89_L1=3, CONST CV_CHAIN_APPROX_TC89_KCOS=4, CONST CV_THRESH_BINARY=0, CONST CV_THRESH_BINARY_INV=1, CONST CV_THRESH_TRUNC=2, CONST CV_THRESH_TOZERO=3, CONST CV_THRESH_TOZERO_INV=4, CONST CV_THRESH_MASK=7, CONST CV_THRESH_OTSU=8, CONST CV_THRESH_TRIANGLE=16]
+[CONST LINE_AA=16(manual), CONST LINE_8=8(manual), CONST LINE_4=4(manual), CONST CV_BLUR_NO_SCALE=0, CONST CV_BLUR=1, CONST CV_GAUSSIAN=2, CONST CV_MEDIAN=3, CONST CV_BILATERAL=4, CONST CV_GAUSSIAN_5x5=7, CONST CV_SCHARR=-1, CONST CV_MAX_SOBEL_KSIZE=7, CONST CV_RGBA2mRGBA=125, CONST CV_mRGBA2RGBA=126, CONST CV_WARP_FILL_OUTLIERS=8, CONST CV_WARP_INVERSE_MAP=16, CONST CV_SHAPE_RECT=0, CONST CV_SHAPE_CROSS=1, CONST CV_SHAPE_ELLIPSE=2, CONST CV_SHAPE_CUSTOM=100, CONST CV_CHAIN_CODE=0, CONST CV_LINK_RUNS=5, CONST CV_POLY_APPROX_DP=0, CONST CV_CONTOURS_MATCH_I1=1, CONST CV_CONTOURS_MATCH_I2=2, CONST CV_CONTOURS_MATCH_I3=3, CONST CV_CLOCKWISE=1, CONST CV_COUNTER_CLOCKWISE=2, CONST CV_COMP_CORREL=0, CONST CV_COMP_CHISQR=1, CONST CV_COMP_INTERSECT=2, CONST CV_COMP_BHATTACHARYYA=3, CONST CV_COMP_HELLINGER=CV_COMP_BHATTACHARYYA, CONST CV_COMP_CHISQR_ALT=4, CONST CV_COMP_KL_DIV=5, CONST CV_DIST_MASK_3=3, CONST CV_DIST_MASK_5=5, CONST CV_DIST_MASK_PRECISE=0, CONST CV_DIST_LABEL_CCOMP=0, CONST CV_DIST_LABEL_PIXEL=1, CONST CV_DIST_USER=-1, CONST CV_DIST_L1=1, CONST CV_DIST_L2=2, CONST CV_DIST_C=3, CONST CV_DIST_L12=4, CONST CV_DIST_FAIR=5, CONST CV_DIST_WELSCH=6, CONST CV_DIST_HUBER=7, CONST CV_CANNY_L2_GRADIENT=(1 << 31), CONST CV_HOUGH_STANDARD=0, CONST CV_HOUGH_PROBABILISTIC=1, CONST CV_HOUGH_MULTI_SCALE=2, CONST CV_HOUGH_GRADIENT=3, CONST MORPH_ERODE=0, CONST MORPH_DILATE=1, CONST MORPH_OPEN=2, CONST MORPH_CLOSE=3, CONST MORPH_GRADIENT=4, CONST MORPH_TOPHAT=5, CONST MORPH_BLACKHAT=6, CONST MORPH_RECT=0, CONST MORPH_CROSS=1, CONST MORPH_ELLIPSE=2, CONST INTER_NEAREST=0, CONST INTER_LINEAR=1, CONST INTER_CUBIC=2, CONST INTER_AREA=3, CONST INTER_LANCZOS4=4, CONST INTER_MAX=7, CONST WARP_FILL_OUTLIERS=8, CONST WARP_INVERSE_MAP=16, CONST INTER_BITS=5, CONST INTER_BITS2=INTER_BITS * 2, CONST INTER_TAB_SIZE=1 << INTER_BITS, CONST INTER_TAB_SIZE2=INTER_TAB_SIZE * INTER_TAB_SIZE, CONST DIST_USER=-1, CONST DIST_L1=1, CONST DIST_L2=2, CONST DIST_C=3, CONST DIST_L12=4, CONST DIST_FAIR=5, CONST DIST_WELSCH=6, CONST DIST_HUBER=7, CONST DIST_MASK_3=3, CONST DIST_MASK_5=5, CONST DIST_MASK_PRECISE=0, CONST THRESH_BINARY=0, CONST THRESH_BINARY_INV=1, CONST THRESH_TRUNC=2, CONST THRESH_TOZERO=3, CONST THRESH_TOZERO_INV=4, CONST THRESH_MASK=7, CONST THRESH_OTSU=8, CONST THRESH_TRIANGLE=16, CONST ADAPTIVE_THRESH_MEAN_C=0, CONST ADAPTIVE_THRESH_GAUSSIAN_C=1, CONST PROJ_SPHERICAL_ORTHO=0, CONST PROJ_SPHERICAL_EQRECT=1, CONST GC_BGD=0, CONST GC_FGD=1, CONST GC_PR_BGD=2, CONST GC_PR_FGD=3, CONST GC_INIT_WITH_RECT=0, CONST GC_INIT_WITH_MASK=1, CONST GC_EVAL=2, CONST DIST_LABEL_CCOMP=0, CONST DIST_LABEL_PIXEL=1, CONST FLOODFILL_FIXED_RANGE=1 << 16, CONST FLOODFILL_MASK_ONLY=1 << 17, CONST TM_SQDIFF=0, CONST TM_SQDIFF_NORMED=1, CONST TM_CCORR=2, CONST TM_CCORR_NORMED=3, CONST TM_CCOEFF=4, CONST TM_CCOEFF_NORMED=5, CONST CC_STAT_LEFT=0, CONST CC_STAT_TOP=1, CONST CC_STAT_WIDTH=2, CONST CC_STAT_HEIGHT=3, CONST CC_STAT_AREA=4, CONST CC_STAT_MAX=5, CONST RETR_EXTERNAL=0, CONST RETR_LIST=1, CONST RETR_CCOMP=2, CONST RETR_TREE=3, CONST RETR_FLOODFILL=4, CONST CHAIN_APPROX_NONE=1, CONST CHAIN_APPROX_SIMPLE=2, CONST CHAIN_APPROX_TC89_L1=3, CONST CHAIN_APPROX_TC89_KCOS=4, CONST HOUGH_STANDARD=0, CONST HOUGH_PROBABILISTIC=1, CONST HOUGH_MULTI_SCALE=2, CONST HOUGH_GRADIENT=3, CONST LSD_REFINE_NONE=0, CONST LSD_REFINE_STD=1, CONST LSD_REFINE_ADV=2, CONST HISTCMP_CORREL=0, CONST HISTCMP_CHISQR=1, CONST HISTCMP_INTERSECT=2, CONST HISTCMP_BHATTACHARYYA=3, CONST HISTCMP_HELLINGER=HISTCMP_BHATTACHARYYA, CONST HISTCMP_CHISQR_ALT=4, CONST HISTCMP_KL_DIV=5, CONST COLOR_BGR2BGRA=0, CONST COLOR_RGB2RGBA=COLOR_BGR2BGRA, CONST COLOR_BGRA2BGR=1, CONST COLOR_RGBA2RGB=COLOR_BGRA2BGR, CONST COLOR_BGR2RGBA=2, CONST COLOR_RGB2BGRA=COLOR_BGR2RGBA, CONST COLOR_RGBA2BGR=3, CONST COLOR_BGRA2RGB=COLOR_RGBA2BGR, CONST COLOR_BGR2RGB=4, CONST COLOR_RGB2BGR=COLOR_BGR2RGB, CONST COLOR_BGRA2RGBA=5, CONST COLOR_RGBA2BGRA=COLOR_BGRA2RGBA, CONST COLOR_BGR2GRAY=6, CONST COLOR_RGB2GRAY=7, CONST COLOR_GRAY2BGR=8, CONST COLOR_GRAY2RGB=COLOR_GRAY2BGR, CONST COLOR_GRAY2BGRA=9, CONST COLOR_GRAY2RGBA=COLOR_GRAY2BGRA, CONST COLOR_BGRA2GRAY=10, CONST COLOR_RGBA2GRAY=11, CONST COLOR_BGR2BGR565=12, CONST COLOR_RGB2BGR565=13, CONST COLOR_BGR5652BGR=14, CONST COLOR_BGR5652RGB=15, CONST COLOR_BGRA2BGR565=16, CONST COLOR_RGBA2BGR565=17, CONST COLOR_BGR5652BGRA=18, CONST COLOR_BGR5652RGBA=19, CONST COLOR_GRAY2BGR565=20, CONST COLOR_BGR5652GRAY=21, CONST COLOR_BGR2BGR555=22, CONST COLOR_RGB2BGR555=23, CONST COLOR_BGR5552BGR=24, CONST COLOR_BGR5552RGB=25, CONST COLOR_BGRA2BGR555=26, CONST COLOR_RGBA2BGR555=27, CONST COLOR_BGR5552BGRA=28, CONST COLOR_BGR5552RGBA=29, CONST COLOR_GRAY2BGR555=30, CONST COLOR_BGR5552GRAY=31, CONST COLOR_BGR2XYZ=32, CONST COLOR_RGB2XYZ=33, CONST COLOR_XYZ2BGR=34, CONST COLOR_XYZ2RGB=35, CONST COLOR_BGR2YCrCb=36, CONST COLOR_RGB2YCrCb=37, CONST COLOR_YCrCb2BGR=38, CONST COLOR_YCrCb2RGB=39, CONST COLOR_BGR2HSV=40, CONST COLOR_RGB2HSV=41, CONST COLOR_BGR2Lab=44, CONST COLOR_RGB2Lab=45, CONST COLOR_BGR2Luv=50, CONST COLOR_RGB2Luv=51, CONST COLOR_BGR2HLS=52, CONST COLOR_RGB2HLS=53, CONST COLOR_HSV2BGR=54, CONST COLOR_HSV2RGB=55, CONST COLOR_Lab2BGR=56, CONST COLOR_Lab2RGB=57, CONST COLOR_Luv2BGR=58, CONST COLOR_Luv2RGB=59, CONST COLOR_HLS2BGR=60, CONST COLOR_HLS2RGB=61, CONST COLOR_BGR2HSV_FULL=66, CONST COLOR_RGB2HSV_FULL=67, CONST COLOR_BGR2HLS_FULL=68, CONST COLOR_RGB2HLS_FULL=69, CONST COLOR_HSV2BGR_FULL=70, CONST COLOR_HSV2RGB_FULL=71, CONST COLOR_HLS2BGR_FULL=72, CONST COLOR_HLS2RGB_FULL=73, CONST COLOR_LBGR2Lab=74, CONST COLOR_LRGB2Lab=75, CONST COLOR_LBGR2Luv=76, CONST COLOR_LRGB2Luv=77, CONST COLOR_Lab2LBGR=78, CONST COLOR_Lab2LRGB=79, CONST COLOR_Luv2LBGR=80, CONST COLOR_Luv2LRGB=81, CONST COLOR_BGR2YUV=82, CONST COLOR_RGB2YUV=83, CONST COLOR_YUV2BGR=84, CONST COLOR_YUV2RGB=85, CONST COLOR_YUV2RGB_NV12=90, CONST COLOR_YUV2BGR_NV12=91, CONST COLOR_YUV2RGB_NV21=92, CONST COLOR_YUV2BGR_NV21=93, CONST COLOR_YUV420sp2RGB=COLOR_YUV2RGB_NV21, CONST COLOR_YUV420sp2BGR=COLOR_YUV2BGR_NV21, CONST COLOR_YUV2RGBA_NV12=94, CONST COLOR_YUV2BGRA_NV12=95, CONST COLOR_YUV2RGBA_NV21=96, CONST COLOR_YUV2BGRA_NV21=97, CONST COLOR_YUV420sp2RGBA=COLOR_YUV2RGBA_NV21, CONST COLOR_YUV420sp2BGRA=COLOR_YUV2BGRA_NV21, CONST COLOR_YUV2RGB_YV12=98, CONST COLOR_YUV2BGR_YV12=99, CONST COLOR_YUV2RGB_IYUV=100, CONST COLOR_YUV2BGR_IYUV=101, CONST COLOR_YUV2RGB_I420=COLOR_YUV2RGB_IYUV, CONST COLOR_YUV2BGR_I420=COLOR_YUV2BGR_IYUV, CONST COLOR_YUV420p2RGB=COLOR_YUV2RGB_YV12, CONST COLOR_YUV420p2BGR=COLOR_YUV2BGR_YV12, CONST COLOR_YUV2RGBA_YV12=102, CONST COLOR_YUV2BGRA_YV12=103, CONST COLOR_YUV2RGBA_IYUV=104, CONST COLOR_YUV2BGRA_IYUV=105, CONST COLOR_YUV2RGBA_I420=COLOR_YUV2RGBA_IYUV, CONST COLOR_YUV2BGRA_I420=COLOR_YUV2BGRA_IYUV, CONST COLOR_YUV420p2RGBA=COLOR_YUV2RGBA_YV12, CONST COLOR_YUV420p2BGRA=COLOR_YUV2BGRA_YV12, CONST COLOR_YUV2GRAY_420=106, CONST COLOR_YUV2GRAY_NV21=COLOR_YUV2GRAY_420, CONST COLOR_YUV2GRAY_NV12=COLOR_YUV2GRAY_420, CONST COLOR_YUV2GRAY_YV12=COLOR_YUV2GRAY_420, CONST COLOR_YUV2GRAY_IYUV=COLOR_YUV2GRAY_420, CONST COLOR_YUV2GRAY_I420=COLOR_YUV2GRAY_420, CONST COLOR_YUV420sp2GRAY=COLOR_YUV2GRAY_420, CONST COLOR_YUV420p2GRAY=COLOR_YUV2GRAY_420, CONST COLOR_YUV2RGB_UYVY=107, CONST COLOR_YUV2BGR_UYVY=108, CONST COLOR_YUV2RGB_Y422=COLOR_YUV2RGB_UYVY, CONST COLOR_YUV2BGR_Y422=COLOR_YUV2BGR_UYVY, CONST COLOR_YUV2RGB_UYNV=COLOR_YUV2RGB_UYVY, CONST COLOR_YUV2BGR_UYNV=COLOR_YUV2BGR_UYVY, CONST COLOR_YUV2RGBA_UYVY=111, CONST COLOR_YUV2BGRA_UYVY=112, CONST COLOR_YUV2RGBA_Y422=COLOR_YUV2RGBA_UYVY, CONST COLOR_YUV2BGRA_Y422=COLOR_YUV2BGRA_UYVY, CONST COLOR_YUV2RGBA_UYNV=COLOR_YUV2RGBA_UYVY, CONST COLOR_YUV2BGRA_UYNV=COLOR_YUV2BGRA_UYVY, CONST COLOR_YUV2RGB_YUY2=115, CONST COLOR_YUV2BGR_YUY2=116, CONST COLOR_YUV2RGB_YVYU=117, CONST COLOR_YUV2BGR_YVYU=118, CONST COLOR_YUV2RGB_YUYV=COLOR_YUV2RGB_YUY2, CONST COLOR_YUV2BGR_YUYV=COLOR_YUV2BGR_YUY2, CONST COLOR_YUV2RGB_YUNV=COLOR_YUV2RGB_YUY2, CONST COLOR_YUV2BGR_YUNV=COLOR_YUV2BGR_YUY2, CONST COLOR_YUV2RGBA_YUY2=119, CONST COLOR_YUV2BGRA_YUY2=120, CONST COLOR_YUV2RGBA_YVYU=121, CONST COLOR_YUV2BGRA_YVYU=122, CONST COLOR_YUV2RGBA_YUYV=COLOR_YUV2RGBA_YUY2, CONST COLOR_YUV2BGRA_YUYV=COLOR_YUV2BGRA_YUY2, CONST COLOR_YUV2RGBA_YUNV=COLOR_YUV2RGBA_YUY2, CONST COLOR_YUV2BGRA_YUNV=COLOR_YUV2BGRA_YUY2, CONST COLOR_YUV2GRAY_UYVY=123, CONST COLOR_YUV2GRAY_YUY2=124, CONST COLOR_YUV2GRAY_Y422=COLOR_YUV2GRAY_UYVY, CONST COLOR_YUV2GRAY_UYNV=COLOR_YUV2GRAY_UYVY, CONST COLOR_YUV2GRAY_YVYU=COLOR_YUV2GRAY_YUY2, CONST COLOR_YUV2GRAY_YUYV=COLOR_YUV2GRAY_YUY2, CONST COLOR_YUV2GRAY_YUNV=COLOR_YUV2GRAY_YUY2, CONST COLOR_RGBA2mRGBA=125, CONST COLOR_mRGBA2RGBA=126, CONST COLOR_RGB2YUV_I420=127, CONST COLOR_BGR2YUV_I420=128, CONST COLOR_RGB2YUV_IYUV=COLOR_RGB2YUV_I420, CONST COLOR_BGR2YUV_IYUV=COLOR_BGR2YUV_I420, CONST COLOR_RGBA2YUV_I420=129, CONST COLOR_BGRA2YUV_I420=130, CONST COLOR_RGBA2YUV_IYUV=COLOR_RGBA2YUV_I420, CONST COLOR_BGRA2YUV_IYUV=COLOR_BGRA2YUV_I420, CONST COLOR_RGB2YUV_YV12=131, CONST COLOR_BGR2YUV_YV12=132, CONST COLOR_RGBA2YUV_YV12=133, CONST COLOR_BGRA2YUV_YV12=134, CONST COLOR_BayerBG2BGR=46, CONST COLOR_BayerGB2BGR=47, CONST COLOR_BayerRG2BGR=48, CONST COLOR_BayerGR2BGR=49, CONST COLOR_BayerBG2RGB=COLOR_BayerRG2BGR, CONST COLOR_BayerGB2RGB=COLOR_BayerGR2BGR, CONST COLOR_BayerRG2RGB=COLOR_BayerBG2BGR, CONST COLOR_BayerGR2RGB=COLOR_BayerGB2BGR, CONST COLOR_BayerBG2GRAY=86, CONST COLOR_BayerGB2GRAY=87, CONST COLOR_BayerRG2GRAY=88, CONST COLOR_BayerGR2GRAY=89, CONST COLOR_BayerBG2BGR_VNG=62, CONST COLOR_BayerGB2BGR_VNG=63, CONST COLOR_BayerRG2BGR_VNG=64, CONST COLOR_BayerGR2BGR_VNG=65, CONST COLOR_BayerBG2RGB_VNG=COLOR_BayerRG2BGR_VNG, CONST COLOR_BayerGB2RGB_VNG=COLOR_BayerGR2BGR_VNG, CONST COLOR_BayerRG2RGB_VNG=COLOR_BayerBG2BGR_VNG, CONST COLOR_BayerGR2RGB_VNG=COLOR_BayerGB2BGR_VNG, CONST COLOR_BayerBG2BGR_EA=135, CONST COLOR_BayerGB2BGR_EA=136, CONST COLOR_BayerRG2BGR_EA=137, CONST COLOR_BayerGR2BGR_EA=138, CONST COLOR_BayerBG2RGB_EA=COLOR_BayerRG2BGR_EA, CONST COLOR_BayerGB2RGB_EA=COLOR_BayerGR2BGR_EA, CONST COLOR_BayerRG2RGB_EA=COLOR_BayerBG2BGR_EA, CONST COLOR_BayerGR2RGB_EA=COLOR_BayerGB2BGR_EA, CONST COLOR_COLORCVT_MAX=139, CONST INTERSECT_NONE=0, CONST INTERSECT_PARTIAL=1, CONST INTERSECT_FULL=2, CONST COLORMAP_AUTUMN=0, CONST COLORMAP_BONE=1, CONST COLORMAP_JET=2, CONST COLORMAP_WINTER=3, CONST COLORMAP_RAINBOW=4, CONST COLORMAP_OCEAN=5, CONST COLORMAP_SUMMER=6, CONST COLORMAP_SPRING=7, CONST COLORMAP_COOL=8, CONST COLORMAP_HSV=9, CONST COLORMAP_PINK=10, CONST COLORMAP_HOT=11]
+FUNC <Ptr_LineSegmentDetector cv..createLineSegmentDetector [ARG int _refine=LSD_REFINE_STD, ARG double _scale=0.8, ARG double _sigma_scale=0.6, ARG double _quant=2.0, ARG double _ang_th=22.5, ARG double _log_eps=0, ARG double _density_th=0.7, ARG int _n_bins=1024]>
+FUNC <Mat cv..getGaussianKernel [ARG int ksize=, ARG double sigma=, ARG int ktype=CV_64F]>
+FUNC <void cv..getDerivKernels [ARG Mat kx=, ARG Mat ky=, ARG int dx=, ARG int dy=, ARG int ksize=, ARG bool normalize=false, ARG int ktype=CV_32F]>
+FUNC <Mat cv..getGaborKernel [ARG Size ksize=, ARG double sigma=, ARG double theta=, ARG double lambd=, ARG double gamma=, ARG double psi=CV_PI*0.5, ARG int ktype=CV_64F]>
+FUNC <Mat cv..getStructuringElement [ARG int shape=, ARG Size ksize=, ARG Point anchor=Point(-1,-1)]>
+FUNC <void cv..medianBlur [ARG Mat src=, ARG Mat dst=, ARG int ksize=]>
+FUNC <void cv..GaussianBlur [ARG Mat src=, ARG Mat dst=, ARG Size ksize=, ARG double sigmaX=, ARG double sigmaY=0, ARG int borderType=BORDER_DEFAULT]>
+FUNC <void cv..bilateralFilter [ARG Mat src=, ARG Mat dst=, ARG int d=, ARG double sigmaColor=, ARG double sigmaSpace=, ARG int borderType=BORDER_DEFAULT]>
+FUNC <void cv..boxFilter [ARG Mat src=, ARG Mat dst=, ARG int ddepth=, ARG Size ksize=, ARG Point anchor=Point(-1,-1), ARG bool normalize=true, ARG int borderType=BORDER_DEFAULT]>
+FUNC <void cv..sqrBoxFilter [ARG Mat _src=, ARG Mat _dst=, ARG int ddepth=, ARG Size ksize=, ARG Point anchor=Point(-1, -1), ARG bool normalize=true, ARG int borderType=BORDER_DEFAULT]>
+FUNC <void cv..blur [ARG Mat src=, ARG Mat dst=, ARG Size ksize=, ARG Point anchor=Point(-1,-1), ARG int borderType=BORDER_DEFAULT]>
+FUNC <void cv..filter2D [ARG Mat src=, ARG Mat dst=, ARG int ddepth=, ARG Mat kernel=, ARG Point anchor=Point(-1,-1), ARG double delta=0, ARG int borderType=BORDER_DEFAULT]>
+FUNC <void cv..sepFilter2D [ARG Mat src=, ARG Mat dst=, ARG int ddepth=, ARG Mat kernelX=, ARG Mat kernelY=, ARG Point anchor=Point(-1,-1), ARG double delta=0, ARG int borderType=BORDER_DEFAULT]>
+FUNC <void cv..Sobel [ARG Mat src=, ARG Mat dst=, ARG int ddepth=, ARG int dx=, ARG int dy=, ARG int ksize=3, ARG double scale=1, ARG double delta=0, ARG int borderType=BORDER_DEFAULT]>
+FUNC <void cv..Scharr [ARG Mat src=, ARG Mat dst=, ARG int ddepth=, ARG int dx=, ARG int dy=, ARG double scale=1, ARG double delta=0, ARG int borderType=BORDER_DEFAULT]>
+FUNC <void cv..Laplacian [ARG Mat src=, ARG Mat dst=, ARG int ddepth=, ARG int ksize=1, ARG double scale=1, ARG double delta=0, ARG int borderType=BORDER_DEFAULT]>
+FUNC <void cv..Canny [ARG Mat image=, ARG Mat edges=, ARG double threshold1=, ARG double threshold2=, ARG int apertureSize=3, ARG bool L2gradient=false]>
+FUNC <void cv..cornerMinEigenVal [ARG Mat src=, ARG Mat dst=, ARG int blockSize=, ARG int ksize=3, ARG int borderType=BORDER_DEFAULT]>
+FUNC <void cv..cornerHarris [ARG Mat src=, ARG Mat dst=, ARG int blockSize=, ARG int ksize=, ARG double k=, ARG int borderType=BORDER_DEFAULT]>
+FUNC <void cv..cornerEigenValsAndVecs [ARG Mat src=, ARG Mat dst=, ARG int blockSize=, ARG int ksize=, ARG int borderType=BORDER_DEFAULT]>
+FUNC <void cv..preCornerDetect [ARG Mat src=, ARG Mat dst=, ARG int ksize=, ARG int borderType=BORDER_DEFAULT]>
+FUNC <void cv..cornerSubPix [ARG Mat image=, ARG vector_Point2f corners=, ARG Size winSize=, ARG Size zeroZone=, ARG TermCriteria criteria=]>
+FUNC <void cv..goodFeaturesToTrack [ARG Mat image=, ARG vector_Point corners=, ARG int maxCorners=, ARG double qualityLevel=, ARG double minDistance=, ARG Mat mask=Mat(), ARG int blockSize=3, ARG bool useHarrisDetector=false, ARG double k=0.04]>
+FUNC <void cv..HoughLines [ARG Mat image=, ARG Mat lines=, ARG double rho=, ARG double theta=, ARG int threshold=, ARG double srn=0, ARG double stn=0, ARG double min_theta=0, ARG double max_theta=CV_PI]>
+FUNC <void cv..HoughLinesP [ARG Mat image=, ARG Mat lines=, ARG double rho=, ARG double theta=, ARG int threshold=, ARG double minLineLength=0, ARG double maxLineGap=0]>
+FUNC <void cv..HoughCircles [ARG Mat image=, ARG Mat circles=, ARG int method=, ARG double dp=, ARG double minDist=, ARG double param1=100, ARG double param2=100, ARG int minRadius=0, ARG int maxRadius=0]>
+FUNC <void cv..erode [ARG Mat src=, ARG Mat dst=, ARG Mat kernel=, ARG Point anchor=Point(-1,-1), ARG int iterations=1, ARG int borderType=BORDER_CONSTANT, ARG Scalar borderValue=morphologyDefaultBorderValue()]>
+FUNC <void cv..dilate [ARG Mat src=, ARG Mat dst=, ARG Mat kernel=, ARG Point anchor=Point(-1,-1), ARG int iterations=1, ARG int borderType=BORDER_CONSTANT, ARG Scalar borderValue=morphologyDefaultBorderValue()]>
+FUNC <void cv..morphologyEx [ARG Mat src=, ARG Mat dst=, ARG int op=, ARG Mat kernel=, ARG Point anchor=Point(-1,-1), ARG int iterations=1, ARG int borderType=BORDER_CONSTANT, ARG Scalar borderValue=morphologyDefaultBorderValue()]>
+FUNC <void cv..resize [ARG Mat src=, ARG Mat dst=, ARG Size dsize=, ARG double fx=0, ARG double fy=0, ARG int interpolation=INTER_LINEAR]>
+FUNC <void cv..warpAffine [ARG Mat src=, ARG Mat dst=, ARG Mat M=, ARG Size dsize=, ARG int flags=INTER_LINEAR, ARG int borderMode=BORDER_CONSTANT, ARG Scalar borderValue=Scalar()]>
+FUNC <void cv..warpPerspective [ARG Mat src=, ARG Mat dst=, ARG Mat M=, ARG Size dsize=, ARG int flags=INTER_LINEAR, ARG int borderMode=BORDER_CONSTANT, ARG Scalar borderValue=Scalar()]>
+FUNC <void cv..remap [ARG Mat src=, ARG Mat dst=, ARG Mat map1=, ARG Mat map2=, ARG int interpolation=, ARG int borderMode=BORDER_CONSTANT, ARG Scalar borderValue=Scalar()]>
+FUNC <void cv..convertMaps [ARG Mat map1=, ARG Mat map2=, ARG Mat dstmap1=, ARG Mat dstmap2=, ARG int dstmap1type=, ARG bool nninterpolation=false]>
+FUNC <Mat cv..getRotationMatrix2D [ARG Point2f center=, ARG double angle=, ARG double scale=]>
+FUNC <void cv..invertAffineTransform [ARG Mat M=, ARG Mat iM=]>
+FUNC <Mat cv..getPerspectiveTransform [ARG Mat src=, ARG Mat dst=]>
+FUNC <Mat cv..getAffineTransform [ARG vector_Point2f src=, ARG vector_Point2f dst=]>
+FUNC <void cv..getRectSubPix [ARG Mat image=, ARG Size patchSize=, ARG Point2f center=, ARG Mat patch=, ARG int patchType=-1]>
+FUNC <void cv..logPolar [ARG Mat src=, ARG Mat dst=, ARG Point2f center=, ARG double M=, ARG int flags=]>
+FUNC <void cv..linearPolar [ARG Mat src=, ARG Mat dst=, ARG Point2f center=, ARG double maxRadius=, ARG int flags=]>
+FUNC <void cv..integral [ARG Mat src=, ARG Mat sum=, ARG int sdepth=-1]>
+FUNC <void cv..integral [ARG Mat src=, ARG Mat sum=, ARG Mat sqsum=, ARG int sdepth=-1, ARG int sqdepth=-1]>
+FUNC <void cv..integral [ARG Mat src=, ARG Mat sum=, ARG Mat sqsum=, ARG Mat tilted=, ARG int sdepth=-1, ARG int sqdepth=-1]>
+FUNC <void cv..accumulate [ARG Mat src=, ARG Mat dst=, ARG Mat mask=Mat()]>
+FUNC <void cv..accumulateSquare [ARG Mat src=, ARG Mat dst=, ARG Mat mask=Mat()]>
+FUNC <void cv..accumulateProduct [ARG Mat src1=, ARG Mat src2=, ARG Mat dst=, ARG Mat mask=Mat()]>
+FUNC <void cv..accumulateWeighted [ARG Mat src=, ARG Mat dst=, ARG double alpha=, ARG Mat mask=Mat()]>
+FUNC <Point2d cv..phaseCorrelate [ARG Mat src1=, ARG Mat src2=, ARG Mat window=Mat(), ARG double * response=0]>
+FUNC <void cv..createHanningWindow [ARG Mat dst=, ARG Size winSize=, ARG int type=]>
+FUNC <double cv..threshold [ARG Mat src=, ARG Mat dst=, ARG double thresh=, ARG double maxval=, ARG int type=]>
+FUNC <void cv..adaptiveThreshold [ARG Mat src=, ARG Mat dst=, ARG double maxValue=, ARG int adaptiveMethod=, ARG int thresholdType=, ARG int blockSize=, ARG double C=]>
+FUNC <void cv..pyrDown [ARG Mat src=, ARG Mat dst=, ARG Size dstsize=Size(), ARG int borderType=BORDER_DEFAULT]>
+FUNC <void cv..pyrUp [ARG Mat src=, ARG Mat dst=, ARG Size dstsize=Size(), ARG int borderType=BORDER_DEFAULT]>
+FUNC <void cv..undistort [ARG Mat src=, ARG Mat dst=, ARG Mat cameraMatrix=, ARG Mat distCoeffs=, ARG Mat newCameraMatrix=Mat()]>
+FUNC <void cv..initUndistortRectifyMap [ARG Mat cameraMatrix=, ARG Mat distCoeffs=, ARG Mat R=, ARG Mat newCameraMatrix=, ARG Size size=, ARG int m1type=, ARG Mat map1=, ARG Mat map2=]>
+FUNC <float cv..initWideAngleProjMap [ARG Mat cameraMatrix=, ARG Mat distCoeffs=, ARG Size imageSize=, ARG int destImageWidth=, ARG int m1type=, ARG Mat map1=, ARG Mat map2=, ARG int projType=PROJ_SPHERICAL_EQRECT, ARG double alpha=0]>
+FUNC <Mat cv..getDefaultNewCameraMatrix [ARG Mat cameraMatrix=, ARG Size imgsize=Size(), ARG bool centerPrincipalPoint=false]>
+FUNC <void cv..undistortPoints [ARG vector_Point2f src=, ARG vector_Point2f dst=, ARG Mat cameraMatrix=, ARG Mat distCoeffs=, ARG Mat R=Mat(), ARG Mat P=Mat()]>
+FUNC <void cv..calcHist [ARG vector_Mat images=, ARG vector_int channels=, ARG Mat mask=, ARG Mat hist=, ARG vector_int histSize=, ARG vector_float ranges=, ARG bool accumulate=false]>
+FUNC <void cv..calcBackProject [ARG vector_Mat images=, ARG vector_int channels=, ARG Mat hist=, ARG Mat dst=, ARG vector_float ranges=, ARG double scale=]>
+FUNC <double cv..compareHist [ARG Mat H1=, ARG Mat H2=, ARG int method=]>
+FUNC <void cv..equalizeHist [ARG Mat src=, ARG Mat dst=]>
+FUNC <void cv..watershed [ARG Mat image=, ARG Mat markers=]>
+FUNC <void cv..pyrMeanShiftFiltering [ARG Mat src=, ARG Mat dst=, ARG double sp=, ARG double sr=, ARG int maxLevel=1, ARG TermCriteria termcrit=TermCriteria(TermCriteria::MAX_ITER+TermCriteria::EPS,5,1)]>
+FUNC <void cv..grabCut [ARG Mat img=, ARG Mat mask=, ARG Rect rect=, ARG Mat bgdModel=, ARG Mat fgdModel=, ARG int iterCount=, ARG int mode=GC_EVAL]>
+FUNC <void cv..distanceTransform [ARG Mat src=, ARG Mat dst=, ARG Mat labels=, ARG int distanceType=, ARG int maskSize=, ARG int labelType=DIST_LABEL_CCOMP]>
+FUNC <void cv..distanceTransform [ARG Mat src=, ARG Mat dst=, ARG int distanceType=, ARG int maskSize=, ARG int dstType=CV_32F]>
+FUNC <int cv..floodFill [ARG Mat image=, ARG Mat mask=, ARG Point seedPoint=, ARG Scalar newVal=, ARG Rect * rect=0, ARG Scalar loDiff=Scalar(), ARG Scalar upDiff=Scalar(), ARG int flags=4]>
+FUNC <void cv..cvtColor [ARG Mat src=, ARG Mat dst=, ARG int code=, ARG int dstCn=0]>
+FUNC <void cv..demosaicing [ARG Mat _src=, ARG Mat _dst=, ARG int code=, ARG int dcn=0]>
+FUNC <Moments cv..moments [ARG Mat array=, ARG bool binaryImage=false]>
+SKIP:Moments moments(Mat array, bool binaryImage = false)	 due to RET typeMoments
+FUNC <void cv..HuMoments [ARG Moments m=, ARG Mat hu=]>
+SKIP:void HuMoments(Moments m, Mat& hu)	 due to ARG typeMoments/I
+FUNC <void cv..matchTemplate [ARG Mat image=, ARG Mat templ=, ARG Mat result=, ARG int method=]>
+FUNC <int cv..connectedComponents [ARG Mat image=, ARG Mat labels=, ARG int connectivity=8, ARG int ltype=CV_32S]>
+FUNC <int cv..connectedComponentsWithStats [ARG Mat image=, ARG Mat labels=, ARG Mat stats=, ARG Mat centroids=, ARG int connectivity=8, ARG int ltype=CV_32S]>
+FUNC <void cv..findContours [ARG Mat image=, ARG vector_vector_Point contours=, ARG Mat hierarchy=, ARG int mode=, ARG int method=, ARG Point offset=Point()]>
+FUNC <void cv..approxPolyDP [ARG vector_Point2f curve=, ARG vector_Point2f approxCurve=, ARG double epsilon=, ARG bool closed=]>
+FUNC <double cv..arcLength [ARG vector_Point2f curve=, ARG bool closed=]>
+FUNC <Rect cv..boundingRect [ARG vector_Point points=]>
+FUNC <double cv..contourArea [ARG Mat contour=, ARG bool oriented=false]>
+FUNC <RotatedRect cv..minAreaRect [ARG vector_Point2f points=]>
+FUNC <void cv..boxPoints [ARG RotatedRect box=, ARG Mat points=]>
+FUNC <void cv..minEnclosingCircle [ARG vector_Point2f points=, ARG Point2f center=, ARG float radius=]>
+FUNC <double cv..minEnclosingTriangle [ARG Mat points=, ARG Mat triangle=]>
+FUNC <double cv..matchShapes [ARG Mat contour1=, ARG Mat contour2=, ARG int method=, ARG double parameter=]>
+FUNC <void cv..convexHull [ARG vector_Point points=, ARG vector_int hull=, ARG bool clockwise=false, ARG  returnPoints=true]>
+FUNC <void cv..convexityDefects [ARG vector_Point contour=, ARG vector_int convexhull=, ARG vector_Vec4i convexityDefects=]>
+FUNC <bool cv..isContourConvex [ARG vector_Point contour=]>
+FUNC <float cv..intersectConvexConvex [ARG Mat _p1=, ARG Mat _p2=, ARG Mat _p12=, ARG bool handleNested=true]>
+FUNC <RotatedRect cv..fitEllipse [ARG vector_Point2f points=]>
+FUNC <void cv..fitLine [ARG Mat points=, ARG Mat line=, ARG int distType=, ARG double param=, ARG double reps=, ARG double aeps=]>
+FUNC <double cv..pointPolygonTest [ARG vector_Point2f contour=, ARG Point2f pt=, ARG bool measureDist=]>
+FUNC <int cv..rotatedRectangleIntersection [ARG RotatedRect rect1=, ARG RotatedRect rect2=, ARG Mat intersectingRegion=]>
+FUNC <Ptr_CLAHE cv..createCLAHE [ARG double clipLimit=40.0, ARG Size tileGridSize=Size(8, 8)]>
+FUNC <void cv..applyColorMap [ARG Mat src=, ARG Mat dst=, ARG int colormap=]>
+FUNC <void cv..line [ARG Mat img=, ARG Point pt1=, ARG Point pt2=, ARG Scalar color=, ARG int thickness=1, ARG int lineType=LINE_8, ARG int shift=0]>
+FUNC <void cv..arrowedLine [ARG Mat img=, ARG Point pt1=, ARG Point pt2=, ARG Scalar color=, ARG int thickness=1, ARG int line_type=8, ARG int shift=0, ARG double tipLength=0.1]>
+FUNC <void cv..rectangle [ARG Mat img=, ARG Point pt1=, ARG Point pt2=, ARG Scalar color=, ARG int thickness=1, ARG int lineType=LINE_8, ARG int shift=0]>
+FUNC <void cv..circle [ARG Mat img=, ARG Point center=, ARG int radius=, ARG Scalar color=, ARG int thickness=1, ARG int lineType=LINE_8, ARG int shift=0]>
+FUNC <void cv..ellipse [ARG Mat img=, ARG Point center=, ARG Size axes=, ARG double angle=, ARG double startAngle=, ARG double endAngle=, ARG Scalar color=, ARG int thickness=1, ARG int lineType=LINE_8, ARG int shift=0]>
+FUNC <void cv..ellipse [ARG Mat img=, ARG RotatedRect box=, ARG Scalar color=, ARG int thickness=1, ARG int lineType=LINE_8]>
+FUNC <void cv..fillConvexPoly [ARG Mat img=, ARG vector_Point points=, ARG Scalar color=, ARG int lineType=LINE_8, ARG int shift=0]>
+FUNC <void cv..fillPoly [ARG Mat img=, ARG vector_vector_Point pts=, ARG Scalar color=, ARG int lineType=LINE_8, ARG int shift=0, ARG Point offset=Point()]>
+FUNC <void cv..polylines [ARG Mat img=, ARG vector_vector_Point pts=, ARG bool isClosed=, ARG Scalar color=, ARG int thickness=1, ARG int lineType=LINE_8, ARG int shift=0]>
+FUNC <void cv..drawContours [ARG Mat image=, ARG vector_vector_Point contours=, ARG int contourIdx=, ARG Scalar color=, ARG int thickness=1, ARG int lineType=LINE_8, ARG Mat hierarchy=Mat(), ARG int maxLevel=INT_MAX, ARG Point offset=Point()]>
+FUNC <bool cv..clipLine [ARG Rect imgRect=, ARG Point pt1=, ARG Point pt2=]>
+FUNC <void cv..ellipse2Poly [ARG Point center=, ARG Size axes=, ARG int angle=, ARG int arcStart=, ARG int arcEnd=, ARG int delta=, ARG vector_Point pts=]>
+FUNC <void cv..putText [ARG Mat img=, ARG String text=, ARG Point org=, ARG int fontFace=, ARG double fontScale=, ARG Scalar color=, ARG int thickness=1, ARG int lineType=LINE_8, ARG bool bottomLeftOrigin=false]>
+CLASS cv..CLAHE : Algorithm
+FUNC <void cv.CLAHE.apply [ARG Mat src=, ARG Mat dst=]>
+FUNC <void cv.CLAHE.setTilesGridSize [ARG Size tileGridSize=]>
+FUNC <double cv.CLAHE.getClipLimit []>
+FUNC <void cv.CLAHE.collectGarbage []>
+FUNC <void cv.CLAHE.setClipLimit [ARG double clipLimit=]>
+FUNC <Size cv.CLAHE.getTilesGridSize []>

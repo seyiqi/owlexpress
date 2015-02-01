@@ -1,0 +1,668 @@
+ok: CLASS ..Features2d : 
+
+
+===== Header: /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/modules/features2d/../java/generator/src/cpp/features2d_manual.hpp =====
+Namespaces: set(['cv'])
+
+--- Incoming ---
+['class cv.javaFeatureDetector', '', ['=FeatureDetector'], []]
+ok: CLASS cv..javaFeatureDetector : 
+
+--- Incoming ---
+[   'cv.javaFeatureDetector.detect',
+    'void',
+    [],
+    [   ['Mat', 'image', '', []],
+        ['vector_KeyPoint', 'keypoints', '', ['/O']],
+        ['Mat', 'mask', 'Mat()', []]]]
+ok: FUNC <void cv.javaFeatureDetector.detect [ARG Mat image=, ARG vector_KeyPoint keypoints=, ARG Mat mask=Mat()]>
+
+--- Incoming ---
+[   'cv.javaFeatureDetector.detect',
+    'void',
+    [],
+    [   ['vector_Mat', 'images', '', []],
+        ['vector_vector_KeyPoint', 'keypoints', '', ['/O']],
+        ['vector_Mat', 'masks', 'std::vector<Mat>()', []]]]
+ok: FUNC <void cv.javaFeatureDetector.detect [ARG vector_Mat images=, ARG vector_vector_KeyPoint keypoints=, ARG vector_Mat masks=std::vector<Mat>()]>
+
+--- Incoming ---
+['cv.javaFeatureDetector.empty', 'bool', [], []]
+ok: FUNC <bool cv.javaFeatureDetector.empty []>
+
+--- Incoming ---
+['const cv.javaFeatureDetector.FAST', '1', [], []]
+ok: CONST FAST=1
+
+--- Incoming ---
+['const cv.javaFeatureDetector.STAR', '2', [], []]
+ok: CONST STAR=2
+
+--- Incoming ---
+['const cv.javaFeatureDetector.SIFT', '3', [], []]
+ok: CONST SIFT=3
+
+--- Incoming ---
+['const cv.javaFeatureDetector.SURF', '4', [], []]
+ok: CONST SURF=4
+
+--- Incoming ---
+['const cv.javaFeatureDetector.ORB', '5', [], []]
+ok: CONST ORB=5
+
+--- Incoming ---
+['const cv.javaFeatureDetector.MSER', '6', [], []]
+ok: CONST MSER=6
+
+--- Incoming ---
+['const cv.javaFeatureDetector.GFTT', '7', [], []]
+ok: CONST GFTT=7
+
+--- Incoming ---
+['const cv.javaFeatureDetector.HARRIS', '8', [], []]
+ok: CONST HARRIS=8
+
+--- Incoming ---
+['const cv.javaFeatureDetector.SIMPLEBLOB', '9', [], []]
+ok: CONST SIMPLEBLOB=9
+
+--- Incoming ---
+['const cv.javaFeatureDetector.DENSE', '10', [], []]
+ok: CONST DENSE=10
+
+--- Incoming ---
+['const cv.javaFeatureDetector.BRISK', '11', [], []]
+ok: CONST BRISK=11
+
+--- Incoming ---
+['const cv.javaFeatureDetector.AKAZE', '12', [], []]
+ok: CONST AKAZE=12
+
+--- Incoming ---
+['const cv.javaFeatureDetector.GRIDDETECTOR', '1000', [], []]
+ok: CONST GRIDDETECTOR=1000
+
+--- Incoming ---
+['const cv.javaFeatureDetector.GRID_FAST', 'GRIDDETECTOR + FAST', [], []]
+ok: CONST GRID_FAST=GRIDDETECTOR + FAST
+
+--- Incoming ---
+['const cv.javaFeatureDetector.GRID_STAR', 'GRIDDETECTOR + STAR', [], []]
+ok: CONST GRID_STAR=GRIDDETECTOR + STAR
+
+--- Incoming ---
+['const cv.javaFeatureDetector.GRID_SIFT', 'GRIDDETECTOR + SIFT', [], []]
+ok: CONST GRID_SIFT=GRIDDETECTOR + SIFT
+
+--- Incoming ---
+['const cv.javaFeatureDetector.GRID_SURF', 'GRIDDETECTOR + SURF', [], []]
+ok: CONST GRID_SURF=GRIDDETECTOR + SURF
+
+--- Incoming ---
+['const cv.javaFeatureDetector.GRID_ORB', 'GRIDDETECTOR + ORB', [], []]
+ok: CONST GRID_ORB=GRIDDETECTOR + ORB
+
+--- Incoming ---
+['const cv.javaFeatureDetector.GRID_MSER', 'GRIDDETECTOR + MSER', [], []]
+ok: CONST GRID_MSER=GRIDDETECTOR + MSER
+
+--- Incoming ---
+['const cv.javaFeatureDetector.GRID_GFTT', 'GRIDDETECTOR + GFTT', [], []]
+ok: CONST GRID_GFTT=GRIDDETECTOR + GFTT
+
+--- Incoming ---
+['const cv.javaFeatureDetector.GRID_HARRIS', 'GRIDDETECTOR + HARRIS', [], []]
+ok: CONST GRID_HARRIS=GRIDDETECTOR + HARRIS
+
+--- Incoming ---
+[   'const cv.javaFeatureDetector.GRID_SIMPLEBLOB',
+    'GRIDDETECTOR + SIMPLEBLOB',
+    [],
+    []]
+ok: CONST GRID_SIMPLEBLOB=GRIDDETECTOR + SIMPLEBLOB
+
+--- Incoming ---
+['const cv.javaFeatureDetector.GRID_DENSE', 'GRIDDETECTOR + DENSE', [], []]
+ok: CONST GRID_DENSE=GRIDDETECTOR + DENSE
+
+--- Incoming ---
+['const cv.javaFeatureDetector.GRID_BRISK', 'GRIDDETECTOR + BRISK', [], []]
+ok: CONST GRID_BRISK=GRIDDETECTOR + BRISK
+
+--- Incoming ---
+['const cv.javaFeatureDetector.GRID_AKAZE', 'GRIDDETECTOR + AKAZE', [], []]
+ok: CONST GRID_AKAZE=GRIDDETECTOR + AKAZE
+
+--- Incoming ---
+['const cv.javaFeatureDetector.PYRAMIDDETECTOR', '2000', [], []]
+ok: CONST PYRAMIDDETECTOR=2000
+
+--- Incoming ---
+['const cv.javaFeatureDetector.PYRAMID_FAST', 'PYRAMIDDETECTOR + FAST', [], []]
+ok: CONST PYRAMID_FAST=PYRAMIDDETECTOR + FAST
+
+--- Incoming ---
+['const cv.javaFeatureDetector.PYRAMID_STAR', 'PYRAMIDDETECTOR + STAR', [], []]
+ok: CONST PYRAMID_STAR=PYRAMIDDETECTOR + STAR
+
+--- Incoming ---
+['const cv.javaFeatureDetector.PYRAMID_SIFT', 'PYRAMIDDETECTOR + SIFT', [], []]
+ok: CONST PYRAMID_SIFT=PYRAMIDDETECTOR + SIFT
+
+--- Incoming ---
+['const cv.javaFeatureDetector.PYRAMID_SURF', 'PYRAMIDDETECTOR + SURF', [], []]
+ok: CONST PYRAMID_SURF=PYRAMIDDETECTOR + SURF
+
+--- Incoming ---
+['const cv.javaFeatureDetector.PYRAMID_ORB', 'PYRAMIDDETECTOR + ORB', [], []]
+ok: CONST PYRAMID_ORB=PYRAMIDDETECTOR + ORB
+
+--- Incoming ---
+['const cv.javaFeatureDetector.PYRAMID_MSER', 'PYRAMIDDETECTOR + MSER', [], []]
+ok: CONST PYRAMID_MSER=PYRAMIDDETECTOR + MSER
+
+--- Incoming ---
+['const cv.javaFeatureDetector.PYRAMID_GFTT', 'PYRAMIDDETECTOR + GFTT', [], []]
+ok: CONST PYRAMID_GFTT=PYRAMIDDETECTOR + GFTT
+
+--- Incoming ---
+[   'const cv.javaFeatureDetector.PYRAMID_HARRIS',
+    'PYRAMIDDETECTOR + HARRIS',
+    [],
+    []]
+ok: CONST PYRAMID_HARRIS=PYRAMIDDETECTOR + HARRIS
+
+--- Incoming ---
+[   'const cv.javaFeatureDetector.PYRAMID_SIMPLEBLOB',
+    'PYRAMIDDETECTOR + SIMPLEBLOB',
+    [],
+    []]
+ok: CONST PYRAMID_SIMPLEBLOB=PYRAMIDDETECTOR + SIMPLEBLOB
+
+--- Incoming ---
+[   'const cv.javaFeatureDetector.PYRAMID_DENSE',
+    'PYRAMIDDETECTOR + DENSE',
+    [],
+    []]
+ok: CONST PYRAMID_DENSE=PYRAMIDDETECTOR + DENSE
+
+--- Incoming ---
+[   'const cv.javaFeatureDetector.PYRAMID_BRISK',
+    'PYRAMIDDETECTOR + BRISK',
+    [],
+    []]
+ok: CONST PYRAMID_BRISK=PYRAMIDDETECTOR + BRISK
+
+--- Incoming ---
+[   'const cv.javaFeatureDetector.PYRAMID_AKAZE',
+    'PYRAMIDDETECTOR + AKAZE',
+    [],
+    []]
+ok: CONST PYRAMID_AKAZE=PYRAMIDDETECTOR + AKAZE
+
+--- Incoming ---
+['const cv.javaFeatureDetector.DYNAMICDETECTOR', '3000', [], []]
+ok: CONST DYNAMICDETECTOR=3000
+
+--- Incoming ---
+['const cv.javaFeatureDetector.DYNAMIC_FAST', 'DYNAMICDETECTOR + FAST', [], []]
+ok: CONST DYNAMIC_FAST=DYNAMICDETECTOR + FAST
+
+--- Incoming ---
+['const cv.javaFeatureDetector.DYNAMIC_STAR', 'DYNAMICDETECTOR + STAR', [], []]
+ok: CONST DYNAMIC_STAR=DYNAMICDETECTOR + STAR
+
+--- Incoming ---
+['const cv.javaFeatureDetector.DYNAMIC_SIFT', 'DYNAMICDETECTOR + SIFT', [], []]
+ok: CONST DYNAMIC_SIFT=DYNAMICDETECTOR + SIFT
+
+--- Incoming ---
+['const cv.javaFeatureDetector.DYNAMIC_SURF', 'DYNAMICDETECTOR + SURF', [], []]
+ok: CONST DYNAMIC_SURF=DYNAMICDETECTOR + SURF
+
+--- Incoming ---
+['const cv.javaFeatureDetector.DYNAMIC_ORB', 'DYNAMICDETECTOR + ORB', [], []]
+ok: CONST DYNAMIC_ORB=DYNAMICDETECTOR + ORB
+
+--- Incoming ---
+['const cv.javaFeatureDetector.DYNAMIC_MSER', 'DYNAMICDETECTOR + MSER', [], []]
+ok: CONST DYNAMIC_MSER=DYNAMICDETECTOR + MSER
+
+--- Incoming ---
+['const cv.javaFeatureDetector.DYNAMIC_GFTT', 'DYNAMICDETECTOR + GFTT', [], []]
+ok: CONST DYNAMIC_GFTT=DYNAMICDETECTOR + GFTT
+
+--- Incoming ---
+[   'const cv.javaFeatureDetector.DYNAMIC_HARRIS',
+    'DYNAMICDETECTOR + HARRIS',
+    [],
+    []]
+ok: CONST DYNAMIC_HARRIS=DYNAMICDETECTOR + HARRIS
+
+--- Incoming ---
+[   'const cv.javaFeatureDetector.DYNAMIC_SIMPLEBLOB',
+    'DYNAMICDETECTOR + SIMPLEBLOB',
+    [],
+    []]
+ok: CONST DYNAMIC_SIMPLEBLOB=DYNAMICDETECTOR + SIMPLEBLOB
+
+--- Incoming ---
+[   'const cv.javaFeatureDetector.DYNAMIC_DENSE',
+    'DYNAMICDETECTOR + DENSE',
+    [],
+    []]
+ok: CONST DYNAMIC_DENSE=DYNAMICDETECTOR + DENSE
+
+--- Incoming ---
+[   'const cv.javaFeatureDetector.DYNAMIC_BRISK',
+    'DYNAMICDETECTOR + BRISK',
+    [],
+    []]
+ok: CONST DYNAMIC_BRISK=DYNAMICDETECTOR + BRISK
+
+--- Incoming ---
+[   'const cv.javaFeatureDetector.DYNAMIC_AKAZE',
+    'DYNAMICDETECTOR + AKAZE',
+    [],
+    []]
+ok: CONST DYNAMIC_AKAZE=DYNAMICDETECTOR + AKAZE
+
+--- Incoming ---
+[   'cv.javaFeatureDetector.create',
+    'javaFeatureDetector*',
+    ['/S'],
+    [['int', 'detectorType', '', []]]]
+ok: FUNC <javaFeatureDetector* cv.javaFeatureDetector.create [ARG int detectorType=]>
+
+--- Incoming ---
+['cv.javaFeatureDetector.write', 'void', [], [['String', 'fileName', '', []]]]
+ok: FUNC <void cv.javaFeatureDetector.write [ARG String fileName=]>
+
+--- Incoming ---
+['cv.javaFeatureDetector.read', 'void', [], [['String', 'fileName', '', []]]]
+ok: FUNC <void cv.javaFeatureDetector.read [ARG String fileName=]>
+
+--- Incoming ---
+['class cv.javaDescriptorMatcher', '', ['=DescriptorMatcher'], []]
+ok: CLASS cv..javaDescriptorMatcher : 
+
+--- Incoming ---
+['cv.javaDescriptorMatcher.isMaskSupported', 'bool', [], []]
+ok: FUNC <bool cv.javaDescriptorMatcher.isMaskSupported []>
+
+--- Incoming ---
+[   'cv.javaDescriptorMatcher.add',
+    'void',
+    [],
+    [['vector_Mat', 'descriptors', '', []]]]
+ok: FUNC <void cv.javaDescriptorMatcher.add [ARG vector_Mat descriptors=]>
+
+--- Incoming ---
+['cv.javaDescriptorMatcher.getTrainDescriptors', 'vector_Mat', [], []]
+ok: FUNC <vector_Mat cv.javaDescriptorMatcher.getTrainDescriptors []>
+
+--- Incoming ---
+['cv.javaDescriptorMatcher.clear', 'void', [], []]
+ok: FUNC <void cv.javaDescriptorMatcher.clear []>
+
+--- Incoming ---
+['cv.javaDescriptorMatcher.empty', 'bool', [], []]
+ok: FUNC <bool cv.javaDescriptorMatcher.empty []>
+
+--- Incoming ---
+['cv.javaDescriptorMatcher.train', 'void', [], []]
+ok: FUNC <void cv.javaDescriptorMatcher.train []>
+
+--- Incoming ---
+[   'cv.javaDescriptorMatcher.match',
+    'void',
+    [],
+    [   ['Mat', 'queryDescriptors', '', []],
+        ['Mat', 'trainDescriptors', '', []],
+        ['vector_DMatch', 'matches', '', ['/O']],
+        ['Mat', 'mask', 'Mat()', []]]]
+ok: FUNC <void cv.javaDescriptorMatcher.match [ARG Mat queryDescriptors=, ARG Mat trainDescriptors=, ARG vector_DMatch matches=, ARG Mat mask=Mat()]>
+
+--- Incoming ---
+[   'cv.javaDescriptorMatcher.knnMatch',
+    'void',
+    [],
+    [   ['Mat', 'queryDescriptors', '', []],
+        ['Mat', 'trainDescriptors', '', []],
+        ['vector_vector_DMatch', 'matches', '', ['/O']],
+        ['int', 'k', '', []],
+        ['Mat', 'mask', 'Mat()', []],
+        ['bool', 'compactResult', 'false', []]]]
+ok: FUNC <void cv.javaDescriptorMatcher.knnMatch [ARG Mat queryDescriptors=, ARG Mat trainDescriptors=, ARG vector_vector_DMatch matches=, ARG int k=, ARG Mat mask=Mat(), ARG bool compactResult=false]>
+
+--- Incoming ---
+[   'cv.javaDescriptorMatcher.radiusMatch',
+    'void',
+    [],
+    [   ['Mat', 'queryDescriptors', '', []],
+        ['Mat', 'trainDescriptors', '', []],
+        ['vector_vector_DMatch', 'matches', '', ['/O']],
+        ['float', 'maxDistance', '', []],
+        ['Mat', 'mask', 'Mat()', []],
+        ['bool', 'compactResult', 'false', []]]]
+ok: FUNC <void cv.javaDescriptorMatcher.radiusMatch [ARG Mat queryDescriptors=, ARG Mat trainDescriptors=, ARG vector_vector_DMatch matches=, ARG float maxDistance=, ARG Mat mask=Mat(), ARG bool compactResult=false]>
+
+--- Incoming ---
+[   'cv.javaDescriptorMatcher.match',
+    'void',
+    [],
+    [   ['Mat', 'queryDescriptors', '', []],
+        ['vector_DMatch', 'matches', '', ['/O']],
+        ['vector_Mat', 'masks', 'std::vector<Mat>()', []]]]
+ok: FUNC <void cv.javaDescriptorMatcher.match [ARG Mat queryDescriptors=, ARG vector_DMatch matches=, ARG vector_Mat masks=std::vector<Mat>()]>
+
+--- Incoming ---
+[   'cv.javaDescriptorMatcher.knnMatch',
+    'void',
+    [],
+    [   ['Mat', 'queryDescriptors', '', []],
+        ['vector_vector_DMatch', 'matches', '', ['/O']],
+        ['int', 'k', '', []],
+        ['vector_Mat', 'masks', 'std::vector<Mat>()', []],
+        ['bool', 'compactResult', 'false', []]]]
+ok: FUNC <void cv.javaDescriptorMatcher.knnMatch [ARG Mat queryDescriptors=, ARG vector_vector_DMatch matches=, ARG int k=, ARG vector_Mat masks=std::vector<Mat>(), ARG bool compactResult=false]>
+
+--- Incoming ---
+[   'cv.javaDescriptorMatcher.radiusMatch',
+    'void',
+    [],
+    [   ['Mat', 'queryDescriptors', '', []],
+        ['vector_vector_DMatch', 'matches', '', ['/O']],
+        ['float', 'maxDistance', '', []],
+        ['vector_Mat', 'masks', 'std::vector<Mat>()', []],
+        ['bool', 'compactResult', 'false', []]]]
+ok: FUNC <void cv.javaDescriptorMatcher.radiusMatch [ARG Mat queryDescriptors=, ARG vector_vector_DMatch matches=, ARG float maxDistance=, ARG vector_Mat masks=std::vector<Mat>(), ARG bool compactResult=false]>
+
+--- Incoming ---
+['const cv.javaDescriptorMatcher.FLANNBASED', '1', [], []]
+ok: CONST FLANNBASED=1
+
+--- Incoming ---
+['const cv.javaDescriptorMatcher.BRUTEFORCE', '2', [], []]
+ok: CONST BRUTEFORCE=2
+
+--- Incoming ---
+['const cv.javaDescriptorMatcher.BRUTEFORCE_L1', '3', [], []]
+ok: CONST BRUTEFORCE_L1=3
+
+--- Incoming ---
+['const cv.javaDescriptorMatcher.BRUTEFORCE_HAMMING', '4', [], []]
+ok: CONST BRUTEFORCE_HAMMING=4
+
+--- Incoming ---
+['const cv.javaDescriptorMatcher.BRUTEFORCE_HAMMINGLUT', '5', [], []]
+ok: CONST BRUTEFORCE_HAMMINGLUT=5
+
+--- Incoming ---
+['const cv.javaDescriptorMatcher.BRUTEFORCE_SL2', '6', [], []]
+ok: CONST BRUTEFORCE_SL2=6
+
+--- Incoming ---
+[   'cv.javaDescriptorMatcher.jclone',
+    'javaDescriptorMatcher*',
+    ['=clone'],
+    [['bool', 'emptyTrainData', 'false', []]]]
+ok: FUNC <javaDescriptorMatcher* cv.javaDescriptorMatcher.jclone [ARG bool emptyTrainData=false]>
+
+--- Incoming ---
+[   'cv.javaDescriptorMatcher.create',
+    'javaDescriptorMatcher*',
+    ['/S'],
+    [['int', 'matcherType', '', []]]]
+ok: FUNC <javaDescriptorMatcher* cv.javaDescriptorMatcher.create [ARG int matcherType=]>
+
+--- Incoming ---
+[   'cv.javaDescriptorMatcher.write',
+    'void',
+    [],
+    [['String', 'fileName', '', []]]]
+ok: FUNC <void cv.javaDescriptorMatcher.write [ARG String fileName=]>
+
+--- Incoming ---
+['cv.javaDescriptorMatcher.read', 'void', [], [['String', 'fileName', '', []]]]
+ok: FUNC <void cv.javaDescriptorMatcher.read [ARG String fileName=]>
+
+--- Incoming ---
+['class cv.javaDescriptorExtractor', '', ['=DescriptorExtractor'], []]
+ok: CLASS cv..javaDescriptorExtractor : 
+
+--- Incoming ---
+[   'cv.javaDescriptorExtractor.compute',
+    'void',
+    [],
+    [   ['Mat', 'image', '', []],
+        ['vector_KeyPoint', 'keypoints', '', ['/IO']],
+        ['Mat', 'descriptors', '', []]]]
+ok: FUNC <void cv.javaDescriptorExtractor.compute [ARG Mat image=, ARG vector_KeyPoint keypoints=, ARG Mat descriptors=]>
+
+--- Incoming ---
+[   'cv.javaDescriptorExtractor.compute',
+    'void',
+    [],
+    [   ['vector_Mat', 'images', '', []],
+        ['vector_vector_KeyPoint', 'keypoints', '', ['/IO']],
+        ['vector_Mat', 'descriptors', '', ['/O']]]]
+ok: FUNC <void cv.javaDescriptorExtractor.compute [ARG vector_Mat images=, ARG vector_vector_KeyPoint keypoints=, ARG vector_Mat descriptors=]>
+
+--- Incoming ---
+['cv.javaDescriptorExtractor.descriptorSize', 'int', [], []]
+ok: FUNC <int cv.javaDescriptorExtractor.descriptorSize []>
+
+--- Incoming ---
+['cv.javaDescriptorExtractor.descriptorType', 'int', [], []]
+ok: FUNC <int cv.javaDescriptorExtractor.descriptorType []>
+
+--- Incoming ---
+['cv.javaDescriptorExtractor.empty', 'bool', [], []]
+ok: FUNC <bool cv.javaDescriptorExtractor.empty []>
+
+--- Incoming ---
+['const cv.javaDescriptorExtractor.SIFT', '1', [], []]
+ok: CONST SIFT=1
+
+--- Incoming ---
+['const cv.javaDescriptorExtractor.SURF', '2', [], []]
+ok: CONST SURF=2
+
+--- Incoming ---
+['const cv.javaDescriptorExtractor.ORB', '3', [], []]
+ok: CONST ORB=3
+
+--- Incoming ---
+['const cv.javaDescriptorExtractor.BRIEF', '4', [], []]
+ok: CONST BRIEF=4
+
+--- Incoming ---
+['const cv.javaDescriptorExtractor.BRISK', '5', [], []]
+ok: CONST BRISK=5
+
+--- Incoming ---
+['const cv.javaDescriptorExtractor.FREAK', '6', [], []]
+ok: CONST FREAK=6
+
+--- Incoming ---
+['const cv.javaDescriptorExtractor.AKAZE', '7', [], []]
+ok: CONST AKAZE=7
+
+--- Incoming ---
+['const cv.javaDescriptorExtractor.OPPONENTEXTRACTOR', '1000', [], []]
+ok: CONST OPPONENTEXTRACTOR=1000
+
+--- Incoming ---
+[   'const cv.javaDescriptorExtractor.OPPONENT_SIFT',
+    'OPPONENTEXTRACTOR + SIFT',
+    [],
+    []]
+ok: CONST OPPONENT_SIFT=OPPONENTEXTRACTOR + SIFT
+
+--- Incoming ---
+[   'const cv.javaDescriptorExtractor.OPPONENT_SURF',
+    'OPPONENTEXTRACTOR + SURF',
+    [],
+    []]
+ok: CONST OPPONENT_SURF=OPPONENTEXTRACTOR + SURF
+
+--- Incoming ---
+[   'const cv.javaDescriptorExtractor.OPPONENT_ORB',
+    'OPPONENTEXTRACTOR + ORB',
+    [],
+    []]
+ok: CONST OPPONENT_ORB=OPPONENTEXTRACTOR + ORB
+
+--- Incoming ---
+[   'const cv.javaDescriptorExtractor.OPPONENT_BRIEF',
+    'OPPONENTEXTRACTOR + BRIEF',
+    [],
+    []]
+ok: CONST OPPONENT_BRIEF=OPPONENTEXTRACTOR + BRIEF
+
+--- Incoming ---
+[   'const cv.javaDescriptorExtractor.OPPONENT_BRISK',
+    'OPPONENTEXTRACTOR + BRISK',
+    [],
+    []]
+ok: CONST OPPONENT_BRISK=OPPONENTEXTRACTOR + BRISK
+
+--- Incoming ---
+[   'const cv.javaDescriptorExtractor.OPPONENT_FREAK',
+    'OPPONENTEXTRACTOR + FREAK',
+    [],
+    []]
+ok: CONST OPPONENT_FREAK=OPPONENTEXTRACTOR + FREAK
+
+--- Incoming ---
+[   'const cv.javaDescriptorExtractor.OPPONENT_AKAZE',
+    'OPPONENTEXTRACTOR + AKAZE',
+    [],
+    []]
+ok: CONST OPPONENT_AKAZE=OPPONENTEXTRACTOR + AKAZE
+
+--- Incoming ---
+[   'cv.javaDescriptorExtractor.create',
+    'javaDescriptorExtractor*',
+    ['/S'],
+    [['int', 'extractorType', '', []]]]
+ok: FUNC <javaDescriptorExtractor* cv.javaDescriptorExtractor.create [ARG int extractorType=]>
+
+--- Incoming ---
+[   'cv.javaDescriptorExtractor.write',
+    'void',
+    [],
+    [['String', 'fileName', '', []]]]
+ok: FUNC <void cv.javaDescriptorExtractor.write [ARG String fileName=]>
+
+--- Incoming ---
+[   'cv.javaDescriptorExtractor.read',
+    'void',
+    [],
+    [['String', 'fileName', '', []]]]
+ok: FUNC <void cv.javaDescriptorExtractor.read [ARG String fileName=]>
+
+--- Incoming ---
+['const cv.DRAW_OVER_OUTIMG', '1', [], []]
+ok: CONST DRAW_OVER_OUTIMG=1
+
+--- Incoming ---
+['const cv.NOT_DRAW_SINGLE_POINTS', '2', [], []]
+ok: CONST NOT_DRAW_SINGLE_POINTS=2
+
+--- Incoming ---
+['const cv.DRAW_RICH_KEYPOINTS', '4', [], []]
+ok: CONST DRAW_RICH_KEYPOINTS=4
+
+--- Incoming ---
+[   'cv.drawKeypoints',
+    'void',
+    [],
+    [   ['Mat', 'image', '', []],
+        ['vector_KeyPoint', 'keypoints', '', []],
+        ['Mat', 'outImage', '', []],
+        ['Scalar', 'color', 'Scalar::all(-1)', []],
+        ['int', 'flags', '0', []]]]
+ok: FUNC <void cv..drawKeypoints [ARG Mat image=, ARG vector_KeyPoint keypoints=, ARG Mat outImage=, ARG Scalar color=Scalar::all(-1), ARG int flags=0]>
+
+--- Incoming ---
+[   'cv.drawMatches',
+    'void',
+    [],
+    [   ['Mat', 'img1', '', []],
+        ['vector_KeyPoint', 'keypoints1', '', []],
+        ['Mat', 'img2', '', []],
+        ['vector_KeyPoint', 'keypoints2', '', []],
+        ['vector_DMatch', 'matches1to2', '', []],
+        ['Mat', 'outImg', '', []],
+        ['Scalar', 'matchColor', 'Scalar::all(-1)', []],
+        ['Scalar', 'singlePointColor', 'Scalar::all(-1)', []],
+        ['vector_char', 'matchesMask', 'std::vector<char>()', []],
+        ['int', 'flags', '0', []]]]
+ok: FUNC <void cv..drawMatches [ARG Mat img1=, ARG vector_KeyPoint keypoints1=, ARG Mat img2=, ARG vector_KeyPoint keypoints2=, ARG vector_DMatch matches1to2=, ARG Mat outImg=, ARG Scalar matchColor=Scalar::all(-1), ARG Scalar singlePointColor=Scalar::all(-1), ARG vector_char matchesMask=std::vector<char>(), ARG int flags=0]>
+
+--- Incoming ---
+[   'cv.drawMatches',
+    'void',
+    ['=drawMatches2'],
+    [   ['Mat', 'img1', '', []],
+        ['vector_KeyPoint', 'keypoints1', '', []],
+        ['Mat', 'img2', '', []],
+        ['vector_KeyPoint', 'keypoints2', '', []],
+        ['vector_vector_DMatch', 'matches1to2', '', []],
+        ['Mat', 'outImg', '', []],
+        ['Scalar', 'matchColor', 'Scalar::all(-1)', []],
+        ['Scalar', 'singlePointColor', 'Scalar::all(-1)', []],
+        [   'vector_vector_char',
+            'matchesMask',
+            'std::vector<std::vector<char> >()',
+            []],
+        ['int', 'flags', '0', []]]]
+ok: FUNC <void cv..drawMatches [ARG Mat img1=, ARG vector_KeyPoint keypoints1=, ARG Mat img2=, ARG vector_KeyPoint keypoints2=, ARG vector_vector_DMatch matches1to2=, ARG Mat outImg=, ARG Scalar matchColor=Scalar::all(-1), ARG Scalar singlePointColor=Scalar::all(-1), ARG vector_vector_char matchesMask=std::vector<std::vector<char> >(), ARG int flags=0]>
+
+
+===== Generating... =====
+CLASS cv..javaDescriptorExtractor : 
+[CONST OPPONENTEXTRACTOR=1000]
+[CONST SIFT=1, CONST SURF=2, CONST ORB=3, CONST BRIEF=4, CONST BRISK=5, CONST FREAK=6, CONST AKAZE=7, CONST OPPONENT_SIFT=OPPONENTEXTRACTOR + SIFT, CONST OPPONENT_SURF=OPPONENTEXTRACTOR + SURF, CONST OPPONENT_ORB=OPPONENTEXTRACTOR + ORB, CONST OPPONENT_BRIEF=OPPONENTEXTRACTOR + BRIEF, CONST OPPONENT_BRISK=OPPONENTEXTRACTOR + BRISK, CONST OPPONENT_FREAK=OPPONENTEXTRACTOR + FREAK, CONST OPPONENT_AKAZE=OPPONENTEXTRACTOR + AKAZE]
+FUNC <void cv.javaDescriptorExtractor.compute [ARG Mat image=, ARG vector_KeyPoint keypoints=, ARG Mat descriptors=]>
+FUNC <void cv.javaDescriptorExtractor.compute [ARG vector_Mat images=, ARG vector_vector_KeyPoint keypoints=, ARG vector_Mat descriptors=]>
+FUNC <int cv.javaDescriptorExtractor.descriptorSize []>
+FUNC <int cv.javaDescriptorExtractor.descriptorType []>
+FUNC <bool cv.javaDescriptorExtractor.empty []>
+FUNC <javaDescriptorExtractor* cv.javaDescriptorExtractor.create [ARG int extractorType=]>
+FUNC <void cv.javaDescriptorExtractor.write [ARG String fileName=]>
+FUNC <void cv.javaDescriptorExtractor.read [ARG String fileName=]>
+CLASS ..Features2d : 
+[CONST DRAW_OVER_OUTIMG=1, CONST NOT_DRAW_SINGLE_POINTS=2, CONST DRAW_RICH_KEYPOINTS=4]
+FUNC <void cv..drawKeypoints [ARG Mat image=, ARG vector_KeyPoint keypoints=, ARG Mat outImage=, ARG Scalar color=Scalar::all(-1), ARG int flags=0]>
+FUNC <void cv..drawMatches [ARG Mat img1=, ARG vector_KeyPoint keypoints1=, ARG Mat img2=, ARG vector_KeyPoint keypoints2=, ARG vector_DMatch matches1to2=, ARG Mat outImg=, ARG Scalar matchColor=Scalar::all(-1), ARG Scalar singlePointColor=Scalar::all(-1), ARG vector_char matchesMask=std::vector<char>(), ARG int flags=0]>
+FUNC <void cv..drawMatches [ARG Mat img1=, ARG vector_KeyPoint keypoints1=, ARG Mat img2=, ARG vector_KeyPoint keypoints2=, ARG vector_vector_DMatch matches1to2=, ARG Mat outImg=, ARG Scalar matchColor=Scalar::all(-1), ARG Scalar singlePointColor=Scalar::all(-1), ARG vector_vector_char matchesMask=std::vector<std::vector<char> >(), ARG int flags=0]>
+CLASS cv..javaDescriptorMatcher : 
+[CONST FLANNBASED=1, CONST BRUTEFORCE=2, CONST BRUTEFORCE_L1=3, CONST BRUTEFORCE_HAMMING=4, CONST BRUTEFORCE_HAMMINGLUT=5, CONST BRUTEFORCE_SL2=6]
+FUNC <bool cv.javaDescriptorMatcher.isMaskSupported []>
+FUNC <void cv.javaDescriptorMatcher.add [ARG vector_Mat descriptors=]>
+FUNC <void cv.javaDescriptorMatcher.clear []>
+FUNC <vector_Mat cv.javaDescriptorMatcher.getTrainDescriptors []>
+FUNC <bool cv.javaDescriptorMatcher.empty []>
+FUNC <void cv.javaDescriptorMatcher.train []>
+FUNC <void cv.javaDescriptorMatcher.match [ARG Mat queryDescriptors=, ARG Mat trainDescriptors=, ARG vector_DMatch matches=, ARG Mat mask=Mat()]>
+FUNC <void cv.javaDescriptorMatcher.knnMatch [ARG Mat queryDescriptors=, ARG Mat trainDescriptors=, ARG vector_vector_DMatch matches=, ARG int k=, ARG Mat mask=Mat(), ARG bool compactResult=false]>
+FUNC <void cv.javaDescriptorMatcher.radiusMatch [ARG Mat queryDescriptors=, ARG Mat trainDescriptors=, ARG vector_vector_DMatch matches=, ARG float maxDistance=, ARG Mat mask=Mat(), ARG bool compactResult=false]>
+FUNC <void cv.javaDescriptorMatcher.match [ARG Mat queryDescriptors=, ARG vector_DMatch matches=, ARG vector_Mat masks=std::vector<Mat>()]>
+FUNC <void cv.javaDescriptorMatcher.knnMatch [ARG Mat queryDescriptors=, ARG vector_vector_DMatch matches=, ARG int k=, ARG vector_Mat masks=std::vector<Mat>(), ARG bool compactResult=false]>
+FUNC <void cv.javaDescriptorMatcher.radiusMatch [ARG Mat queryDescriptors=, ARG vector_vector_DMatch matches=, ARG float maxDistance=, ARG vector_Mat masks=std::vector<Mat>(), ARG bool compactResult=false]>
+FUNC <javaDescriptorMatcher* cv.javaDescriptorMatcher.jclone [ARG bool emptyTrainData=false]>
+FUNC <javaDescriptorMatcher* cv.javaDescriptorMatcher.create [ARG int matcherType=]>
+FUNC <void cv.javaDescriptorMatcher.write [ARG String fileName=]>
+FUNC <void cv.javaDescriptorMatcher.read [ARG String fileName=]>
+CLASS cv..javaFeatureDetector : 
+[CONST GRIDDETECTOR=1000, CONST PYRAMIDDETECTOR=2000, CONST DYNAMICDETECTOR=3000]
+[CONST FAST=1, CONST STAR=2, CONST SIFT=3, CONST SURF=4, CONST ORB=5, CONST MSER=6, CONST GFTT=7, CONST HARRIS=8, CONST SIMPLEBLOB=9, CONST DENSE=10, CONST BRISK=11, CONST AKAZE=12, CONST GRID_FAST=GRIDDETECTOR + FAST, CONST GRID_STAR=GRIDDETECTOR + STAR, CONST GRID_SIFT=GRIDDETECTOR + SIFT, CONST GRID_SURF=GRIDDETECTOR + SURF, CONST GRID_ORB=GRIDDETECTOR + ORB, CONST GRID_MSER=GRIDDETECTOR + MSER, CONST GRID_GFTT=GRIDDETECTOR + GFTT, CONST GRID_HARRIS=GRIDDETECTOR + HARRIS, CONST GRID_SIMPLEBLOB=GRIDDETECTOR + SIMPLEBLOB, CONST GRID_DENSE=GRIDDETECTOR + DENSE, CONST GRID_BRISK=GRIDDETECTOR + BRISK, CONST GRID_AKAZE=GRIDDETECTOR + AKAZE, CONST PYRAMID_FAST=PYRAMIDDETECTOR + FAST, CONST PYRAMID_STAR=PYRAMIDDETECTOR + STAR, CONST PYRAMID_SIFT=PYRAMIDDETECTOR + SIFT, CONST PYRAMID_SURF=PYRAMIDDETECTOR + SURF, CONST PYRAMID_ORB=PYRAMIDDETECTOR + ORB, CONST PYRAMID_MSER=PYRAMIDDETECTOR + MSER, CONST PYRAMID_GFTT=PYRAMIDDETECTOR + GFTT, CONST PYRAMID_HARRIS=PYRAMIDDETECTOR + HARRIS, CONST PYRAMID_SIMPLEBLOB=PYRAMIDDETECTOR + SIMPLEBLOB, CONST PYRAMID_DENSE=PYRAMIDDETECTOR + DENSE, CONST PYRAMID_BRISK=PYRAMIDDETECTOR + BRISK, CONST PYRAMID_AKAZE=PYRAMIDDETECTOR + AKAZE, CONST DYNAMIC_FAST=DYNAMICDETECTOR + FAST, CONST DYNAMIC_STAR=DYNAMICDETECTOR + STAR, CONST DYNAMIC_SIFT=DYNAMICDETECTOR + SIFT, CONST DYNAMIC_SURF=DYNAMICDETECTOR + SURF, CONST DYNAMIC_ORB=DYNAMICDETECTOR + ORB, CONST DYNAMIC_MSER=DYNAMICDETECTOR + MSER, CONST DYNAMIC_GFTT=DYNAMICDETECTOR + GFTT, CONST DYNAMIC_HARRIS=DYNAMICDETECTOR + HARRIS, CONST DYNAMIC_SIMPLEBLOB=DYNAMICDETECTOR + SIMPLEBLOB, CONST DYNAMIC_DENSE=DYNAMICDETECTOR + DENSE, CONST DYNAMIC_BRISK=DYNAMICDETECTOR + BRISK, CONST DYNAMIC_AKAZE=DYNAMICDETECTOR + AKAZE]
+FUNC <void cv.javaFeatureDetector.detect [ARG Mat image=, ARG vector_KeyPoint keypoints=, ARG Mat mask=Mat()]>
+FUNC <void cv.javaFeatureDetector.detect [ARG vector_Mat images=, ARG vector_vector_KeyPoint keypoints=, ARG vector_Mat masks=std::vector<Mat>()]>
+FUNC <bool cv.javaFeatureDetector.empty []>
+FUNC <javaFeatureDetector* cv.javaFeatureDetector.create [ARG int detectorType=]>
+FUNC <void cv.javaFeatureDetector.write [ARG String fileName=]>
+FUNC <void cv.javaFeatureDetector.read [ARG String fileName=]>

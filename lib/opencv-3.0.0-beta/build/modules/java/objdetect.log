@@ -1,0 +1,344 @@
+ok: CLASS ..Objdetect : 
+
+
+===== Header: /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/modules/objdetect/include/opencv2/objdetect/objdetect_c.h =====
+Namespaces: set([''])
+
+
+===== Header: /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/modules/objdetect/include/opencv2/objdetect.hpp =====
+Namespaces: set(['', 'cv'])
+
+--- Incoming ---
+[   'cv.groupRectangles',
+    'void',
+    [],
+    [   ['vector_Rect', 'rectList', '', ['/IO']],
+        ['vector_int', 'weights', '', ['/O']],
+        ['int', 'groupThreshold', '', []],
+        ['double', 'eps', '0.2', []]]]
+ok: FUNC <void cv..groupRectangles [ARG vector_Rect rectList=, ARG vector_int weights=, ARG int groupThreshold=, ARG double eps=0.2]>
+
+--- Incoming ---
+['const cv.CASCADE_DO_CANNY_PRUNING', '1', [], []]
+ok: CONST CASCADE_DO_CANNY_PRUNING=1
+
+--- Incoming ---
+['const cv.CASCADE_SCALE_IMAGE', '2', [], []]
+ok: CONST CASCADE_SCALE_IMAGE=2
+
+--- Incoming ---
+['const cv.CASCADE_FIND_BIGGEST_OBJECT', '4', [], []]
+ok: CONST CASCADE_FIND_BIGGEST_OBJECT=4
+
+--- Incoming ---
+['const cv.CASCADE_DO_ROUGH_SEARCH', '8', [], []]
+ok: CONST CASCADE_DO_ROUGH_SEARCH=8
+
+--- Incoming ---
+['class cv.BaseCascadeClassifier', ': cv::Algorithm', [], []]
+ok: CLASS cv..BaseCascadeClassifier : Algorithm
+
+--- Incoming ---
+['class cv.CascadeClassifier', '', [], []]
+ok: CLASS cv..CascadeClassifier : 
+
+--- Incoming ---
+['cv.CascadeClassifier.CascadeClassifier', '', [], []]
+ok: FUNC < cv.CascadeClassifier.CascadeClassifier []>
+
+--- Incoming ---
+[   'cv.CascadeClassifier.CascadeClassifier',
+    '',
+    [],
+    [['String', 'filename', '', []]]]
+ok: FUNC < cv.CascadeClassifier.CascadeClassifier [ARG String filename=]>
+
+--- Incoming ---
+['cv.CascadeClassifier.empty', 'bool', [], []]
+ok: FUNC <bool cv.CascadeClassifier.empty []>
+
+--- Incoming ---
+['cv.CascadeClassifier.load', 'bool', [], [['String', 'filename', '', []]]]
+ok: FUNC <bool cv.CascadeClassifier.load [ARG String filename=]>
+
+--- Incoming ---
+['cv.CascadeClassifier.read', 'bool', [], [['FileNode', 'node', '', []]]]
+ok: FUNC <bool cv.CascadeClassifier.read [ARG FileNode node=]>
+
+--- Incoming ---
+[   'cv.CascadeClassifier.detectMultiScale',
+    'void',
+    [],
+    [   ['Mat', 'image', '', []],
+        ['vector_Rect', 'objects', '', ['/O']],
+        ['double', 'scaleFactor', '1.1', []],
+        ['int', 'minNeighbors', '3', []],
+        ['int', 'flags', '0', []],
+        ['Size', 'minSize', 'Size()', []],
+        ['Size', 'maxSize', 'Size()', []]]]
+ok: FUNC <void cv.CascadeClassifier.detectMultiScale [ARG Mat image=, ARG vector_Rect objects=, ARG double scaleFactor=1.1, ARG int minNeighbors=3, ARG int flags=0, ARG Size minSize=Size(), ARG Size maxSize=Size()]>
+
+--- Incoming ---
+[   'cv.CascadeClassifier.detectMultiScale',
+    'void',
+    ['=detectMultiScale2'],
+    [   ['Mat', 'image', '', []],
+        ['vector_Rect', 'objects', '', ['/O']],
+        ['vector_int', 'numDetections', '', ['/O']],
+        ['double', 'scaleFactor', '1.1', []],
+        ['int', 'minNeighbors', '3', []],
+        ['int', 'flags', '0', []],
+        ['Size', 'minSize', 'Size()', []],
+        ['Size', 'maxSize', 'Size()', []]]]
+ok: FUNC <void cv.CascadeClassifier.detectMultiScale [ARG Mat image=, ARG vector_Rect objects=, ARG vector_int numDetections=, ARG double scaleFactor=1.1, ARG int minNeighbors=3, ARG int flags=0, ARG Size minSize=Size(), ARG Size maxSize=Size()]>
+
+--- Incoming ---
+[   'cv.CascadeClassifier.detectMultiScale',
+    'void',
+    ['=detectMultiScale3'],
+    [   ['Mat', 'image', '', []],
+        ['vector_Rect', 'objects', '', ['/O']],
+        ['vector_int', 'rejectLevels', '', ['/O']],
+        ['vector_double', 'levelWeights', '', ['/O']],
+        ['double', 'scaleFactor', '1.1', []],
+        ['int', 'minNeighbors', '3', []],
+        ['int', 'flags', '0', []],
+        ['Size', 'minSize', 'Size()', []],
+        ['Size', 'maxSize', 'Size()', []],
+        ['bool', 'outputRejectLevels', 'false', []]]]
+ok: FUNC <void cv.CascadeClassifier.detectMultiScale [ARG Mat image=, ARG vector_Rect objects=, ARG vector_int rejectLevels=, ARG vector_double levelWeights=, ARG double scaleFactor=1.1, ARG int minNeighbors=3, ARG int flags=0, ARG Size minSize=Size(), ARG Size maxSize=Size(), ARG bool outputRejectLevels=false]>
+
+--- Incoming ---
+['cv.CascadeClassifier.isOldFormatCascade', 'bool', [], []]
+ok: FUNC <bool cv.CascadeClassifier.isOldFormatCascade []>
+
+--- Incoming ---
+['cv.CascadeClassifier.getOriginalWindowSize', 'Size', [], []]
+ok: FUNC <Size cv.CascadeClassifier.getOriginalWindowSize []>
+
+--- Incoming ---
+['cv.CascadeClassifier.getFeatureType', 'int', [], []]
+ok: FUNC <int cv.CascadeClassifier.getFeatureType []>
+
+--- Incoming ---
+[   'cv.CascadeClassifier.convert',
+    'bool',
+    ['/S'],
+    [['String', 'oldcascade', '', []], ['String', 'newcascade', '', []]]]
+ok: FUNC <bool cv.CascadeClassifier.convert [ARG String oldcascade=, ARG String newcascade=]>
+
+--- Incoming ---
+[   'struct cv.HOGDescriptor',
+    '',
+    [],
+    [   ['Size', 'winSize', '', []],
+        ['Size', 'blockSize', '', []],
+        ['Size', 'blockStride', '', []],
+        ['Size', 'cellSize', '', []],
+        ['int', 'nbins', '', []],
+        ['int', 'derivAperture', '', []],
+        ['double', 'winSigma', '', []],
+        ['int', 'histogramNormType', '', []],
+        ['double', 'L2HysThreshold', '', []],
+        ['bool', 'gammaCorrection', '', []],
+        ['vector_float', 'svmDetector', '', []],
+        ['int', 'nlevels', '', []]]]
+ok: CLASS cv..HOGDescriptor : 
+
+--- Incoming ---
+['const cv.HOGDescriptor.L2Hys', '0', [], []]
+ok: CONST L2Hys=0
+
+--- Incoming ---
+['const cv.HOGDescriptor.DEFAULT_NLEVELS', '64', [], []]
+ok: CONST DEFAULT_NLEVELS=64
+
+--- Incoming ---
+['cv.HOGDescriptor.HOGDescriptor', '', [], []]
+ok: FUNC < cv.HOGDescriptor.HOGDescriptor []>
+
+--- Incoming ---
+[   'cv.HOGDescriptor.HOGDescriptor',
+    '',
+    [],
+    [   ['Size', '_winSize', '', []],
+        ['Size', '_blockSize', '', []],
+        ['Size', '_blockStride', '', []],
+        ['Size', '_cellSize', '', []],
+        ['int', '_nbins', '', []],
+        ['int', '_derivAperture', '1', []],
+        ['double', '_winSigma', '-1', []],
+        ['int', '_histogramNormType', 'HOGDescriptor::L2Hys', []],
+        ['double', '_L2HysThreshold', '0.2', []],
+        ['bool', '_gammaCorrection', 'false', []],
+        ['int', '_nlevels', 'HOGDescriptor::DEFAULT_NLEVELS', []]]]
+ok: FUNC < cv.HOGDescriptor.HOGDescriptor [ARG Size _winSize=, ARG Size _blockSize=, ARG Size _blockStride=, ARG Size _cellSize=, ARG int _nbins=, ARG int _derivAperture=1, ARG double _winSigma=-1, ARG int _histogramNormType=HOGDescriptor::L2Hys, ARG double _L2HysThreshold=0.2, ARG bool _gammaCorrection=false, ARG int _nlevels=HOGDescriptor::DEFAULT_NLEVELS]>
+
+--- Incoming ---
+['cv.HOGDescriptor.HOGDescriptor', '', [], [['String', 'filename', '', []]]]
+ok: FUNC < cv.HOGDescriptor.HOGDescriptor [ARG String filename=]>
+
+--- Incoming ---
+['cv.HOGDescriptor.getDescriptorSize', 'size_t', [], []]
+ok: FUNC <size_t cv.HOGDescriptor.getDescriptorSize []>
+
+--- Incoming ---
+['cv.HOGDescriptor.checkDetectorSize', 'bool', [], []]
+ok: FUNC <bool cv.HOGDescriptor.checkDetectorSize []>
+
+--- Incoming ---
+['cv.HOGDescriptor.getWinSigma', 'double', [], []]
+ok: FUNC <double cv.HOGDescriptor.getWinSigma []>
+
+--- Incoming ---
+[   'cv.HOGDescriptor.setSVMDetector',
+    'void',
+    [],
+    [['Mat', '_svmdetector', '', []]]]
+ok: FUNC <void cv.HOGDescriptor.setSVMDetector [ARG Mat _svmdetector=]>
+
+--- Incoming ---
+[   'cv.HOGDescriptor.load',
+    'bool',
+    [],
+    [['String', 'filename', '', []], ['String', 'objname', 'String()', []]]]
+ok: FUNC <bool cv.HOGDescriptor.load [ARG String filename=, ARG String objname=String()]>
+
+--- Incoming ---
+[   'cv.HOGDescriptor.save',
+    'void',
+    [],
+    [['String', 'filename', '', []], ['String', 'objname', 'String()', []]]]
+ok: FUNC <void cv.HOGDescriptor.save [ARG String filename=, ARG String objname=String()]>
+
+--- Incoming ---
+[   'cv.HOGDescriptor.compute',
+    'void',
+    [],
+    [   ['Mat', 'img', '', []],
+        ['vector_float', 'descriptors', '', ['/O']],
+        ['Size', 'winStride', 'Size()', []],
+        ['Size', 'padding', 'Size()', []],
+        ['vector_Point', 'locations', 'std::vector<Point>()', []]]]
+ok: FUNC <void cv.HOGDescriptor.compute [ARG Mat img=, ARG vector_float descriptors=, ARG Size winStride=Size(), ARG Size padding=Size(), ARG vector_Point locations=std::vector<Point>()]>
+
+--- Incoming ---
+[   'cv.HOGDescriptor.detect',
+    'void',
+    [],
+    [   ['Mat', 'img', '', []],
+        ['vector_Point', 'foundLocations', '', ['/O']],
+        ['vector_double', 'weights', '', ['/O']],
+        ['double', 'hitThreshold', '0', []],
+        ['Size', 'winStride', 'Size()', []],
+        ['Size', 'padding', 'Size()', []],
+        ['vector_Point', 'searchLocations', 'std::vector<Point>()', []]]]
+ok: FUNC <void cv.HOGDescriptor.detect [ARG Mat img=, ARG vector_Point foundLocations=, ARG vector_double weights=, ARG double hitThreshold=0, ARG Size winStride=Size(), ARG Size padding=Size(), ARG vector_Point searchLocations=std::vector<Point>()]>
+
+--- Incoming ---
+[   'cv.HOGDescriptor.detectMultiScale',
+    'void',
+    [],
+    [   ['Mat', 'img', '', []],
+        ['vector_Rect', 'foundLocations', '', ['/O']],
+        ['vector_double', 'foundWeights', '', ['/O']],
+        ['double', 'hitThreshold', '0', []],
+        ['Size', 'winStride', 'Size()', []],
+        ['Size', 'padding', 'Size()', []],
+        ['double', 'scale', '1.05', []],
+        ['double', 'finalThreshold', '2.0', []],
+        ['bool', 'useMeanshiftGrouping', 'false', []]]]
+ok: FUNC <void cv.HOGDescriptor.detectMultiScale [ARG Mat img=, ARG vector_Rect foundLocations=, ARG vector_double foundWeights=, ARG double hitThreshold=0, ARG Size winStride=Size(), ARG Size padding=Size(), ARG double scale=1.05, ARG double finalThreshold=2.0, ARG bool useMeanshiftGrouping=false]>
+
+--- Incoming ---
+[   'cv.HOGDescriptor.computeGradient',
+    'void',
+    [],
+    [   ['Mat', 'img', '', []],
+        ['Mat', 'grad', '', ['/O']],
+        ['Mat', 'angleOfs', '', ['/O']],
+        ['Size', 'paddingTL', 'Size()', []],
+        ['Size', 'paddingBR', 'Size()', []]]]
+ok: FUNC <void cv.HOGDescriptor.computeGradient [ARG Mat img=, ARG Mat grad=, ARG Mat angleOfs=, ARG Size paddingTL=Size(), ARG Size paddingBR=Size()]>
+
+--- Incoming ---
+['cv.HOGDescriptor.getDefaultPeopleDetector', 'vector_float', ['/S'], []]
+ok: FUNC <vector_float cv.HOGDescriptor.getDefaultPeopleDetector []>
+
+--- Incoming ---
+['cv.HOGDescriptor.getDaimlerPeopleDetector', 'vector_float', ['/S'], []]
+ok: FUNC <vector_float cv.HOGDescriptor.getDaimlerPeopleDetector []>
+
+
+===== Header: /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/modules/objdetect/include/opencv2/objdetect/detection_based_tracker.hpp =====
+Namespaces: set(['', 'cv'])
+
+--- Incoming ---
+['const cv.DetectionBasedTracker.DETECTED_NOT_SHOWN_YET', '0', [], []]
+class not found: CONST DETECTED_NOT_SHOWN_YET=0
+
+--- Incoming ---
+['const cv.DetectionBasedTracker.DETECTED', '1', [], []]
+class not found: CONST DETECTED=1
+
+--- Incoming ---
+['const cv.DetectionBasedTracker.DETECTED_TEMPORARY_LOST', '2', [], []]
+class not found: CONST DETECTED_TEMPORARY_LOST=2
+
+--- Incoming ---
+['const cv.DetectionBasedTracker.WRONG_OBJECT', '3', [], []]
+class not found: CONST WRONG_OBJECT=3
+
+
+===== Header: /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/modules/objdetect/include/opencv2/objdetect/objdetect.hpp =====
+Namespaces: set(['', 'cv'])
+
+
+===== Generating... =====
+CLASS cv..CascadeClassifier : 
+FUNC < cv.CascadeClassifier.CascadeClassifier []>
+FUNC < cv.CascadeClassifier.CascadeClassifier [ARG String filename=]>
+FUNC <bool cv.CascadeClassifier.empty []>
+FUNC <bool cv.CascadeClassifier.load [ARG String filename=]>
+FUNC <bool cv.CascadeClassifier.read [ARG FileNode node=]>
+SKIP:bool read(FileNode node)	 due to ARG typeFileNode/I
+FUNC <void cv.CascadeClassifier.detectMultiScale [ARG Mat image=, ARG vector_Rect objects=, ARG double scaleFactor=1.1, ARG int minNeighbors=3, ARG int flags=0, ARG Size minSize=Size(), ARG Size maxSize=Size()]>
+FUNC <void cv.CascadeClassifier.detectMultiScale [ARG Mat image=, ARG vector_Rect objects=, ARG vector_int numDetections=, ARG double scaleFactor=1.1, ARG int minNeighbors=3, ARG int flags=0, ARG Size minSize=Size(), ARG Size maxSize=Size()]>
+FUNC <void cv.CascadeClassifier.detectMultiScale [ARG Mat image=, ARG vector_Rect objects=, ARG vector_int rejectLevels=, ARG vector_double levelWeights=, ARG double scaleFactor=1.1, ARG int minNeighbors=3, ARG int flags=0, ARG Size minSize=Size(), ARG Size maxSize=Size(), ARG bool outputRejectLevels=false]>
+FUNC <bool cv.CascadeClassifier.isOldFormatCascade []>
+FUNC <Size cv.CascadeClassifier.getOriginalWindowSize []>
+FUNC <bool cv.CascadeClassifier.convert [ARG String oldcascade=, ARG String newcascade=]>
+FUNC <int cv.CascadeClassifier.getFeatureType []>
+CLASS cv..BaseCascadeClassifier : Algorithm
+CLASS cv..HOGDescriptor : 
+[CONST L2Hys=0, CONST DEFAULT_NLEVELS=64]
+FUNC < cv.HOGDescriptor.HOGDescriptor [ARG Size _winSize=, ARG Size _blockSize=, ARG Size _blockStride=, ARG Size _cellSize=, ARG int _nbins=, ARG int _derivAperture=1, ARG double _winSigma=-1, ARG int _histogramNormType=HOGDescriptor::L2Hys, ARG double _L2HysThreshold=0.2, ARG bool _gammaCorrection=false, ARG int _nlevels=HOGDescriptor::DEFAULT_NLEVELS]>
+FUNC < cv.HOGDescriptor.HOGDescriptor []>
+FUNC < cv.HOGDescriptor.HOGDescriptor [ARG String filename=]>
+FUNC <size_t cv.HOGDescriptor.getDescriptorSize []>
+FUNC <bool cv.HOGDescriptor.checkDetectorSize []>
+FUNC <double cv.HOGDescriptor.getWinSigma []>
+FUNC <void cv.HOGDescriptor.setSVMDetector [ARG Mat _svmdetector=]>
+FUNC <bool cv.HOGDescriptor.load [ARG String filename=, ARG String objname=String()]>
+FUNC <void cv.HOGDescriptor.save [ARG String filename=, ARG String objname=String()]>
+FUNC <void cv.HOGDescriptor.compute [ARG Mat img=, ARG vector_float descriptors=, ARG Size winStride=Size(), ARG Size padding=Size(), ARG vector_Point locations=std::vector<Point>()]>
+FUNC <void cv.HOGDescriptor.detect [ARG Mat img=, ARG vector_Point foundLocations=, ARG vector_double weights=, ARG double hitThreshold=0, ARG Size winStride=Size(), ARG Size padding=Size(), ARG vector_Point searchLocations=std::vector<Point>()]>
+FUNC <void cv.HOGDescriptor.detectMultiScale [ARG Mat img=, ARG vector_Rect foundLocations=, ARG vector_double foundWeights=, ARG double hitThreshold=0, ARG Size winStride=Size(), ARG Size padding=Size(), ARG double scale=1.05, ARG double finalThreshold=2.0, ARG bool useMeanshiftGrouping=false]>
+FUNC <void cv.HOGDescriptor.computeGradient [ARG Mat img=, ARG Mat grad=, ARG Mat angleOfs=, ARG Size paddingTL=Size(), ARG Size paddingBR=Size()]>
+FUNC <vector_float cv.HOGDescriptor.getDefaultPeopleDetector []>
+FUNC <vector_float cv.HOGDescriptor.getDaimlerPeopleDetector []>
+FUNC <Size cv.HOGDescriptor.get_winSize []>
+FUNC <Size cv.HOGDescriptor.get_blockSize []>
+FUNC <Size cv.HOGDescriptor.get_blockStride []>
+FUNC <Size cv.HOGDescriptor.get_cellSize []>
+FUNC <int cv.HOGDescriptor.get_nbins []>
+FUNC <int cv.HOGDescriptor.get_derivAperture []>
+FUNC <double cv.HOGDescriptor.get_winSigma []>
+FUNC <int cv.HOGDescriptor.get_histogramNormType []>
+FUNC <double cv.HOGDescriptor.get_L2HysThreshold []>
+FUNC <bool cv.HOGDescriptor.get_gammaCorrection []>
+FUNC <vector_float cv.HOGDescriptor.get_svmDetector []>
+FUNC <int cv.HOGDescriptor.get_nlevels []>
+CLASS ..Objdetect : 
+[CONST CASCADE_DO_CANNY_PRUNING=1, CONST CASCADE_SCALE_IMAGE=2, CONST CASCADE_FIND_BIGGEST_OBJECT=4, CONST CASCADE_DO_ROUGH_SEARCH=8]
+FUNC <void cv..groupRectangles [ARG vector_Rect rectList=, ARG vector_int weights=, ARG int groupThreshold=, ARG double eps=0.2]>

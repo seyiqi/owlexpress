@@ -1,0 +1,1811 @@
+ok: CLASS ..Videoio : 
+
+
+===== Header: /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/modules/videoio/include/opencv2/videoio/cap_ios.h =====
+Namespaces: set([])
+
+
+===== Header: /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/modules/videoio/include/opencv2/videoio/videoio_c.h =====
+Namespaces: set([''])
+
+--- Incoming ---
+['const CV_CAP_ANY', '0', [], []]
+ignored: CONST CV_CAP_ANY=0
+
+--- Incoming ---
+['const CV_CAP_MIL', '100', [], []]
+ignored: CONST CV_CAP_MIL=100
+
+--- Incoming ---
+['const CV_CAP_VFW', '200', [], []]
+ignored: CONST CV_CAP_VFW=200
+
+--- Incoming ---
+['const CV_CAP_V4L', '200', [], []]
+ignored: CONST CV_CAP_V4L=200
+
+--- Incoming ---
+['const CV_CAP_V4L2', '200', [], []]
+ignored: CONST CV_CAP_V4L2=200
+
+--- Incoming ---
+['const CV_CAP_FIREWARE', '300', [], []]
+ignored: CONST CV_CAP_FIREWARE=300
+
+--- Incoming ---
+['const CV_CAP_FIREWIRE', '300', [], []]
+ignored: CONST CV_CAP_FIREWIRE=300
+
+--- Incoming ---
+['const CV_CAP_IEEE1394', '300', [], []]
+ignored: CONST CV_CAP_IEEE1394=300
+
+--- Incoming ---
+['const CV_CAP_DC1394', '300', [], []]
+ignored: CONST CV_CAP_DC1394=300
+
+--- Incoming ---
+['const CV_CAP_CMU1394', '300', [], []]
+ignored: CONST CV_CAP_CMU1394=300
+
+--- Incoming ---
+['const CV_CAP_STEREO', '400', [], []]
+ignored: CONST CV_CAP_STEREO=400
+
+--- Incoming ---
+['const CV_CAP_TYZX', '400', [], []]
+ignored: CONST CV_CAP_TYZX=400
+
+--- Incoming ---
+['const CV_TYZX_LEFT', '400', [], []]
+ignored: CONST CV_TYZX_LEFT=400
+
+--- Incoming ---
+['const CV_TYZX_RIGHT', '401', [], []]
+ignored: CONST CV_TYZX_RIGHT=401
+
+--- Incoming ---
+['const CV_TYZX_COLOR', '402', [], []]
+ignored: CONST CV_TYZX_COLOR=402
+
+--- Incoming ---
+['const CV_TYZX_Z', '403', [], []]
+ignored: CONST CV_TYZX_Z=403
+
+--- Incoming ---
+['const CV_CAP_QT', '500', [], []]
+ignored: CONST CV_CAP_QT=500
+
+--- Incoming ---
+['const CV_CAP_UNICAP', '600', [], []]
+ignored: CONST CV_CAP_UNICAP=600
+
+--- Incoming ---
+['const CV_CAP_DSHOW', '700', [], []]
+ignored: CONST CV_CAP_DSHOW=700
+
+--- Incoming ---
+['const CV_CAP_MSMF', '1400', [], []]
+ok: CONST CV_CAP_MSMF=1400
+
+--- Incoming ---
+['const CV_CAP_PVAPI', '800', [], []]
+ignored: CONST CV_CAP_PVAPI=800
+
+--- Incoming ---
+['const CV_CAP_OPENNI', '900', [], []]
+ignored: CONST CV_CAP_OPENNI=900
+
+--- Incoming ---
+['const CV_CAP_OPENNI_ASUS', '910', [], []]
+ignored: CONST CV_CAP_OPENNI_ASUS=910
+
+--- Incoming ---
+['const CV_CAP_ANDROID', '1000', [], []]
+ok: CONST CV_CAP_ANDROID=1000
+
+--- Incoming ---
+['const CV_CAP_ANDROID_BACK', 'CV_CAP_ANDROID+99', [], []]
+ok: CONST CV_CAP_ANDROID_BACK=CV_CAP_ANDROID+99
+
+--- Incoming ---
+['const CV_CAP_ANDROID_FRONT', 'CV_CAP_ANDROID+98', [], []]
+ok: CONST CV_CAP_ANDROID_FRONT=CV_CAP_ANDROID+98
+
+--- Incoming ---
+['const CV_CAP_XIAPI', '1100', [], []]
+ok: CONST CV_CAP_XIAPI=1100
+
+--- Incoming ---
+['const CV_CAP_AVFOUNDATION', '1200', [], []]
+ok: CONST CV_CAP_AVFOUNDATION=1200
+
+--- Incoming ---
+['const CV_CAP_GIGANETIX', '1300', [], []]
+ok: CONST CV_CAP_GIGANETIX=1300
+
+--- Incoming ---
+['const CV_CAP_INTELPERC', '1500', [], []]
+ignored: CONST CV_CAP_INTELPERC=1500
+
+--- Incoming ---
+['const CV_CAP_OPENNI2', '1600', [], []]
+ignored: CONST CV_CAP_OPENNI2=1600
+
+--- Incoming ---
+['const CV_CAP_PROP_DC1394_OFF', '-4', [], []]
+ignored: CONST CV_CAP_PROP_DC1394_OFF=-4
+
+--- Incoming ---
+['const CV_CAP_PROP_DC1394_MODE_MANUAL', '-3', [], []]
+ignored: CONST CV_CAP_PROP_DC1394_MODE_MANUAL=-3
+
+--- Incoming ---
+['const CV_CAP_PROP_DC1394_MODE_AUTO', '-2', [], []]
+ignored: CONST CV_CAP_PROP_DC1394_MODE_AUTO=-2
+
+--- Incoming ---
+['const CV_CAP_PROP_DC1394_MODE_ONE_PUSH_AUTO', '-1', [], []]
+ignored: CONST CV_CAP_PROP_DC1394_MODE_ONE_PUSH_AUTO=-1
+
+--- Incoming ---
+['const CV_CAP_PROP_POS_MSEC', '0', [], []]
+ignored: CONST CV_CAP_PROP_POS_MSEC=0
+
+--- Incoming ---
+['const CV_CAP_PROP_POS_FRAMES', '1', [], []]
+ignored: CONST CV_CAP_PROP_POS_FRAMES=1
+
+--- Incoming ---
+['const CV_CAP_PROP_POS_AVI_RATIO', '2', [], []]
+ignored: CONST CV_CAP_PROP_POS_AVI_RATIO=2
+
+--- Incoming ---
+['const CV_CAP_PROP_FRAME_WIDTH', '3', [], []]
+ok: CONST CV_CAP_PROP_FRAME_WIDTH=3
+
+--- Incoming ---
+['const CV_CAP_PROP_FRAME_HEIGHT', '4', [], []]
+ok: CONST CV_CAP_PROP_FRAME_HEIGHT=4
+
+--- Incoming ---
+['const CV_CAP_PROP_FPS', '5', [], []]
+ignored: CONST CV_CAP_PROP_FPS=5
+
+--- Incoming ---
+['const CV_CAP_PROP_FOURCC', '6', [], []]
+ignored: CONST CV_CAP_PROP_FOURCC=6
+
+--- Incoming ---
+['const CV_CAP_PROP_FRAME_COUNT', '7', [], []]
+ignored: CONST CV_CAP_PROP_FRAME_COUNT=7
+
+--- Incoming ---
+['const CV_CAP_PROP_FORMAT', '8', [], []]
+ignored: CONST CV_CAP_PROP_FORMAT=8
+
+--- Incoming ---
+['const CV_CAP_PROP_MODE', '9', [], []]
+ignored: CONST CV_CAP_PROP_MODE=9
+
+--- Incoming ---
+['const CV_CAP_PROP_BRIGHTNESS', '10', [], []]
+ignored: CONST CV_CAP_PROP_BRIGHTNESS=10
+
+--- Incoming ---
+['const CV_CAP_PROP_CONTRAST', '11', [], []]
+ignored: CONST CV_CAP_PROP_CONTRAST=11
+
+--- Incoming ---
+['const CV_CAP_PROP_SATURATION', '12', [], []]
+ignored: CONST CV_CAP_PROP_SATURATION=12
+
+--- Incoming ---
+['const CV_CAP_PROP_HUE', '13', [], []]
+ignored: CONST CV_CAP_PROP_HUE=13
+
+--- Incoming ---
+['const CV_CAP_PROP_GAIN', '14', [], []]
+ignored: CONST CV_CAP_PROP_GAIN=14
+
+--- Incoming ---
+['const CV_CAP_PROP_EXPOSURE', '15', [], []]
+ignored: CONST CV_CAP_PROP_EXPOSURE=15
+
+--- Incoming ---
+['const CV_CAP_PROP_CONVERT_RGB', '16', [], []]
+ignored: CONST CV_CAP_PROP_CONVERT_RGB=16
+
+--- Incoming ---
+['const CV_CAP_PROP_WHITE_BALANCE_BLUE_U', '17', [], []]
+ignored: CONST CV_CAP_PROP_WHITE_BALANCE_BLUE_U=17
+
+--- Incoming ---
+['const CV_CAP_PROP_RECTIFICATION', '18', [], []]
+ignored: CONST CV_CAP_PROP_RECTIFICATION=18
+
+--- Incoming ---
+['const CV_CAP_PROP_MONOCROME', '19', [], []]
+ignored: CONST CV_CAP_PROP_MONOCROME=19
+
+--- Incoming ---
+['const CV_CAP_PROP_SHARPNESS', '20', [], []]
+ignored: CONST CV_CAP_PROP_SHARPNESS=20
+
+--- Incoming ---
+['const CV_CAP_PROP_AUTO_EXPOSURE', '21', [], []]
+ignored: CONST CV_CAP_PROP_AUTO_EXPOSURE=21
+
+--- Incoming ---
+['const CV_CAP_PROP_GAMMA', '22', [], []]
+ignored: CONST CV_CAP_PROP_GAMMA=22
+
+--- Incoming ---
+['const CV_CAP_PROP_TEMPERATURE', '23', [], []]
+ignored: CONST CV_CAP_PROP_TEMPERATURE=23
+
+--- Incoming ---
+['const CV_CAP_PROP_TRIGGER', '24', [], []]
+ignored: CONST CV_CAP_PROP_TRIGGER=24
+
+--- Incoming ---
+['const CV_CAP_PROP_TRIGGER_DELAY', '25', [], []]
+ignored: CONST CV_CAP_PROP_TRIGGER_DELAY=25
+
+--- Incoming ---
+['const CV_CAP_PROP_WHITE_BALANCE_RED_V', '26', [], []]
+ignored: CONST CV_CAP_PROP_WHITE_BALANCE_RED_V=26
+
+--- Incoming ---
+['const CV_CAP_PROP_ZOOM', '27', [], []]
+ok: CONST CV_CAP_PROP_ZOOM=27
+
+--- Incoming ---
+['const CV_CAP_PROP_FOCUS', '28', [], []]
+ok: CONST CV_CAP_PROP_FOCUS=28
+
+--- Incoming ---
+['const CV_CAP_PROP_GUID', '29', [], []]
+ok: CONST CV_CAP_PROP_GUID=29
+
+--- Incoming ---
+['const CV_CAP_PROP_ISO_SPEED', '30', [], []]
+ok: CONST CV_CAP_PROP_ISO_SPEED=30
+
+--- Incoming ---
+['const CV_CAP_PROP_MAX_DC1394', '31', [], []]
+ignored: CONST CV_CAP_PROP_MAX_DC1394=31
+
+--- Incoming ---
+['const CV_CAP_PROP_BACKLIGHT', '32', [], []]
+ok: CONST CV_CAP_PROP_BACKLIGHT=32
+
+--- Incoming ---
+['const CV_CAP_PROP_PAN', '33', [], []]
+ok: CONST CV_CAP_PROP_PAN=33
+
+--- Incoming ---
+['const CV_CAP_PROP_TILT', '34', [], []]
+ok: CONST CV_CAP_PROP_TILT=34
+
+--- Incoming ---
+['const CV_CAP_PROP_ROLL', '35', [], []]
+ok: CONST CV_CAP_PROP_ROLL=35
+
+--- Incoming ---
+['const CV_CAP_PROP_IRIS', '36', [], []]
+ok: CONST CV_CAP_PROP_IRIS=36
+
+--- Incoming ---
+['const CV_CAP_PROP_SETTINGS', '37', [], []]
+ok: CONST CV_CAP_PROP_SETTINGS=37
+
+--- Incoming ---
+['const CV_CAP_PROP_AUTOGRAB', '1024', [], []]
+ok: CONST CV_CAP_PROP_AUTOGRAB=1024
+
+--- Incoming ---
+['const CV_CAP_PROP_SUPPORTED_PREVIEW_SIZES_STRING', '1025', [], []]
+ignored: CONST CV_CAP_PROP_SUPPORTED_PREVIEW_SIZES_STRING=1025
+
+--- Incoming ---
+['const CV_CAP_PROP_PREVIEW_FORMAT', '1026', [], []]
+ok: CONST CV_CAP_PROP_PREVIEW_FORMAT=1026
+
+--- Incoming ---
+['const CV_CAP_OPENNI_DEPTH_GENERATOR', '1 << 31', [], []]
+ignored: CONST CV_CAP_OPENNI_DEPTH_GENERATOR=1 << 31
+
+--- Incoming ---
+['const CV_CAP_OPENNI_IMAGE_GENERATOR', '1 << 30', [], []]
+ignored: CONST CV_CAP_OPENNI_IMAGE_GENERATOR=1 << 30
+
+--- Incoming ---
+[   'const CV_CAP_OPENNI_GENERATORS_MASK',
+    'CV_CAP_OPENNI_DEPTH_GENERATOR + CV_CAP_OPENNI_IMAGE_GENERATOR',
+    [],
+    []]
+ignored: CONST CV_CAP_OPENNI_GENERATORS_MASK=CV_CAP_OPENNI_DEPTH_GENERATOR + CV_CAP_OPENNI_IMAGE_GENERATOR
+
+--- Incoming ---
+['const CV_CAP_PROP_OPENNI_OUTPUT_MODE', '100', [], []]
+ignored: CONST CV_CAP_PROP_OPENNI_OUTPUT_MODE=100
+
+--- Incoming ---
+['const CV_CAP_PROP_OPENNI_FRAME_MAX_DEPTH', '101', [], []]
+ignored: CONST CV_CAP_PROP_OPENNI_FRAME_MAX_DEPTH=101
+
+--- Incoming ---
+['const CV_CAP_PROP_OPENNI_BASELINE', '102', [], []]
+ignored: CONST CV_CAP_PROP_OPENNI_BASELINE=102
+
+--- Incoming ---
+['const CV_CAP_PROP_OPENNI_FOCAL_LENGTH', '103', [], []]
+ignored: CONST CV_CAP_PROP_OPENNI_FOCAL_LENGTH=103
+
+--- Incoming ---
+['const CV_CAP_PROP_OPENNI_REGISTRATION', '104', [], []]
+ignored: CONST CV_CAP_PROP_OPENNI_REGISTRATION=104
+
+--- Incoming ---
+[   'const CV_CAP_PROP_OPENNI_REGISTRATION_ON',
+    'CV_CAP_PROP_OPENNI_REGISTRATION',
+    [],
+    []]
+ignored: CONST CV_CAP_PROP_OPENNI_REGISTRATION_ON=CV_CAP_PROP_OPENNI_REGISTRATION
+
+--- Incoming ---
+['const CV_CAP_PROP_OPENNI_APPROX_FRAME_SYNC', '105', [], []]
+ignored: CONST CV_CAP_PROP_OPENNI_APPROX_FRAME_SYNC=105
+
+--- Incoming ---
+['const CV_CAP_PROP_OPENNI_MAX_BUFFER_SIZE', '106', [], []]
+ignored: CONST CV_CAP_PROP_OPENNI_MAX_BUFFER_SIZE=106
+
+--- Incoming ---
+['const CV_CAP_PROP_OPENNI_CIRCLE_BUFFER', '107', [], []]
+ignored: CONST CV_CAP_PROP_OPENNI_CIRCLE_BUFFER=107
+
+--- Incoming ---
+['const CV_CAP_PROP_OPENNI_MAX_TIME_DURATION', '108', [], []]
+ignored: CONST CV_CAP_PROP_OPENNI_MAX_TIME_DURATION=108
+
+--- Incoming ---
+['const CV_CAP_PROP_OPENNI_GENERATOR_PRESENT', '109', [], []]
+ignored: CONST CV_CAP_PROP_OPENNI_GENERATOR_PRESENT=109
+
+--- Incoming ---
+['const CV_CAP_PROP_OPENNI2_SYNC', '110', [], []]
+ok: CONST CV_CAP_PROP_OPENNI2_SYNC=110
+
+--- Incoming ---
+['const CV_CAP_PROP_OPENNI2_MIRROR', '111', [], []]
+ok: CONST CV_CAP_PROP_OPENNI2_MIRROR=111
+
+--- Incoming ---
+[   'const CV_CAP_OPENNI_IMAGE_GENERATOR_PRESENT',
+    'CV_CAP_OPENNI_IMAGE_GENERATOR + CV_CAP_PROP_OPENNI_GENERATOR_PRESENT',
+    [],
+    []]
+ignored: CONST CV_CAP_OPENNI_IMAGE_GENERATOR_PRESENT=CV_CAP_OPENNI_IMAGE_GENERATOR + CV_CAP_PROP_OPENNI_GENERATOR_PRESENT
+
+--- Incoming ---
+[   'const CV_CAP_OPENNI_IMAGE_GENERATOR_OUTPUT_MODE',
+    'CV_CAP_OPENNI_IMAGE_GENERATOR + CV_CAP_PROP_OPENNI_OUTPUT_MODE',
+    [],
+    []]
+ignored: CONST CV_CAP_OPENNI_IMAGE_GENERATOR_OUTPUT_MODE=CV_CAP_OPENNI_IMAGE_GENERATOR + CV_CAP_PROP_OPENNI_OUTPUT_MODE
+
+--- Incoming ---
+[   'const CV_CAP_OPENNI_DEPTH_GENERATOR_BASELINE',
+    'CV_CAP_OPENNI_DEPTH_GENERATOR + CV_CAP_PROP_OPENNI_BASELINE',
+    [],
+    []]
+ignored: CONST CV_CAP_OPENNI_DEPTH_GENERATOR_BASELINE=CV_CAP_OPENNI_DEPTH_GENERATOR + CV_CAP_PROP_OPENNI_BASELINE
+
+--- Incoming ---
+[   'const CV_CAP_OPENNI_DEPTH_GENERATOR_FOCAL_LENGTH',
+    'CV_CAP_OPENNI_DEPTH_GENERATOR + CV_CAP_PROP_OPENNI_FOCAL_LENGTH',
+    [],
+    []]
+ignored: CONST CV_CAP_OPENNI_DEPTH_GENERATOR_FOCAL_LENGTH=CV_CAP_OPENNI_DEPTH_GENERATOR + CV_CAP_PROP_OPENNI_FOCAL_LENGTH
+
+--- Incoming ---
+[   'const CV_CAP_OPENNI_DEPTH_GENERATOR_REGISTRATION',
+    'CV_CAP_OPENNI_DEPTH_GENERATOR + CV_CAP_PROP_OPENNI_REGISTRATION',
+    [],
+    []]
+ignored: CONST CV_CAP_OPENNI_DEPTH_GENERATOR_REGISTRATION=CV_CAP_OPENNI_DEPTH_GENERATOR + CV_CAP_PROP_OPENNI_REGISTRATION
+
+--- Incoming ---
+[   'const CV_CAP_OPENNI_DEPTH_GENERATOR_REGISTRATION_ON',
+    'CV_CAP_OPENNI_DEPTH_GENERATOR_REGISTRATION',
+    [],
+    []]
+ignored: CONST CV_CAP_OPENNI_DEPTH_GENERATOR_REGISTRATION_ON=CV_CAP_OPENNI_DEPTH_GENERATOR_REGISTRATION
+
+--- Incoming ---
+['const CV_CAP_GSTREAMER_QUEUE_LENGTH', '200', [], []]
+ignored: CONST CV_CAP_GSTREAMER_QUEUE_LENGTH=200
+
+--- Incoming ---
+['const CV_CAP_PROP_PVAPI_MULTICASTIP', '300', [], []]
+ignored: CONST CV_CAP_PROP_PVAPI_MULTICASTIP=300
+
+--- Incoming ---
+['const CV_CAP_PROP_PVAPI_FRAMESTARTTRIGGERMODE', '301', [], []]
+ok: CONST CV_CAP_PROP_PVAPI_FRAMESTARTTRIGGERMODE=301
+
+--- Incoming ---
+['const CV_CAP_PROP_PVAPI_DECIMATIONHORIZONTAL', '302', [], []]
+ok: CONST CV_CAP_PROP_PVAPI_DECIMATIONHORIZONTAL=302
+
+--- Incoming ---
+['const CV_CAP_PROP_PVAPI_DECIMATIONVERTICAL', '303', [], []]
+ok: CONST CV_CAP_PROP_PVAPI_DECIMATIONVERTICAL=303
+
+--- Incoming ---
+['const CV_CAP_PROP_PVAPI_BINNINGX', '304', [], []]
+ok: CONST CV_CAP_PROP_PVAPI_BINNINGX=304
+
+--- Incoming ---
+['const CV_CAP_PROP_PVAPI_BINNINGY', '305', [], []]
+ok: CONST CV_CAP_PROP_PVAPI_BINNINGY=305
+
+--- Incoming ---
+['const CV_CAP_PROP_XI_DOWNSAMPLING', '400', [], []]
+ok: CONST CV_CAP_PROP_XI_DOWNSAMPLING=400
+
+--- Incoming ---
+['const CV_CAP_PROP_XI_DATA_FORMAT', '401', [], []]
+ok: CONST CV_CAP_PROP_XI_DATA_FORMAT=401
+
+--- Incoming ---
+['const CV_CAP_PROP_XI_OFFSET_X', '402', [], []]
+ok: CONST CV_CAP_PROP_XI_OFFSET_X=402
+
+--- Incoming ---
+['const CV_CAP_PROP_XI_OFFSET_Y', '403', [], []]
+ok: CONST CV_CAP_PROP_XI_OFFSET_Y=403
+
+--- Incoming ---
+['const CV_CAP_PROP_XI_TRG_SOURCE', '404', [], []]
+ok: CONST CV_CAP_PROP_XI_TRG_SOURCE=404
+
+--- Incoming ---
+['const CV_CAP_PROP_XI_TRG_SOFTWARE', '405', [], []]
+ok: CONST CV_CAP_PROP_XI_TRG_SOFTWARE=405
+
+--- Incoming ---
+['const CV_CAP_PROP_XI_GPI_SELECTOR', '406', [], []]
+ok: CONST CV_CAP_PROP_XI_GPI_SELECTOR=406
+
+--- Incoming ---
+['const CV_CAP_PROP_XI_GPI_MODE', '407', [], []]
+ok: CONST CV_CAP_PROP_XI_GPI_MODE=407
+
+--- Incoming ---
+['const CV_CAP_PROP_XI_GPI_LEVEL', '408', [], []]
+ok: CONST CV_CAP_PROP_XI_GPI_LEVEL=408
+
+--- Incoming ---
+['const CV_CAP_PROP_XI_GPO_SELECTOR', '409', [], []]
+ok: CONST CV_CAP_PROP_XI_GPO_SELECTOR=409
+
+--- Incoming ---
+['const CV_CAP_PROP_XI_GPO_MODE', '410', [], []]
+ok: CONST CV_CAP_PROP_XI_GPO_MODE=410
+
+--- Incoming ---
+['const CV_CAP_PROP_XI_LED_SELECTOR', '411', [], []]
+ok: CONST CV_CAP_PROP_XI_LED_SELECTOR=411
+
+--- Incoming ---
+['const CV_CAP_PROP_XI_LED_MODE', '412', [], []]
+ok: CONST CV_CAP_PROP_XI_LED_MODE=412
+
+--- Incoming ---
+['const CV_CAP_PROP_XI_MANUAL_WB', '413', [], []]
+ok: CONST CV_CAP_PROP_XI_MANUAL_WB=413
+
+--- Incoming ---
+['const CV_CAP_PROP_XI_AUTO_WB', '414', [], []]
+ok: CONST CV_CAP_PROP_XI_AUTO_WB=414
+
+--- Incoming ---
+['const CV_CAP_PROP_XI_AEAG', '415', [], []]
+ok: CONST CV_CAP_PROP_XI_AEAG=415
+
+--- Incoming ---
+['const CV_CAP_PROP_XI_EXP_PRIORITY', '416', [], []]
+ok: CONST CV_CAP_PROP_XI_EXP_PRIORITY=416
+
+--- Incoming ---
+['const CV_CAP_PROP_XI_AE_MAX_LIMIT', '417', [], []]
+ok: CONST CV_CAP_PROP_XI_AE_MAX_LIMIT=417
+
+--- Incoming ---
+['const CV_CAP_PROP_XI_AG_MAX_LIMIT', '418', [], []]
+ok: CONST CV_CAP_PROP_XI_AG_MAX_LIMIT=418
+
+--- Incoming ---
+['const CV_CAP_PROP_XI_AEAG_LEVEL', '419', [], []]
+ok: CONST CV_CAP_PROP_XI_AEAG_LEVEL=419
+
+--- Incoming ---
+['const CV_CAP_PROP_XI_TIMEOUT', '420', [], []]
+ok: CONST CV_CAP_PROP_XI_TIMEOUT=420
+
+--- Incoming ---
+['const CV_CAP_PROP_ANDROID_FLASH_MODE', '8001', [], []]
+ok: CONST CV_CAP_PROP_ANDROID_FLASH_MODE=8001
+
+--- Incoming ---
+['const CV_CAP_PROP_ANDROID_FOCUS_MODE', '8002', [], []]
+ok: CONST CV_CAP_PROP_ANDROID_FOCUS_MODE=8002
+
+--- Incoming ---
+['const CV_CAP_PROP_ANDROID_WHITE_BALANCE', '8003', [], []]
+ok: CONST CV_CAP_PROP_ANDROID_WHITE_BALANCE=8003
+
+--- Incoming ---
+['const CV_CAP_PROP_ANDROID_ANTIBANDING', '8004', [], []]
+ok: CONST CV_CAP_PROP_ANDROID_ANTIBANDING=8004
+
+--- Incoming ---
+['const CV_CAP_PROP_ANDROID_FOCAL_LENGTH', '8005', [], []]
+ok: CONST CV_CAP_PROP_ANDROID_FOCAL_LENGTH=8005
+
+--- Incoming ---
+['const CV_CAP_PROP_ANDROID_FOCUS_DISTANCE_NEAR', '8006', [], []]
+ok: CONST CV_CAP_PROP_ANDROID_FOCUS_DISTANCE_NEAR=8006
+
+--- Incoming ---
+['const CV_CAP_PROP_ANDROID_FOCUS_DISTANCE_OPTIMAL', '8007', [], []]
+ok: CONST CV_CAP_PROP_ANDROID_FOCUS_DISTANCE_OPTIMAL=8007
+
+--- Incoming ---
+['const CV_CAP_PROP_ANDROID_FOCUS_DISTANCE_FAR', '8008', [], []]
+ok: CONST CV_CAP_PROP_ANDROID_FOCUS_DISTANCE_FAR=8008
+
+--- Incoming ---
+['const CV_CAP_PROP_ANDROID_EXPOSE_LOCK', '8009', [], []]
+ok: CONST CV_CAP_PROP_ANDROID_EXPOSE_LOCK=8009
+
+--- Incoming ---
+['const CV_CAP_PROP_ANDROID_WHITEBALANCE_LOCK', '8010', [], []]
+ok: CONST CV_CAP_PROP_ANDROID_WHITEBALANCE_LOCK=8010
+
+--- Incoming ---
+['const CV_CAP_PROP_IOS_DEVICE_FOCUS', '9001', [], []]
+ok: CONST CV_CAP_PROP_IOS_DEVICE_FOCUS=9001
+
+--- Incoming ---
+['const CV_CAP_PROP_IOS_DEVICE_EXPOSURE', '9002', [], []]
+ok: CONST CV_CAP_PROP_IOS_DEVICE_EXPOSURE=9002
+
+--- Incoming ---
+['const CV_CAP_PROP_IOS_DEVICE_FLASH', '9003', [], []]
+ok: CONST CV_CAP_PROP_IOS_DEVICE_FLASH=9003
+
+--- Incoming ---
+['const CV_CAP_PROP_IOS_DEVICE_WHITEBALANCE', '9004', [], []]
+ok: CONST CV_CAP_PROP_IOS_DEVICE_WHITEBALANCE=9004
+
+--- Incoming ---
+['const CV_CAP_PROP_IOS_DEVICE_TORCH', '9005', [], []]
+ok: CONST CV_CAP_PROP_IOS_DEVICE_TORCH=9005
+
+--- Incoming ---
+['const CV_CAP_PROP_GIGA_FRAME_OFFSET_X', '10001', [], []]
+ok: CONST CV_CAP_PROP_GIGA_FRAME_OFFSET_X=10001
+
+--- Incoming ---
+['const CV_CAP_PROP_GIGA_FRAME_OFFSET_Y', '10002', [], []]
+ok: CONST CV_CAP_PROP_GIGA_FRAME_OFFSET_Y=10002
+
+--- Incoming ---
+['const CV_CAP_PROP_GIGA_FRAME_WIDTH_MAX', '10003', [], []]
+ok: CONST CV_CAP_PROP_GIGA_FRAME_WIDTH_MAX=10003
+
+--- Incoming ---
+['const CV_CAP_PROP_GIGA_FRAME_HEIGH_MAX', '10004', [], []]
+ok: CONST CV_CAP_PROP_GIGA_FRAME_HEIGH_MAX=10004
+
+--- Incoming ---
+['const CV_CAP_PROP_GIGA_FRAME_SENS_WIDTH', '10005', [], []]
+ok: CONST CV_CAP_PROP_GIGA_FRAME_SENS_WIDTH=10005
+
+--- Incoming ---
+['const CV_CAP_PROP_GIGA_FRAME_SENS_HEIGH', '10006', [], []]
+ok: CONST CV_CAP_PROP_GIGA_FRAME_SENS_HEIGH=10006
+
+--- Incoming ---
+['const CV_CAP_PROP_INTELPERC_PROFILE_COUNT', '11001', [], []]
+ok: CONST CV_CAP_PROP_INTELPERC_PROFILE_COUNT=11001
+
+--- Incoming ---
+['const CV_CAP_PROP_INTELPERC_PROFILE_IDX', '11002', [], []]
+ok: CONST CV_CAP_PROP_INTELPERC_PROFILE_IDX=11002
+
+--- Incoming ---
+['const CV_CAP_PROP_INTELPERC_DEPTH_LOW_CONFIDENCE_VALUE', '11003', [], []]
+ok: CONST CV_CAP_PROP_INTELPERC_DEPTH_LOW_CONFIDENCE_VALUE=11003
+
+--- Incoming ---
+['const CV_CAP_PROP_INTELPERC_DEPTH_SATURATION_VALUE', '11004', [], []]
+ok: CONST CV_CAP_PROP_INTELPERC_DEPTH_SATURATION_VALUE=11004
+
+--- Incoming ---
+['const CV_CAP_PROP_INTELPERC_DEPTH_CONFIDENCE_THRESHOLD', '11005', [], []]
+ok: CONST CV_CAP_PROP_INTELPERC_DEPTH_CONFIDENCE_THRESHOLD=11005
+
+--- Incoming ---
+['const CV_CAP_PROP_INTELPERC_DEPTH_FOCAL_LENGTH_HORZ', '11006', [], []]
+ok: CONST CV_CAP_PROP_INTELPERC_DEPTH_FOCAL_LENGTH_HORZ=11006
+
+--- Incoming ---
+['const CV_CAP_PROP_INTELPERC_DEPTH_FOCAL_LENGTH_VERT', '11007', [], []]
+ok: CONST CV_CAP_PROP_INTELPERC_DEPTH_FOCAL_LENGTH_VERT=11007
+
+--- Incoming ---
+['const CV_CAP_INTELPERC_DEPTH_GENERATOR', '1 << 29', [], []]
+ignored: CONST CV_CAP_INTELPERC_DEPTH_GENERATOR=1 << 29
+
+--- Incoming ---
+['const CV_CAP_INTELPERC_IMAGE_GENERATOR', '1 << 28', [], []]
+ignored: CONST CV_CAP_INTELPERC_IMAGE_GENERATOR=1 << 28
+
+--- Incoming ---
+[   'const CV_CAP_INTELPERC_GENERATORS_MASK',
+    'CV_CAP_INTELPERC_DEPTH_GENERATOR + CV_CAP_INTELPERC_IMAGE_GENERATOR',
+    [],
+    []]
+ignored: CONST CV_CAP_INTELPERC_GENERATORS_MASK=CV_CAP_INTELPERC_DEPTH_GENERATOR + CV_CAP_INTELPERC_IMAGE_GENERATOR
+
+--- Incoming ---
+['const CV_CAP_OPENNI_DEPTH_MAP', '0', [], []]
+ignored: CONST CV_CAP_OPENNI_DEPTH_MAP=0
+
+--- Incoming ---
+['const CV_CAP_OPENNI_POINT_CLOUD_MAP', '1', [], []]
+ignored: CONST CV_CAP_OPENNI_POINT_CLOUD_MAP=1
+
+--- Incoming ---
+['const CV_CAP_OPENNI_DISPARITY_MAP', '2', [], []]
+ignored: CONST CV_CAP_OPENNI_DISPARITY_MAP=2
+
+--- Incoming ---
+['const CV_CAP_OPENNI_DISPARITY_MAP_32F', '3', [], []]
+ignored: CONST CV_CAP_OPENNI_DISPARITY_MAP_32F=3
+
+--- Incoming ---
+['const CV_CAP_OPENNI_VALID_DEPTH_MASK', '4', [], []]
+ignored: CONST CV_CAP_OPENNI_VALID_DEPTH_MASK=4
+
+--- Incoming ---
+['const CV_CAP_OPENNI_BGR_IMAGE', '5', [], []]
+ignored: CONST CV_CAP_OPENNI_BGR_IMAGE=5
+
+--- Incoming ---
+['const CV_CAP_OPENNI_GRAY_IMAGE', '6', [], []]
+ignored: CONST CV_CAP_OPENNI_GRAY_IMAGE=6
+
+--- Incoming ---
+['const CV_CAP_OPENNI_VGA_30HZ', '0', [], []]
+ignored: CONST CV_CAP_OPENNI_VGA_30HZ=0
+
+--- Incoming ---
+['const CV_CAP_OPENNI_SXGA_15HZ', '1', [], []]
+ignored: CONST CV_CAP_OPENNI_SXGA_15HZ=1
+
+--- Incoming ---
+['const CV_CAP_OPENNI_SXGA_30HZ', '2', [], []]
+ignored: CONST CV_CAP_OPENNI_SXGA_30HZ=2
+
+--- Incoming ---
+['const CV_CAP_OPENNI_QVGA_30HZ', '3', [], []]
+ignored: CONST CV_CAP_OPENNI_QVGA_30HZ=3
+
+--- Incoming ---
+['const CV_CAP_OPENNI_QVGA_60HZ', '4', [], []]
+ignored: CONST CV_CAP_OPENNI_QVGA_60HZ=4
+
+--- Incoming ---
+['const CV_CAP_ANDROID_COLOR_FRAME_BGR', '0', [], []]
+ok: CONST CV_CAP_ANDROID_COLOR_FRAME_BGR=0
+
+--- Incoming ---
+['const CV_CAP_ANDROID_COLOR_FRAME', 'CV_CAP_ANDROID_COLOR_FRAME_BGR', [], []]
+ok: CONST CV_CAP_ANDROID_COLOR_FRAME=CV_CAP_ANDROID_COLOR_FRAME_BGR
+
+--- Incoming ---
+['const CV_CAP_ANDROID_GREY_FRAME', '1', [], []]
+ok: CONST CV_CAP_ANDROID_GREY_FRAME=1
+
+--- Incoming ---
+['const CV_CAP_ANDROID_COLOR_FRAME_RGB', '2', [], []]
+ok: CONST CV_CAP_ANDROID_COLOR_FRAME_RGB=2
+
+--- Incoming ---
+['const CV_CAP_ANDROID_COLOR_FRAME_BGRA', '3', [], []]
+ok: CONST CV_CAP_ANDROID_COLOR_FRAME_BGRA=3
+
+--- Incoming ---
+['const CV_CAP_ANDROID_COLOR_FRAME_RGBA', '4', [], []]
+ok: CONST CV_CAP_ANDROID_COLOR_FRAME_RGBA=4
+
+--- Incoming ---
+['const CV_CAP_ANDROID_FLASH_MODE_AUTO', '0', [], []]
+ok: CONST CV_CAP_ANDROID_FLASH_MODE_AUTO=0
+
+--- Incoming ---
+['const CV_CAP_ANDROID_FLASH_MODE_OFF', '0+1', [], []]
+ok: CONST CV_CAP_ANDROID_FLASH_MODE_OFF=0+1
+
+--- Incoming ---
+['const CV_CAP_ANDROID_FLASH_MODE_ON', '0+2', [], []]
+ok: CONST CV_CAP_ANDROID_FLASH_MODE_ON=0+2
+
+--- Incoming ---
+['const CV_CAP_ANDROID_FLASH_MODE_RED_EYE', '0+3', [], []]
+ok: CONST CV_CAP_ANDROID_FLASH_MODE_RED_EYE=0+3
+
+--- Incoming ---
+['const CV_CAP_ANDROID_FLASH_MODE_TORCH', '0+4', [], []]
+ok: CONST CV_CAP_ANDROID_FLASH_MODE_TORCH=0+4
+
+--- Incoming ---
+['const CV_CAP_ANDROID_FOCUS_MODE_AUTO', '0', [], []]
+ok: CONST CV_CAP_ANDROID_FOCUS_MODE_AUTO=0
+
+--- Incoming ---
+['const CV_CAP_ANDROID_FOCUS_MODE_CONTINUOUS_PICTURE', '0+1', [], []]
+ok: CONST CV_CAP_ANDROID_FOCUS_MODE_CONTINUOUS_PICTURE=0+1
+
+--- Incoming ---
+['const CV_CAP_ANDROID_FOCUS_MODE_CONTINUOUS_VIDEO', '0+2', [], []]
+ok: CONST CV_CAP_ANDROID_FOCUS_MODE_CONTINUOUS_VIDEO=0+2
+
+--- Incoming ---
+['const CV_CAP_ANDROID_FOCUS_MODE_EDOF', '0+3', [], []]
+ok: CONST CV_CAP_ANDROID_FOCUS_MODE_EDOF=0+3
+
+--- Incoming ---
+['const CV_CAP_ANDROID_FOCUS_MODE_FIXED', '0+4', [], []]
+ok: CONST CV_CAP_ANDROID_FOCUS_MODE_FIXED=0+4
+
+--- Incoming ---
+['const CV_CAP_ANDROID_FOCUS_MODE_INFINITY', '0+5', [], []]
+ok: CONST CV_CAP_ANDROID_FOCUS_MODE_INFINITY=0+5
+
+--- Incoming ---
+['const CV_CAP_ANDROID_FOCUS_MODE_MACRO', '0+6', [], []]
+ok: CONST CV_CAP_ANDROID_FOCUS_MODE_MACRO=0+6
+
+--- Incoming ---
+['const CV_CAP_ANDROID_WHITE_BALANCE_AUTO', '0', [], []]
+ok: CONST CV_CAP_ANDROID_WHITE_BALANCE_AUTO=0
+
+--- Incoming ---
+['const CV_CAP_ANDROID_WHITE_BALANCE_CLOUDY_DAYLIGHT', '0+1', [], []]
+ok: CONST CV_CAP_ANDROID_WHITE_BALANCE_CLOUDY_DAYLIGHT=0+1
+
+--- Incoming ---
+['const CV_CAP_ANDROID_WHITE_BALANCE_DAYLIGHT', '0+2', [], []]
+ok: CONST CV_CAP_ANDROID_WHITE_BALANCE_DAYLIGHT=0+2
+
+--- Incoming ---
+['const CV_CAP_ANDROID_WHITE_BALANCE_FLUORESCENT', '0+3', [], []]
+ok: CONST CV_CAP_ANDROID_WHITE_BALANCE_FLUORESCENT=0+3
+
+--- Incoming ---
+['const CV_CAP_ANDROID_WHITE_BALANCE_INCANDESCENT', '0+4', [], []]
+ok: CONST CV_CAP_ANDROID_WHITE_BALANCE_INCANDESCENT=0+4
+
+--- Incoming ---
+['const CV_CAP_ANDROID_WHITE_BALANCE_SHADE', '0+5', [], []]
+ok: CONST CV_CAP_ANDROID_WHITE_BALANCE_SHADE=0+5
+
+--- Incoming ---
+['const CV_CAP_ANDROID_WHITE_BALANCE_TWILIGHT', '0+6', [], []]
+ok: CONST CV_CAP_ANDROID_WHITE_BALANCE_TWILIGHT=0+6
+
+--- Incoming ---
+['const CV_CAP_ANDROID_WHITE_BALANCE_WARM_FLUORESCENT', '0+7', [], []]
+ok: CONST CV_CAP_ANDROID_WHITE_BALANCE_WARM_FLUORESCENT=0+7
+
+--- Incoming ---
+['const CV_CAP_ANDROID_ANTIBANDING_50HZ', '0', [], []]
+ok: CONST CV_CAP_ANDROID_ANTIBANDING_50HZ=0
+
+--- Incoming ---
+['const CV_CAP_ANDROID_ANTIBANDING_60HZ', '0+1', [], []]
+ok: CONST CV_CAP_ANDROID_ANTIBANDING_60HZ=0+1
+
+--- Incoming ---
+['const CV_CAP_ANDROID_ANTIBANDING_AUTO', '0+2', [], []]
+ok: CONST CV_CAP_ANDROID_ANTIBANDING_AUTO=0+2
+
+--- Incoming ---
+['const CV_CAP_ANDROID_ANTIBANDING_OFF', '0+3', [], []]
+ok: CONST CV_CAP_ANDROID_ANTIBANDING_OFF=0+3
+
+--- Incoming ---
+['const CV_CAP_INTELPERC_DEPTH_MAP', '0', [], []]
+ignored: CONST CV_CAP_INTELPERC_DEPTH_MAP=0
+
+--- Incoming ---
+['const CV_CAP_INTELPERC_UVDEPTH_MAP', '1', [], []]
+ignored: CONST CV_CAP_INTELPERC_UVDEPTH_MAP=1
+
+--- Incoming ---
+['const CV_CAP_INTELPERC_IR_MAP', '2', [], []]
+ignored: CONST CV_CAP_INTELPERC_IR_MAP=2
+
+--- Incoming ---
+['const CV_CAP_INTELPERC_IMAGE', '3', [], []]
+ignored: CONST CV_CAP_INTELPERC_IMAGE=3
+
+
+===== Header: /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/modules/videoio/include/opencv2/videoio.hpp =====
+Namespaces: set(['', 'cv'])
+
+--- Incoming ---
+['const cv.CAP_ANY', '0', [], []]
+ok: CONST CAP_ANY=0
+
+--- Incoming ---
+['const cv.CAP_VFW', '200', [], []]
+ok: CONST CAP_VFW=200
+
+--- Incoming ---
+['const cv.CAP_V4L', '200', [], []]
+ok: CONST CAP_V4L=200
+
+--- Incoming ---
+['const cv.CAP_V4L2', 'CAP_V4L', [], []]
+ok: CONST CAP_V4L2=CAP_V4L
+
+--- Incoming ---
+['const cv.CAP_FIREWARE', '300', [], []]
+ok: CONST CAP_FIREWARE=300
+
+--- Incoming ---
+['const cv.CAP_FIREWIRE', 'CAP_FIREWARE', [], []]
+ok: CONST CAP_FIREWIRE=CAP_FIREWARE
+
+--- Incoming ---
+['const cv.CAP_IEEE1394', 'CAP_FIREWARE', [], []]
+ok: CONST CAP_IEEE1394=CAP_FIREWARE
+
+--- Incoming ---
+['const cv.CAP_DC1394', 'CAP_FIREWARE', [], []]
+ok: CONST CAP_DC1394=CAP_FIREWARE
+
+--- Incoming ---
+['const cv.CAP_CMU1394', 'CAP_FIREWARE', [], []]
+ok: CONST CAP_CMU1394=CAP_FIREWARE
+
+--- Incoming ---
+['const cv.CAP_QT', '500', [], []]
+ok: CONST CAP_QT=500
+
+--- Incoming ---
+['const cv.CAP_UNICAP', '600', [], []]
+ok: CONST CAP_UNICAP=600
+
+--- Incoming ---
+['const cv.CAP_DSHOW', '700', [], []]
+ok: CONST CAP_DSHOW=700
+
+--- Incoming ---
+['const cv.CAP_PVAPI', '800', [], []]
+ok: CONST CAP_PVAPI=800
+
+--- Incoming ---
+['const cv.CAP_OPENNI', '900', [], []]
+ok: CONST CAP_OPENNI=900
+
+--- Incoming ---
+['const cv.CAP_OPENNI_ASUS', '910', [], []]
+ok: CONST CAP_OPENNI_ASUS=910
+
+--- Incoming ---
+['const cv.CAP_ANDROID', '1000', [], []]
+ok: CONST CAP_ANDROID=1000
+
+--- Incoming ---
+['const cv.CAP_XIAPI', '1100', [], []]
+ok: CONST CAP_XIAPI=1100
+
+--- Incoming ---
+['const cv.CAP_AVFOUNDATION', '1200', [], []]
+ok: CONST CAP_AVFOUNDATION=1200
+
+--- Incoming ---
+['const cv.CAP_GIGANETIX', '1300', [], []]
+ok: CONST CAP_GIGANETIX=1300
+
+--- Incoming ---
+['const cv.CAP_MSMF', '1400', [], []]
+ok: CONST CAP_MSMF=1400
+
+--- Incoming ---
+['const cv.CAP_INTELPERC', '1500', [], []]
+ok: CONST CAP_INTELPERC=1500
+
+--- Incoming ---
+['const cv.CAP_OPENNI2', '1600', [], []]
+ok: CONST CAP_OPENNI2=1600
+
+--- Incoming ---
+['const cv.CAP_PROP_POS_MSEC', '0', [], []]
+ok: CONST CAP_PROP_POS_MSEC=0
+
+--- Incoming ---
+['const cv.CAP_PROP_POS_FRAMES', '1', [], []]
+ok: CONST CAP_PROP_POS_FRAMES=1
+
+--- Incoming ---
+['const cv.CAP_PROP_POS_AVI_RATIO', '2', [], []]
+ok: CONST CAP_PROP_POS_AVI_RATIO=2
+
+--- Incoming ---
+['const cv.CAP_PROP_FRAME_WIDTH', '3', [], []]
+ok: CONST CAP_PROP_FRAME_WIDTH=3
+
+--- Incoming ---
+['const cv.CAP_PROP_FRAME_HEIGHT', '4', [], []]
+ok: CONST CAP_PROP_FRAME_HEIGHT=4
+
+--- Incoming ---
+['const cv.CAP_PROP_FPS', '5', [], []]
+ok: CONST CAP_PROP_FPS=5
+
+--- Incoming ---
+['const cv.CAP_PROP_FOURCC', '6', [], []]
+ok: CONST CAP_PROP_FOURCC=6
+
+--- Incoming ---
+['const cv.CAP_PROP_FRAME_COUNT', '7', [], []]
+ok: CONST CAP_PROP_FRAME_COUNT=7
+
+--- Incoming ---
+['const cv.CAP_PROP_FORMAT', '8', [], []]
+ok: CONST CAP_PROP_FORMAT=8
+
+--- Incoming ---
+['const cv.CAP_PROP_MODE', '9', [], []]
+ok: CONST CAP_PROP_MODE=9
+
+--- Incoming ---
+['const cv.CAP_PROP_BRIGHTNESS', '10', [], []]
+ok: CONST CAP_PROP_BRIGHTNESS=10
+
+--- Incoming ---
+['const cv.CAP_PROP_CONTRAST', '11', [], []]
+ok: CONST CAP_PROP_CONTRAST=11
+
+--- Incoming ---
+['const cv.CAP_PROP_SATURATION', '12', [], []]
+ok: CONST CAP_PROP_SATURATION=12
+
+--- Incoming ---
+['const cv.CAP_PROP_HUE', '13', [], []]
+ok: CONST CAP_PROP_HUE=13
+
+--- Incoming ---
+['const cv.CAP_PROP_GAIN', '14', [], []]
+ok: CONST CAP_PROP_GAIN=14
+
+--- Incoming ---
+['const cv.CAP_PROP_EXPOSURE', '15', [], []]
+ok: CONST CAP_PROP_EXPOSURE=15
+
+--- Incoming ---
+['const cv.CAP_PROP_CONVERT_RGB', '16', [], []]
+ok: CONST CAP_PROP_CONVERT_RGB=16
+
+--- Incoming ---
+['const cv.CAP_PROP_WHITE_BALANCE_BLUE_U', '17', [], []]
+ok: CONST CAP_PROP_WHITE_BALANCE_BLUE_U=17
+
+--- Incoming ---
+['const cv.CAP_PROP_RECTIFICATION', '18', [], []]
+ok: CONST CAP_PROP_RECTIFICATION=18
+
+--- Incoming ---
+['const cv.CAP_PROP_MONOCROME', '19', [], []]
+ok: CONST CAP_PROP_MONOCROME=19
+
+--- Incoming ---
+['const cv.CAP_PROP_SHARPNESS', '20', [], []]
+ok: CONST CAP_PROP_SHARPNESS=20
+
+--- Incoming ---
+['const cv.CAP_PROP_AUTO_EXPOSURE', '21', [], []]
+ok: CONST CAP_PROP_AUTO_EXPOSURE=21
+
+--- Incoming ---
+['const cv.CAP_PROP_GAMMA', '22', [], []]
+ok: CONST CAP_PROP_GAMMA=22
+
+--- Incoming ---
+['const cv.CAP_PROP_TEMPERATURE', '23', [], []]
+ok: CONST CAP_PROP_TEMPERATURE=23
+
+--- Incoming ---
+['const cv.CAP_PROP_TRIGGER', '24', [], []]
+ok: CONST CAP_PROP_TRIGGER=24
+
+--- Incoming ---
+['const cv.CAP_PROP_TRIGGER_DELAY', '25', [], []]
+ok: CONST CAP_PROP_TRIGGER_DELAY=25
+
+--- Incoming ---
+['const cv.CAP_PROP_WHITE_BALANCE_RED_V', '26', [], []]
+ok: CONST CAP_PROP_WHITE_BALANCE_RED_V=26
+
+--- Incoming ---
+['const cv.CAP_PROP_ZOOM', '27', [], []]
+ok: CONST CAP_PROP_ZOOM=27
+
+--- Incoming ---
+['const cv.CAP_PROP_FOCUS', '28', [], []]
+ok: CONST CAP_PROP_FOCUS=28
+
+--- Incoming ---
+['const cv.CAP_PROP_GUID', '29', [], []]
+ok: CONST CAP_PROP_GUID=29
+
+--- Incoming ---
+['const cv.CAP_PROP_ISO_SPEED', '30', [], []]
+ok: CONST CAP_PROP_ISO_SPEED=30
+
+--- Incoming ---
+['const cv.CAP_PROP_BACKLIGHT', '32', [], []]
+ok: CONST CAP_PROP_BACKLIGHT=32
+
+--- Incoming ---
+['const cv.CAP_PROP_PAN', '33', [], []]
+ok: CONST CAP_PROP_PAN=33
+
+--- Incoming ---
+['const cv.CAP_PROP_TILT', '34', [], []]
+ok: CONST CAP_PROP_TILT=34
+
+--- Incoming ---
+['const cv.CAP_PROP_ROLL', '35', [], []]
+ok: CONST CAP_PROP_ROLL=35
+
+--- Incoming ---
+['const cv.CAP_PROP_IRIS', '36', [], []]
+ok: CONST CAP_PROP_IRIS=36
+
+--- Incoming ---
+['const cv.CAP_PROP_SETTINGS', '37', [], []]
+ok: CONST CAP_PROP_SETTINGS=37
+
+--- Incoming ---
+['const cv.CAP_PROP_DC1394_OFF', '-4', [], []]
+ok: CONST CAP_PROP_DC1394_OFF=-4
+
+--- Incoming ---
+['const cv.CAP_PROP_DC1394_MODE_MANUAL', '-3', [], []]
+ok: CONST CAP_PROP_DC1394_MODE_MANUAL=-3
+
+--- Incoming ---
+['const cv.CAP_PROP_DC1394_MODE_AUTO', '-2', [], []]
+ok: CONST CAP_PROP_DC1394_MODE_AUTO=-2
+
+--- Incoming ---
+['const cv.CAP_PROP_DC1394_MODE_ONE_PUSH_AUTO', '-1', [], []]
+ok: CONST CAP_PROP_DC1394_MODE_ONE_PUSH_AUTO=-1
+
+--- Incoming ---
+['const cv.CAP_PROP_DC1394_MAX', '31', [], []]
+ok: CONST CAP_PROP_DC1394_MAX=31
+
+--- Incoming ---
+['const cv.CAP_OPENNI_DEPTH_GENERATOR', '1 << 31', [], []]
+ok: CONST CAP_OPENNI_DEPTH_GENERATOR=1 << 31
+
+--- Incoming ---
+['const cv.CAP_OPENNI_IMAGE_GENERATOR', '1 << 30', [], []]
+ok: CONST CAP_OPENNI_IMAGE_GENERATOR=1 << 30
+
+--- Incoming ---
+[   'const cv.CAP_OPENNI_GENERATORS_MASK',
+    'CAP_OPENNI_DEPTH_GENERATOR + CAP_OPENNI_IMAGE_GENERATOR',
+    [],
+    []]
+ok: CONST CAP_OPENNI_GENERATORS_MASK=CAP_OPENNI_DEPTH_GENERATOR + CAP_OPENNI_IMAGE_GENERATOR
+
+--- Incoming ---
+['const cv.CAP_PROP_OPENNI_OUTPUT_MODE', '100', [], []]
+ok: CONST CAP_PROP_OPENNI_OUTPUT_MODE=100
+
+--- Incoming ---
+['const cv.CAP_PROP_OPENNI_FRAME_MAX_DEPTH', '101', [], []]
+ok: CONST CAP_PROP_OPENNI_FRAME_MAX_DEPTH=101
+
+--- Incoming ---
+['const cv.CAP_PROP_OPENNI_BASELINE', '102', [], []]
+ok: CONST CAP_PROP_OPENNI_BASELINE=102
+
+--- Incoming ---
+['const cv.CAP_PROP_OPENNI_FOCAL_LENGTH', '103', [], []]
+ok: CONST CAP_PROP_OPENNI_FOCAL_LENGTH=103
+
+--- Incoming ---
+['const cv.CAP_PROP_OPENNI_REGISTRATION', '104', [], []]
+ok: CONST CAP_PROP_OPENNI_REGISTRATION=104
+
+--- Incoming ---
+[   'const cv.CAP_PROP_OPENNI_REGISTRATION_ON',
+    'CAP_PROP_OPENNI_REGISTRATION',
+    [],
+    []]
+ok: CONST CAP_PROP_OPENNI_REGISTRATION_ON=CAP_PROP_OPENNI_REGISTRATION
+
+--- Incoming ---
+['const cv.CAP_PROP_OPENNI_APPROX_FRAME_SYNC', '105', [], []]
+ok: CONST CAP_PROP_OPENNI_APPROX_FRAME_SYNC=105
+
+--- Incoming ---
+['const cv.CAP_PROP_OPENNI_MAX_BUFFER_SIZE', '106', [], []]
+ok: CONST CAP_PROP_OPENNI_MAX_BUFFER_SIZE=106
+
+--- Incoming ---
+['const cv.CAP_PROP_OPENNI_CIRCLE_BUFFER', '107', [], []]
+ok: CONST CAP_PROP_OPENNI_CIRCLE_BUFFER=107
+
+--- Incoming ---
+['const cv.CAP_PROP_OPENNI_MAX_TIME_DURATION', '108', [], []]
+ok: CONST CAP_PROP_OPENNI_MAX_TIME_DURATION=108
+
+--- Incoming ---
+['const cv.CAP_PROP_OPENNI_GENERATOR_PRESENT', '109', [], []]
+ok: CONST CAP_PROP_OPENNI_GENERATOR_PRESENT=109
+
+--- Incoming ---
+['const cv.CAP_PROP_OPENNI2_SYNC', '110', [], []]
+ok: CONST CAP_PROP_OPENNI2_SYNC=110
+
+--- Incoming ---
+['const cv.CAP_PROP_OPENNI2_MIRROR', '111', [], []]
+ok: CONST CAP_PROP_OPENNI2_MIRROR=111
+
+--- Incoming ---
+[   'const cv.CAP_OPENNI_IMAGE_GENERATOR_PRESENT',
+    'CAP_OPENNI_IMAGE_GENERATOR + CAP_PROP_OPENNI_GENERATOR_PRESENT',
+    [],
+    []]
+ok: CONST CAP_OPENNI_IMAGE_GENERATOR_PRESENT=CAP_OPENNI_IMAGE_GENERATOR + CAP_PROP_OPENNI_GENERATOR_PRESENT
+
+--- Incoming ---
+[   'const cv.CAP_OPENNI_IMAGE_GENERATOR_OUTPUT_MODE',
+    'CAP_OPENNI_IMAGE_GENERATOR + CAP_PROP_OPENNI_OUTPUT_MODE',
+    [],
+    []]
+ok: CONST CAP_OPENNI_IMAGE_GENERATOR_OUTPUT_MODE=CAP_OPENNI_IMAGE_GENERATOR + CAP_PROP_OPENNI_OUTPUT_MODE
+
+--- Incoming ---
+[   'const cv.CAP_OPENNI_DEPTH_GENERATOR_BASELINE',
+    'CAP_OPENNI_DEPTH_GENERATOR + CAP_PROP_OPENNI_BASELINE',
+    [],
+    []]
+ok: CONST CAP_OPENNI_DEPTH_GENERATOR_BASELINE=CAP_OPENNI_DEPTH_GENERATOR + CAP_PROP_OPENNI_BASELINE
+
+--- Incoming ---
+[   'const cv.CAP_OPENNI_DEPTH_GENERATOR_FOCAL_LENGTH',
+    'CAP_OPENNI_DEPTH_GENERATOR + CAP_PROP_OPENNI_FOCAL_LENGTH',
+    [],
+    []]
+ok: CONST CAP_OPENNI_DEPTH_GENERATOR_FOCAL_LENGTH=CAP_OPENNI_DEPTH_GENERATOR + CAP_PROP_OPENNI_FOCAL_LENGTH
+
+--- Incoming ---
+[   'const cv.CAP_OPENNI_DEPTH_GENERATOR_REGISTRATION',
+    'CAP_OPENNI_DEPTH_GENERATOR + CAP_PROP_OPENNI_REGISTRATION',
+    [],
+    []]
+ok: CONST CAP_OPENNI_DEPTH_GENERATOR_REGISTRATION=CAP_OPENNI_DEPTH_GENERATOR + CAP_PROP_OPENNI_REGISTRATION
+
+--- Incoming ---
+[   'const cv.CAP_OPENNI_DEPTH_GENERATOR_REGISTRATION_ON',
+    'CAP_OPENNI_DEPTH_GENERATOR_REGISTRATION',
+    [],
+    []]
+ok: CONST CAP_OPENNI_DEPTH_GENERATOR_REGISTRATION_ON=CAP_OPENNI_DEPTH_GENERATOR_REGISTRATION
+
+--- Incoming ---
+['const cv.CAP_OPENNI_DEPTH_MAP', '0', [], []]
+ok: CONST CAP_OPENNI_DEPTH_MAP=0
+
+--- Incoming ---
+['const cv.CAP_OPENNI_POINT_CLOUD_MAP', '1', [], []]
+ok: CONST CAP_OPENNI_POINT_CLOUD_MAP=1
+
+--- Incoming ---
+['const cv.CAP_OPENNI_DISPARITY_MAP', '2', [], []]
+ok: CONST CAP_OPENNI_DISPARITY_MAP=2
+
+--- Incoming ---
+['const cv.CAP_OPENNI_DISPARITY_MAP_32F', '3', [], []]
+ok: CONST CAP_OPENNI_DISPARITY_MAP_32F=3
+
+--- Incoming ---
+['const cv.CAP_OPENNI_VALID_DEPTH_MASK', '4', [], []]
+ok: CONST CAP_OPENNI_VALID_DEPTH_MASK=4
+
+--- Incoming ---
+['const cv.CAP_OPENNI_BGR_IMAGE', '5', [], []]
+ok: CONST CAP_OPENNI_BGR_IMAGE=5
+
+--- Incoming ---
+['const cv.CAP_OPENNI_GRAY_IMAGE', '6', [], []]
+ok: CONST CAP_OPENNI_GRAY_IMAGE=6
+
+--- Incoming ---
+['const cv.CAP_OPENNI_VGA_30HZ', '0', [], []]
+ok: CONST CAP_OPENNI_VGA_30HZ=0
+
+--- Incoming ---
+['const cv.CAP_OPENNI_SXGA_15HZ', '1', [], []]
+ok: CONST CAP_OPENNI_SXGA_15HZ=1
+
+--- Incoming ---
+['const cv.CAP_OPENNI_SXGA_30HZ', '2', [], []]
+ok: CONST CAP_OPENNI_SXGA_30HZ=2
+
+--- Incoming ---
+['const cv.CAP_OPENNI_QVGA_30HZ', '3', [], []]
+ok: CONST CAP_OPENNI_QVGA_30HZ=3
+
+--- Incoming ---
+['const cv.CAP_OPENNI_QVGA_60HZ', '4', [], []]
+ok: CONST CAP_OPENNI_QVGA_60HZ=4
+
+--- Incoming ---
+['const cv.CAP_PROP_GSTREAMER_QUEUE_LENGTH', '200', [], []]
+ok: CONST CAP_PROP_GSTREAMER_QUEUE_LENGTH=200
+
+--- Incoming ---
+['const cv.CAP_PROP_PVAPI_MULTICASTIP', '300', [], []]
+ok: CONST CAP_PROP_PVAPI_MULTICASTIP=300
+
+--- Incoming ---
+['const cv.CAP_PROP_PVAPI_FRAMESTARTTRIGGERMODE', '301', [], []]
+ok: CONST CAP_PROP_PVAPI_FRAMESTARTTRIGGERMODE=301
+
+--- Incoming ---
+['const cv.CAP_PROP_PVAPI_DECIMATIONHORIZONTAL', '302', [], []]
+ok: CONST CAP_PROP_PVAPI_DECIMATIONHORIZONTAL=302
+
+--- Incoming ---
+['const cv.CAP_PROP_PVAPI_DECIMATIONVERTICAL', '303', [], []]
+ok: CONST CAP_PROP_PVAPI_DECIMATIONVERTICAL=303
+
+--- Incoming ---
+['const cv.CAP_PROP_PVAPI_BINNINGX', '304', [], []]
+ok: CONST CAP_PROP_PVAPI_BINNINGX=304
+
+--- Incoming ---
+['const cv.CAP_PROP_PVAPI_BINNINGY', '305', [], []]
+ok: CONST CAP_PROP_PVAPI_BINNINGY=305
+
+--- Incoming ---
+['const cv.CAP_PVAPI_FSTRIGMODE_FREERUN', '0', [], []]
+ok: CONST CAP_PVAPI_FSTRIGMODE_FREERUN=0
+
+--- Incoming ---
+['const cv.CAP_PVAPI_FSTRIGMODE_SYNCIN1', '1', [], []]
+ok: CONST CAP_PVAPI_FSTRIGMODE_SYNCIN1=1
+
+--- Incoming ---
+['const cv.CAP_PVAPI_FSTRIGMODE_SYNCIN2', '2', [], []]
+ok: CONST CAP_PVAPI_FSTRIGMODE_SYNCIN2=2
+
+--- Incoming ---
+['const cv.CAP_PVAPI_FSTRIGMODE_FIXEDRATE', '3', [], []]
+ok: CONST CAP_PVAPI_FSTRIGMODE_FIXEDRATE=3
+
+--- Incoming ---
+['const cv.CAP_PVAPI_FSTRIGMODE_SOFTWARE', '4', [], []]
+ok: CONST CAP_PVAPI_FSTRIGMODE_SOFTWARE=4
+
+--- Incoming ---
+['const cv.CAP_PVAPI_DECIMATION_OFF', '1', [], []]
+ok: CONST CAP_PVAPI_DECIMATION_OFF=1
+
+--- Incoming ---
+['const cv.CAP_PVAPI_DECIMATION_2OUTOF4', '2', [], []]
+ok: CONST CAP_PVAPI_DECIMATION_2OUTOF4=2
+
+--- Incoming ---
+['const cv.CAP_PVAPI_DECIMATION_2OUTOF8', '4', [], []]
+ok: CONST CAP_PVAPI_DECIMATION_2OUTOF8=4
+
+--- Incoming ---
+['const cv.CAP_PVAPI_DECIMATION_2OUTOF16', '8', [], []]
+ok: CONST CAP_PVAPI_DECIMATION_2OUTOF16=8
+
+--- Incoming ---
+['const cv.CAP_PROP_XI_DOWNSAMPLING', '400', [], []]
+ok: CONST CAP_PROP_XI_DOWNSAMPLING=400
+
+--- Incoming ---
+['const cv.CAP_PROP_XI_DATA_FORMAT', '401', [], []]
+ok: CONST CAP_PROP_XI_DATA_FORMAT=401
+
+--- Incoming ---
+['const cv.CAP_PROP_XI_OFFSET_X', '402', [], []]
+ok: CONST CAP_PROP_XI_OFFSET_X=402
+
+--- Incoming ---
+['const cv.CAP_PROP_XI_OFFSET_Y', '403', [], []]
+ok: CONST CAP_PROP_XI_OFFSET_Y=403
+
+--- Incoming ---
+['const cv.CAP_PROP_XI_TRG_SOURCE', '404', [], []]
+ok: CONST CAP_PROP_XI_TRG_SOURCE=404
+
+--- Incoming ---
+['const cv.CAP_PROP_XI_TRG_SOFTWARE', '405', [], []]
+ok: CONST CAP_PROP_XI_TRG_SOFTWARE=405
+
+--- Incoming ---
+['const cv.CAP_PROP_XI_GPI_SELECTOR', '406', [], []]
+ok: CONST CAP_PROP_XI_GPI_SELECTOR=406
+
+--- Incoming ---
+['const cv.CAP_PROP_XI_GPI_MODE', '407', [], []]
+ok: CONST CAP_PROP_XI_GPI_MODE=407
+
+--- Incoming ---
+['const cv.CAP_PROP_XI_GPI_LEVEL', '408', [], []]
+ok: CONST CAP_PROP_XI_GPI_LEVEL=408
+
+--- Incoming ---
+['const cv.CAP_PROP_XI_GPO_SELECTOR', '409', [], []]
+ok: CONST CAP_PROP_XI_GPO_SELECTOR=409
+
+--- Incoming ---
+['const cv.CAP_PROP_XI_GPO_MODE', '410', [], []]
+ok: CONST CAP_PROP_XI_GPO_MODE=410
+
+--- Incoming ---
+['const cv.CAP_PROP_XI_LED_SELECTOR', '411', [], []]
+ok: CONST CAP_PROP_XI_LED_SELECTOR=411
+
+--- Incoming ---
+['const cv.CAP_PROP_XI_LED_MODE', '412', [], []]
+ok: CONST CAP_PROP_XI_LED_MODE=412
+
+--- Incoming ---
+['const cv.CAP_PROP_XI_MANUAL_WB', '413', [], []]
+ok: CONST CAP_PROP_XI_MANUAL_WB=413
+
+--- Incoming ---
+['const cv.CAP_PROP_XI_AUTO_WB', '414', [], []]
+ok: CONST CAP_PROP_XI_AUTO_WB=414
+
+--- Incoming ---
+['const cv.CAP_PROP_XI_AEAG', '415', [], []]
+ok: CONST CAP_PROP_XI_AEAG=415
+
+--- Incoming ---
+['const cv.CAP_PROP_XI_EXP_PRIORITY', '416', [], []]
+ok: CONST CAP_PROP_XI_EXP_PRIORITY=416
+
+--- Incoming ---
+['const cv.CAP_PROP_XI_AE_MAX_LIMIT', '417', [], []]
+ok: CONST CAP_PROP_XI_AE_MAX_LIMIT=417
+
+--- Incoming ---
+['const cv.CAP_PROP_XI_AG_MAX_LIMIT', '418', [], []]
+ok: CONST CAP_PROP_XI_AG_MAX_LIMIT=418
+
+--- Incoming ---
+['const cv.CAP_PROP_XI_AEAG_LEVEL', '419', [], []]
+ok: CONST CAP_PROP_XI_AEAG_LEVEL=419
+
+--- Incoming ---
+['const cv.CAP_PROP_XI_TIMEOUT', '420', [], []]
+ok: CONST CAP_PROP_XI_TIMEOUT=420
+
+--- Incoming ---
+['const cv.CAP_PROP_ANDROID_AUTOGRAB', '1024', [], []]
+ok: CONST CAP_PROP_ANDROID_AUTOGRAB=1024
+
+--- Incoming ---
+['const cv.CAP_PROP_ANDROID_PREVIEW_SIZES_STRING', '1025', [], []]
+ok: CONST CAP_PROP_ANDROID_PREVIEW_SIZES_STRING=1025
+
+--- Incoming ---
+['const cv.CAP_PROP_ANDROID_PREVIEW_FORMAT', '1026', [], []]
+ok: CONST CAP_PROP_ANDROID_PREVIEW_FORMAT=1026
+
+--- Incoming ---
+['const cv.CAP_PROP_ANDROID_FLASH_MODE', '8001', [], []]
+ok: CONST CAP_PROP_ANDROID_FLASH_MODE=8001
+
+--- Incoming ---
+['const cv.CAP_PROP_ANDROID_FOCUS_MODE', '8002', [], []]
+ok: CONST CAP_PROP_ANDROID_FOCUS_MODE=8002
+
+--- Incoming ---
+['const cv.CAP_PROP_ANDROID_WHITE_BALANCE', '8003', [], []]
+ok: CONST CAP_PROP_ANDROID_WHITE_BALANCE=8003
+
+--- Incoming ---
+['const cv.CAP_PROP_ANDROID_ANTIBANDING', '8004', [], []]
+ok: CONST CAP_PROP_ANDROID_ANTIBANDING=8004
+
+--- Incoming ---
+['const cv.CAP_PROP_ANDROID_FOCAL_LENGTH', '8005', [], []]
+ok: CONST CAP_PROP_ANDROID_FOCAL_LENGTH=8005
+
+--- Incoming ---
+['const cv.CAP_PROP_ANDROID_FOCUS_DISTANCE_NEAR', '8006', [], []]
+ok: CONST CAP_PROP_ANDROID_FOCUS_DISTANCE_NEAR=8006
+
+--- Incoming ---
+['const cv.CAP_PROP_ANDROID_FOCUS_DISTANCE_OPTIMAL', '8007', [], []]
+ok: CONST CAP_PROP_ANDROID_FOCUS_DISTANCE_OPTIMAL=8007
+
+--- Incoming ---
+['const cv.CAP_PROP_ANDROID_FOCUS_DISTANCE_FAR', '8008', [], []]
+ok: CONST CAP_PROP_ANDROID_FOCUS_DISTANCE_FAR=8008
+
+--- Incoming ---
+['const cv.CAP_ANDROID_COLOR_FRAME_BGR', '0', [], []]
+ok: CONST CAP_ANDROID_COLOR_FRAME_BGR=0
+
+--- Incoming ---
+['const cv.CAP_ANDROID_COLOR_FRAME', 'CAP_ANDROID_COLOR_FRAME_BGR', [], []]
+ok: CONST CAP_ANDROID_COLOR_FRAME=CAP_ANDROID_COLOR_FRAME_BGR
+
+--- Incoming ---
+['const cv.CAP_ANDROID_GREY_FRAME', '1', [], []]
+ok: CONST CAP_ANDROID_GREY_FRAME=1
+
+--- Incoming ---
+['const cv.CAP_ANDROID_COLOR_FRAME_RGB', '2', [], []]
+ok: CONST CAP_ANDROID_COLOR_FRAME_RGB=2
+
+--- Incoming ---
+['const cv.CAP_ANDROID_COLOR_FRAME_BGRA', '3', [], []]
+ok: CONST CAP_ANDROID_COLOR_FRAME_BGRA=3
+
+--- Incoming ---
+['const cv.CAP_ANDROID_COLOR_FRAME_RGBA', '4', [], []]
+ok: CONST CAP_ANDROID_COLOR_FRAME_RGBA=4
+
+--- Incoming ---
+['const cv.CAP_ANDROID_FLASH_MODE_AUTO', '0', [], []]
+ok: CONST CAP_ANDROID_FLASH_MODE_AUTO=0
+
+--- Incoming ---
+['const cv.CAP_ANDROID_FLASH_MODE_OFF', '1', [], []]
+ok: CONST CAP_ANDROID_FLASH_MODE_OFF=1
+
+--- Incoming ---
+['const cv.CAP_ANDROID_FLASH_MODE_ON', '2', [], []]
+ok: CONST CAP_ANDROID_FLASH_MODE_ON=2
+
+--- Incoming ---
+['const cv.CAP_ANDROID_FLASH_MODE_RED_EYE', '3', [], []]
+ok: CONST CAP_ANDROID_FLASH_MODE_RED_EYE=3
+
+--- Incoming ---
+['const cv.CAP_ANDROID_FLASH_MODE_TORCH', '4', [], []]
+ok: CONST CAP_ANDROID_FLASH_MODE_TORCH=4
+
+--- Incoming ---
+['const cv.CAP_ANDROID_FOCUS_MODE_AUTO', '0', [], []]
+ok: CONST CAP_ANDROID_FOCUS_MODE_AUTO=0
+
+--- Incoming ---
+['const cv.CAP_ANDROID_FOCUS_MODE_CONTINUOUS_VIDEO', '1', [], []]
+ok: CONST CAP_ANDROID_FOCUS_MODE_CONTINUOUS_VIDEO=1
+
+--- Incoming ---
+['const cv.CAP_ANDROID_FOCUS_MODE_EDOF', '2', [], []]
+ok: CONST CAP_ANDROID_FOCUS_MODE_EDOF=2
+
+--- Incoming ---
+['const cv.CAP_ANDROID_FOCUS_MODE_FIXED', '3', [], []]
+ok: CONST CAP_ANDROID_FOCUS_MODE_FIXED=3
+
+--- Incoming ---
+['const cv.CAP_ANDROID_FOCUS_MODE_INFINITY', '4', [], []]
+ok: CONST CAP_ANDROID_FOCUS_MODE_INFINITY=4
+
+--- Incoming ---
+['const cv.CAP_ANDROID_FOCUS_MODE_MACRO', '5', [], []]
+ok: CONST CAP_ANDROID_FOCUS_MODE_MACRO=5
+
+--- Incoming ---
+['const cv.CAP_ANDROID_WHITE_BALANCE_AUTO', '0', [], []]
+ok: CONST CAP_ANDROID_WHITE_BALANCE_AUTO=0
+
+--- Incoming ---
+['const cv.CAP_ANDROID_WHITE_BALANCE_CLOUDY_DAYLIGHT', '1', [], []]
+ok: CONST CAP_ANDROID_WHITE_BALANCE_CLOUDY_DAYLIGHT=1
+
+--- Incoming ---
+['const cv.CAP_ANDROID_WHITE_BALANCE_DAYLIGHT', '2', [], []]
+ok: CONST CAP_ANDROID_WHITE_BALANCE_DAYLIGHT=2
+
+--- Incoming ---
+['const cv.CAP_ANDROID_WHITE_BALANCE_FLUORESCENT', '3', [], []]
+ok: CONST CAP_ANDROID_WHITE_BALANCE_FLUORESCENT=3
+
+--- Incoming ---
+['const cv.CAP_ANDROID_WHITE_BALANCE_INCANDESCENT', '4', [], []]
+ok: CONST CAP_ANDROID_WHITE_BALANCE_INCANDESCENT=4
+
+--- Incoming ---
+['const cv.CAP_ANDROID_WHITE_BALANCE_SHADE', '5', [], []]
+ok: CONST CAP_ANDROID_WHITE_BALANCE_SHADE=5
+
+--- Incoming ---
+['const cv.CAP_ANDROID_WHITE_BALANCE_TWILIGHT', '6', [], []]
+ok: CONST CAP_ANDROID_WHITE_BALANCE_TWILIGHT=6
+
+--- Incoming ---
+['const cv.CAP_ANDROID_WHITE_BALANCE_WARM_FLUORESCENT', '7', [], []]
+ok: CONST CAP_ANDROID_WHITE_BALANCE_WARM_FLUORESCENT=7
+
+--- Incoming ---
+['const cv.CAP_ANDROID_ANTIBANDING_50HZ', '0', [], []]
+ok: CONST CAP_ANDROID_ANTIBANDING_50HZ=0
+
+--- Incoming ---
+['const cv.CAP_ANDROID_ANTIBANDING_60HZ', '1', [], []]
+ok: CONST CAP_ANDROID_ANTIBANDING_60HZ=1
+
+--- Incoming ---
+['const cv.CAP_ANDROID_ANTIBANDING_AUTO', '2', [], []]
+ok: CONST CAP_ANDROID_ANTIBANDING_AUTO=2
+
+--- Incoming ---
+['const cv.CAP_ANDROID_ANTIBANDING_OFF', '3', [], []]
+ok: CONST CAP_ANDROID_ANTIBANDING_OFF=3
+
+--- Incoming ---
+['const cv.CAP_PROP_IOS_DEVICE_FOCUS', '9001', [], []]
+ok: CONST CAP_PROP_IOS_DEVICE_FOCUS=9001
+
+--- Incoming ---
+['const cv.CAP_PROP_IOS_DEVICE_EXPOSURE', '9002', [], []]
+ok: CONST CAP_PROP_IOS_DEVICE_EXPOSURE=9002
+
+--- Incoming ---
+['const cv.CAP_PROP_IOS_DEVICE_FLASH', '9003', [], []]
+ok: CONST CAP_PROP_IOS_DEVICE_FLASH=9003
+
+--- Incoming ---
+['const cv.CAP_PROP_IOS_DEVICE_WHITEBALANCE', '9004', [], []]
+ok: CONST CAP_PROP_IOS_DEVICE_WHITEBALANCE=9004
+
+--- Incoming ---
+['const cv.CAP_PROP_IOS_DEVICE_TORCH', '9005', [], []]
+ok: CONST CAP_PROP_IOS_DEVICE_TORCH=9005
+
+--- Incoming ---
+['const cv.CAP_PROP_GIGA_FRAME_OFFSET_X', '10001', [], []]
+ok: CONST CAP_PROP_GIGA_FRAME_OFFSET_X=10001
+
+--- Incoming ---
+['const cv.CAP_PROP_GIGA_FRAME_OFFSET_Y', '10002', [], []]
+ok: CONST CAP_PROP_GIGA_FRAME_OFFSET_Y=10002
+
+--- Incoming ---
+['const cv.CAP_PROP_GIGA_FRAME_WIDTH_MAX', '10003', [], []]
+ok: CONST CAP_PROP_GIGA_FRAME_WIDTH_MAX=10003
+
+--- Incoming ---
+['const cv.CAP_PROP_GIGA_FRAME_HEIGH_MAX', '10004', [], []]
+ok: CONST CAP_PROP_GIGA_FRAME_HEIGH_MAX=10004
+
+--- Incoming ---
+['const cv.CAP_PROP_GIGA_FRAME_SENS_WIDTH', '10005', [], []]
+ok: CONST CAP_PROP_GIGA_FRAME_SENS_WIDTH=10005
+
+--- Incoming ---
+['const cv.CAP_PROP_GIGA_FRAME_SENS_HEIGH', '10006', [], []]
+ok: CONST CAP_PROP_GIGA_FRAME_SENS_HEIGH=10006
+
+--- Incoming ---
+['const cv.CAP_PROP_INTELPERC_PROFILE_COUNT', '11001', [], []]
+ok: CONST CAP_PROP_INTELPERC_PROFILE_COUNT=11001
+
+--- Incoming ---
+['const cv.CAP_PROP_INTELPERC_PROFILE_IDX', '11002', [], []]
+ok: CONST CAP_PROP_INTELPERC_PROFILE_IDX=11002
+
+--- Incoming ---
+['const cv.CAP_PROP_INTELPERC_DEPTH_LOW_CONFIDENCE_VALUE', '11003', [], []]
+ok: CONST CAP_PROP_INTELPERC_DEPTH_LOW_CONFIDENCE_VALUE=11003
+
+--- Incoming ---
+['const cv.CAP_PROP_INTELPERC_DEPTH_SATURATION_VALUE', '11004', [], []]
+ok: CONST CAP_PROP_INTELPERC_DEPTH_SATURATION_VALUE=11004
+
+--- Incoming ---
+['const cv.CAP_PROP_INTELPERC_DEPTH_CONFIDENCE_THRESHOLD', '11005', [], []]
+ok: CONST CAP_PROP_INTELPERC_DEPTH_CONFIDENCE_THRESHOLD=11005
+
+--- Incoming ---
+['const cv.CAP_PROP_INTELPERC_DEPTH_FOCAL_LENGTH_HORZ', '11006', [], []]
+ok: CONST CAP_PROP_INTELPERC_DEPTH_FOCAL_LENGTH_HORZ=11006
+
+--- Incoming ---
+['const cv.CAP_PROP_INTELPERC_DEPTH_FOCAL_LENGTH_VERT', '11007', [], []]
+ok: CONST CAP_PROP_INTELPERC_DEPTH_FOCAL_LENGTH_VERT=11007
+
+--- Incoming ---
+['const cv.CAP_INTELPERC_DEPTH_GENERATOR', '1 << 29', [], []]
+ok: CONST CAP_INTELPERC_DEPTH_GENERATOR=1 << 29
+
+--- Incoming ---
+['const cv.CAP_INTELPERC_IMAGE_GENERATOR', '1 << 28', [], []]
+ok: CONST CAP_INTELPERC_IMAGE_GENERATOR=1 << 28
+
+--- Incoming ---
+[   'const cv.CAP_INTELPERC_GENERATORS_MASK',
+    'CAP_INTELPERC_DEPTH_GENERATOR + CAP_INTELPERC_IMAGE_GENERATOR',
+    [],
+    []]
+ok: CONST CAP_INTELPERC_GENERATORS_MASK=CAP_INTELPERC_DEPTH_GENERATOR + CAP_INTELPERC_IMAGE_GENERATOR
+
+--- Incoming ---
+['const cv.CAP_INTELPERC_DEPTH_MAP', '0', [], []]
+ok: CONST CAP_INTELPERC_DEPTH_MAP=0
+
+--- Incoming ---
+['const cv.CAP_INTELPERC_UVDEPTH_MAP', '1', [], []]
+ok: CONST CAP_INTELPERC_UVDEPTH_MAP=1
+
+--- Incoming ---
+['const cv.CAP_INTELPERC_IR_MAP', '2', [], []]
+ok: CONST CAP_INTELPERC_IR_MAP=2
+
+--- Incoming ---
+['const cv.CAP_INTELPERC_IMAGE', '3', [], []]
+ok: CONST CAP_INTELPERC_IMAGE=3
+
+--- Incoming ---
+['class cv.VideoCapture', '', [], []]
+ok: CLASS cv..VideoCapture : 
+
+--- Incoming ---
+['cv.VideoCapture.VideoCapture', '', [], []]
+ok: FUNC < cv.VideoCapture.VideoCapture []>
+
+--- Incoming ---
+['cv.VideoCapture.VideoCapture', '', [], [['String', 'filename', '', []]]]
+ok: FUNC < cv.VideoCapture.VideoCapture [ARG String filename=]>
+
+--- Incoming ---
+['cv.VideoCapture.VideoCapture', '', [], [['int', 'device', '', []]]]
+ok: FUNC < cv.VideoCapture.VideoCapture [ARG int device=]>
+
+--- Incoming ---
+['cv.VideoCapture.open', 'bool', [], [['String', 'filename', '', []]]]
+ok: FUNC <bool cv.VideoCapture.open [ARG String filename=]>
+
+--- Incoming ---
+['cv.VideoCapture.open', 'bool', [], [['int', 'device', '', []]]]
+ok: FUNC <bool cv.VideoCapture.open [ARG int device=]>
+
+--- Incoming ---
+['cv.VideoCapture.isOpened', 'bool', [], []]
+ok: FUNC <bool cv.VideoCapture.isOpened []>
+
+--- Incoming ---
+['cv.VideoCapture.release', 'void', [], []]
+ok: FUNC <void cv.VideoCapture.release []>
+
+--- Incoming ---
+['cv.VideoCapture.grab', 'bool', [], []]
+ok: FUNC <bool cv.VideoCapture.grab []>
+
+--- Incoming ---
+[   'cv.VideoCapture.retrieve',
+    'bool',
+    [],
+    [['Mat', 'image', '', ['/O']], ['int', 'flag', '0', []]]]
+ok: FUNC <bool cv.VideoCapture.retrieve [ARG Mat image=, ARG int flag=0]>
+
+--- Incoming ---
+['cv.VideoCapture.read', 'bool', [], [['Mat', 'image', '', ['/O']]]]
+ok: FUNC <bool cv.VideoCapture.read [ARG Mat image=]>
+
+--- Incoming ---
+[   'cv.VideoCapture.set',
+    'bool',
+    [],
+    [['int', 'propId', '', []], ['double', 'value', '', []]]]
+ok: FUNC <bool cv.VideoCapture.set [ARG int propId=, ARG double value=]>
+
+--- Incoming ---
+['cv.VideoCapture.get', 'double', [], [['int', 'propId', '', []]]]
+ok: FUNC <double cv.VideoCapture.get [ARG int propId=]>
+
+--- Incoming ---
+['class cv.VideoWriter', '', [], []]
+ignored: CLASS cv..VideoWriter : 
+
+--- Incoming ---
+['cv.VideoWriter.VideoWriter', '', [], []]
+ignored: FUNC < cv.VideoWriter.VideoWriter []>
+
+--- Incoming ---
+[   'cv.VideoWriter.VideoWriter',
+    '',
+    [],
+    [   ['String', 'filename', '', []],
+        ['int', 'fourcc', '', []],
+        ['double', 'fps', '', []],
+        ['Size', 'frameSize', '', []],
+        ['bool', 'isColor', 'true', []]]]
+ignored: FUNC < cv.VideoWriter.VideoWriter [ARG String filename=, ARG int fourcc=, ARG double fps=, ARG Size frameSize=, ARG bool isColor=true]>
+
+--- Incoming ---
+[   'cv.VideoWriter.open',
+    'bool',
+    [],
+    [   ['String', 'filename', '', []],
+        ['int', 'fourcc', '', []],
+        ['double', 'fps', '', []],
+        ['Size', 'frameSize', '', []],
+        ['bool', 'isColor', 'true', []]]]
+ignored: FUNC <bool cv.VideoWriter.open [ARG String filename=, ARG int fourcc=, ARG double fps=, ARG Size frameSize=, ARG bool isColor=true]>
+
+--- Incoming ---
+['cv.VideoWriter.isOpened', 'bool', [], []]
+ignored: FUNC <bool cv.VideoWriter.isOpened []>
+
+--- Incoming ---
+['cv.VideoWriter.release', 'void', [], []]
+ignored: FUNC <void cv.VideoWriter.release []>
+
+--- Incoming ---
+['cv.VideoWriter.write', 'void', [], [['Mat', 'image', '', []]]]
+ignored: FUNC <void cv.VideoWriter.write [ARG Mat image=]>
+
+--- Incoming ---
+[   'cv.VideoWriter.fourcc',
+    'int',
+    ['/S'],
+    [   ['char', 'c1', '', []],
+        ['char', 'c2', '', []],
+        ['char', 'c3', '', []],
+        ['char', 'c4', '', []]]]
+ignored: FUNC <int cv.VideoWriter.fourcc [ARG char c1=, ARG char c2=, ARG char c3=, ARG char c4=]>
+
+
+===== Header: /Users/Melancardie/Dropbox/Documents/code/Java/OwlExpress/lib/opencv-3.0.0-beta/modules/videoio/include/opencv2/videoio/videoio.hpp =====
+Namespaces: set(['', 'cv'])
+
+
+===== Generating... =====
+CLASS ..Videoio : 
+[CONST CV_CAP_MSMF=1400, CONST CV_CAP_ANDROID=1000, CONST CV_CAP_ANDROID_BACK=CV_CAP_ANDROID+99, CONST CV_CAP_ANDROID_FRONT=CV_CAP_ANDROID+98, CONST CV_CAP_XIAPI=1100, CONST CV_CAP_AVFOUNDATION=1200, CONST CV_CAP_GIGANETIX=1300, CONST CV_CAP_PROP_FRAME_WIDTH=3, CONST CV_CAP_PROP_FRAME_HEIGHT=4, CONST CV_CAP_PROP_ZOOM=27, CONST CV_CAP_PROP_FOCUS=28, CONST CV_CAP_PROP_GUID=29, CONST CV_CAP_PROP_ISO_SPEED=30, CONST CV_CAP_PROP_BACKLIGHT=32, CONST CV_CAP_PROP_PAN=33, CONST CV_CAP_PROP_TILT=34, CONST CV_CAP_PROP_ROLL=35, CONST CV_CAP_PROP_IRIS=36, CONST CV_CAP_PROP_SETTINGS=37, CONST CV_CAP_PROP_AUTOGRAB=1024, CONST CV_CAP_PROP_PREVIEW_FORMAT=1026, CONST CV_CAP_PROP_OPENNI2_SYNC=110, CONST CV_CAP_PROP_OPENNI2_MIRROR=111, CONST CV_CAP_PROP_PVAPI_FRAMESTARTTRIGGERMODE=301, CONST CV_CAP_PROP_PVAPI_DECIMATIONHORIZONTAL=302, CONST CV_CAP_PROP_PVAPI_DECIMATIONVERTICAL=303, CONST CV_CAP_PROP_PVAPI_BINNINGX=304, CONST CV_CAP_PROP_PVAPI_BINNINGY=305, CONST CV_CAP_PROP_XI_DOWNSAMPLING=400, CONST CV_CAP_PROP_XI_DATA_FORMAT=401, CONST CV_CAP_PROP_XI_OFFSET_X=402, CONST CV_CAP_PROP_XI_OFFSET_Y=403, CONST CV_CAP_PROP_XI_TRG_SOURCE=404, CONST CV_CAP_PROP_XI_TRG_SOFTWARE=405, CONST CV_CAP_PROP_XI_GPI_SELECTOR=406, CONST CV_CAP_PROP_XI_GPI_MODE=407, CONST CV_CAP_PROP_XI_GPI_LEVEL=408, CONST CV_CAP_PROP_XI_GPO_SELECTOR=409, CONST CV_CAP_PROP_XI_GPO_MODE=410, CONST CV_CAP_PROP_XI_LED_SELECTOR=411, CONST CV_CAP_PROP_XI_LED_MODE=412, CONST CV_CAP_PROP_XI_MANUAL_WB=413, CONST CV_CAP_PROP_XI_AUTO_WB=414, CONST CV_CAP_PROP_XI_AEAG=415, CONST CV_CAP_PROP_XI_EXP_PRIORITY=416, CONST CV_CAP_PROP_XI_AE_MAX_LIMIT=417, CONST CV_CAP_PROP_XI_AG_MAX_LIMIT=418, CONST CV_CAP_PROP_XI_AEAG_LEVEL=419, CONST CV_CAP_PROP_XI_TIMEOUT=420, CONST CV_CAP_PROP_ANDROID_FLASH_MODE=8001, CONST CV_CAP_PROP_ANDROID_FOCUS_MODE=8002, CONST CV_CAP_PROP_ANDROID_WHITE_BALANCE=8003, CONST CV_CAP_PROP_ANDROID_ANTIBANDING=8004, CONST CV_CAP_PROP_ANDROID_FOCAL_LENGTH=8005, CONST CV_CAP_PROP_ANDROID_FOCUS_DISTANCE_NEAR=8006, CONST CV_CAP_PROP_ANDROID_FOCUS_DISTANCE_OPTIMAL=8007, CONST CV_CAP_PROP_ANDROID_FOCUS_DISTANCE_FAR=8008, CONST CV_CAP_PROP_ANDROID_EXPOSE_LOCK=8009, CONST CV_CAP_PROP_ANDROID_WHITEBALANCE_LOCK=8010, CONST CV_CAP_PROP_IOS_DEVICE_FOCUS=9001, CONST CV_CAP_PROP_IOS_DEVICE_EXPOSURE=9002, CONST CV_CAP_PROP_IOS_DEVICE_FLASH=9003, CONST CV_CAP_PROP_IOS_DEVICE_WHITEBALANCE=9004, CONST CV_CAP_PROP_IOS_DEVICE_TORCH=9005, CONST CV_CAP_PROP_GIGA_FRAME_OFFSET_X=10001, CONST CV_CAP_PROP_GIGA_FRAME_OFFSET_Y=10002, CONST CV_CAP_PROP_GIGA_FRAME_WIDTH_MAX=10003, CONST CV_CAP_PROP_GIGA_FRAME_HEIGH_MAX=10004, CONST CV_CAP_PROP_GIGA_FRAME_SENS_WIDTH=10005, CONST CV_CAP_PROP_GIGA_FRAME_SENS_HEIGH=10006, CONST CV_CAP_PROP_INTELPERC_PROFILE_COUNT=11001, CONST CV_CAP_PROP_INTELPERC_PROFILE_IDX=11002, CONST CV_CAP_PROP_INTELPERC_DEPTH_LOW_CONFIDENCE_VALUE=11003, CONST CV_CAP_PROP_INTELPERC_DEPTH_SATURATION_VALUE=11004, CONST CV_CAP_PROP_INTELPERC_DEPTH_CONFIDENCE_THRESHOLD=11005, CONST CV_CAP_PROP_INTELPERC_DEPTH_FOCAL_LENGTH_HORZ=11006, CONST CV_CAP_PROP_INTELPERC_DEPTH_FOCAL_LENGTH_VERT=11007, CONST CV_CAP_ANDROID_COLOR_FRAME_BGR=0, CONST CV_CAP_ANDROID_COLOR_FRAME=CV_CAP_ANDROID_COLOR_FRAME_BGR, CONST CV_CAP_ANDROID_GREY_FRAME=1, CONST CV_CAP_ANDROID_COLOR_FRAME_RGB=2, CONST CV_CAP_ANDROID_COLOR_FRAME_BGRA=3, CONST CV_CAP_ANDROID_COLOR_FRAME_RGBA=4, CONST CV_CAP_ANDROID_FLASH_MODE_AUTO=0, CONST CV_CAP_ANDROID_FLASH_MODE_OFF=0+1, CONST CV_CAP_ANDROID_FLASH_MODE_ON=0+2, CONST CV_CAP_ANDROID_FLASH_MODE_RED_EYE=0+3, CONST CV_CAP_ANDROID_FLASH_MODE_TORCH=0+4, CONST CV_CAP_ANDROID_FOCUS_MODE_AUTO=0, CONST CV_CAP_ANDROID_FOCUS_MODE_CONTINUOUS_PICTURE=0+1, CONST CV_CAP_ANDROID_FOCUS_MODE_CONTINUOUS_VIDEO=0+2, CONST CV_CAP_ANDROID_FOCUS_MODE_EDOF=0+3, CONST CV_CAP_ANDROID_FOCUS_MODE_FIXED=0+4, CONST CV_CAP_ANDROID_FOCUS_MODE_INFINITY=0+5, CONST CV_CAP_ANDROID_FOCUS_MODE_MACRO=0+6, CONST CV_CAP_ANDROID_WHITE_BALANCE_AUTO=0, CONST CV_CAP_ANDROID_WHITE_BALANCE_CLOUDY_DAYLIGHT=0+1, CONST CV_CAP_ANDROID_WHITE_BALANCE_DAYLIGHT=0+2, CONST CV_CAP_ANDROID_WHITE_BALANCE_FLUORESCENT=0+3, CONST CV_CAP_ANDROID_WHITE_BALANCE_INCANDESCENT=0+4, CONST CV_CAP_ANDROID_WHITE_BALANCE_SHADE=0+5, CONST CV_CAP_ANDROID_WHITE_BALANCE_TWILIGHT=0+6, CONST CV_CAP_ANDROID_WHITE_BALANCE_WARM_FLUORESCENT=0+7, CONST CV_CAP_ANDROID_ANTIBANDING_50HZ=0, CONST CV_CAP_ANDROID_ANTIBANDING_60HZ=0+1, CONST CV_CAP_ANDROID_ANTIBANDING_AUTO=0+2, CONST CV_CAP_ANDROID_ANTIBANDING_OFF=0+3, CONST CAP_ANY=0, CONST CAP_VFW=200, CONST CAP_V4L=200, CONST CAP_V4L2=CAP_V4L, CONST CAP_FIREWARE=300, CONST CAP_FIREWIRE=CAP_FIREWARE, CONST CAP_IEEE1394=CAP_FIREWARE, CONST CAP_DC1394=CAP_FIREWARE, CONST CAP_CMU1394=CAP_FIREWARE, CONST CAP_QT=500, CONST CAP_UNICAP=600, CONST CAP_DSHOW=700, CONST CAP_PVAPI=800, CONST CAP_OPENNI=900, CONST CAP_OPENNI_ASUS=910, CONST CAP_ANDROID=1000, CONST CAP_XIAPI=1100, CONST CAP_AVFOUNDATION=1200, CONST CAP_GIGANETIX=1300, CONST CAP_MSMF=1400, CONST CAP_INTELPERC=1500, CONST CAP_OPENNI2=1600, CONST CAP_PROP_POS_MSEC=0, CONST CAP_PROP_POS_FRAMES=1, CONST CAP_PROP_POS_AVI_RATIO=2, CONST CAP_PROP_FRAME_WIDTH=3, CONST CAP_PROP_FRAME_HEIGHT=4, CONST CAP_PROP_FPS=5, CONST CAP_PROP_FOURCC=6, CONST CAP_PROP_FRAME_COUNT=7, CONST CAP_PROP_FORMAT=8, CONST CAP_PROP_MODE=9, CONST CAP_PROP_BRIGHTNESS=10, CONST CAP_PROP_CONTRAST=11, CONST CAP_PROP_SATURATION=12, CONST CAP_PROP_HUE=13, CONST CAP_PROP_GAIN=14, CONST CAP_PROP_EXPOSURE=15, CONST CAP_PROP_CONVERT_RGB=16, CONST CAP_PROP_WHITE_BALANCE_BLUE_U=17, CONST CAP_PROP_RECTIFICATION=18, CONST CAP_PROP_MONOCROME=19, CONST CAP_PROP_SHARPNESS=20, CONST CAP_PROP_AUTO_EXPOSURE=21, CONST CAP_PROP_GAMMA=22, CONST CAP_PROP_TEMPERATURE=23, CONST CAP_PROP_TRIGGER=24, CONST CAP_PROP_TRIGGER_DELAY=25, CONST CAP_PROP_WHITE_BALANCE_RED_V=26, CONST CAP_PROP_ZOOM=27, CONST CAP_PROP_FOCUS=28, CONST CAP_PROP_GUID=29, CONST CAP_PROP_ISO_SPEED=30, CONST CAP_PROP_BACKLIGHT=32, CONST CAP_PROP_PAN=33, CONST CAP_PROP_TILT=34, CONST CAP_PROP_ROLL=35, CONST CAP_PROP_IRIS=36, CONST CAP_PROP_SETTINGS=37, CONST CAP_PROP_DC1394_OFF=-4, CONST CAP_PROP_DC1394_MODE_MANUAL=-3, CONST CAP_PROP_DC1394_MODE_AUTO=-2, CONST CAP_PROP_DC1394_MODE_ONE_PUSH_AUTO=-1, CONST CAP_PROP_DC1394_MAX=31, CONST CAP_OPENNI_DEPTH_GENERATOR=1 << 31, CONST CAP_OPENNI_IMAGE_GENERATOR=1 << 30, CONST CAP_OPENNI_GENERATORS_MASK=CAP_OPENNI_DEPTH_GENERATOR + CAP_OPENNI_IMAGE_GENERATOR, CONST CAP_PROP_OPENNI_OUTPUT_MODE=100, CONST CAP_PROP_OPENNI_FRAME_MAX_DEPTH=101, CONST CAP_PROP_OPENNI_BASELINE=102, CONST CAP_PROP_OPENNI_FOCAL_LENGTH=103, CONST CAP_PROP_OPENNI_REGISTRATION=104, CONST CAP_PROP_OPENNI_REGISTRATION_ON=CAP_PROP_OPENNI_REGISTRATION, CONST CAP_PROP_OPENNI_APPROX_FRAME_SYNC=105, CONST CAP_PROP_OPENNI_MAX_BUFFER_SIZE=106, CONST CAP_PROP_OPENNI_CIRCLE_BUFFER=107, CONST CAP_PROP_OPENNI_MAX_TIME_DURATION=108, CONST CAP_PROP_OPENNI_GENERATOR_PRESENT=109, CONST CAP_PROP_OPENNI2_SYNC=110, CONST CAP_PROP_OPENNI2_MIRROR=111, CONST CAP_OPENNI_IMAGE_GENERATOR_PRESENT=CAP_OPENNI_IMAGE_GENERATOR + CAP_PROP_OPENNI_GENERATOR_PRESENT, CONST CAP_OPENNI_IMAGE_GENERATOR_OUTPUT_MODE=CAP_OPENNI_IMAGE_GENERATOR + CAP_PROP_OPENNI_OUTPUT_MODE, CONST CAP_OPENNI_DEPTH_GENERATOR_BASELINE=CAP_OPENNI_DEPTH_GENERATOR + CAP_PROP_OPENNI_BASELINE, CONST CAP_OPENNI_DEPTH_GENERATOR_FOCAL_LENGTH=CAP_OPENNI_DEPTH_GENERATOR + CAP_PROP_OPENNI_FOCAL_LENGTH, CONST CAP_OPENNI_DEPTH_GENERATOR_REGISTRATION=CAP_OPENNI_DEPTH_GENERATOR + CAP_PROP_OPENNI_REGISTRATION, CONST CAP_OPENNI_DEPTH_GENERATOR_REGISTRATION_ON=CAP_OPENNI_DEPTH_GENERATOR_REGISTRATION, CONST CAP_OPENNI_DEPTH_MAP=0, CONST CAP_OPENNI_POINT_CLOUD_MAP=1, CONST CAP_OPENNI_DISPARITY_MAP=2, CONST CAP_OPENNI_DISPARITY_MAP_32F=3, CONST CAP_OPENNI_VALID_DEPTH_MASK=4, CONST CAP_OPENNI_BGR_IMAGE=5, CONST CAP_OPENNI_GRAY_IMAGE=6, CONST CAP_OPENNI_VGA_30HZ=0, CONST CAP_OPENNI_SXGA_15HZ=1, CONST CAP_OPENNI_SXGA_30HZ=2, CONST CAP_OPENNI_QVGA_30HZ=3, CONST CAP_OPENNI_QVGA_60HZ=4, CONST CAP_PROP_GSTREAMER_QUEUE_LENGTH=200, CONST CAP_PROP_PVAPI_MULTICASTIP=300, CONST CAP_PROP_PVAPI_FRAMESTARTTRIGGERMODE=301, CONST CAP_PROP_PVAPI_DECIMATIONHORIZONTAL=302, CONST CAP_PROP_PVAPI_DECIMATIONVERTICAL=303, CONST CAP_PROP_PVAPI_BINNINGX=304, CONST CAP_PROP_PVAPI_BINNINGY=305, CONST CAP_PVAPI_FSTRIGMODE_FREERUN=0, CONST CAP_PVAPI_FSTRIGMODE_SYNCIN1=1, CONST CAP_PVAPI_FSTRIGMODE_SYNCIN2=2, CONST CAP_PVAPI_FSTRIGMODE_FIXEDRATE=3, CONST CAP_PVAPI_FSTRIGMODE_SOFTWARE=4, CONST CAP_PVAPI_DECIMATION_OFF=1, CONST CAP_PVAPI_DECIMATION_2OUTOF4=2, CONST CAP_PVAPI_DECIMATION_2OUTOF8=4, CONST CAP_PVAPI_DECIMATION_2OUTOF16=8, CONST CAP_PROP_XI_DOWNSAMPLING=400, CONST CAP_PROP_XI_DATA_FORMAT=401, CONST CAP_PROP_XI_OFFSET_X=402, CONST CAP_PROP_XI_OFFSET_Y=403, CONST CAP_PROP_XI_TRG_SOURCE=404, CONST CAP_PROP_XI_TRG_SOFTWARE=405, CONST CAP_PROP_XI_GPI_SELECTOR=406, CONST CAP_PROP_XI_GPI_MODE=407, CONST CAP_PROP_XI_GPI_LEVEL=408, CONST CAP_PROP_XI_GPO_SELECTOR=409, CONST CAP_PROP_XI_GPO_MODE=410, CONST CAP_PROP_XI_LED_SELECTOR=411, CONST CAP_PROP_XI_LED_MODE=412, CONST CAP_PROP_XI_MANUAL_WB=413, CONST CAP_PROP_XI_AUTO_WB=414, CONST CAP_PROP_XI_AEAG=415, CONST CAP_PROP_XI_EXP_PRIORITY=416, CONST CAP_PROP_XI_AE_MAX_LIMIT=417, CONST CAP_PROP_XI_AG_MAX_LIMIT=418, CONST CAP_PROP_XI_AEAG_LEVEL=419, CONST CAP_PROP_XI_TIMEOUT=420, CONST CAP_PROP_ANDROID_AUTOGRAB=1024, CONST CAP_PROP_ANDROID_PREVIEW_SIZES_STRING=1025, CONST CAP_PROP_ANDROID_PREVIEW_FORMAT=1026, CONST CAP_PROP_ANDROID_FLASH_MODE=8001, CONST CAP_PROP_ANDROID_FOCUS_MODE=8002, CONST CAP_PROP_ANDROID_WHITE_BALANCE=8003, CONST CAP_PROP_ANDROID_ANTIBANDING=8004, CONST CAP_PROP_ANDROID_FOCAL_LENGTH=8005, CONST CAP_PROP_ANDROID_FOCUS_DISTANCE_NEAR=8006, CONST CAP_PROP_ANDROID_FOCUS_DISTANCE_OPTIMAL=8007, CONST CAP_PROP_ANDROID_FOCUS_DISTANCE_FAR=8008, CONST CAP_ANDROID_COLOR_FRAME_BGR=0, CONST CAP_ANDROID_COLOR_FRAME=CAP_ANDROID_COLOR_FRAME_BGR, CONST CAP_ANDROID_GREY_FRAME=1, CONST CAP_ANDROID_COLOR_FRAME_RGB=2, CONST CAP_ANDROID_COLOR_FRAME_BGRA=3, CONST CAP_ANDROID_COLOR_FRAME_RGBA=4, CONST CAP_ANDROID_FLASH_MODE_AUTO=0, CONST CAP_ANDROID_FLASH_MODE_OFF=1, CONST CAP_ANDROID_FLASH_MODE_ON=2, CONST CAP_ANDROID_FLASH_MODE_RED_EYE=3, CONST CAP_ANDROID_FLASH_MODE_TORCH=4, CONST CAP_ANDROID_FOCUS_MODE_AUTO=0, CONST CAP_ANDROID_FOCUS_MODE_CONTINUOUS_VIDEO=1, CONST CAP_ANDROID_FOCUS_MODE_EDOF=2, CONST CAP_ANDROID_FOCUS_MODE_FIXED=3, CONST CAP_ANDROID_FOCUS_MODE_INFINITY=4, CONST CAP_ANDROID_FOCUS_MODE_MACRO=5, CONST CAP_ANDROID_WHITE_BALANCE_AUTO=0, CONST CAP_ANDROID_WHITE_BALANCE_CLOUDY_DAYLIGHT=1, CONST CAP_ANDROID_WHITE_BALANCE_DAYLIGHT=2, CONST CAP_ANDROID_WHITE_BALANCE_FLUORESCENT=3, CONST CAP_ANDROID_WHITE_BALANCE_INCANDESCENT=4, CONST CAP_ANDROID_WHITE_BALANCE_SHADE=5, CONST CAP_ANDROID_WHITE_BALANCE_TWILIGHT=6, CONST CAP_ANDROID_WHITE_BALANCE_WARM_FLUORESCENT=7, CONST CAP_ANDROID_ANTIBANDING_50HZ=0, CONST CAP_ANDROID_ANTIBANDING_60HZ=1, CONST CAP_ANDROID_ANTIBANDING_AUTO=2, CONST CAP_ANDROID_ANTIBANDING_OFF=3, CONST CAP_PROP_IOS_DEVICE_FOCUS=9001, CONST CAP_PROP_IOS_DEVICE_EXPOSURE=9002, CONST CAP_PROP_IOS_DEVICE_FLASH=9003, CONST CAP_PROP_IOS_DEVICE_WHITEBALANCE=9004, CONST CAP_PROP_IOS_DEVICE_TORCH=9005, CONST CAP_PROP_GIGA_FRAME_OFFSET_X=10001, CONST CAP_PROP_GIGA_FRAME_OFFSET_Y=10002, CONST CAP_PROP_GIGA_FRAME_WIDTH_MAX=10003, CONST CAP_PROP_GIGA_FRAME_HEIGH_MAX=10004, CONST CAP_PROP_GIGA_FRAME_SENS_WIDTH=10005, CONST CAP_PROP_GIGA_FRAME_SENS_HEIGH=10006, CONST CAP_PROP_INTELPERC_PROFILE_COUNT=11001, CONST CAP_PROP_INTELPERC_PROFILE_IDX=11002, CONST CAP_PROP_INTELPERC_DEPTH_LOW_CONFIDENCE_VALUE=11003, CONST CAP_PROP_INTELPERC_DEPTH_SATURATION_VALUE=11004, CONST CAP_PROP_INTELPERC_DEPTH_CONFIDENCE_THRESHOLD=11005, CONST CAP_PROP_INTELPERC_DEPTH_FOCAL_LENGTH_HORZ=11006, CONST CAP_PROP_INTELPERC_DEPTH_FOCAL_LENGTH_VERT=11007, CONST CAP_INTELPERC_DEPTH_GENERATOR=1 << 29, CONST CAP_INTELPERC_IMAGE_GENERATOR=1 << 28, CONST CAP_INTELPERC_GENERATORS_MASK=CAP_INTELPERC_DEPTH_GENERATOR + CAP_INTELPERC_IMAGE_GENERATOR, CONST CAP_INTELPERC_DEPTH_MAP=0, CONST CAP_INTELPERC_UVDEPTH_MAP=1, CONST CAP_INTELPERC_IR_MAP=2, CONST CAP_INTELPERC_IMAGE=3]
+CLASS cv..VideoCapture : 
+FUNC < cv.VideoCapture.VideoCapture []>
+FUNC < cv.VideoCapture.VideoCapture [ARG String filename=]>
+FUNC < cv.VideoCapture.VideoCapture [ARG int device=]>
+FUNC <bool cv.VideoCapture.retrieve [ARG Mat image=, ARG int flag=0]>
+FUNC <bool cv.VideoCapture.read [ARG Mat image=]>
+FUNC <bool cv.VideoCapture.set [ARG int propId=, ARG double value=]>
+FUNC <double cv.VideoCapture.get [ARG int propId=]>
+FUNC <bool cv.VideoCapture.open [ARG String filename=]>
+FUNC <bool cv.VideoCapture.open [ARG int device=]>
+FUNC <bool cv.VideoCapture.isOpened []>
+FUNC <void cv.VideoCapture.release []>
+FUNC <bool cv.VideoCapture.grab []>
